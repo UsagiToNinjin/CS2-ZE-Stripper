@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.01.21
+// stripper by 兎RB 26.06.16
 // map ze_starlight_revue_cs2
 // workshop id 3519985936
 // if find mistranslation tell me　https://steamcommunity.com/profiles/76561198343767968/
@@ -28,8 +28,8 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.01.21 by 兎RB",
-                        "delay": 1.0,
+                        "overrideparam": "say language translation stripper 26.06.16 by 兎RB",
+                        "delay": 3.0,
                         "timestofire": -1
                     }
                 ]
@@ -69,7 +69,7 @@
 					"outputname": "OnCase01",
 					"targetname": "revue_lev1_trigger_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞これは私の最初のマップで,CSGOの時の少女☆歌劇 レヴュースタァライトです＜＜>8.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞これは私の最初のマップで, CSGOの時の少女☆歌劇 レヴュースタァライトです＜＜>8.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -78,7 +78,7 @@
 					"outputname": "OnCase01",
 					"targetname": "revue_lev1_trigger_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞マップにバグがあった場合,私のワークショップにコメントを残してください＜＜>10.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞マップにバグがあった場合, 私のワークショップにコメントを残してください＜＜>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -123,7 +123,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv1_trigger_door1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞待機 30秒後に教室の裏のドアが開きます＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞待機 30秒後に教室の裏口が開きます＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -186,7 +186,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv1_trigger_door5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞おかしい,どうしてドアが閉まってるんだ,別の方法を考えてみよう＜＜>10.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞おかしい, どうしてドアが閉まってるんだ, 別の方法を考えてみよう＜＜>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -195,7 +195,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv1_trigger_door5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞あの壁は壊れているみたいだ,倒せるかどうか見てみよう＜＜>12.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞あの壁は壊れているみたいだ, 倒せるかどうか見てみよう＜＜>12.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -204,7 +204,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv1_trigger_cmd1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞廊下が何かで塞がってる,教室から回り込もう＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞廊下が何かで塞がってる, 教室から回り込もう＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -213,7 +213,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv1_trigger_door6",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞図書室の裏のドアが25秒後に開きます＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞図書室の裏口が25秒後に開きます＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -231,7 +231,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv1_button_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say ＞＞おかしい,どうして学校の正門に入れないんだ,早く左の小さな林に入ってみよう＜＜>40.0>1",
+					"overrideparam": "OnPressed>cmd>Command>say ＞＞おかしい, どうして学校の正門に入れないんだ, 早く左の小さな林に入ってみよう＜＜>40.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -330,7 +330,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_trigger_cmd1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞9人の少女を探し出せばエレベーターが作動されます＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞9人の少女を見つけるとエレベーターが起動します＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -339,7 +339,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_trigger_end_tokyo",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5秒後にAFKのテレポートを作動します＜＜>15.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5秒後にAFKテレポートが開始されます＜＜>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -348,7 +348,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_trigger_end_tokyo",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞私!生まれ変わる!＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞私! 生まれ変わるんだ!＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -357,7 +357,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_counter",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnHitMax>cmd>Command>say ＞＞全てのキリンを壊した,30秒間守り抜いて星が昇るのを待とう＜＜>0.0>1",
+					"overrideparam": "OnHitMax>cmd>Command>say ＞＞全てのキリンを壊した, 30秒間守り抜いて星が昇るのを待とう＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -366,7 +366,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_trigger_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞20秒間守り抜き,プラットフォームが降りてくるのを待とう＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞20秒間守り抜き, プラットフォームが降りてくるのを待とう＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -375,7 +375,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_track_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞プラットフォームが15秒後に動き始める,他のプラットフォームにいるゾンビに注意しよう＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞プラットフォームが15秒後に起動する, 他のプラットフォームにいるゾンビに注意しよう＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -384,7 +384,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_counter_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnHitMax>cmd>Command>say ＞＞成功した！15秒間守り抜いて道が現れるのを待とう＜＜>0.0>1",
+					"overrideparam": "OnHitMax>cmd>Command>say ＞＞成功した！ 15秒間守り抜いて道が現れるのを待とう＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -420,7 +420,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_trigger_3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞ハシゴが開放された,早く走れ!＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞ハシゴが開放された, 早く走れ!＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -429,7 +429,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_trigger_3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞3秒後にAFKのテレポートを作動します＜＜>1.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞3秒後にAFKテレポートが開始されます＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -438,7 +438,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_trigger_6",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞星が間もなく消える,早く走れ!＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞星が間もなく消える, 早く走れ!＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -447,7 +447,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_trigger_6",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞15秒後にAFKのテレポートを作動します＜＜>5.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞15秒後にAFKテレポートが開始されます＜＜>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -465,7 +465,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_trigger_7",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞3秒後にAFKのテレポートを作動します＜＜>30.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞3秒後にAFKテレポートが開始されます＜＜>30.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -528,7 +528,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_bad_end_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞20秒後にレーザーが作動されます＜＜>5.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞20秒後にレーザーが起動します＜＜>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -537,7 +537,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_bad_end_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞まもなくステージを再作動します……＜＜>41.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞ステージを初期化します……＜＜>41.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -609,7 +609,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_danmu_solo_case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase01>cmd>Command>say ＞＞プレイしていただきありがとうございます,バグを見つけた場合はワークショップのコメント欄にご報告ください＜＜>4.0>1",
+					"overrideparam": "OnCase01>cmd>Command>say ＞＞プレイしていただきありがとうございます, バグを見つけた場合はワークショップのコメント欄にご報告ください＜＜>4.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -645,7 +645,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_trigger_door_2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞なんでドアが2つあるんだ,20秒間守り抜いて正しいドアを探そう＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞なんでドアが2つあるんだ, 20秒間守り抜いて正しいドアを探そう＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -654,7 +654,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_trigger_door_3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞またか?20秒間守り抜いて正しいドアを探し続けよう＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞またか? 20秒間守り抜いて正しいドアを探し続けよう＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -672,7 +672,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_trigger_door_5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5秒後にAFKのテレポートを作動します＜＜>8.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5秒後にAFKテレポートが開始されます＜＜>8.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -681,7 +681,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_trigger_door_5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞なんでドアがないんだ?道がないのか?＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞なんでドアがないんだ? 道がないのか?＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -690,7 +690,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_trigger_door_5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5秒間守って,壁が消えるのを待とう＜＜>1.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5秒間守って, 壁が消えるのを待とう＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -699,7 +699,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv3_trigger_tp4",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5秒後にAFKのテレポートを作動します＜＜>15.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5秒後にAFKテレポートが開始されます＜＜>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -744,7 +744,7 @@
 					"outputname": "OnCase01",
 					"targetname": "8084",
 					"inputname": "SetMessage",
-					"overrideparam": "3ステージ\n",
+					"overrideparam": "3 ステージ\n",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -753,7 +753,7 @@
 					"outputname": "OnCase01",
 					"targetname": "8085",
 					"inputname": "SetMessage",
-					"overrideparam": "2ステージ\n",
+					"overrideparam": "2 ステージ\n",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -762,7 +762,7 @@
 					"outputname": "OnCase01",
 					"targetname": "8086",
 					"inputname": "SetMessage",
-					"overrideparam": "1ステージ\n",
+					"overrideparam": "1 ステージ\n",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -771,7 +771,7 @@
 					"outputname": "OnCase01",
 					"targetname": "11084",
 					"inputname": "SetMessage",
-					"overrideparam": "4ステージ\n",
+					"overrideparam": "4 ステージ\n",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -780,7 +780,7 @@
 					"outputname": "OnCase01",
 					"targetname": "name_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say Top☆Starになりました>0.0>-1",
+					"overrideparam": "OnTrigger>cmd>Command>say Top☆Starになった>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -789,7 +789,7 @@
 					"outputname": "OnCase02",
 					"targetname": "revue_lev1_trigger_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞이것은 저의 처음 맵으로,CSGO 시기의 소녀☆가극 레뷰 스타 라이트 입니다＜＜>8.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞이것은 저의 처음 맵으로, CSGO 시기의 소녀☆가극 레뷰 스타 라이트 입니다＜＜>8.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -798,7 +798,7 @@
 					"outputname": "OnCase02",
 					"targetname": "revue_lev1_trigger_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞맵에 버그가 있을 경우,저의 워크숍에 코멘드를 남겨 주세요＜＜>10.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞맵에 버그가 있을 경우, 저의 워크숍에 코멘드를 남겨 주세요＜＜>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -834,7 +834,7 @@
 					"outputname": "OnCase02",
 					"targetname": "revue_lev1_trigger_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞이 버젼은 최종판이 아닙니다＜＜>11.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞이 버전은 최종판이 아닙니다＜＜>11.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -906,7 +906,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv1_trigger_door5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞이상하다,어째서 문이 닫혀 있지,다른 방법을 생각해 보자＜＜>10.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞이상하다, 어째서 문이 닫혀 있지, 다른 방법을 생각해 보자＜＜>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -915,7 +915,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv1_trigger_door5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞저 벽은 부서져 있는 것 같다,쓰러뜨릴 수 있을지는 봐 보자＜＜>12.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞저 벽은 부서져 있는 것 같다, 쓰러뜨릴 수 있을지는 봐 보자＜＜>12.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -924,7 +924,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv1_trigger_cmd1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞복도가 무언가로 막혀져 있다,교실로부터 돌아 가자＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞복도가 무언가로 막혀져 있다, 교실로부터 돌아 가자＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -951,7 +951,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv1_button_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say ＞＞이상하다,어째서 학교 정문으로 들어갈 수 없는거지,빨리 왼쪽의 작은 숲에 들어가 보자＜＜>40.0>1",
+					"overrideparam": "OnPressed>cmd>Command>say ＞＞이상하다, 어째서 학교 정문으로 들어갈 수 없는거지, 빨리 왼쪽의 작은 숲에 들어가 보자＜＜>40.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1059,7 +1059,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_trigger_end_tokyo",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5초 후에 AFK 텔레포트를 작동합니다＜＜>15.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5초 후에 AFK 텔레포트가 작동됩니다＜＜>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1068,7 +1068,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_trigger_end_tokyo",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞난!다시 태어나는 거야!＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞난! 다시 태어나는 거야!＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1077,7 +1077,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_counter",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnHitMax>cmd>Command>say ＞＞모든 기린을 부쉈다,30초간 지켜내고 별이 뜨는걸 기다리자＜＜>0.0>1",
+					"overrideparam": "OnHitMax>cmd>Command>say ＞＞모든 기린을 부쉈다, 30초간 지켜내고 별이 뜨는걸 기다리자＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1086,7 +1086,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_trigger_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞20초간 지켜내고,플랫폼이 내려 오는걸 기다리자＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞20초간 지켜내고, 플랫폼이 내려 오는걸 기다리자＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1095,7 +1095,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_track_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞플랫폼이 15초 후에 움직이기 시작한다,다른 플랫폼에 있는 좀비에 주의하자＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞플랫폼이 15초 후에 움직이기 시작한다, 다른 플랫폼에 있는 좀비에 주의하자＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1104,7 +1104,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_counter_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnHitMax>cmd>Command>say ＞＞성공했다！15초간 지켜내며 길이 나타나는걸 기다리자＜＜>0.0>1",
+					"overrideparam": "OnHitMax>cmd>Command>say ＞＞성공했다！ 15초간 지켜내며 길이 나타나는걸 기다리자＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1140,7 +1140,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_trigger_3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞사다리가 개방됬어,빨리 달려!＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞사다리가 개방됬다, 빨리 가자!＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1149,7 +1149,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_trigger_3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞3초 후에 AFK 텔레포트를 작동합니다＜＜>1.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞3초 후에 AFK 텔레포트가 작동됩니다＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1158,7 +1158,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_trigger_6",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞별이 곧 사라진다,빨리 달려!＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞별이 곧 사라진다, 빨리 가자!＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1167,7 +1167,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_trigger_6",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞15초 후에 AFK 텔레포트를 작동합니다＜＜>5.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞15초 후에 AFK 텔레포트가 작동됩니다＜＜>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1176,7 +1176,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_trigger_7",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞새 바구니 안에서 30초 기다리면 텔레포트 됩니다＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞새장 안에서 30초 기다리면 텔레포트 됩니다＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1185,7 +1185,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_trigger_7",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞3초 후에 AFK 텔레포트를 작동합니다＜＜>30.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞3초 후에 AFK 텔레포트가 작동됩니다＜＜>30.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1194,7 +1194,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_niaolong_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞새 바구니가 5초 후에 상승합니다＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞새장이 5초 후에 상승합니다＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1203,7 +1203,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_niaolong_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞첫번째 철문이 20초 후에 열립니다＜＜>1.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞첫 번째 철문이 20초 후에 열립니다＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1212,7 +1212,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_niaolong_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞두번째 철문이 20초 후에 열립니다＜＜>21.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞두 번째 철문이 20초 후에 열립니다＜＜>21.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1221,7 +1221,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_niaolong_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞세번째 철문이 5초 후에 열립니다＜＜>41.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞세 번째 철문이 5초 후에 열립니다＜＜>41.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1230,7 +1230,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_bad_end_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞참 엔딩 해방조건이 충족되지 않는 것이 검출되었습니다＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞진실 엔딩 해방조건이 충족되지 않는 것이 검출되었습니다＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1248,7 +1248,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_bad_end_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞20초 후에 레이저 작동됩니다＜＜>5.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞20초 후에 레이저가 작동됩니다＜＜>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1257,7 +1257,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_bad_end_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞곧 스테이지를 재작동합니다……＜＜>41.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞스테이지를 초기화합니다……＜＜>41.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1320,7 +1320,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_danmu_solo_case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase01>cmd>Command>say ＞＞무대에 마지막까지 남아 있는 자가 탑 스타가 되었다＜＜>2.0>1",
+					"overrideparam": "OnCase01>cmd>Command>say ＞＞무대에 마지막까지 남아 있는 자가 탑 스타가 되었습니다＜＜>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1329,7 +1329,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_danmu_solo_case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase01>cmd>Command>say ＞＞플레이 해 주셔서 감사합니다,버그를 찾았을 경우 워크숍 코멘드란에 보고 바랍니다＜＜>4.0>1",
+					"overrideparam": "OnCase01>cmd>Command>say ＞＞플레이 해 주셔서 감사합니다, 버그를 찾았을 경우 워크숍 코멘드란에 보고 바랍니다＜＜>4.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1365,7 +1365,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_trigger_door_2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞어째서 문이 2개 있는거야,20초간 막아내고 올바른 문을 찾자＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞어째서 문이 2개 있는거야, 20초간 막아내고 올바른 문을 찾자＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1374,7 +1374,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_trigger_door_3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞또인가?20초간 막아내고 올바른 문을 계속 찾자＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞또인가? 20초간 막아내고 올바른 문을 계속 찾자＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1392,7 +1392,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_trigger_door_5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5초 후에 AFK 텔레포트를 작동합니다＜＜>8.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5초 후에 AFK 텔레포트가 작동됩니다＜＜>8.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1401,7 +1401,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_trigger_door_5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞어째서 문이 없지?길이 없는건가?＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞어째서 문이 없지? 길이 없는건가?＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1410,7 +1410,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_trigger_door_5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5초간 막고,벽이 사라지는 것을 기다리자＜＜>1.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5초간 막고, 벽이 사라지는 것을 기다리자＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1419,7 +1419,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_trigger_tp4",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5초 후에 AFK 텔레포트를 작동합니다＜＜>15.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞5초 후에 AFK 텔레포트가 작동됩니다＜＜>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1428,7 +1428,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv3_trigger_tp4",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞빨리 선반 밑으로 들어가 15초간 지켜내＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞빨리 선반 밑으로 들어가 15초간 막아내자＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1464,7 +1464,7 @@
 					"outputname": "OnCase02",
 					"targetname": "8084",
 					"inputname": "SetMessage",
-					"overrideparam": "3스테이지\n",
+					"overrideparam": "3 스테이지\n",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1473,7 +1473,7 @@
 					"outputname": "OnCase02",
 					"targetname": "8085",
 					"inputname": "SetMessage",
-					"overrideparam": "2스테이지\n",
+					"overrideparam": "2 스테이지\n",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1482,7 +1482,7 @@
 					"outputname": "OnCase02",
 					"targetname": "8086",
 					"inputname": "SetMessage",
-					"overrideparam": "1스테이지\n",
+					"overrideparam": "1 스테이지\n",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1491,7 +1491,7 @@
 					"outputname": "OnCase02",
 					"targetname": "11084",
 					"inputname": "SetMessage",
-					"overrideparam": "4스테이지\n",
+					"overrideparam": "4 스테이지\n",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1500,7 +1500,7 @@
 					"outputname": "OnCase02",
 					"targetname": "name_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say Top☆Star가 되었습니다>0.0>-1",
+					"overrideparam": "OnTrigger>cmd>Command>say Top☆Star가 되었다>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1518,7 +1518,7 @@
 					"outputname": "OnCase03",
 					"targetname": "revue_lev1_trigger_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞If you find any bugs in the map, please leave a comment on my Workshop page＜＜>10.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞If you find any bugs in the map, Please leave a comment on my Workshop page＜＜>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1626,7 +1626,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv1_trigger_door5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞That’s strange,Why isn’t the door closed,Let’s think of another way＜＜>10.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞That’s strange, Why isn’t the door closed, Let’s think of another way＜＜>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1635,7 +1635,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv1_trigger_door5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞That wall looks broken,Let’s see if we can bring it down＜＜>12.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞That wall looks broken, Let’s see if we can bring it down＜＜>12.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1644,7 +1644,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv1_trigger_cmd1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The hallway is blocked by something,Let’s go back to the classroom＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The hallway is blocked by something, Let’s go back to the classroom＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1671,7 +1671,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv1_button_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say ＞＞That’s strange,Why can’t we enter through the school’s main gate,Let’s quickly head into the small forest on the left＜＜>40.0>1",
+					"overrideparam": "OnPressed>cmd>Command>say ＞＞That’s strange, Why can’t we enter through the school’s main gate, Let’s quickly head into the small forest on the left＜＜>40.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1797,7 +1797,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv3_counter",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnHitMax>cmd>Command>say ＞＞destroyed all the giraffes,Let’s defend for 30 seconds and wait for the stars to appear＜＜>0.0>1",
+					"overrideparam": "OnHitMax>cmd>Command>say ＞＞destroyed all the giraffes, Let’s defend for 30 seconds and wait for the stars to appear＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1806,7 +1806,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv3_trigger_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Let’s defend for 20 seconds,wait for the platform to come down＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Let’s defend for 20 seconds, Wait for the platform to come down＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1815,7 +1815,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv3_track_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The platform will start moving in 15 seconds,Watch out for the zombies on the other platform＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The platform will start moving in 15 seconds, Watch out for the zombies on the other platform＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1860,7 +1860,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv3_trigger_3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The ladder is open,Run quickly!＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The ladder is open, Run quickly!＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1878,7 +1878,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv3_trigger_6",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The star is about to disappear,Run quickly!＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The star is about to disappear, Run quickly!＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1977,7 +1977,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv3_bad_end_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The stage will restart soon……＜＜>41.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞The stage will reset soon……＜＜>41.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2031,7 +2031,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv3_end_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Hold out under the light for 30 seconds, then let’s go get that star together!＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Hold out under the light for 30 seconds, Then let’s go get that star together!＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2049,7 +2049,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv3_danmu_solo_case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase01>cmd>Command>say ＞＞Thank you for playing,If you find any bugs, please report them in the workshop comments＜＜>4.0>1",
+					"overrideparam": "OnCase01>cmd>Command>say ＞＞Thank you for playing, If you find any bugs, Please report them in the workshop comments＜＜>4.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2085,7 +2085,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv3_trigger_door_2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Why are there 2 doors,Let’s hold out for 20 seconds and find the correct one＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Why are there 2 doors, Let’s hold out for 20 seconds and find the correct one＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2130,7 +2130,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv3_trigger_door_5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Hold out for 5 seconds,wait for the wall to disappear＜＜>1.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞Hold out for 5 seconds, Wait for the wall to disappear＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2230,26 +2230,15 @@
 		// RE:CREATE
         {
 			"targetname": "lyric_re_create",
-			"classname": "trigger_multiple",
-			"origin": "-14812 -15796 -3068",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-            "wait": "1",
-			"spawnflags": "4097",
-			"model": "maps/ze_starlight_revue_cs2/entities/lv4_hurt_10997.vmdl",
+			"model": "maps/ze_starlight_revue_cs2/entities/unnamed_2613.vmdl",
 			"io":
 			[
-                {
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
-					"timestofire": -1
-				},
-
 			    {
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerInZone",
 					"targetname": "lyric_re_create_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -2257,10 +2246,26 @@
 				},
 
                 {
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_re_create_hud",
-					"inputname": "FireUser2",
+					"inputname": "FireUser1",
 					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
             ]
@@ -2287,6 +2292,23 @@
 					"delay": 0.01,
 					"timestofire": -1
 				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "cmd",
+                    "inputname": "Command",
+                    "overrideparam": "say ♪ MUSIC [ 神楽ひかり,大場なな : RE:CREATE ]",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
 
 				{
   					"outputname": "OnUser2",
@@ -2633,26 +2655,15 @@
 		// 恋の魔球
         {
 			"targetname": "lyric_koi",
-			"classname": "trigger_multiple",
-			"origin": "9996 372 -2288",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-            "wait": "1",
-			"spawnflags": "4097",
-			"model": "maps/ze_starlight_revue_cs2/entities/lv4_hurt_10997.vmdl",
+			"model": "maps/ze_starlight_revue_cs2/entities/unnamed_2613.vmdl",
 			"io":
 			[
-                {
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
-					"timestofire": -1
-				},
-
 			    {
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerInZone",
 					"targetname": "lyric_koi_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -2660,48 +2671,26 @@
 				},
 
                 {
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_koi_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
-					"timestofire": -1
-				}
-            ]
-        },
-
-		{
-			"targetname": "lyric_koi",
-			"classname": "trigger_multiple",
-			"origin": "11500 -11700 -1650",
-			"angles": "0 0 0",
-			"scales": "5 5 5",
-			"startdisabled": "1",
-            "wait": "1",
-			"spawnflags": "4097",
-			"model": "maps/ze_starlight_revue_cs2/entities/lv4_hurt_10997.vmdl",
-			"io":
-			[
-                {
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
-					"timestofire": -1
-				},
-
-			    {
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_koi_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
 
-                {
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_koi_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
+				{
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
             ]
@@ -2730,11 +2719,45 @@
 				},
 
 				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "lyric_re_create_hud",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "lv3_music_trigger",
+                    "inputname": "AddOutPut",
+					"overrideparam": "OnStartTouch>lyric_koi_hud>Kill>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "cmd",
+                    "inputname": "Command",
+                    "overrideparam": "say ♪ MUSIC [ 露崎まひる,愛城華恋 : 恋の魔球 ]",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
   					"outputname": "OnUser2",
   					"targetname": "!self",
   					"inputname": "SetMessage",
   					"overrideparam": " ",
-  					"delay": 29.6,
+  					"delay": 30.0,
   					"timestofire": -1
 				},
 
@@ -3204,16 +3227,7 @@
   					"overrideparam": "Geemu wo owarasenaide\nゲームを終わらせないで",
   					"delay": 323.7,
   					"timestofire": -1
-				},					
-
-				{					
-  					"outputname": "OnUser2",
-  					"targetname": "!self",
-  					"inputname": "SetMessage",
-  					"overrideparam": "約100秒\n間奏中",
-  					"delay": 333.7,
-  					"timestofire": -1
-				},					
+				},										
 
 				{					
   					"outputname": "OnUser2",
@@ -3317,26 +3331,15 @@
 		// 青い春と西の空
         {
 			"targetname": "lyric_aoi",
-			"classname": "trigger_multiple",
-			"origin": "-3680 -2407 264",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-            "wait": "1",
-			"spawnflags": "4097",
-			"model": "maps/ze_starlight_revue_cs2/entities/lv4_hurt_10997.vmdl",
+			"model": "maps/ze_starlight_revue_cs2/entities/unnamed_2613.vmdl",
 			"io":
 			[
-                {
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
-					"timestofire": -1
-				},
-
 			    {
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerInZone",
 					"targetname": "lyric_aoi_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -3344,10 +3347,26 @@
 				},
 
                 {
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_aoi_hud",
-					"inputname": "FireUser2",
+					"inputname": "FireUser1",
 					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
             ]
@@ -3374,6 +3393,23 @@
 					"delay": 0.01,
 					"timestofire": -1
 				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "cmd",
+                    "inputname": "Command",
+                    "overrideparam": "say ♪ MUSIC [ 結束バンド : 青い春と西の空 ]",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
 
 				{
   					"outputname": "OnUser2",
@@ -3729,26 +3765,15 @@
 		// I Want You ~반짝★반짝 Sunshine~
         {
 			"targetname": "lyric_iwantyou",
-			"classname": "trigger_multiple",
-			"origin": "-3680 -2407 264",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-            "wait": "1",
-			"spawnflags": "4097",
-			"model": "maps/ze_starlight_revue_cs2/entities/lv4_hurt_10997.vmdl",
+			"model": "maps/ze_starlight_revue_cs2/entities/unnamed_2613.vmdl",
 			"io":
 			[
-                {
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
-					"timestofire": -1
-				},
-
 			    {
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerInZone",
 					"targetname": "lyric_iwantyou_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -3756,10 +3781,26 @@
 				},
 
                 {
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_iwantyou_hud",
-					"inputname": "FireUser2",
+					"inputname": "FireUser1",
 					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
             ]
@@ -3786,6 +3827,23 @@
 					"delay": 0.01,
 					"timestofire": -1
 				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "cmd",
+                    "inputname": "Command",
+                    "overrideparam": "say ♪ MUSIC [ DJMAX : I Want You ~반짝★반짝 Sunshine~ ]",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
 
 				{
     			    "outputname": "OnUser2",
@@ -4317,9 +4375,299 @@
     			    "timestofire": -1
     			}
 			]
-		}
+		},
+		// 春日影
+        {
+			"targetname": "lyric_haru",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
+			"angles": "0 0 0",
+			"scales": "1 1 1",
+			"model": "maps/ze_starlight_revue_cs2/entities/unnamed_2613.vmdl",
+			"io":
+			[
+			    {
+					"outputname": "OnPlayerInZone",
+					"targetname": "lyric_haru_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnPlayerOutZone",
+					"targetname": "lyric_haru_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				}
+            ]
+        },
+
+        {
+			"targetname": "lyric_haru_hud",
+			"classname": "env_hudhint",
+			"message": "春日影",
+            "io":
+			[
+			    {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "ShowHudHint",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser1",
+					"delay": 0.01,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "cmd",
+                    "inputname": "Command",
+                    "overrideparam": "say ♪ MUSIC [ MyGO!!!!! : 春日影 ]",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "Kajikanda kokoro\n悴んだ心",
+    			    "delay": 15.3,
+    			    "timestofire": -1
+    			},
+
+				{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "Furueru manazashi Sekai de\nふるえる眼差し世界で",
+    			    "delay": 17.1,
+    			    "timestofire": -1
+    			},
+
+    			{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "Boku wa hitoribocchi datta\n僕はひとりぼっちだった",
+    			    "delay": 22.0,
+    			    "timestofire": -1
+    			},
+
+    			{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "Chiru koto shika shiranai haru wa\n散ることしか知らない春は",
+    			    "delay": 25.6,
+    			    "timestofire": -1
+    			},
+
+    			{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "Maitoshi tsumetaku ashirau\n毎年 冷たくあしらう",
+    			    "delay": 31.6,
+    			    "timestofire": -1
+    			},
+
+    			{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "Kuragari no naka ippoutsuukou ni tada tada\n暗がりの中 一方通行にただただ",
+    			    "delay": 37.3,
+    			    "timestofire": -1
+    			},
+
+    			{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "Kotoba wo kakinagutte kitai suru dake\n言葉を書き殴って期待するだけ",
+    			    "delay": 44.2,
+    			    "timestofire": -1
+    			},
+
+    			{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "Munashii to wakatte ite mo\nむなしいと分かっていても",
+    			    "delay": 50.3,
+    			    "timestofire": -1
+    			},
+
+    			{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "Sukui wo motome tsuzuketa\n救いを求め続けた",
+    			    "delay": 55.3,
+    			    "timestofire": -1
+    			},
+
+    			{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "(Setsunakute itooshii)\n(せつなくて いとおしい)",
+    			    "delay": 59.8,
+    			    "timestofire": -1
+    			},
+
+    			{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "Ima naraba wakaru ki ga suru\n今ならば分かる気がする",
+    			    "delay": 63.3,
+    			    "timestofire": -1
+    			},
+
+    			{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "(Shiawase de kuruoshii)\n(しあわせで くるおしい)",
+    			    "delay": 67.2,
+    			    "timestofire": -1
+    			},
+
+    			{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "Ano hi nake nakatta boku wo\nあの日泣けなかった僕を",
+    			    "delay": 70.8,
+    			    "timestofire": -1
+    			},
+
+    			{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "Hikari wa yasashiku tsuredatsu yo\n光はやさしく連れ立つよ",
+    			    "delay": 74.5,
+    			    "timestofire": -1
+    			},
+
+    			{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "Kumoma wo nutte kirari kirari\n雲間をぬってきらりきらり",
+    			    "delay": 82.2,
+    			    "timestofire": -1
+    			},
+
+    			{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "Kokoro mitashite wa afure\n心満たしては溢れ",
+    			    "delay": 85.6,
+    			    "timestofire": -1
+    			},
+
+    			{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "Itsushika hoho wo kirari kirari\nいつしか頬をきらりきらり",
+    			    "delay": 89.6,
+    			    "timestofire": -1
+    			},
+
+    			{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "Atsuku atsuku nurashite yuku\n熱く熱く濡らしてゆく",
+    			    "delay": 93.1,
+    			    "timestofire": -1
+    			},
+
+    			{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "Kimi no te wa doushite\n君の手はどうして",
+    			    "delay": 96.7,
+    			    "timestofire": -1
+    			},
+
+				{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "Konna ni mo atatakai no?\nこんなにも温かいの？",
+    			    "delay": 100.5,
+    			    "timestofire": -1
+    			},
+
+    			{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "Nee onegai\nねぇお願い",
+    			    "delay": 104.2,
+    			    "timestofire": -1
+    			},
+
+				{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "SetMessage",
+    			    "overrideparam": "Douka kono mama hanasanaide ite\nどうかこのまま離さないでいて",
+    			    "delay": 106.1,
+    			    "timestofire": -1
+    			},
+
+				{
+    			    "outputname": "OnUser2",
+    			    "targetname": "!self",
+    			    "inputname": "Kill",
+    			    "delay": 111.0,
+    			    "timestofire": -1
+    			}
+			]
+		}		
     ],
-    "modify": // remove message output, add targetname/output
+    "modify": // remove message output, add targetname
     [
         // message : "少女 ☆歌剧"
         {
@@ -4342,7 +4690,10 @@
             },
             "replace":
             {
-                "targetname": "8084"
+                "targetname": "8084",
+				"origin": "-9906 10718 72",
+				"justify_horizontal": "1",
+				"font_size": "65"
             }
         },
         // message : "第二关"
@@ -4354,7 +4705,10 @@
             },
             "replace":
             {
-                "targetname": "8085"
+                "targetname": "8085",
+				"origin": "-9822 10718 72",
+				"justify_horizontal": "1",
+				"font_size": "65"
             }
         },
         // message : "第一关"
@@ -4366,7 +4720,10 @@
             },
             "replace":
             {
-                "targetname": "8086"
+                "targetname": "8086",
+				"origin": "-9752 10718 72",
+				"justify_horizontal": "1",
+				"font_size": "65"
             }
         },
         // message : "第四关"
@@ -4378,7 +4735,10 @@
             },
             "replace":
             {
-                "targetname": "11084"
+                "targetname": "11084",
+				"origin": "-9970 10718 72",
+				"justify_horizontal": "1",
+				"font_size": "65"
             }
         },
 
@@ -5600,16 +5960,7 @@
 				    {
                         "outputname": "SoundEventGuid",
 						"targetname": "lyric_re_create",
-                        "inputname": "Enable",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "SoundEventGuid",
-						"targetname": "cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say ♪ MUSIC [ 神楽ひかり,大場なな : RE:CREATE ]",
+                        "inputname": "CountPlayersInZone",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -5626,47 +5977,10 @@
             {
                 "io":
                 [
-					{
-                        "outputname": "SoundEventGuid",
-						"targetname": "*re_create*",
-                        "inputname": "Kill",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
 				    {
                         "outputname": "SoundEventGuid",
 						"targetname": "lyric_koi",
-                        "inputname": "Enable",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "SoundEventGuid",
-						"targetname": "cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say ♪ MUSIC [ 露崎まひる,愛城華恋 : 恋の魔球 ]",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    }
-                ]
-            }
-        },
-
-		{
-            "match":
-            {
-                "targetname": "[PR#]lv3_music_trigger"
-            },
-            "insert":
-            {
-                "io":
-                [
-					{
-                        "outputname": "OnStartTouch",
-						"targetname": "*koi*",
-                        "inputname": "Kill",
+                        "inputname": "CountPlayersInZone",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -5686,16 +6000,7 @@
 				    {
                         "outputname": "SoundEventGuid",
 						"targetname": "lyric_aoi",
-                        "inputname": "Enable",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "SoundEventGuid",
-						"targetname": "cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say ♪ MUSIC [ 結束バンド : 青い春と西の空 ]",
+                        "inputname": "CountPlayersInZone",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -5715,16 +6020,27 @@
 				    {
                         "outputname": "SoundEventGuid",
 						"targetname": "lyric_iwantyou",
-                        "inputname": "Enable",
+                        "inputname": "CountPlayersInZone",
                         "delay": 0.0,
                         "timestofire": 1
-                    },
+                    }
+                ]
+            }
+        },
 
-                    {
+		{
+            "match":
+            {
+                "targetname": "[PR#]lv3_music_6"
+            },
+            "insert":
+            {
+                "io":
+                [
+				    {
                         "outputname": "SoundEventGuid",
-						"targetname": "cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say ♪ MUSIC [ DJMAX : I Want You ~반짝★반짝 Sunshine~ ]",
+						"targetname": "lyric_haru",
+                        "inputname": "CountPlayersInZone",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -5733,4 +6049,3 @@
         }
     ]
 }
-
