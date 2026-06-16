@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.06.16
+// stripper by 兎RB 26.06.17
 // map ze_starlight_revue_cs2
 // workshop id 3519985936
 // if find mistranslation tell me　https://steamcommunity.com/profiles/76561198343767968/
@@ -28,7 +28,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.06.16 by 兎RB",
+                        "overrideparam": "say language translation stripper 26.06.17 by 兎RB",
                         "delay": 3.0,
                         "timestofire": -1
                     }
@@ -4472,7 +4472,7 @@
     			    "outputname": "OnUser2",
     			    "targetname": "!self",
     			    "inputname": "SetMessage",
-    			    "overrideparam": "Furueru manazashi Sekai de\nふるえる眼差し世界で",
+    			    "overrideparam": "Furueru manazashi sekai de\nふるえる眼差し世界で",
     			    "delay": 17.1,
     			    "timestofire": -1
     			},
@@ -4634,7 +4634,7 @@
     			    "outputname": "OnUser2",
     			    "targetname": "!self",
     			    "inputname": "SetMessage",
-    			    "overrideparam": "Konna ni mo atatakai no?\nこんなにも温かいの？",
+    			    "overrideparam": "Konna ni mo atatakai no？\nこんなにも温かいの？",
     			    "delay": 100.5,
     			    "timestofire": -1
     			},
