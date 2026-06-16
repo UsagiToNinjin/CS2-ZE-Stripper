@@ -4667,7 +4667,7 @@
 			]
 		}		
     ],
-    "modify": // remove message output, add targetname
+    "modify": // remove message output, add targetname, rearrange point_worldtext
     [
         // message : "少女 ☆歌剧"
         {
