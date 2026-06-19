@@ -822,7 +822,7 @@
         //        
         //            {
         //                "outputname": "OnStartTouch",
-		//				  "targetname": "[PR#]Gabranth_HP",
+		//				  "targetname": "Gabranth_HP",
         //                "inputname": "Add",
         //                "overrideparam": "0.6",
         //                "delay": 0.0,
