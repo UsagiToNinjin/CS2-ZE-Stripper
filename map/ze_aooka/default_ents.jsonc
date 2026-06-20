@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.06.12
+// stripper by 兎RB 26.06.20
 // map ze_aooka
 // workshop id 3310240982
 {
@@ -18,48 +18,12 @@
                         "outputname": "OnMapSpawn",
 				        "targetname": "Command",
                         "inputname": "Command",
-                        "overrideparam": "say fix stripper update 26.06.12",
+                        "overrideparam": "say fix stripper update 26.06.20",
                         "delay": 7.0,
                         "timestofire": -1
                     }
 				]
 			}
-		},
-		// fix item filter reset issue
-		{
-		    "match":
-            {
-				"targetname": "[PR#]context_fix",
-				"classname": "logic_relay"
-            },
-			"delete": 
-            {
-                "io":
-                [
-					{
-						"outputname": "OnTrigger",
-						"targetname": "[PR#]user",
-						"inputname": "KeyValue",
-						"overrideparam": "targetname none",
-						"delay": 0.0,
-						"timestofire": -1
-					}
-				]
-			},
-			"insert": 
-            {
-                "io":
-                [
-					{
-						"outputname": "OnTrigger",
-						"targetname": "player",
-						"inputname": "KeyValue",
-						"overrideparam": "targetname none",
-						"delay": 0.0,
-						"timestofire": -1
-					}
-				]
-			}		
 		},
 		// convert ModifySpeed(player_speedmod) to Keyvalue format
 		{
