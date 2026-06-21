@@ -1,0 +1,49 @@
+// stripper by 兎RB 26.06.21
+// map ze_platformer_p
+// workshop id 3257491664
+{
+	"modify": // convert to game_player_equip input
+    [
+        {
+		    "match":
+            {
+				"targetname": "[PR#]item_rocket_strip&0000",
+				"classname": "trigger_once"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]strip_knife",
+						"inputname": "Trigger",
+						"delay": 0.0,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "strip_knife",
+						"inputname": "Use",
+						"delay": 0.0,
+						"timestofire": 1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!self",
+						"inputname": "Kill",
+						"delay": 0.05,
+						"timestofire": 1
+					}
+				]
+			}		
+		}
+	]	
+}

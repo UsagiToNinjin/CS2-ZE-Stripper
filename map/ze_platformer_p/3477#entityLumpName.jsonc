@@ -1,0 +1,20 @@
+// stripper by 兎RB 26.06.21
+// map ze_platformer_p
+// workshop id 3257491664
+{
+	"modify": // fix error model
+    [
+        {
+		    "match":
+            {
+				"targetname": "[PR#]item_jetpack_button&0000",
+				"classname": "momentary_rot_button"
+            },
+			"replace": 
+            {
+				"scales": "1.5 1.5 1.5",
+				"model": "maps\\ze_platformer_p\\entities\\item_builder_button_3504.vmdl"
+			}
+		}
+	]	
+}

@@ -1,0 +1,62 @@
+// stripper by 兎RB 26.06.21
+// map ze_platformer_p
+// workshop id 3257491664
+{
+	"filter": // remove old zombie item pickup entities and convert them to the new entity system
+	[
+		{
+			"targetname": "/knife_stripper(_(maker|template))?/"
+		}
+	],
+	"modify": 
+    [
+		// stripper update log
+        {
+            "match":
+            {
+                "classname": "logic_relay",
+				"hammeruniqueid": "3200"
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnSpawn",
+				        "targetname": "command",
+                        "inputname": "Command",
+                        "overrideparam": "say fix stripper update 26.06.21",
+                        "delay": 3.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+		// convert point_entity_finder to game_player_equip
+		{
+		    "match":
+            {
+				"targetname": "[PR#]strip_knife",
+				"classname": "logic_relay"
+            },
+			"replace":
+			{
+				"classname": "game_player_equip",
+				"spawnflags": "3"
+			},
+			"delete":
+			{
+				"passthroughcaller": "false",
+				"fastretrigger": "true",
+				"triggeronce": "false",
+				"startdisabled": "false",
+				"io":
+				[
+					{
+						"outputname": "OnTrigger"
+					}	
+				]
+			}		
+		}
+	]
+}
