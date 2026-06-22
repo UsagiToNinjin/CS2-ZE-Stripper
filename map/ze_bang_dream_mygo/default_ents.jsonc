@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.03.21
+// stripper by 兎RB 26.06.22
 // map ze_bang_dream_mygo
 // workshop id 3600074056
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -7,7 +7,8 @@
 	"filter": // remove chinese lyric
 	[
 		{
-			"targetname": "[PR#]lv2_music_game_init_relay"
+			"targetname": "/screen_springsunshine([1-9]|1[0-9]|20)/",
+			"classname": "info_particle_system"
 		}	
 	],
     "modify":
@@ -57,7 +58,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.03.21 by 兎RB",
+                        "overrideparam": "say language translation stripper 26.06.22 by 兎RB",
                         "delay": 6.0,
                         "timestofire": -1
                     },
@@ -116,7 +117,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_init_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞高松 燈:愛音ちゃん,どうして私たちをRiNGに連れてきたの?＜＜>10.0>-1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞高松 燈:愛音ちゃん, どうして私たちをRiNGに連れてきたの?＜＜>10.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -134,7 +135,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_init_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:ないよ,中でMujicaがライブやるって聞いたから来ちゃっただけ＜＜>12.0>-1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:ないよ, 中でMujicaがライブやるって聞いたから来ちゃっただけ＜＜>12.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -278,7 +279,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block4_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞椎名 立希:千早 愛音,早くこのアルバムを押して下に落として＜＜>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞椎名 立希:千早 愛音, 早くこのアルバムを押して下に落として＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -287,7 +288,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block4_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:これは私たちのアルバムだよ,そんなことはやめてよ＜＜>1.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:これは私たちのアルバムだよ, そんなことはやめてよ＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -296,7 +297,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block4_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞椎名 立希:早く行こ 千早 愛音,グズグズ泣かないで＜＜>32.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞椎名 立希:早く行こ 千早 愛音, グズグズ泣かないで＜＜>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -314,7 +315,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block4_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:そよりん 知ってる？,実は...燈ちゃんはペンギンじゃないの＜＜>45.0>-1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:そよりん 知ってる？, 実は...燈ちゃんはペンギンじゃないの＜＜>45.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -350,7 +351,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block5_move",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞長崎 そよ:2階がスタジオだよ,早く行こう＜＜>2.0>-1",
+					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞長崎 そよ:2階がスタジオだよ, 早く行こう＜＜>2.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -368,7 +369,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block5_move",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞長崎 そよ:正面のドアは鍵がかかってるみたい,裏口を見に行こう＜＜>15.0>-1",
+					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞長崎 そよ:正面のドアは鍵がかかってるみたい, 裏口を見に行こう＜＜>15.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -395,7 +396,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block5_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:ともりんが言い出したことだから,仕方ないね＜＜>2.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:ともりんが言い出したことだから, 仕方ないね＜＜>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -404,7 +405,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block5_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞高松 燈:愛音ちゃん,これお願いね＜＜>1.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞高松 燈:愛音ちゃん, これお願いね＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -413,7 +414,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block6_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞高松 燈:愛音ちゃん これお願いね＜＜>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞高松 燈:愛音ちゃん これもお願いね＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -431,7 +432,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block6_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:ともりんに頼まれたことだから,仕方ないね＜＜>1.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:ともりんに頼まれたことだから, 仕方ないね＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -449,7 +450,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block6_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:ドアが開いたよ,みんな早く入って＜＜>31.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:ドアが開いたよ, みんな早く入って＜＜>31.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -458,7 +459,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block7_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞高松 燈:愛音ちゃん,これ.....＜＜>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞高松 燈:愛音ちゃん, これ.....＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -521,7 +522,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞椎名 立希:千早 愛音,また何か仕掛けたんじゃないの＜＜>1.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞椎名 立希:千早 愛音, また何か仕掛けたんじゃないの＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -530,7 +531,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞高松 燈:私たち今こんな状態だけど,愛音ちゃんの仕業じゃないよね?...＜＜>2.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞高松 燈:私たち今こんな状態だけど, 愛音ちゃんの仕業じゃないよね?...＜＜>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -566,7 +567,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音(分身):ちょうどいいタイミングね,あなたたちと一緒に遊ぶのを待ってたんだから＜＜>21.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音(分身):ちょうどいいタイミングね, あなたたちと一緒に遊ぶのを待ってたんだから＜＜>21.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -593,7 +594,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞よくやったらご褒美,間違えたら罰＜＜>24.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞よくやったらご褒美, 間違えたら罰＜＜>24.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -620,7 +621,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞長崎 そよ:ご褒美は聞いたけど,罰はどうなの?＜＜>27.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞長崎 そよ:ご褒美は聞いたけど, 罰はどうなの?＜＜>27.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -638,7 +639,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音(分身):くそっ,この体でもまだできないの?＜＜>91.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音(分身):くそっ, この体でもまだできないの?＜＜>91.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -647,7 +648,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞まあいいわ,後にはもっと大きな挑戦が待ってるんだから＜＜>92.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞まあいいわ, 後にはもっと大きな挑戦が待ってるんだから＜＜>92.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -665,7 +666,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音(分身):とにかく,ゲームはもうすぐ始まるわ,しっかり楽しんでね!＜＜>29.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音(分身):とにかく, ゲームはもうすぐ始まるわ, しっかり楽しんでね!＜＜>29.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -764,7 +765,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block8_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞長崎 そよ:この廊下を通り抜ければ,前にはレストランがあるわ＜＜>15.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞長崎 そよ:この廊下を通り抜ければ, 前にはレストランがあるわ＜＜>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -773,7 +774,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block8_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:カウンターの上に紙飛行機があるの,あれを使えばきっと早く行けるよ＜＜>16.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:カウンターの上に紙飛行機があるの, あれを使えばきっと早く行けるよ＜＜>16.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -809,7 +810,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block9_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:大丈夫だよ,ハワイで飛行機の操縦を習ったことあるし,離陸はもう20年の経験があるんだから＜＜>2.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:大丈夫だよ, ハワイで飛行機の操縦を習ったことあるし, 離陸はもう20年の経験があるんだから＜＜>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -818,7 +819,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block9_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞椎名 立希:(この子,ハワイまで行ったことあったけ?)＜＜>3.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞椎名 立希:(この子, ハワイまで行ったことあったけ?)＜＜>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -827,7 +828,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block9_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞(それに,まだ20歳だよね)＜＜>4.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞(それに, まだ20歳だよね)＜＜>4.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -863,7 +864,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block9_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:もうすぐ離陸するよ,みんなシートにしっかり座ってね＜＜>25.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:もうすぐ離陸するよ, みんなシートにしっかり座ってね＜＜>25.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -899,7 +900,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block9_path1_11",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>cmd>Command>say ＞＞千早 愛音:大丈夫だよ,飛行機がなくても飛べるんだから＜＜>2.0>-1",
+					"overrideparam": "OnPass>cmd>Command>say ＞＞千早 愛音:大丈夫だよ, 飛行機がなくても飛べるんだから＜＜>2.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -908,7 +909,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block9_path1_11",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>cmd>Command>say ＞＞椎名 立希:あなた,今なんて変なこと言ってるの＜＜>3.0>-1",
+					"overrideparam": "OnPass>cmd>Command>say ＞＞椎名 立希:あなた, 今なんて変なこと言ってるの＜＜>3.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -917,7 +918,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block9_path1_11",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>cmd>Command>say ＞＞もういいわよ、私降りる＜＜>4.0>-1",
+					"overrideparam": "OnPass>cmd>Command>say ＞＞もういいわよ, 私降りる＜＜>4.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -926,7 +927,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block9_path1_11",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>cmd>Command>say ＞＞高松 燈:ここめっちゃ高いけど,飛び降りても大丈夫なの?＜＜>5.0>-1",
+					"overrideparam": "OnPass>cmd>Command>say ＞＞高松 燈:ここめっちゃ高いけど, 飛び降りても大丈夫なの?＜＜>5.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -953,7 +954,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block9_path1_11",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>cmd>Command>say ＞＞千早 愛音:あの鉢植え見える?,あのツタを使って登れそうだよ＜＜>21.0>-1",
+					"overrideparam": "OnPass>cmd>Command>say ＞＞千早 愛音:あの鉢植え見える?, あのツタを使って登れそうだよ＜＜>21.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1007,7 +1008,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block10_move",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞千早 愛音:えぇ,このアルバムたち可哀そうだよ＜＜>1.0>-1",
+					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞千早 愛音:えぇ, このアルバムたち可哀そうだよ＜＜>1.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1016,7 +1017,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block10_move",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞もういい,大事なことが先だし,行こっか＜＜>2.0>-1",
+					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞もういい, 大事なことが先だし,行こっか＜＜>2.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1034,7 +1035,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block10_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞これが落ちちゃったら,きっと全部使えなくなっちゃうよ＜＜>1.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞これが落ちちゃったら, きっと全部使えなくなっちゃうよ＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1043,7 +1044,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block10_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞そんなの見てられないよ,もう仕方ないから,みんなに任せるね＜＜>2.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞そんなの見てられないよ, もう仕方ないから, みんなに任せるね＜＜>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1052,7 +1053,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block10_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞椎名 立希:あんた,ただサボりたいだけでしょ＜＜>3.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞椎名 立希:あんた, ただサボりたいだけでしょ＜＜>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1079,7 +1080,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:もうっ,3階には何もないじゃん＜＜>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:もうっ, 3階には何もないじゃん＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1106,7 +1107,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞もう仕方ないし,ベランダに行ってみよっか＜＜>3.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞もう仕方ないし, ベランダに行ってみよっか＜＜>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1133,7 +1134,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞長崎 そよ:ベランダの方に人影が見えるよ,早く行ってみよう＜＜>32.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞長崎 そよ:ベランダの方に人影が見えるよ, 早く行ってみよう＜＜>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1151,7 +1152,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音(分身):そんなに焦らないでよ,2階の練習ステージに行ってみなよ＜＜>37.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音(分身):そんなに焦らないでよ, 2階の練習ステージに行ってみなよ＜＜>37.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1178,7 +1179,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞言うことは言ったし,私は先に失礼するね,ふふふ＜＜>39.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞言うことは言ったし, 私は先に失礼するね, ふふふ＜＜>39.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1187,7 +1188,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞椎名 立希:くそっ,あいつ私たちを振り回して＜＜>41.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞椎名 立希:くそっ, あいつ私たちを振り回して＜＜>41.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1196,7 +1197,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞捕まらないようにね,捕まえたらただじゃ済まないからね＜＜>42.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞捕まらないようにね, 捕まえたらただじゃ済まないからね＜＜>42.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1232,7 +1233,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block12_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞高松 燈:愛音ちゃん,大丈夫?＜＜>11.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞高松 燈:愛音ちゃん, 大丈夫?＜＜>11.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1259,7 +1260,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block12_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞椎名 立希:そう言われると,なんだか私も眠くなってきちゃった＜＜>14.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞椎名 立希:そう言われると, なんだか私も眠くなってきちゃった＜＜>14.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1277,7 +1278,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block12_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:(なんか,もうすぐ気を失っちゃいそう)＜＜>20.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:(なんか, もうすぐ気を失っちゃいそう)＜＜>20.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1286,7 +1287,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block12_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:(もしかして,ここまでなのかな)＜＜>21.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音:(もしかして, ここまでなのかな)＜＜>21.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1295,7 +1296,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block12_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞高松 燈:愛音ちゃん,早く起きて＜＜>32.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞高松 燈:愛音ちゃん, 早く起きて＜＜>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1322,7 +1323,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_block12_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞椎名 立希:またあんたたちか,いったい何がしたいの＜＜>35.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞椎名 立希:またあんたたちか, いったい何がしたいの＜＜>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1358,7 +1359,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_music_game_init_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音(分身):ふんふん,まだ喜ぶのは早いよ＜＜>119.0>-1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞千早 愛音(分身):ふんふん, まだ喜ぶのは早いよ＜＜>119.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1367,7 +1368,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv2_music_game_init_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞高松 燈:わ,私たち...できたよ!＜＜>118.0>-1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞高松 燈:わ, 私たち...できたよ!＜＜>118.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1403,7 +1404,7 @@
 					"outputname": "OnCase01",
 					"targetname": "rtv1_init_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞ぼーっとしてないで,どの曲を演奏するか見てみて＜＜>11.0>-1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞ぼーっとしてないで, どの曲を演奏するか見てみて＜＜>11.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1628,7 +1629,7 @@
 					"outputname": "OnCase01",
 					"targetname": "rank_text",
 					"inputname": "SetMessage",
-					"overrideparam": "クリア順位",
+					"overrideparam": "クリアランキング",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1646,7 +1647,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_init_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞타카마츠 토모리:아논,우리를 RING에 왜 데려온 거야?＜＜>10.0>-1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞타카마츠 토모리:아논, 우리를 RING에 왜 데려온 거야?＜＜>10.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1664,7 +1665,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_init_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:아니야,나 그냥 Mujica가 안에서 콘서트 한다길래 온 것뿐이야＜＜>12.0>-1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:아니야, 나 그냥 Mujica가 안에서 콘서트 한다길래 온 것뿐이야＜＜>12.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1808,7 +1809,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block4_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞시이나 타키:치하야 아논,빨리 와서 이 앨범 좀 밀어 떨어뜨려＜＜>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞시이나 타키:치하야 아논, 빨리 와서 이 앨범 좀 밀어 떨어뜨려＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1817,7 +1818,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block4_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:이거 우리 앨범이잖아,그런 건 싫어＜＜>1.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:이거 우리 앨범이잖아, 그런 건 싫어＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1826,7 +1827,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block4_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞시이나 타키:빨리 가자 치하야 아논,여기서 그렇게 울고 있지 말고＜＜>32.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞시이나 타키:빨리 가자 치하야 아논, 여기서 그렇게 울고 있지 말고＜＜>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1844,7 +1845,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block4_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:소요링 그거 알아？,사실은...토모리는 펭귄이 아니야＜＜>45.0>-1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:소요링 그거 알아？, 사실은...토모리는 펭귄이 아니야＜＜>45.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1880,7 +1881,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block5_move",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞나가사키 소요:2층이 바로 스튜디오래,우리 빨리 가자＜＜>2.0>-1",
+					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞나가사키 소요:2층이 바로 스튜디오래, 우리 빨리 가자＜＜>2.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1898,7 +1899,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block5_move",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞나가사키 소요:앞문은 잠긴 것 같아,우리 뒷문으로 가볼까＜＜>15.0>-1",
+					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞나가사키 소요:앞문은 잠긴 것 같아, 우리 뒷문으로 가볼까＜＜>15.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1925,7 +1926,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block5_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:토모링가 제안한 거니까,어쩔 수 없네＜＜>2.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:토모링가 제안한 거니까, 어쩔 수 없네＜＜>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1934,7 +1935,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block5_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞타카마츠 토모리:아논,이건 네가 부탁해＜＜>1.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞타카마츠 토모리:아논, 이건 네가 부탁해＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1943,7 +1944,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block6_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞타카마츠 토모리:아논 이거도 부탁할게＜＜>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞타카마츠 토모리:아논 이것도 부탁할게＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1961,7 +1962,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block6_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:토모링한테 부탁받은 거니까,어쩔 수 없네＜＜>1.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:토모링한테 부탁받은 거니까, 어쩔 수 없네＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1979,7 +1980,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block6_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:문 열렸어,모두 빨리 들어와＜＜>31.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:문 열렸어, 모두 빨리 들어와＜＜>31.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1988,7 +1989,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block7_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞타카마츠 토모리:아논,이거.....＜＜>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞타카마츠 토모리:아논, 이거.....＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2051,7 +2052,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞시이나 타키:치하야 아논,이거 또 너 장난 친 거 아니지?＜＜>1.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞시이나 타키:치하야 아논, 이거 또 너 장난 친 거 아니지?＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2060,7 +2061,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞타카마츠 토모리:우리 지금 이 모양인데,아논이 한 건 아니겠지?...＜＜>2.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞타카마츠 토모리:우리 지금 이 모양인데, 아논이 한 건 아니겠지?...＜＜>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2096,7 +2097,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논(분신):잘 왔어,나 지금 너희랑 같이 놀려고 기다리고 있었거든＜＜>21.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논(분신):잘 왔어, 나 지금 너희랑 같이 놀려고 기다리고 있었거든＜＜>21.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2123,7 +2124,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞맞히면 보상,틀리면 벌칙이야＜＜>24.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞맞히면 보상, 틀리면 벌칙이야＜＜>24.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2150,7 +2151,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞나가사키 소요:보상은 다 들었는데,벌칙은?＜＜>27.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞나가사키 소요:보상은 다 들었는데, 벌칙은?＜＜>27.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2168,7 +2169,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논(분신):정말,이 몸으로도 안 되는 거야?＜＜>91.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논(분신):정말, 이 몸으로도 안 되는 거야?＜＜>91.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2177,7 +2178,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞괜찮겠지,뒤에 더 큰 도전이 기다리고 있으니까＜＜>92.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞괜찮겠지, 뒤에 더 큰 도전이 기다리고 있으니까＜＜>92.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2195,7 +2196,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논(분신):어쨌든,게임 시작이니까 잘 즐겨!＜＜>29.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논(분신):어쨌든, 게임 시작이니까 잘 즐겨!＜＜>29.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2294,7 +2295,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block8_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞나가사키 소요:이 긴 복도를 지나면,앞이 바로 식당이야＜＜>15.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞나가사키 소요:이 긴 복도를 지나면, 앞이 바로 식당이야＜＜>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2303,7 +2304,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block8_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:바 테이블 위에 종이비행기가 있어,그거 이용하면 빨리 갈 수 있을지도＜＜>16.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:바 테이블 위에 종이비행기가 있어, 그거 이용하면 빨리 갈 수 있을지도＜＜>16.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2339,7 +2340,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block9_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:괜찮아,나 하와이에서 비행기 배운 적 있어,이륙 경험만 20년이나 된다고＜＜>2.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:괜찮아,나 하와이에서 비행기 배운 적 있어, 이륙 경험만 20년이나 된다고＜＜>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2348,7 +2349,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block9_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞시이나 타키:(얘,하와이까지 가봤다고?)＜＜>3.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞시이나 타키:(얘, 하와이까지 가봤다고?)＜＜>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2357,7 +2358,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block9_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞(게다가,스무 살이잖아)＜＜>4.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞(게다가, 스무 살이잖아)＜＜>4.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2393,7 +2394,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block9_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:이제 곧 이륙이니까,다들 단단히 앉아＜＜>25.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:이제 곧 이륙이니까, 다들 단단히 앉아＜＜>25.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2429,7 +2430,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block9_path1_11",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>cmd>Command>say ＞＞치하야 아논:괜찮아,비행기 없어도 날 수 있어＜＜>2.0>-1",
+					"overrideparam": "OnPass>cmd>Command>say ＞＞치하야 아논:괜찮아, 비행기 없어도 날 수 있어＜＜>2.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2438,7 +2439,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block9_path1_11",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>cmd>Command>say ＞＞시이나 타키:너,입에서 또 무슨 헛소리야＜＜>3.0>-1",
+					"overrideparam": "OnPass>cmd>Command>say ＞＞시이나 타키:너, 입에서 또 무슨 헛소리야＜＜>3.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2447,7 +2448,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block9_path1_11",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>cmd>Command>say ＞＞이젠 됐어,나 먼저 내릴래＜＜>4.0>-1",
+					"overrideparam": "OnPass>cmd>Command>say ＞＞이젠 됐어, 나 먼저 내릴래＜＜>4.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2456,7 +2457,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block9_path1_11",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>cmd>Command>say ＞＞타카마츠 토모리:여기 이렇게 높은데,뛰어내려도 괜찮아?＜＜>5.0>-1",
+					"overrideparam": "OnPass>cmd>Command>say ＞＞타카마츠 토모리:여기 이렇게 높은데, 뛰어내려도 괜찮아?＜＜>5.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2483,7 +2484,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block9_path1_11",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>cmd>Command>say ＞＞치하야 아논:저 화분들 보이니?,저 덩굴을 타고 올라가면 돼＜＜>21.0>-1",
+					"overrideparam": "OnPass>cmd>Command>say ＞＞치하야 아논:저 화분들 보이니?, 저 덩굴을 타고 올라가면 돼＜＜>21.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2537,7 +2538,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block10_move",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞치하야 아논:아,이 앨범들 불쌍해＜＜>1.0>-1",
+					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞치하야 아논:아, 이 앨범들 불쌍해＜＜>1.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2546,7 +2547,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block10_move",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞뭐,중요한 일이 먼저니까,우리 가자＜＜>2.0>-1",
+					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞뭐, 중요한 일이 먼저니까, 우리 가자＜＜>2.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2564,7 +2565,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block10_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞이거 떨어지면,분명 다 못 쓰게 될 거야＜＜>1.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞이거 떨어지면, 분명 다 못 쓰게 될 거야＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2573,7 +2574,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block10_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞나 못 참겠어,어쩔 수 없잖아,너희에게 맡길 수밖에＜＜>2.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞나 못 참겠어, 어쩔 수 없잖아, 너희에게 맡길 수밖에＜＜>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2582,7 +2583,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block10_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞시이나 타키:너,그냥 게으름 피우고 싶은 거잖아＜＜>3.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞시이나 타키:너, 그냥 게으름 피우고 싶은 거잖아＜＜>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2609,7 +2610,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:정말,3층에는 아무것도 없잖아＜＜>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:정말, 3층에는 아무것도 없잖아＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2636,7 +2637,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞어쩔 수 없네,베란다로 가서 한번 보자＜＜>3.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞어쩔 수 없네, 베란다로 가서 한번 보자＜＜>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2663,7 +2664,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞나가사키 소요:베란다 쪽에 사람 그림자가 보이네,빨리 가서 보자＜＜>32.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞나가사키 소요:베란다 쪽에 사람 그림자가 보이네, 빨리 가서 보자＜＜>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2681,7 +2682,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논(분신):급해하지 말고,2층 연습대로 가자＜＜>37.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논(분신):급해하지 말고, 2층 연습대로 가자＜＜>37.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2708,7 +2709,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞할 말 다 했으니까,나 먼저 간다,헤헤헤＜＜>39.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞할 말 다 했으니까, 나 먼저 간다, 헤헤헤＜＜>39.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2717,7 +2718,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞시이나 타키:젠장,얘가 우리를 완전히 갖고 놀잔아＜＜>41.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞시이나 타키:젠장, 얘가 우리를 완전히 갖고 놀잔아＜＜>41.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2726,7 +2727,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞잡히지 않도록 해,잡히면 넌 분명 좋은 꼴을 못 볼 거야 ＜＜>42.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞잡히지 않도록 해, 잡히면 넌 분명 좋은 꼴을 못 볼 거야 ＜＜>42.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2762,7 +2763,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block12_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞타카마츠 토모리:아논,괜찮아?＜＜>11.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞타카마츠 토모리:아논, 괜찮아?＜＜>11.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2789,7 +2790,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block12_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞시이나 타키:너가 그렇게 말하니까,나도 좀 졸린 것 같아＜＜>14.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞시이나 타키:너가 그렇게 말하니까, 나도 좀 졸린 것 같아＜＜>14.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2807,7 +2808,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block12_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:(머리가,곧 쓰러질 것 같아)＜＜>20.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:(머리가, 곧 쓰러질 것 같아)＜＜>20.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2816,7 +2817,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block12_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:(설마,여기서 끝인 건가)＜＜>21.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논:(설마, 여기서 끝인 건가)＜＜>21.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2825,7 +2826,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block12_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞타카마츠 토모리:아논,얼른 일어나＜＜>32.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞타카마츠 토모리:아논, 얼른 일어나＜＜>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2852,7 +2853,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_block12_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞시이나 타키:또 너희들이야,도대체 뭐 하려는 거야＜＜>35.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞시이나 타키:또 너희들이야, 도대체 뭐 하려는 거야＜＜>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2888,7 +2889,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_music_game_init_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논(분신):흥흥,기뻐하긴 아직 일러＜＜>119.0>-1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞치하야 아논(분신):흥흥, 기뻐하긴 아직 일러＜＜>119.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2897,7 +2898,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv2_music_game_init_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞타카마츠 토모리:우,우리들...해냈어!＜＜>118.0>-1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞타카마츠 토모리:우, 우리들...해냈어!＜＜>118.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2933,7 +2934,7 @@
 					"outputname": "OnCase02",
 					"targetname": "rtv1_init_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞멍 때리지 말아 줘,어느 곡을 연주할지 봐봐>11.0>-1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞멍 때리지 말아 줘, 어느 곡을 연주할지 봐봐>11.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3185,7 +3186,7 @@
 					"outputname": "OnCase02",
 					"targetname": "rank_text",
 					"inputname": "SetMessage",
-					"overrideparam": "클리어 순위",
+					"overrideparam": "클리어 랭킹",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3203,7 +3204,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_init_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Tomori Takamatsu:Anon,why did you bring us to the RING?＜＜>10.0>-1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Tomori Takamatsu:Anon, why did you bring us to the RING?＜＜>10.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3221,7 +3222,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_init_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:No,there isn’t. I just came because I heard Mujica is having a concert inside＜＜>12.0>-1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:No, there isn’t. I just came because I heard Mujica is having a concert inside＜＜>12.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3338,7 +3339,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block2_move",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnFullyClosed>cmd>Command>say ＞＞Taki Siina:Did you actually go to England,right?＜＜>2.0>-1",
+					"overrideparam": "OnFullyClosed>cmd>Command>say ＞＞Taki Siina:Did you actually go to England, Right?＜＜>2.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3365,7 +3366,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block4_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Taki Siina:Anon Chihaya,come push this album down＜＜>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Taki Siina:Anon Chihaya, Come push this album down＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3374,7 +3375,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block4_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:That’s our album,don’t do something like that＜＜>1.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:That’s our album, Don’t do something like that＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3383,7 +3384,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block4_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Taki Siina:Hurry up Anon Chihaya,don’t cry here＜＜>32.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Taki Siina:Hurry up Anon Chihaya, Don’t cry here＜＜>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3401,7 +3402,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block4_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:Soyoring did you know？,Tomori isn’t actually a penguin＜＜>45.0>-1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:Soyoring did you know？, Tomori isn’t actually a penguin＜＜>45.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3437,7 +3438,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block5_move",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞Soyo Nagasaki:The broadcast hall is on the second floor,let’s go quickly＜＜>2.0>-1",
+					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞Soyo Nagasaki:The broadcast hall is on the second floor, Let’s go quickly＜＜>2.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3455,7 +3456,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block5_move",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞Soyo Nagasaki:The front door seems to be locked,let’s check the back door＜＜>15.0>-1",
+					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞Soyo Nagasaki:The front door seems to be locked, Let’s check the back door＜＜>15.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3482,7 +3483,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block5_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:Since Tomoring suggested it,there’s no helping it＜＜>2.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:Since Tomoring suggested it, There’s no helping it＜＜>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3491,7 +3492,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block5_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Tomori Takamatsu:Anon,I’ll leave this to you＜＜>1.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Tomori Takamatsu:Anon, I’ll leave this to you＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3500,7 +3501,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block6_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Tomori Takamatsu:Anon,I’ll leave this to you too＜＜>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Tomori Takamatsu:Anon, I’ll leave this to you too＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3518,7 +3519,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block6_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:Since it’s something Tomoring asked me to do,there’s no helping it＜＜>1.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:Since it’s something Tomoring asked me to do, There’s no helping it＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3536,7 +3537,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block6_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:The door’s open,Everyone come in quickly＜＜>31.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:The door’s open, Everyone come in quickly＜＜>31.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3545,7 +3546,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block7_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Tomori Takamatsu:Anon,this.....＜＜>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Tomori Takamatsu:Anon, This.....＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3608,7 +3609,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Taki Siina:Anon Chihaya,this isn’t one of your tricks again is it?＜＜>1.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Taki Siina:Anon Chihaya, This isn’t one of your tricks again is it?＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3617,7 +3618,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Tomori Takamatsu:With how we look now,this isn’t the work of Anon,right?...＜＜>2.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Tomori Takamatsu:With how we look now, This isn’t the work of Anon, Right?...＜＜>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3653,7 +3654,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya(Clone):Perfect timing,I was just waiting for you to play a few rounds with me＜＜>21.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya(Clone):Perfect timing, I was just waiting for you to play a few rounds with me＜＜>21.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3671,7 +3672,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya(Clone):Whatever we do,you have to do too＜＜>23.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya(Clone):Whatever we do, You have to do too＜＜>23.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3680,7 +3681,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Do it right and there’s a reward,do it wrong and there’s a punishment＜＜>24.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Do it right and there’s a reward, Do it wrong and there’s a punishment＜＜>24.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3707,7 +3708,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Soyo Nagasaki:You finished explaining the reward,what about the punishment?＜＜>27.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Soyo Nagasaki:You finished explaining the reward, What about the punishment?＜＜>27.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3725,7 +3726,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya(Clone):Darn it,this body still can’t do it?＜＜>91.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya(Clone):Darn it, This body still can’t do it?＜＜>91.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3734,7 +3735,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞It’s fine,there are even bigger challenges waiting for you ahead＜＜>92.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞It’s fine, There are even bigger challenges waiting for you ahead＜＜>92.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3752,7 +3753,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_mg_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya(Clone):Anyway,the game is about to start,so enjoy it!＜＜>29.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya(Clone):Anyway, The game is about to start, So enjoy it!＜＜>29.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3851,7 +3852,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block8_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Soyo Nagasaki:Go through this corridor,the restaurant is just ahead＜＜>15.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Soyo Nagasaki:Go through this corridor, The restaurant is just ahead＜＜>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3860,7 +3861,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block8_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:There’s a paper airplane on the bar,maybe we can use it to get there quickly＜＜>16.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:There’s a paper airplane on the bar, Maybe we can use it to get there quickly＜＜>16.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3896,7 +3897,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block9_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:It’s fine,I learned how to fly in Hawaii,I have 20 years of takeoff experience＜＜>2.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:It’s fine, I learned how to fly in Hawaii, I have 20 years of takeoff experience＜＜>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3905,7 +3906,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block9_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Taki Siina:(This girl,she’s even been to Hawaii?)＜＜>3.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Taki Siina:(This girl, She’s even been to Hawaii?)＜＜>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3914,7 +3915,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block9_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞(Besides,is she even twenty years old?)＜＜>4.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞(Besides, Is she even twenty years old?)＜＜>4.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3950,7 +3951,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block9_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:We’re about to take off,Everyone hold tight＜＜>25.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:We’re about to take off, Everyone hold tight＜＜>25.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3986,7 +3987,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block9_path1_11",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>cmd>Command>say ＞＞Anon Chihaya:It’s fine,Even without a plane we can still fly＜＜>2.0>-1",
+					"overrideparam": "OnPass>cmd>Command>say ＞＞Anon Chihaya:It’s fine, Even without a plane we can still fly＜＜>2.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4004,7 +4005,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block9_path1_11",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>cmd>Command>say ＞＞Anyway,I’m going down＜＜>4.0>-1",
+					"overrideparam": "OnPass>cmd>Command>say ＞＞Anyway, I’m going down＜＜>4.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4031,7 +4032,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block9_path1_11",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>cmd>Command>say ＞＞Soyo Nagasaki:By the way,how are we supposed to get to the third floor like this＜＜>20.0>-1",
+					"overrideparam": "OnPass>cmd>Command>say ＞＞Soyo Nagasaki:By the way, How are we supposed to get to the third floor like this＜＜>20.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4040,7 +4041,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block9_path1_11",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>cmd>Command>say ＞＞Anon Chihaya:See those potted plants?,We can climb up using those vines＜＜>21.0>-1",
+					"overrideparam": "OnPass>cmd>Command>say ＞＞Anon Chihaya:See those potted plants?, We can climb up using those vines＜＜>21.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4094,7 +4095,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block10_move",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞Anon Chihaya:Ah,poor albums＜＜>1.0>-1",
+					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞Anon Chihaya:Ah, Poor albums＜＜>1.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4103,7 +4104,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block10_move",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞Forget it,the important thing comes first,Let’s go＜＜>2.0>-1",
+					"overrideparam": "OnFullyOpen>cmd>Command>say ＞＞Forget it, The important thing comes first, Let’s go＜＜>2.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4121,7 +4122,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block10_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞If these fall,they’ll definitely all be ruined＜＜>1.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞If these fall, They’ll definitely all be ruined＜＜>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4130,7 +4131,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block10_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞I can’t bear it,There’s nothing I can do,I’ll have to leave it to you＜＜>2.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞I can’t bear it, There’s nothing I can do, I’ll have to leave it to you＜＜>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4166,7 +4167,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:Darn it,there’s nothing on the third floor at all＜＜>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:Darn it, There’s nothing on the third floor at all＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4193,7 +4194,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞There’s no choice,let’s check the balcony＜＜>3.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞There’s no choice, Let’s check the balcony＜＜>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4220,7 +4221,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Soyo Nagasaki:It looks like there’s a figure by the balcony,Let’s go check it out＜＜>32.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Soyo Nagasaki:It looks like there’s a figure by the balcony, Let’s go check it out＜＜>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4238,7 +4239,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya(Clone):Don’t rush,go to the practice stage on the second floor＜＜>37.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya(Clone):Don’t rush, Go to the practice stage on the second floor＜＜>37.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4265,7 +4266,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞I’ve said everything I wanted,I’m off,hehehe＜＜>39.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞I’ve said everything I wanted, I’m off, hehehe＜＜>39.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4274,7 +4275,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Taki Siina:Darn it,You’re totally messing with us＜＜>41.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Taki Siina:Darn it, You’re totally messing with us＜＜>41.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4283,7 +4284,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block11_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Make sure you don’t get caught,If you do,you definitely won’t like what happens＜＜>42.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Make sure you don’t get caught, If you do, You definitely won’t like what happens＜＜>42.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4319,7 +4320,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block12_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Tomori Takamatsu:Anon,are you okay?＜＜>11.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Tomori Takamatsu:Anon, Are you okay?＜＜>11.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4346,7 +4347,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block12_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Taki Siina:Now that you mention it,I feel a little sleepy too＜＜>14.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Taki Siina:Now that you mention it, I feel a little sleepy too＜＜>14.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4373,7 +4374,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block12_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:(Could it be,this is the end)＜＜>21.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya:(Could it be, This is the end)＜＜>21.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4382,7 +4383,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block12_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Tomori Takamatsu:Anon,wake up quickly＜＜>32.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Tomori Takamatsu:Anon, Wake up quickly＜＜>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4409,7 +4410,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_block12_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Taki Siina:It’s you again,what exactly do you want to do＜＜>35.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Taki Siina:It’s you again, What exactly do you want to do＜＜>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4445,7 +4446,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv2_music_game_init_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya(Clone):Hmph,don’t get too happy yet＜＜>119.0>-1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Anon Chihaya(Clone):Hmph, Don’t get too happy yet＜＜>119.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4490,7 +4491,7 @@
 					"outputname": "OnCase03",
 					"targetname": "rtv1_init_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Don’t just stand there,come and see which song we’ll play＜＜>11.0>-1",
+					"overrideparam": "OnTrigger>cmd>Command>say ＞＞Don’t just stand there, Come and see which song we’ll play＜＜>11.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4544,7 +4545,7 @@
 					"outputname": "OnCase03",
 					"targetname": "warmup_init_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say **Once the number of people exceeds 20,the normal stage will begin**>10.0>-1",
+					"overrideparam": "OnTrigger>cmd>Command>say **Once the number of people exceeds 20, The normal stage will begin**>10.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4770,26 +4771,15 @@
 		// ちっちゃな私
 		{
 			"targetname": "lyric_littleme",
-			"classname": "trigger_multiple",
-			"origin": "-7963 -7855 500",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-			"wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_bang_dream_mygo/entities/unnamed_2475.vmdl",
 			"io":
 			[
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
-					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerInZone",
 					"targetname": "lyric_littleme_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -4797,10 +4787,26 @@
 				},
 
 				{
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_littleme_hud",
-					"inputname": "FireUser2",
+					"inputname": "FireUser1",
 					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
 			]
@@ -4826,6 +4832,23 @@
 					"inputname": "FireUser1",
 					"delay": 0.01,
 					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "cmd",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ 重音テト : ちっちゃな私 ]",
+					"delay": 0.0,
+					"timestofire": 1
 				},
 
 				{
@@ -7326,21 +7349,12 @@
 					{
 						"outputname": "SoundEventGuid",
 						"targetname": "lyric_littleme",
-						"inputname": "Enable",
-						"delay": 0.0,
-						"timestofire": 1
-					},
-
-					{
-						"outputname": "SoundEventGuid",
-						"targetname": "cmd",
-						"inputname": "Command",
-						"overrideparam": "say ♪ MUSIC [ 重音テト : ちっちゃな私 ]",
+						"inputname": "CountPlayersInZone",
 						"delay": 0.0,
 						"timestofire": 1
 					}
 				]
 			}
 		}
-    ]	
+    ]
 }
