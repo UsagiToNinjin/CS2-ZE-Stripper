@@ -2,6 +2,12 @@
 // map ze_surf_vortex_p
 // workshop id 3105755546(reflelia), 3107392708(GFL Zombie Escape)
 {
+	"filter": // ai_changetarget does not work in CS2
+	[
+		{
+			"classname": "ai_changetarget"
+		}
+	],
 	"modify": 
     [
         // stripper update log
@@ -61,7 +67,7 @@
 				]
 			}		
 		},
-		// ai_changetarget does not work in CS2, convert to Keyvalue format
+		// convert ai_changetarget input to Keyvalue format
 		{
 		    "match":
             {
