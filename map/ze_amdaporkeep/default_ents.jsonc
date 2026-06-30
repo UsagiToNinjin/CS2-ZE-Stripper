@@ -1,4 +1,4 @@
-// stripper by 兎RB,Frame 26.06.08
+// stripper by 兎RB,Frame 26.06.30
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -50,7 +50,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "ServerCommand",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.06.08 by 兎RB,Frame",
+                        "overrideparam": "say language translation stripper 26.06.30 by 兎RB,Frame",
                         "delay": 12.0,
                         "timestofire": -1
                     }
@@ -3066,7 +3066,7 @@
 
                 {
                     "outputname": "OnUser1",
-					"targetname": "Item_Ninja_Ninjutsu_Text*",
+					"targetname": "Item_Ninja_Ninjutsu_Text",
                     "inputname": "SetMessage",
                     "overrideparam": "忍者：忍術を発動 頭上Eキーで忍術の種類を切り替える",
                     "delay": 0.0,
@@ -3075,18 +3075,18 @@
 
                 {
                     "outputname": "OnUser1",
-					"targetname": "Item_Ninja_Ninjutsu_Text*",
+					"targetname": "Item_Ninja_Ninjutsu_Text",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnUser2>!self>SetMessage>氷遁の術>0.0>-1",
+                    "overrideparam": "OnUser2>Item_Ninja_Ninjutsu_Text_F>SetMessage>氷遁の術>0.0>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
 
                 {
                     "outputname": "OnUser1",
-					"targetname": "Item_Ninja_Ninjutsu_Text*",
+					"targetname": "Item_Ninja_Ninjutsu_Text",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnUser1>!self>SetMessage>土遁の術>0.0>-1",
+                    "overrideparam": "OnUser1>Item_Ninja_Ninjutsu_Text_F>SetMessage>土遁の術>0.0>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -3102,7 +3102,7 @@
 
                 {
                     "outputname": "OnUser2",
-					"targetname": "Item_Ninja_Ninjutsu_Text*",
+					"targetname": "Item_Ninja_Ninjutsu_Text",
                     "inputname": "SetMessage",
                     "overrideparam": "닌자：닌술을 발동 머리 위 E키로 닌술 종류를 변환",
                     "delay": 0.0,
@@ -3111,18 +3111,18 @@
 
                 {
                     "outputname": "OnUser2",
-					"targetname": "Item_Ninja_Ninjutsu_Text*",
+					"targetname": "Item_Ninja_Ninjutsu_Text",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnUser2>!self>SetMessage>빙둔술>0.0>-1",
+                    "overrideparam": "OnUser2>Item_Ninja_Ninjutsu_Text_F>SetMessage>빙둔술>0.0>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
 
                 {
                     "outputname": "OnUser2",
-					"targetname": "Item_Ninja_Ninjutsu_Text*",
+					"targetname": "Item_Ninja_Ninjutsu_Text",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnUser1>!self>SetMessage>토둔술>0.0>-1",
+                    "overrideparam": "OnUser1>Item_Ninja_Ninjutsu_Text_F>SetMessage>토둔술>0.0>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -3138,7 +3138,7 @@
 
                 {
                     "outputname": "OnUser3",
-					"targetname": "Item_Ninja_Ninjutsu_Text*",
+					"targetname": "Item_Ninja_Ninjutsu_Text",
                     "inputname": "SetMessage",
                     "overrideparam": "Ninja：Activate Ninja skill  Overhead E-key to switch Ninja skill type",
                     "delay": 0.0,
@@ -3147,18 +3147,18 @@
 
                 {
                     "outputname": "OnUser3",
-					"targetname": "Item_Ninja_Ninjutsu_Text*",
+					"targetname": "Item_Ninja_Ninjutsu_Text",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnUser2>!self>SetMessage>Ice Release Technique>0.0>-1",
+                    "overrideparam": "OnUser2>Item_Ninja_Ninjutsu_Text_F>SetMessage>Ice Release Technique>0.0>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
 
                 {
                     "outputname": "OnUser3",
-					"targetname": "Item_Ninja_Ninjutsu_Text*",
+					"targetname": "Item_Ninja_Ninjutsu_Text",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnUser1>!self>SetMessage>Earth Release Technique>0.0>-1",
+                    "overrideparam": "OnUser1>Item_Ninja_Ninjutsu_Text_F>SetMessage>Earth Release Technique>0.0>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 }
@@ -3206,6 +3206,24 @@
                     "delay": 0.0,
                     "timestofire": -1
                 },
+
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Elidibus_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEqualTo>Item_Elidibus_Text_F>SetMessage>凝聚力が足りない>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Elidibus_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnLessThan>Item_Elidibus_Text_F>SetMessage>凝聚力が足りない>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
                 // 한국어
 				{
                     "outputname": "OnUser2",
@@ -3242,6 +3260,24 @@
                     "delay": 0.0,
                     "timestofire": -1
                 },
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Elidibus_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEqualTo>Item_Elidibus_Text_F>SetMessage>응집력이 부족하다>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Elidibus_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnLessThan>Item_Elidibus_Text_F>SetMessage>응집력이 부족하다>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
                 // English
 				{
                     "outputname": "OnUser3",
@@ -3275,6 +3311,24 @@
 					"targetname": "Item_Elidibus_Text*",
                     "inputname": "AddOutPut",
                     "overrideparam": "OnUser3>!self>SetMessage>Limit Break>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Elidibus_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEqualTo>Item_Elidibus_Text_F>SetMessage>Not enough cohesion>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Elidibus_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnLessThan>Item_Elidibus_Text_F>SetMessage>Not enough cohesion>0.0>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 }
@@ -11006,6 +11060,28 @@
             "replace":
             {
                 "template18": "f_Item_Astrologer_Text"
+            }
+        },
+		// 1723#entityLumpName
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Elidibus_Temp"
+            },
+            "replace":
+            {
+                "template21": "Item_Elidibus_Text_F"
+            }
+        },
+		// 1684#entityLumpName
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Ninja_Temp"
+            },
+            "replace":
+            {
+                "template10": "Item_Ninja_Ninjutsu_Text_F"
             }
         }
     ]
