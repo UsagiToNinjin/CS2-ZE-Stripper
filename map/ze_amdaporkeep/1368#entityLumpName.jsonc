@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.03.06
+// stripper by 兎RB 26.07.04
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -56,7 +56,7 @@
         {
             "match":
             {
-                "targetname": "[PR#]Cloud_of_Darkness_HP"
+                "targetname": "[PR#]Cloud_of_Darkness_HP_Blocks"
             },
             "delete":
             {

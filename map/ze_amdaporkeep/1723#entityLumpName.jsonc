@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.06.30
+// stripper by 兎RB 26.07.04
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -24,6 +24,15 @@
                     },
 
                     {
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]Item_Elidibus_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": "与伙伴一起战斗，收集凝聚力，右键释放战技，可对敌方和boss造成伤害",
+                        "delay": 7.5,
+                        "timestofire": 1
+                    },
+
+                    {
                         "inputname": "ShowHudHint"
                     }
 				]
@@ -37,6 +46,15 @@
 						"targetname": "Item_Elidibus_Text",
                         "inputname": "Enable",
                         "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnPlayerPickup",
+						"targetname": "Item_Elidibus_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": " ",
+                        "delay": 12.0,
                         "timestofire": 1
                     }
 				]
@@ -115,7 +133,7 @@
                         "outputname": "OnEqualTo",
 						"targetname": "Item_Elidibus_Text_F",
                         "inputname": "Disable",
-                        "delay": 3.0,
+                        "delay": 4.0,
                         "timestofire": -1
                     },
 
@@ -123,7 +141,7 @@
                         "outputname": "OnLessThan",
 						"targetname": "Item_Elidibus_Text_F",
                         "inputname": "Disable",
-                        "delay": 3.0,
+                        "delay": 4.0,
                         "timestofire": -1
                     },
 
@@ -131,7 +149,7 @@
                         "outputname": "OnEqualTo",
 						"targetname": "Item_Elidibus_Text",
                         "inputname": "Enable",
-                        "delay": 3.0,
+                        "delay": 4.0,
                         "timestofire": -1
                     },
 
@@ -139,7 +157,7 @@
                         "outputname": "OnLessThan",
 						"targetname": "Item_Elidibus_Text",
                         "inputname": "Enable",
-                        "delay": 3.0,
+                        "delay": 4.0,
                         "timestofire": -1
                     }
 				]

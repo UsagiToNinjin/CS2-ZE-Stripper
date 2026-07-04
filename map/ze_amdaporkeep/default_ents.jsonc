@@ -1,4 +1,4 @@
-// stripper by 兎RB,Frame 26.06.30
+// stripper by 兎RB,Frame 26.07.04
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -50,7 +50,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "ServerCommand",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.06.30 by 兎RB,Frame",
+                        "overrideparam": "say language translation stripper 26.07.04 by 兎RB,Frame",
                         "delay": 12.0,
                         "timestofire": -1
                     }
@@ -3173,16 +3173,25 @@
 				// 日本語
 				{
                     "outputname": "OnUser1",
-					"targetname": "Item_Elidibus_Elite*",
+					"targetname": "Item_Elidibus_Elite",
                     "inputname": "AddOutPut",
                     "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** 光の戦士がチームに加わった **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Elidibus_Elite",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Item_Elidibus_Text>SetMessage>仲間と共に戦い，結束力を集めよう\n右キーで戦技を発動し，敵やボスにダメージを与える>7.5>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
                 
                 {
                     "outputname": "OnUser1",
-					"targetname": "Item_Elidibus_Text*",
+					"targetname": "Item_Elidibus_Text",
                     "inputname": "SetMessage",
                     "overrideparam": "光の戦士：強力なスキルを発動\n頭上Eキーで効果を切り替える，ただし各効果は1回のみ",
                     "delay": 0.0,
@@ -3191,7 +3200,7 @@
 
                 {
                     "outputname": "OnUser1",
-					"targetname": "Item_Elidibus_Text*",
+					"targetname": "Item_Elidibus_Text",
                     "inputname": "AddOutPut",
                     "overrideparam": "OnUser2>!self>SetMessage>光の壁>0.0>-1",
                     "delay": 0.0,
@@ -3200,7 +3209,7 @@
 
                 {
                     "outputname": "OnUser1",
-					"targetname": "Item_Elidibus_Text*",
+					"targetname": "Item_Elidibus_Text",
                     "inputname": "AddOutPut",
                     "overrideparam": "OnUser3>!self>SetMessage>限界突破>0.0>-1",
                     "delay": 0.0,
@@ -3211,7 +3220,7 @@
                     "outputname": "OnUser1",
 					"targetname": "Item_Elidibus_Compare",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnEqualTo>Item_Elidibus_Text_F>SetMessage>凝聚力が足りない>0.0>-1",
+                    "overrideparam": "OnEqualTo>Item_Elidibus_Text_F>SetMessage>結束力が足りない>0.0>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -3220,23 +3229,32 @@
                     "outputname": "OnUser1",
 					"targetname": "Item_Elidibus_Compare",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnLessThan>Item_Elidibus_Text_F>SetMessage>凝聚力が足りない>0.0>-1",
+                    "overrideparam": "OnLessThan>Item_Elidibus_Text_F>SetMessage>結束力が足りない>0.0>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
                 // 한국어
 				{
                     "outputname": "OnUser2",
-					"targetname": "Item_Elidibus_Elite*",
+					"targetname": "Item_Elidibus_Elite",
                     "inputname": "AddOutPut",
                     "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** 빛의 전사가 팀에 합류했다 **>0.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
 
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Elidibus_Elite",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Item_Elidibus_Text>SetMessage>동료와 함께 싸워，결속력을 모으자\n우측 키로 전투 기술을 발동해 적과 보스에게 피해를 줌>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
                 {
                     "outputname": "OnUser2",
-					"targetname": "Item_Elidibus_Text*",
+					"targetname": "Item_Elidibus_Text",
                     "inputname": "SetMessage",
                     "overrideparam": "빛의 전사：강력한 스킬을 발동\n머리 위 E키로 효과를 전환，단 각 효과는 1회 한정",
                     "delay": 0.0,
@@ -3245,7 +3263,7 @@
 
                 {
                     "outputname": "OnUser2",
-					"targetname": "Item_Elidibus_Text*",
+					"targetname": "Item_Elidibus_Text",
                     "inputname": "AddOutPut",
                     "overrideparam": "OnUser2>!self>SetMessage>빛의 벽>0.0>-1",
                     "delay": 0.0,
@@ -3254,7 +3272,7 @@
 
                 {
                     "outputname": "OnUser2",
-					"targetname": "Item_Elidibus_Text*",
+					"targetname": "Item_Elidibus_Text",
                     "inputname": "AddOutPut",
                     "overrideparam": "OnUser3>!self>SetMessage>한계돌파>0.0>-1",
                     "delay": 0.0,
@@ -3265,7 +3283,7 @@
                     "outputname": "OnUser2",
 					"targetname": "Item_Elidibus_Compare",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnEqualTo>Item_Elidibus_Text_F>SetMessage>응집력이 부족하다>0.0>-1",
+                    "overrideparam": "OnEqualTo>Item_Elidibus_Text_F>SetMessage>결속력이 부족하다>0.0>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -3274,23 +3292,32 @@
                     "outputname": "OnUser2",
 					"targetname": "Item_Elidibus_Compare",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnLessThan>Item_Elidibus_Text_F>SetMessage>응집력이 부족하다>0.0>-1",
+                    "overrideparam": "OnLessThan>Item_Elidibus_Text_F>SetMessage>결속력이 부족하다>0.0>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
                 // English
 				{
                     "outputname": "OnUser3",
-					"targetname": "Item_Elidibus_Elite*",
+					"targetname": "Item_Elidibus_Elite",
                     "inputname": "AddOutPut",
                     "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** A light warrior has joined the team **>0.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
 
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Elidibus_Elite",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Item_Elidibus_Text>SetMessage>Fight alongside your teammates to build Cohesion\nRight-key to activate your battle skill\ndealing damage to enemies and bosses>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
                 {
                     "outputname": "OnUser3",
-					"targetname": "Item_Elidibus_Text*",
+					"targetname": "Item_Elidibus_Text",
                     "inputname": "SetMessage",
                     "overrideparam": "Light Warrior：Activate powerful skill\nOverhead E-key to switch effects，but each can only be used once",
                     "delay": 0.0,
@@ -3299,7 +3326,7 @@
 
                 {
                     "outputname": "OnUser3",
-					"targetname": "Item_Elidibus_Text*",
+					"targetname": "Item_Elidibus_Text",
                     "inputname": "AddOutPut",
                     "overrideparam": "OnUser2>!self>SetMessage>Light Wall>0.0>-1",
                     "delay": 0.0,
@@ -3308,7 +3335,7 @@
 
                 {
                     "outputname": "OnUser3",
-					"targetname": "Item_Elidibus_Text*",
+					"targetname": "Item_Elidibus_Text",
                     "inputname": "AddOutPut",
                     "overrideparam": "OnUser3>!self>SetMessage>Limit Break>0.0>-1",
                     "delay": 0.0,
