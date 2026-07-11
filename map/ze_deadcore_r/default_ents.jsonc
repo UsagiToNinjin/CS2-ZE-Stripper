@@ -1,12 +1,13 @@
-// stripper by 兎RB 26.05.02
+// stripper by 兎RB 26.07.11
 // map ze_deadcore_r
 // workshop id 3331345627
+// disable extra stage L1118~1160
 {
     "filter":  
     [
         // remove scripts that are no longer used	
         {
-            "targetname": "[PR#]script"
+            "classname": "point_script"
 		},
 
 		{
@@ -19,11 +20,7 @@
 		},
         // remove random set human hp
         {
-            "targetname": "[PR#]d_ex_hp_filter_radnom_case"
-		},
-
-        {
-            "targetname": "[PR#]d_ex_hp_radnom_trigger"
+            "targetname": "/d_ex_hp_(filter_radnom_case|radnom_trigger)/"
 		}
 	],
     "modify": 
@@ -42,7 +39,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "server",
                         "inputname": "Command",
-                        "overrideparam": "say fix stripper update 26.05.31",
+                        "overrideparam": "say fix stripper update 26.07.11",
                         "delay": 8.0,
                         "timestofire": -1
                     },
@@ -115,7 +112,7 @@
                 "targetname": "[PR#]escape_press1_temp1",
                 "classname": "point_template"
             },		
-			"replace":
+			"insert":
             {
                 "template04": "escape_press1_hurt1"
             }
@@ -127,7 +124,7 @@
                 "targetname": "[PR#]escape_press1_temp2",
                 "classname": "point_template"
             },		
-			"replace":
+			"insert":
             {
                 "template04": "escape_press1_hurt2"
             }
@@ -139,7 +136,7 @@
                 "targetname": "[PR#]escape_press1_temp3",
                 "classname": "point_template"
             },		
-			"replace":
+			"insert":
             {
                 "template04": "escape_press1_hurt3"
             }
@@ -151,7 +148,7 @@
                 "targetname": "[PR#]escape_press1_temp4",
                 "classname": "point_template"
             },		
-			"replace":
+			"insert":
             {
                 "template04": "escape_press1_hurt4"
             }
@@ -163,7 +160,7 @@
                 "targetname": "[PR#]escape_press1_temp5",
                 "classname": "point_template"
             },		
-			"replace":
+			"insert":
             {
                 "template04": "escape_press1_hurt5"
             }
@@ -175,7 +172,7 @@
                 "targetname": "[PR#]escape_press1_temp6",
                 "classname": "point_template"
             },		
-			"replace":
+			"insert":
             {
                 "template04": "escape_press1_hurt6"
             }
@@ -465,14 +462,6 @@
 						"targetname": "post_b_escape",
                         "inputname": "FireUser1",                       
                         "delay": 77.0,
-                        "timestofire": -1
-                    },
-                    // fix mini game end after still spawn npc
-                    {
-                        "outputname": "OnHitMin",
-						"targetname": "enemy4_temp1",
-                        "inputname": "Kill",                       
-                        "delay": 0.0,
                         "timestofire": -1
                     }
 				]
@@ -854,6 +843,319 @@
                     }
                 ]
             }
-        }            
+        },
+        // fix an issue where the meteor particle would sometimes spawn below the platform and become invisible
+        {
+            "match":
+            {
+                "targetname": "/(red_d|escape_ex|d)_meteor_detecttrigger/",
+                "classname": "trigger_multiple"
+            },		
+			"delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]radiation_meteor_maker1",
+                        "inputname": "SetParent",
+                        "overrideparam": "!activator",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                    
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]radiation_meteor_maker1",
+                        "inputname": "SetParentAttachment",
+                        "overrideparam": "primary",
+                        "delay": 0.01,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]radiation_meteor_maker1",
+                        "inputname": "ClearParent",
+                        "delay": 0.02,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]radiation_meteor_maker1",
+                        "inputname": "keyvalue",
+                        "overrideparam": "angles 0 0 0",
+                        "delay": 0.03,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "radiation_meteor_maker1",
+                        "inputname": "ForceSpawnAtEntityOrigin",
+                        "overrideparam": "!activator",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_meteor_maker1",
+                "classname": "env_entity_maker"
+            },
+            "replace":
+            {
+                "origin": "-8800 -12800 -7500",
+                "entitytemplate": "radiation_meteor_temp2"
+            }
+        },
+        // stage D ball attack rework
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_ball_maker2",
+                "classname": "env_entity_maker"
+            },
+            "replace":
+            {
+                "angles": "0 22.5 0",
+                "entitytemplate": "radiation_ball_temp1"
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_ball_maker3",
+                "classname": "env_entity_maker"
+            },
+            "replace":
+            {
+                "angles": "0 45.0 0",
+                "entitytemplate": "radiation_ball_temp1"
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_ball_maker4",
+                "classname": "env_entity_maker"
+            },
+            "replace":
+            {
+                "angles": "0 67.5 0",
+                "entitytemplate": "radiation_ball_temp1"
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_ball_maker5",
+                "classname": "env_entity_maker"
+            },
+            "replace":
+            {
+                "angles": "0 90.0 0",
+                "entitytemplate": "radiation_ball_temp1"
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_ball_maker6",
+                "classname": "env_entity_maker"
+            },
+            "replace":
+            {
+                "angles": "0 112.5 0",
+                "entitytemplate": "radiation_ball_temp1"
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_ball_maker7",
+                "classname": "env_entity_maker"
+            },
+            "replace":
+            {
+                "angles": "0 135.0 0",
+                "entitytemplate": "radiation_ball_temp1"
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_ball_maker8",
+                "classname": "env_entity_maker"
+            },
+            "replace":
+            {
+                "angles": "0 157.5 0",
+                "entitytemplate": "radiation_ball_temp1"
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_ball_maker9",
+                "classname": "env_entity_maker"
+            },
+            "replace":
+            {
+                "angles": "0 180.0 0",
+                "entitytemplate": "radiation_ball_temp1"
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_ball_maker10",
+                "classname": "env_entity_maker"
+            },
+            "replace":
+            {
+                "angles": "0 202.5 0",
+                "entitytemplate": "radiation_ball_temp1"
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_ball_maker11",
+                "classname": "env_entity_maker"
+            },
+            "replace":
+            {
+                "angles": "0 225.0 0",
+                "entitytemplate": "radiation_ball_temp1"
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_ball_maker12",
+                "classname": "env_entity_maker"
+            },
+            "replace":
+            {
+                "angles": "0 247.5 0",
+                "entitytemplate": "radiation_ball_temp1"
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_ball_maker13",
+                "classname": "env_entity_maker"
+            },
+            "replace":
+            {
+                "angles": "0 270.0 0",
+                "entitytemplate": "radiation_ball_temp1"
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_ball_maker14",
+                "classname": "env_entity_maker"
+            },
+            "replace":
+            {
+                "angles": "0 292.5 0",
+                "entitytemplate": "radiation_ball_temp1"
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_ball_maker15",
+                "classname": "env_entity_maker"
+            },
+            "replace":
+            {
+                "angles": "0 315.0 0",
+                "entitytemplate": "radiation_ball_temp1"
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_ball_maker16",
+                "classname": "env_entity_maker"
+            },
+            "replace":
+            {
+                "angles": "0 337.5 0",
+                "entitytemplate": "radiation_ball_temp1"
+            }
+        }
     ]
+    // disable extra stage D(only adminroom can change level)
+    // remove comments if necessary
+    //"modify":
+    //[
+    //    {
+    //        "match":
+    //        {
+    //            "targetname": "[PR#]Level_Case"
+    //        },		
+	//		  "insert":
+    //        {
+    //            "io":
+    //            [
+	//			      {
+    //                    "outputname": "OnCase09",
+	//					  "targetname": "escape_platform_temp6",
+    //                    "inputname": "AddOutPut",
+    //                    "overrideparam": "OnEntitySpawned>disable_extra>Trigger>>0.0>-1",                       
+    //                    "delay": 0.0,
+    //                    "timestofire": -1
+    //                }
+	//			  ]
+	//		  }
+	//	  }
+    //],
+    //"add": // reset level
+    //[
+    //    {
+    //        "targetname": "disable_extra",
+    //        "classname": "logic_relay",
+    //        "io":
+    //        [
+	//		      {
+    //                "outputname": "OnTrigger",
+	//				  "targetname": "win_d1*",
+    //                "inputname": "AddOutPut",
+    //                "overrideparam": "OnStartTouch>level_counter>SetValue>1>0.02>1",                       
+    //                "delay": 0.0,
+    //                "timestofire": -1
+    //            }
+	//		  ]
+	//	  }
+    //]
 }

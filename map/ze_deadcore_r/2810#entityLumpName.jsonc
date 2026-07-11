@@ -1,21 +1,8 @@
-// stripper by 兎RB 25.26.31
+// stripper by 兎RB 26.07.11
 // map ze_deadcore_r
 // workshop id 3331345627
 {
-	"modify": // fix particle lighting(animgraph 2 update)
-    [
-        {
-            "match":
-            {
-                "classname": "info_particle_system"
-            },
-            "replace":
-            {
-				"data_cp_value": "20 4 20"
-			}
-		}
-	],
-	"add": 
+	"add": // improved particle visibility by layering multiple particle effects
     [
         {
 			"targetname": "radiation_beam1&0000",
@@ -27,7 +14,7 @@
 			"cpoint1": "radiation_beam_move1l&0000",
 			"tint_cp_color": "255 255 255",
 			"tint_cp": "-1",
-			"data_cp_value": "20 4 20",
+			"data_cp_value": "5 1 5",
 			"data_cp": "2",
 			"start_active": "1",
 			"effect_name": "particles/cs2/ring_beam.vpcf"
