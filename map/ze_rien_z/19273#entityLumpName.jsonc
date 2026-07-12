@@ -1,0 +1,62 @@
+// stripper by 兎RB 26.07.12
+// map ze_rien_z
+// workshop id 3472980350
+{
+	"modify": // convert ModifySpeed(player_speedmod) Keyvalue format
+    [
+        {
+		    "match":
+            {
+				"targetname": "[PR#]Gravity_Push",
+				"classname": "trigger_push"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					// why isn't the default value 1 ?
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]speed",
+						"inputname": "ModifySpeed",
+						"overrideparam": "1.100000",
+						"delay": 3.0,
+						"timestofire": -1
+					},
+					
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]speed",
+						"inputname": "ModifySpeed",
+						"overrideparam": "0.700000",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 1",
+						"delay": 3.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 0.7",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}		
+		}
+	]	
+}
