@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.07.11
+// stripper by 兎RB 26.07.13
 // map ze_deadcore_r
 // workshop id 3331345627
 // disable extra stage L1118~1160
@@ -39,7 +39,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "server",
                         "inputname": "Command",
-                        "overrideparam": "say fix stripper update 26.07.11",
+                        "overrideparam": "say fix stripper update 26.07.13",
                         "delay": 8.0,
                         "timestofire": -1
                     },
@@ -915,7 +915,7 @@
             },
             "replace":
             {
-                "origin": "-8800 -12800 -7500",
+                "origin": "0 0 -20000",
                 "entitytemplate": "radiation_meteor_temp2"
             }
         },
