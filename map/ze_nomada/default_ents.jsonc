@@ -241,7 +241,7 @@
 				]
 			}
 		},
-		// remove the bug-prevention prop when the stage 3 boss dies, refer to L268~706
+		// remove the bug-prevention prop when the stage 3 boss dies, refer to L266~707
 		{
 		    "match":
             {
