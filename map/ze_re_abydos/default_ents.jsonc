@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.04.18
+// stripper by 兎RB 26.07.16
 // map ze_re_abydos
 // workshop id 3261481731
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -29,8 +29,8 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "severadmin",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.04.18 by 兎RB",
-                        "delay": 1.0,
+                        "overrideparam": "say language translation stripper 26.07.16 by 兎RB",
+                        "delay": 3.0,
                         "timestofire": -1
                     }
                 ]
@@ -361,7 +361,7 @@
 					"outputname": "OnCase02",
 					"targetname": "boss_tank_case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase02>severadmin>Command>say **  전차에서 떨어저  **>0>-1",
+					"overrideparam": "OnCase01>severadmin>Command>say **  전차에서 떨어져  **>0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -370,7 +370,7 @@
 					"outputname": "OnCase02",
 					"targetname": "boss_tank_case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase02>severadmin>Command>say **  전차에서 떨어저  **>0>-1",
+					"overrideparam": "OnCase02>severadmin>Command>say **  전차에서 떨어져  **>0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -379,7 +379,7 @@
 					"outputname": "OnCase02",
 					"targetname": "boss_tank_case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase03>severadmin>Command>say **  전차에서 떨어저  **>0>-1",
+					"overrideparam": "OnCase03>severadmin>Command>say **  전차에서 떨어져  **>0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -388,7 +388,7 @@
 					"outputname": "OnCase02",
 					"targetname": "boss_tank_case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase04>severadmin>Command>say **  전차에서 떨어저  **>0>-1",
+					"overrideparam": "OnCase04>severadmin>Command>say **  전차에서 떨어져  **>0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -505,7 +505,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv1_d1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>severadmin>Command>say **  누군가가 버그를 시도할려고 하면 피자신께서 좀비쪽으로 날려버립니다  **>0>-1",
+					"overrideparam": "OnStartTouch>severadmin>Command>say **  누군가가 버그를 시도하려고 하면 피자신께서 좀비 쪽으로 날려버립니다  **>0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -514,7 +514,7 @@
 					"outputname": "OnCase03",
 					"targetname": "10460",
 					"inputname": "SetMessage",
-					"overrideparam": "Thank you to\nsupporters",
+					"overrideparam": "Special thanks to\nSupporters",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -577,7 +577,7 @@
 					"outputname": "OnCase03",
 					"targetname": "boss_tank_case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase02>severadmin>Command>say **  Get off the tank  **>0>-1",
+					"overrideparam": "OnCase01>severadmin>Command>say **  Get off the tank  **>0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -658,7 +658,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv1_egg_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>severadmin>Command>say Hasn't the detective agency given up yet！>0>-1",
+					"overrideparam": "OnTrigger>severadmin>Command>say Hasn't problem solver 68 given up yet！>0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1112,6 +1112,6 @@
                     }
 				]
 			}
-		}				
+		}
     ]
 }
