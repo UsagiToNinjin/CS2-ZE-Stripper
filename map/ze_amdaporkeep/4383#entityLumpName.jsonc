@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.04.29
+// stripper by 兎RB 26.07.19
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -61,6 +61,15 @@
             {
                 "io":
                 [
+                    {
+                        "outputname": "OnUser1",
+						"targetname": "!self",
+                        "inputname": "SetMessage",
+                        "overrideparam": "积攒魔元，释放强力技能吧",
+                        "delay": 7.5,
+                        "timestofire": 1
+                    },
+
                     {
                         "inputname": "ShowHudHint"
                     }

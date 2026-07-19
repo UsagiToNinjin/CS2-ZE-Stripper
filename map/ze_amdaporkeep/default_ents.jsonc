@@ -1,4 +1,4 @@
-// stripper by 兎RB,Frame 26.07.04
+// stripper by 兎RB,Frame 26.07.19
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -50,7 +50,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "ServerCommand",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.07.04 by 兎RB,Frame",
+                        "overrideparam": "say language translation stripper 26.07.19 by 兎RB,Frame",
                         "delay": 12.0,
                         "timestofire": -1
                     }
@@ -3923,7 +3923,7 @@
 				// 日本語
 				{
                     "outputname": "OnUser1",
-					"targetname": "Item_Red_Mage_Elite*",
+					"targetname": "Item_Red_Mage_Elite",
                     "inputname": "AddOutPut",
                     "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** 赤魔道士がチームに加わった **>0.0>1",
                     "delay": 0.0,
@@ -3932,16 +3932,25 @@
                 
                 {
                     "outputname": "OnUser1",
-					"targetname": "Item_Red_Mage_Text*",
+					"targetname": "Item_Red_Mage_Text",
                     "inputname": "SetMessage",
                     "overrideparam": "赤魔道士：正面Eキーでそれぞれの魔連攻と円斬と魔交撃斬を発動\n命中した敵の移動速度をリセットできる",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Red_Mage_Text",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>魔元をためて，強力なスキルを発動>7.5>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
                 // 한국어
 				{
                     "outputname": "OnUser2",
-					"targetname": "Item_Red_Mage_Elite*",
+					"targetname": "Item_Red_Mage_Elite",
                     "inputname": "AddOutPut",
                     "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** 적마법사가 팀에 합류했다 **>0.0>1",
                     "delay": 0.0,
@@ -3950,16 +3959,25 @@
 
                 {
                     "outputname": "OnUser2",
-					"targetname": "Item_Red_Mage_Text*",
+					"targetname": "Item_Red_Mage_Text",
                     "inputname": "SetMessage",
                     "overrideparam": "적마법사：정면 E키로 각각 마연격과 원참과 마교격참을 발동\n명중시킨 적의 이동속도를 리셋할 수 있다",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Red_Mage_Text",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>마원을 모아，강력한 스킬을 해방>7.5>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
                 // English
 				{
                     "outputname": "OnUser3",
-					"targetname": "Item_Red_Mage_Elite*",
+					"targetname": "Item_Red_Mage_Elite",
                     "inputname": "AddOutPut",
                     "overrideparam": "OnPlayerPickup>ServerCommand>Command>say ** A red mage has joined the team **>0.0>1",
                     "delay": 0.0,
@@ -3968,9 +3986,18 @@
 
                 {
                     "outputname": "OnUser3",
-					"targetname": "Item_Red_Mage_Text*",
+					"targetname": "Item_Red_Mage_Text",
                     "inputname": "SetMessage",
                     "overrideparam": "Red Mage：Front E-key to activate\nMagic Combo Attack，Circular Slash，last Magic Cross Strike\nCan reset the movement speed of hit enemies",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Red_Mage_Text",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnUser1>!self>SetMessage>Gather mana，Unleash powerful skills>7.5>1",
                     "delay": 0.0,
                     "timestofire": -1
                 }
@@ -11062,7 +11089,7 @@
             {
                 "targetname": "[PR#]Temp_Hollow_Night"
             },
-            "replace":
+            "add":
             {
                 "template17": "Hollow_Night_tl_relay"
             }
@@ -11073,7 +11100,7 @@
             {
                 "targetname": "[PR#]Laser_Omega_Ending"
             },
-            "replace":
+            "add":
             {
                 "template23": "Laser_Omega_Ending_tl_relay"
             }
@@ -11084,7 +11111,7 @@
             {
                 "targetname": "[PR#]Item_Astrologer_Temp"
             },
-            "replace":
+            "add":
             {
                 "template18": "f_Item_Astrologer_Text"
             }
@@ -11095,7 +11122,7 @@
             {
                 "targetname": "[PR#]Item_Elidibus_Temp"
             },
-            "replace":
+            "add":
             {
                 "template21": "Item_Elidibus_Text_F"
             }
@@ -11106,7 +11133,7 @@
             {
                 "targetname": "[PR#]Item_Ninja_Temp"
             },
-            "replace":
+            "add":
             {
                 "template10": "Item_Ninja_Ninjutsu_Text_F"
             }
