@@ -1,4 +1,4 @@
-// stripper by 兎RB,Frame 26.07.19
+// stripper by 兎RB,Frame 26.07.25
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -50,7 +50,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "ServerCommand",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.07.19 by 兎RB,Frame",
+                        "overrideparam": "say language translation stripper 26.07.25 by 兎RB,Frame",
                         "delay": 12.0,
                         "timestofire": -1
                     }
@@ -11089,7 +11089,7 @@
             {
                 "targetname": "[PR#]Temp_Hollow_Night"
             },
-            "add":
+            "insert":
             {
                 "template17": "Hollow_Night_tl_relay"
             }
@@ -11100,7 +11100,7 @@
             {
                 "targetname": "[PR#]Laser_Omega_Ending"
             },
-            "add":
+            "insert":
             {
                 "template23": "Laser_Omega_Ending_tl_relay"
             }
@@ -11111,7 +11111,7 @@
             {
                 "targetname": "[PR#]Item_Astrologer_Temp"
             },
-            "add":
+            "insert":
             {
                 "template18": "f_Item_Astrologer_Text"
             }
@@ -11122,7 +11122,7 @@
             {
                 "targetname": "[PR#]Item_Elidibus_Temp"
             },
-            "add":
+            "insert":
             {
                 "template21": "Item_Elidibus_Text_F"
             }
@@ -11133,7 +11133,7 @@
             {
                 "targetname": "[PR#]Item_Ninja_Temp"
             },
-            "add":
+            "insert":
             {
                 "template10": "Item_Ninja_Ninjutsu_Text_F"
             }
