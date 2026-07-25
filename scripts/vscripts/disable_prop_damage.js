@@ -18,5 +18,5 @@ Instance.OnModifyPlayerDamage((stuff) => {
             "cs_script": "scripts/vscripts/disable_prop_damage.vjs"
         }
     ]
-]
+}
 */            
