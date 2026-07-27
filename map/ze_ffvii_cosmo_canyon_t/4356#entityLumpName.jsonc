@@ -56,7 +56,7 @@
 			"replace": 
             {
                 "classname": "point_worldtext",
-                "origin": "40 25 50",
+                "origin": "40 33 50",
                 "angles": "0 -90 90",
 			    "scales": "1 1 1",
                 "parentname": "Weapon_Earth",
