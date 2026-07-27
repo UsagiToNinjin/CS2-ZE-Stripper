@@ -882,7 +882,7 @@
                 "message": ""
             }
 		},
-        // convert AddOutput ot SetMessage(env_hudhint)
+        // convert AddOutput to SetMessage(env_hudhint)
         {
             "match":
             {
