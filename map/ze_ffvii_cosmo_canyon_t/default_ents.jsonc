@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.07.27
+// stripper by 兎RB 26.07.28
 // map ze_ffvii_cosmo_canyon_t
 // workshop id 3310260547
 {
@@ -74,7 +74,7 @@
                         "outputname": "OnMapSpawn",
 				        "targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say fix stripper update 26.07.27",
+                        "overrideparam": "say fix stripper update 26.07.28",
                         "delay": 5.0,
                         "timestofire": -1
                     },
@@ -1330,7 +1330,7 @@
 		{
 		    "match":
             {
-				"targetname": "/(Genesis_Model|Shinra_Ifrit|Jenova_Model)/",
+				"targetname": "/((Genesis|Jenova)_Model|Shinra_Ifrit)/",
 				"classname": "prop_dynamic"
             },
 			"replace":
