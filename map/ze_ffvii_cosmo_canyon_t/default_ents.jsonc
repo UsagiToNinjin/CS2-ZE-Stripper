@@ -55,6 +55,14 @@
                         "overrideparam": "EntityTemplate Item_Heal_Temp",
                         "delay": 8.0,
                         "timestofire": -1
+                    },
+					// remove unnecessary output
+					{
+                        "outputname": "OnNewGame",
+				        "targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "/sm_gravity/",
+                        "timestofire": 1
                     }
 				]
 			},
