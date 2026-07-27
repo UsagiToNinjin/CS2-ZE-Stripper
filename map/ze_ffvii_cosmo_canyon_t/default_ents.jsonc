@@ -1099,6 +1099,24 @@
                         "overrideparam": "255",
                         "delay": 0.0,
                         "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+				        "targetname": "!activator",
+                        "inputname": "IgniteLifetime",
+                        "overrideparam": "0",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+				        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "targetname none",
+                        "delay": 0.0,
+                        "timestofire": -1
                     }
 				]
 			}
