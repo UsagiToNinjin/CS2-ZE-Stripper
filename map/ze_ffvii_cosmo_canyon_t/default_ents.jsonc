@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.07.25
+// stripper by 兎RB 26.07.27
 // map ze_ffvii_cosmo_canyon_t
 // workshop id 3310260547
 // 17783#, 1800# doesn't work
@@ -67,7 +67,7 @@
                         "outputname": "OnMapSpawn",
 				        "targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say fix stripper update 26.07.25",
+                        "overrideparam": "say fix stripper update 26.07.27",
                         "delay": 5.0,
                         "timestofire": -1
                     },
