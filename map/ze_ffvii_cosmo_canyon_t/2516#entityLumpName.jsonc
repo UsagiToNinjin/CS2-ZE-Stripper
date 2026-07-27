@@ -1,0 +1,110 @@
+// stripper by 兎RB 26.07.27
+// map ze_ffvii_cosmo_canyon_t
+// workshop id 3310260547
+{
+	"modify":
+    [
+		// convert AddOutput to Keyvalue format
+        {
+		    "match":
+            {
+				"targetname": "[PR#]Baha_Random_Bridge",
+				"classname": "logic_case"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnCase01",
+						"targetname": "[PR#]Explosion_Temp",
+						"inputname": "AddOutput",
+						"overrideparam": "origin -6516 -2076 1834",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnCase02",
+						"targetname": "[PR#]Explosion_Temp",
+						"inputname": "AddOutput",
+						"overrideparam": "origin -6772 -2076 1833",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnCase03",
+						"targetname": "[PR#]Explosion_Temp",
+						"inputname": "AddOutput",
+						"overrideparam": "origin -7036 -2076 1834",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnCase04",
+						"targetname": "[PR#]Explosion_Temp",
+						"inputname": "AddOutput",
+						"overrideparam": "origin -6310 -2090 1828",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnCase01",
+						"targetname": "Explosion_Temp",
+						"inputname": "KeyValue",
+						"overrideparam": "origin -6516 -2076 1834",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnCase02",
+						"targetname": "Explosion_Temp",
+						"inputname": "KeyValue",
+						"overrideparam": "origin -6772 -2076 1833",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnCase03",
+						"targetname": "Explosion_Temp",
+						"inputname": "KeyValue",
+						"overrideparam": "origin -7036 -2076 1834",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnCase04",
+						"targetname": "Explosion_Temp",
+						"inputname": "KeyValue",
+						"overrideparam": "origin -6310 -2090 1828",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}
+		},
+		// fix invisible model
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Baha_Model",
+				"classname": "prop_dynamic"
+            },
+			"replace": 
+            {
+				"rendermode": "0"
+			}
+		}
+	]
+}

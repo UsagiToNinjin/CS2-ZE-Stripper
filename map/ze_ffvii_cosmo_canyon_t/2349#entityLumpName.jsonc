@@ -1,0 +1,47 @@
+// stripper by 兎RB 26.07.27
+// map ze_ffvii_cosmo_canyon_t
+// workshop id 3310260547
+{
+	"modify": // add missing output
+    [
+        {
+		    "match":
+            {
+				"targetname": "[PR#]Item_Bio_Freeze",
+				"classname": "trigger_hurt"
+            },
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 0.1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 1",
+						"delay": 6.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnEndTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 1",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,123 @@
+// stripper by 兎RB 26.07.27
+// map ze_ffvii_cosmo_canyon_t
+// workshop id 3310260547
+{
+	"modify":
+    [
+		// convert AddOutput to Keyvalue format, fix targetname filter issue
+		// convert inputname Display(game_text) to Enable/Disable(point_worldtext)
+        {
+		    "match":
+            {
+				"targetname": "[PR#]Weapon_Potion",
+				"classname": "weapon_elite"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "!activator",
+						"inputname": "AddOutput",
+						"overrideparam": "targetname Potion_Owner",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "[PR#]Potion_Gametext",
+						"inputname": "Display",
+						"delay": 0.5,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "Potion_Owner",
+						"inputname": "KeyValue",
+						"overrideparam": "targetname none",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "targetname Potion_Owner",
+						"delay": 0.02,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "Potion_Gametext",
+						"inputname": "Enable",
+						"delay": 0.5,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnPlayerPickup",
+						"targetname": "Potion_Gametext",
+						"inputname": "Disable",
+						"delay": 4.0,
+						"timestofire": -1
+					}
+				]
+			}
+		},
+		// convert game_text to point_worldtext, since game_text is unsupported in CS2
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Potion_Gametext",
+				"classname": "game_text"
+            },
+			"replace": 
+            {
+                "classname": "point_worldtext",
+                "origin": "40 25 50",
+                "angles": "0 -90 90",
+			    "scales": "1 1 1",
+                "parentname": "Weapon_Potion",
+			    "depth_render_offset": "0.125",
+			    "reorient_mode": "0",
+                "justify_vertical": "1",
+			    "justify_horizontal": "0",
+                "font_name": "Arial Black",
+                "font_size": "15",
+                "world_units_per_pixel": "0.25",
+                "color": "9 228 247",
+                "fullbright": "1",
+                "enabled": "0",
+                "message": "Item> Phoenix Down\nEffect> Unknown\nDuration> Momentary\nCooldown> Only 1 use",
+			    "fademaxdist": "0",
+		        "fademindist": "-1",
+                "rendercolor": "255 255 255",
+                "renderamt": "255",
+                "rendermode": "kRenderNormal",
+                "renderfx": "kRenderFxNone"
+			}
+		},
+		// fix origin(animgraph 2 update)
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Potion_Button",
+				"classname": "func_button"
+            },
+			"replace": 
+            {
+				"origin": "0 -24 63.001007"	
+			}
+		}
+	]
+}

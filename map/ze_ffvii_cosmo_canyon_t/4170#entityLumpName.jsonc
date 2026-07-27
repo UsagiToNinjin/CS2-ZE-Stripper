@@ -1,0 +1,61 @@
+// stripper by 兎RB 26.07.26
+// map ze_ffvii_cosmo_canyon_t
+// workshop id 3310260547
+{
+	"modify": // convert RunScriptCode(lua script) to Keyvalue format
+    [
+        {
+		    "match":
+            {
+				"targetname": "[PR#]Item_Electro_Trigger&0000",
+				"classname": "trigger_hurt"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnHurtPlayer",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(2.00)",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnHurtPlayer",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(1.00)",
+						"delay": 0.48,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnHurtPlayer",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 0.5",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnHurtPlayer",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 1",
+						"delay": 0.48,
+						"timestofire": -1
+					}
+				]
+			}
+		}
+	]
+}
