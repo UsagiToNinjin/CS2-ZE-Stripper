@@ -680,7 +680,7 @@
                         "inputname": "KeyValue",
                         "overrideparam": "EntityTemplate Explosion_Temp_Huge",
                         "delay": 34.95,
-                        "timestofire": -1
+                        "timestofire": 1
                     },
 
                     {
@@ -689,7 +689,7 @@
                         "inputname": "KeyValue",
                         "overrideparam": "origin -1916 2828 396",
                         "delay": 34.95,
-                        "timestofire": -1
+                        "timestofire": 1
                     }
 				]
 			}
@@ -770,7 +770,7 @@
                         "inputname": "KeyValue",
                         "overrideparam": "EntityTemplate Explosion_Temp_Huge",
                         "delay": 25.0,
-                        "timestofire": -1
+                        "timestofire": 1
                     },
 
                     {
@@ -779,7 +779,7 @@
                         "inputname": "KeyValue",
                         "overrideparam": "origin -4961 -3746 1907",
                         "delay": 25.0,
-                        "timestofire": -1
+                        "timestofire": 1
                     }
 				]
 			}
