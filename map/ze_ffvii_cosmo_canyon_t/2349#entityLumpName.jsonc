@@ -2,7 +2,7 @@
 // map ze_ffvii_cosmo_canyon_t
 // workshop id 3310260547
 {
-	"modify": // add missing output
+	"modify": // add missing output(based on CS:GO)
     [
         {
 		    "match":
