@@ -1128,7 +1128,7 @@
 				"targetname": "/(Genesis_Model|Shinra_Ifrit|Jenova_Model)/",
 				"classname": "prop_dynamic"
             },
-			"insert":
+			"replace":
 			{
                 "rendermode": "0"
             }
