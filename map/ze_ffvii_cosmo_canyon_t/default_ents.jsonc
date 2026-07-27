@@ -5,7 +5,7 @@
     "filter": // remove old zombie item pickup entities and convert them to the new entity system
     [
         {
-            "targetname": "/^(Map_Stripper|Knife_Strip|Knife_Stripper_(Maker|Template))$/"
+            "targetname": "/(Map_Stripper|Knife_(Strip|Stripper_Maker|Stripper_Template))/"
         }
     ],
 	"modify": 
@@ -434,7 +434,7 @@
                         "outputname": "OnTrigger",
                         "targetname": "Quest_Spawner",
                         "inputname": "KeyValue",
-                        "overrideparam": "origin 2634 -1564 83",
+                        "overrideparam": "origin 2634 -1564 334", // fix an incorrect position
                         "delay": 2.0,
                         "timestofire": -1
                     },
