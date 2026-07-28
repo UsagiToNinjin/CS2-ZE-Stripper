@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.07.27
+// stripper by 兎RB 26.07.28
 // map ze_ffvii_cosmo_canyon_t
 // workshop id 3310260547
 {
@@ -56,7 +56,7 @@
 			"replace": 
             {
                 "classname": "point_worldtext",
-                "origin": "40 35 50",
+                "origin": "40 25 50",
                 "angles": "0 -90 90",
 			    "scales": "1 1 1",
                 "parentname": "Weapon_Wind",
