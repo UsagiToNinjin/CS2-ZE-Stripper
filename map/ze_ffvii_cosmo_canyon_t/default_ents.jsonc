@@ -37,24 +37,6 @@
                         "delay": 15.0,
                         "timestofire": -1
                     },
-
-                    {
-                        "outputname": "OnNewGame",
-				        "targetname": "[PR#]Map_Spawner",
-                        "inputname": "AddOutput",
-                        "overrideparam": "EntityTemplate Item_Bio_Temp1",
-                        "delay": 5.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnNewGame",
-				        "targetname": "[PR#]Map_Spawner",
-                        "inputname": "AddOutput",
-                        "overrideparam": "EntityTemplate Item_Heal_Temp",
-                        "delay": 8.0,
-                        "timestofire": -1
-                    },
 					// remove unnecessary output
 					{
                         "outputname": "OnNewGame",
@@ -69,16 +51,6 @@
             {
                 "io":
                 [
-                    // stripper update log
-					{
-                        "outputname": "OnMapSpawn",
-				        "targetname": "cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say fix stripper update 26.07.28",
-                        "delay": 5.0,
-                        "timestofire": -1
-                    },
-
                     {
                         "outputname": "OnNewGame",
 				        "targetname": "Map_Spawner",
@@ -96,22 +68,13 @@
                         "delay": 15.0,
                         "timestofire": -1
                     },
-
-                    {
-                        "outputname": "OnNewGame",
-				        "targetname": "Map_Spawner",
-                        "inputname": "KeyValue",
-                        "overrideparam": "EntityTemplate Item_Bio_Temp1",
+                    // stripper update log
+					{
+                        "outputname": "OnMapSpawn",
+				        "targetname": "cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say fix stripper update 26.07.28",
                         "delay": 5.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnNewGame",
-				        "targetname": "Map_Spawner",
-                        "inputname": "KeyValue",
-                        "overrideparam": "EntityTemplate Item_Heal_Temp",
-                        "delay": 8.0,
                         "timestofire": -1
                     }
 				]
@@ -128,15 +91,6 @@
 			{
 				"io":
 				[
-					{
-                        "outputname": "OnTrigger",
-				        "targetname": "[PR#]Materia_Random_Spawner2",
-                        "inputname": "AddOutput",
-                        "overrideparam": "targetname Materia_Random_Spawner",
-                        "delay": 2.02,
-                        "timestofire": -1
-                    },
-
                     {
                         "outputname": "OnTrigger",
 				        "targetname": "[PR#]Hold_End_Trigger",
@@ -178,15 +132,6 @@
 			{
 				"io":
 				[
-					{
-                        "outputname": "OnTrigger",
-				        "targetname": "Materia_Random_Spawner2",
-                        "inputname": "KeyValue",
-                        "overrideparam": "targetname Materia_Random_Spawner",
-                        "delay": 2.02,
-                        "timestofire": -1
-                    },
-
                     {
                         "outputname": "OnTrigger",
 				        "targetname": "Hold_End_Trigger",
@@ -1325,18 +1270,6 @@
                     }
 				]
 			}
-		},
-        // fix invisible model
-		{
-		    "match":
-            {
-				"targetname": "/((Genesis|Jenova)_Model|Shinra_Ifrit)/",
-				"classname": "prop_dynamic"
-            },
-			"replace":
-			{
-                "rendermode": "0"
-            }
 		},
         // fix item origin
         // 17783#entityLumpName
