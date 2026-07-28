@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.06.14
+// stripper by 兎RB 26.07.29
 // map ze_ffxii_westersand_v7_t
 // workshop id 3236270292
 // boss HP adjustment refet to L560~977
@@ -26,7 +26,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "Cmd",
                         "inputname": "Command",
-                        "overrideparam": "say fix stripper update 26.06.14",
+                        "overrideparam": "say fix stripper update 26.07.29",
                         "delay": 7.0,
                         "timestofire": -1
                     }
@@ -42,8 +42,7 @@
             },
 			"replace":
 			{
-				"classname": "game_player_equip",
-				"spawnflags": "3"
+				"classname": "game_player_equip"
 			},
 			"delete":
 			{
@@ -57,7 +56,11 @@
 						"outputname": "OnTrigger"
 					}	
 				]
-			}		
+			},
+			"insert":
+			{
+				"spawnflags": "3"
+			}
 		},
         
         {
@@ -549,10 +552,10 @@
         {
             "match":
             {
-                "targetname": "[PR#]Boss_Water",
-                "classname": "trigger_multiple"
+                "targetname": "[PR#]Knife_Choc_Temp",
+                "classname": "point_template"
             },
-            "replace":
+            "insert":
             {
                 "template08": "Knife_Choc_Model_Fix"
             }
