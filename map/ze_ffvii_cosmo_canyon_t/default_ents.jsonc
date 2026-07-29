@@ -73,7 +73,7 @@
                         "outputname": "OnMapSpawn",
 				        "targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say fix stripper update 26.07.28",
+                        "overrideparam": "say fix stripper update 26.07.30",
                         "delay": 5.0,
                         "timestofire": -1
                     }
