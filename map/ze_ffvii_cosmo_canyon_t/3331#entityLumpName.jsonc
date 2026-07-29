@@ -4,7 +4,7 @@
 {
 	"modify":
     [
-		// convert RunScriptCode(lua script), AddOutput to Keyvalue format
+		// convert AddOutput to Keyvalue format
 		// convert inputname Display(game_text) to Enable/Disable(point_worldtext)
         {
 		    "match":
