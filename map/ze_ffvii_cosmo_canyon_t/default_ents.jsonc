@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.07.28
+// stripper by 兎RB 26.07.30
 // map ze_ffvii_cosmo_canyon_t
 // workshop id 3310260547
 {
@@ -634,42 +634,6 @@
                         "overrideparam": "origin -1916 2828 396",
                         "delay": 34.95,
                         "timestofire": 1
-                    }
-				]
-			}
-		},
-
-        {
-            "match":
-            {
-                "targetname": "[PR#]lvl3_boss_lasers_time",
-				"classname": "logic_timer"
-            },
-			"delete":
-            {
-                "io":
-                [
-					{
-                        "outputname": "OnTimer",
-				        "targetname": "[PR#]Map_Spawner",
-                        "inputname": "AddOutput",
-                        "overrideparam": "EntityTemplate Hojo_Laser_Temp",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-				]
-			},
-			"insert":
-            {
-                "io":
-                [
-					{
-                        "outputname": "OnTimer",
-				        "targetname": "Map_Spawner",
-                        "inputname": "KeyValue",
-                        "overrideparam": "EntityTemplate Hojo_Laser_Temp",
-                        "delay": 0.0,
-                        "timestofire": -1
                     }
 				]
 			}
