@@ -1,16 +1,20 @@
-// stripper by 兎RB 26.06.08
+// stripper by 兎RB 26.07.29
 // map ze_ffxii_westersand_v7_t
 // workshop id 3236270292
 {
-    "filter": // remove unnecessary entity
+    "filter": // remove unnecessary entities
     [
         {
             "classname": "logic_measure_movement"
+        },
+
+        {
+            "targetname": "/Knife_Choc_(Finder&0000|Finder_Filter&0000|Knife_Filter&0000)/"
         }
     ],
 	"modify":
     [
-        // convert RunScriptCode(lua script), ModifySpeed(player_speedmod) to keyvalue format
+        // convert RunScriptCode(lua script), ModifySpeed(player_speedmod) to Keyvalue format
         {
             "match":
             {
@@ -80,7 +84,7 @@
 				]
 			}
 		},
-        // convert to game_player_equip input
+        // convert inputname Trigger(logic_relay) to Use(game_player_equip)
         {
             "match":
             {

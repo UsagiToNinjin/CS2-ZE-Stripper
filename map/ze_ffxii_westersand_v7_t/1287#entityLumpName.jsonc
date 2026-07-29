@@ -1,10 +1,10 @@
-// stripper by 兎RB 26.06.07
+// stripper by 兎RB 26.07.29
 // map ze_ffxii_westersand_v7_t
 // workshop id 3236270292
 {
 	"modify":
     [
-        // convert RunScriptCode(lua script), AddOutPut to keyvalue format
+        // convert RunScriptCode(lua script), AddOutPut to Keyvalue format
         {
             "match":
             {
@@ -94,7 +94,7 @@
 				]
 			}
 		},
-        // convert to game_player_equip input
+        // convert inputname Trigger(logic_relay) to Use(game_player_equip)
         {
             "match":
             {

@@ -1,12 +1,16 @@
 // stripper by 兎RB 26.07.29
 // map ze_ffxii_westersand_v7_t
 // workshop id 3236270292
-// boss HP adjustment refet to L560~977
+// boss HP adjustment refet to L622~1041
 {
     "filter": // remove old zombie item pickup entities and convert them to the new entity system
     [
         {
-            "targetname": "/(Cloak_Balthier_Finder|Knife_(Strip|Stripper_Template|Stripper_Maker))/"
+            "targetname": "/Knife_(Strip|Stripper_Template|Stripper_Maker))/"
+        },
+
+        {
+            "targetname": "/Cloak_(Balthier|Vaan|Ashe|Basch)_(Finder|Finder_Filter|Knife_Filter)/"
         }
     ],
     "modify":
@@ -66,8 +70,7 @@
         {
 		    "match":
             {
-				"targetname": "[PR#]Cloak_Balthier_Stripper",
-				"classname": "trigger_once"
+				"targetname": "/Cloak_(Balthier|Vaan|Ashe|Basch)_Stripper/"
             },
 			"delete":
 			{
@@ -75,7 +78,6 @@
 				[
 					{
                         "outputname": "OnStartTouch",
-						"targetname": "[PR#]Cloak_Balthier_Finder",
                         "inputname": "FindEntity",
                         "delay": 0.0,
                         "timestofire": 1
@@ -96,7 +98,7 @@
 				]
 			}		
 		},
-        // convert RunScriptCode(lua script), ModifySpeed(player_speedmod) to keyvalue format
+        // convert RunScriptCode(lua script), ModifySpeed(player_speedmod) to Keyvalue format
         {
             "match":
             {
@@ -250,8 +252,8 @@
                     {
                         "outputname": "OnStartTouch",
 						"targetname": "!activator",
-                        "inputname": "movetype",
-                        "overrideparam": "2",
+                        "inputname": "IgniteLifetime",
+                        "overrideparam": "0",
                         "delay": 0.0,
                         "timestofire": -1
                     }
@@ -457,7 +459,7 @@
                 ]  
             }
         },
-        // convert AddOutPut to keyvalue format
+        // convert AddOutPut to Keyvalue format
         {
             "match":
             {
@@ -555,428 +557,487 @@
                 "targetname": "[PR#]Knife_Choc_Temp",
                 "classname": "point_template"
             },
-            "insert":
+            "replace":
             {
-                "template08": "Knife_Choc_Model_Fix"
+                "template04": "Knife_Choc_Model_Fix"
+            }
+        },
+        // remove unnecessary entities
+        // 1288#entityLumpName
+        {
+            "match":
+            {
+                "targetname": "[PR#]Temp_Invis",
+                "classname": "point_template"
+            },
+            "delete":
+            {
+                "template10": "[PR#]Knife_Invis_Finder",
+                "template11": "[PR#]Knife_Invis_Finder_Filter",
+                "template12": "[PR#]Knife_Invis_Knife_Filter"
+            }
+        },
+        // 1289#entityLumpName
+        {
+            "match":
+            {
+                "targetname": "[PR#]Temp_Warp",
+                "classname": "point_template"
+            },
+            "delete":
+            {
+                "template11": "[PR#]Knife_Warp_Finder",
+                "template12": "[PR#]Knife_Warp_Finder_Filter",
+                "template13": "[PR#]Knife_Warp_Knife_Filter"
+            }
+        },
+        // 1290#entityLumpName
+        {
+            "match":
+            {
+                "targetname": "[PR#]Temp_Lure",
+                "classname": "point_template"
+            },
+            "delete":
+            {
+                "template10": "[PR#]Knife_Lure_Finder",
+                "template11": "[PR#]Knife_Lure_Finder_Filter",
+                "template12": "[PR#]Knife_Lure_Knife_Filter"
+            }
+        },
+        // 1355#entityLumpName
+        {
+            "match":
+            {
+                "targetname": "[PR#]Knife_Choc_Temp",
+                "classname": "point_template"
+            },
+            "delete":
+            {
+                "template05": "[PR#]Knife_Choc_Knife_Filter",
+                "template06": "[PR#]Knife_Choc_Finder",
+                "template07": "[PR#]Knife_Choc_Finder_Filter"
             }
         }
         // boss HP is set based on china server's balance, making it excessively high
         // reduce all boss HP by approximately 50%
         // uncomment if necessary
+        /*
         // stage hard mid boss reduce hp 50%
-        //{
-        //    "match":
-        //    {
-        //        "targetname": "[PR#]Boss_Trigger_Add_Health_Hard",
-        //        "classname": "trigger_multiple"
-        //    },
-        //    "delete":
-        //    {
-        //        "io":
-        //        [				
-		//			  {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "[PR#]Boss_Health_Init",
-        //                "inputname": "Add",
-        //                "overrideparam": "30",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    },
-        //    "insert":
-        //    {
-        //        "io":
-        //        [				
-		//			  {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "Boss_Health_Init",
-        //                "inputname": "Add",
-        //                "overrideparam": "15",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    }
-        //},
-        //// stage hard,extreme mid boss reduce hp 50%
-        //{
-        //    "match":
-        //    {
-        //        "targetname": "[PR#]Boss_Trigger_Add_Health_Default",
-        //        "classname": "trigger_multiple"
-        //    },
-        //    "delete":
-        //    {
-        //        "io":
-        //        [				
-		//			  {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "[PR#]Boss_Health_Init",
-        //                "inputname": "Add",
-        //                "overrideparam": "60",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    },
-        //    "insert":
-        //    {
-        //        "io":
-        //        [				
-		//			  {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "Boss_Health_Init",
-        //                "inputname": "Add",
-        //                "overrideparam": "30",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    }
-        //},
-        //// stage extreme mid boss reduce hp 50%
-        //{
-        //    "match":
-        //    {
-        //        "targetname": "[PR#]Boss_Trigger_Add_Health_Extreme",
-        //        "classname": "trigger_multiple"
-        //    },
-        //    "delete":
-        //    {
-        //        "io":
-        //        [				
-		//			  {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "[PR#]Boss_Health_Init",
-        //                "inputname": "Add",
-        //                "overrideparam": "5",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    },
-        //    "insert":
-        //    {
-        //        "io":
-        //        [				
-		//			  {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "Boss_Health_Init",
-        //                "inputname": "Add",
-        //                "overrideparam": "3",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    }
-        //},
-        //// stage hard,extreme last boss reduce hp 50%
-        //{
-        //    "match":
-        //    {
-        //        "targetname": "[PR#]Ehe_Dragon_AddHP",
-        //        "classname": "trigger_multiple"
-        //    },
-        //    "delete":
-        //    {
-        //        "io":
-        //        [				
-		//			  {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "[PR#]Ehe_Dragon_HP",
-        //                "inputname": "Add",
-        //                "overrideparam": "100",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    },
-        //    "insert":
-        //    {
-        //        "io":
-        //        [				
-		//			  {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "Ehe_Dragon_HP",
-        //                "inputname": "Add",
-        //                "overrideparam": "50",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    }
-        //},
-        //// stage extreme midlast boss reduce hp 50%
-        //{
-        //    "match":
-        //    {
-        //        "targetname": "[PR#]ZE_Extreme_Ending",
-        //        "classname": "trigger_multiple",
-        //        "hammeruniqueid": "1001"
-        //    },
-        //    "delete":
-        //    {
-        //        "io":
-        //        [				
-		//			  {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "[PR#]Ehe_Guardian_HP",
-        //                "inputname": "Add",
-        //                "overrideparam": "30",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    },
-        //    "insert":
-        //    {
-        //        "io":
-        //        [				
-		//			  {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "Ehe_Guardian_HP",
-        //                "inputname": "Add",
-        //                "overrideparam": "15",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    }
-        //},
-        //// stage epic,god mid boss reduce hp 50%
-        //{
-        //    "match":
-        //    {
-        //        "targetname": "[PR#]Airship_Guard_Trigger_Add_Health_Default",
-        //        "classname": "trigger_multiple"
-        //    },
-        //    "delete":
-        //    {
-        //        "io":
-        //        [				
-		//			  {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "[PR#]Guard_Health_Init",
-        //                "inputname": "Add",
-        //                "overrideparam": "40",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            },
-        //        
-        //            {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "[PR#]Guard_2_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "20",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            },
-        //        
-        //            {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "[PR#]Guard_3_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "20",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            },
-        //        
-        //            {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "[PR#]Gabranth_HP",
-        //                "inputname": "Add",
-        //                "overrideparam": "1.200000",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    },
-        //    "insert":
-        //    {
-        //        "io":
-        //        [				
-		//			  {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "Guard_Health_Init",
-        //                "inputname": "Add",
-        //                "overrideparam": "20",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            },
-        //        
-        //            {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "Guard_2_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "10",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            },
-        //        
-        //            {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "Guard_3_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "10",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            },
-        //        
-        //            {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "Gabranth_HP",
-        //                "inputname": "Add",
-        //                "overrideparam": "0.6",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]  
-        //    }
-        //},
-        //// stage god mid boss reduce hp 50%
-        //{
-        //    "match":
-        //    {
-        //        "targetname": "[PR#]Airship_Guard_Trigger_Add_Health_Godmode",
-        //        "classname": "trigger_multiple"
-        //    },
-        //    "delete":
-        //    {
-        //        "io":
-        //        [				
-		//			  {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "[PR#]Guard_Health_Init",
-        //                "inputname": "Add",
-        //                "overrideparam": "80",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            },
-        //        
-        //            {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "[PR#]Guard_2_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "20",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            },
-        //        
-        //            {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "[PR#]Guard_3_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "20",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    },
-        //    "insert":
-        //    {
-        //        "io":
-        //        [				
-		//			  {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "Guard_Health_Init",
-        //                "inputname": "Add",
-        //                "overrideparam": "40",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            },
-        //        
-        //            {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "Guard_2_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "10",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            },
-        //        
-        //            {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "Guard_3_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "10",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]  
-        //    }
-        //},
-        //// stage epic,god last boss reduce hp 50%
-        //{
-        //    "match":
-        //    {
-        //        "classname": "trigger_multiple",
-        //        "hammeruniqueid": "604"
-        //    },
-        //    "delete":
-        //    {
-        //        "io":
-        //        [				
-		//			  {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "[PR#]Airship_Ending_Boss_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "145",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    },
-        //    "insert":
-        //    {
-        //        "io":
-        //        [				
-		//			  {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "Airship_Ending_Boss_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "72",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    }
-        //},
-        //// stage god last boss reduce hp 50%
-        //{
-        //    "match":
-        //    {
-        //        "targetname": "[PR#]Airship_Ending_Boss_Trigger_Add_Health_Godmode",
-        //        "classname": "trigger_multiple"
-        //    },
-        //    "delete":
-        //    {
-        //        "io":
-        //        [				
-		//			  {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "[PR#]Airship_Ending_Boss_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "55",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]    
-        //    },
-        //    "insert":
-        //    {
-        //        "io":
-        //        [				
-		//			  {
-        //                "outputname": "OnStartTouch",
-		//				  "targetname": "Airship_Ending_Boss_Health",
-        //                "inputname": "Add",
-        //                "overrideparam": "27",
-        //                "delay": 0.0,
-        //                "timestofire": -1
-        //            }
-        //        ]
-        //    }
-        //}
+        {
+            "match":
+            {
+                "targetname": "[PR#]Boss_Trigger_Add_Health_Hard",
+                "classname": "trigger_multiple"
+            },
+            "delete":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Boss_Health_Init",
+                        "inputname": "Add",
+                        "overrideparam": "30",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            },
+            "insert":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "Boss_Health_Init",
+                        "inputname": "Add",
+                        "overrideparam": "15",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            }
+        },
+        // stage hard,extreme mid boss reduce hp 50%
+        {
+            "match":
+            {
+                "targetname": "[PR#]Boss_Trigger_Add_Health_Default",
+                "classname": "trigger_multiple"
+            },
+            "delete":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Boss_Health_Init",
+                        "inputname": "Add",
+                        "overrideparam": "60",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            },
+            "insert":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "Boss_Health_Init",
+                        "inputname": "Add",
+                        "overrideparam": "30",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            }
+        },
+        // stage extreme mid boss reduce hp 50%
+        {
+            "match":
+            {
+                "targetname": "[PR#]Boss_Trigger_Add_Health_Extreme",
+                "classname": "trigger_multiple"
+            },
+            "delete":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Boss_Health_Init",
+                        "inputname": "Add",
+                        "overrideparam": "5",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            },
+            "insert":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "Boss_Health_Init",
+                        "inputname": "Add",
+                        "overrideparam": "3",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            }
+        },
+        // stage hard,extreme last boss reduce hp 50%
+        {
+            "match":
+            {
+                "targetname": "[PR#]Ehe_Dragon_AddHP",
+                "classname": "trigger_multiple"
+            },
+            "delete":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Ehe_Dragon_HP",
+                        "inputname": "Add",
+                        "overrideparam": "100",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            },
+            "insert":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "Ehe_Dragon_HP",
+                        "inputname": "Add",
+                        "overrideparam": "50",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            }
+        },
+        // stage extreme midlast boss reduce hp 50%
+        {
+            "match":
+            {
+                "targetname": "[PR#]ZE_Extreme_Ending",
+                "classname": "trigger_multiple",
+                "hammeruniqueid": "1001"
+            },
+            "delete":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Ehe_Guardian_HP",
+                        "inputname": "Add",
+                        "overrideparam": "30",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            },
+            "insert":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "Ehe_Guardian_HP",
+                        "inputname": "Add",
+                        "overrideparam": "15",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            }
+        },
+        // stage epic,god mid boss reduce hp 50%
+        {
+            "match":
+            {
+                "targetname": "[PR#]Airship_Guard_Trigger_Add_Health_Default",
+                "classname": "trigger_multiple"
+            },
+            "delete":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Guard_Health_Init",
+                        "inputname": "Add",
+                        "overrideparam": "40",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Guard_2_Health",
+                        "inputname": "Add",
+                        "overrideparam": "20",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Guard_3_Health",
+                        "inputname": "Add",
+                        "overrideparam": "20",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Gabranth_HP",
+                        "inputname": "Add",
+                        "overrideparam": "1.200000",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            },
+            "insert":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "Guard_Health_Init",
+                        "inputname": "Add",
+                        "overrideparam": "20",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "Guard_2_Health",
+                        "inputname": "Add",
+                        "overrideparam": "10",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "Guard_3_Health",
+                        "inputname": "Add",
+                        "overrideparam": "10",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "Gabranth_HP",
+                        "inputname": "Add",
+                        "overrideparam": "0.6",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]  
+            }
+        },
+        // stage god mid boss reduce hp 50%
+        {
+            "match":
+            {
+                "targetname": "[PR#]Airship_Guard_Trigger_Add_Health_Godmode",
+                "classname": "trigger_multiple"
+            },
+            "delete":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Guard_Health_Init",
+                        "inputname": "Add",
+                        "overrideparam": "80",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Guard_2_Health",
+                        "inputname": "Add",
+                        "overrideparam": "20",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Guard_3_Health",
+                        "inputname": "Add",
+                        "overrideparam": "20",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            },
+            "insert":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "Guard_Health_Init",
+                        "inputname": "Add",
+                        "overrideparam": "40",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "Guard_2_Health",
+                        "inputname": "Add",
+                        "overrideparam": "10",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "Guard_3_Health",
+                        "inputname": "Add",
+                        "overrideparam": "10",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]  
+            }
+        },
+        // stage epic,god last boss reduce hp 50%
+        {
+            "match":
+            {
+                "classname": "trigger_multiple",
+                "hammeruniqueid": "604"
+            },
+            "delete":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Airship_Ending_Boss_Health",
+                        "inputname": "Add",
+                        "overrideparam": "145",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            },
+            "insert":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "Airship_Ending_Boss_Health",
+                        "inputname": "Add",
+                        "overrideparam": "72",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            }
+        },
+        // stage god last boss reduce hp 50%
+        {
+            "match":
+            {
+                "targetname": "[PR#]Airship_Ending_Boss_Trigger_Add_Health_Godmode",
+                "classname": "trigger_multiple"
+            },
+            "delete":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Airship_Ending_Boss_Health",
+                        "inputname": "Add",
+                        "overrideparam": "55",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            },
+            "insert":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "Airship_Ending_Boss_Health",
+                        "inputname": "Add",
+                        "overrideparam": "27",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        }
+        */
     ]
 }

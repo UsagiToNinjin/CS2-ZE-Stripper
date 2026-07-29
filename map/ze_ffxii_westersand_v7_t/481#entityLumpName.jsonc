@@ -1,8 +1,8 @@
-// stripper by 兎RB 26.05.17
+// stripper by 兎RB 26.07.29
 // map ze_ffxii_westersand_v7_t
 // workshop id 3236270292
 {
-	"modify": // convert RunScriptCode(lua script) to keyvalue format
+	"modify": // convert RunScriptCode(lua script) to Keyvalue format
     [
         {
             "match":
@@ -77,7 +77,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "!activator",
                         "inputname": "KeyValue",
-                        "overrideparam": "speed 0.2",
+                        "overrideparam": "speed 0.1",
                         "delay": 0.0,
                         "timestofire": -1
                     },
@@ -86,7 +86,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "!activator",
                         "inputname": "KeyValue",
-                        "overrideparam": "speed 0.2",
+                        "overrideparam": "speed 0.1",
                         "delay": 1.0,
                         "timestofire": -1
                     },
@@ -95,7 +95,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "!activator",
                         "inputname": "KeyValue",
-                        "overrideparam": "speed 0.2",
+                        "overrideparam": "speed 0.1",
                         "delay": 2.0,
                         "timestofire": -1
                     },
@@ -104,7 +104,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "!activator",
                         "inputname": "KeyValue",
-                        "overrideparam": "speed 0.2",
+                        "overrideparam": "speed 0.1",
                         "delay": 3.0,
                         "timestofire": -1
                     },
@@ -113,7 +113,7 @@
                         "outputname": "OnStartTouch",
 						"targetname": "!activator",
                         "inputname": "KeyValue",
-                        "overrideparam": "speed 0.2",
+                        "overrideparam": "speed 0.1",
                         "delay": 4.0,
                         "timestofire": -1
                     },
