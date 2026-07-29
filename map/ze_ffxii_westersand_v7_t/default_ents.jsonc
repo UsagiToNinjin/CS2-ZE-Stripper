@@ -1,7 +1,7 @@
 // stripper by 兎RB 26.07.29
 // map ze_ffxii_westersand_v7_t
 // workshop id 3236270292
-// boss HP adjustment refet to L622~1041
+// boss HP adjustment refet to L663~1082
 {
     "filter": // remove old zombie item pickup entities and convert them to the new entity system
     [
@@ -70,7 +70,8 @@
         {
 		    "match":
             {
-				"targetname": "/Cloak_(Balthier|Vaan|Ashe|Basch)_Stripper/"
+				"targetname": "/Cloak_(Balthier|Vaan|Basch)_Stripper/",
+                "classname": "trigger_once"
             },
 			"delete":
 			{
@@ -96,7 +97,47 @@
                         "timestofire": 1
                     }
 				]
-			}		
+			}
+		},
+
+        {
+		    "match":
+            {
+				"targetname": "[PR#]Cloak_Ashe_Stripper",
+                "classname": "trigger_multiple"
+            },
+            "replace":
+            {
+                "classname": "trigger_once",
+                "spawnflags": "1"
+            },
+			"delete":
+			{
+                "wait": "1.0",
+				"io":
+				[
+					{
+                        "outputname": "OnStartTouch",
+                        "targetname": "[PR#]Cloak_Ashe_Finder",
+                        "inputname": "FindEntity",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			},
+            "insert":
+			{
+				"io":
+				[
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "Strip_Knife",
+                        "inputname": "Use",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
 		},
         // convert RunScriptCode(lua script), ModifySpeed(player_speedmod) to Keyvalue format
         {
@@ -202,6 +243,60 @@
                         "overrideparam": "max_health 50000",
                         "delay": 0.0,
                         "timestofire": 1
+                    }
+                ]  
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Reset",
+                "classname": "trigger_multiple"
+            },
+            "delete":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(1.00)",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "ModifySpeed",
+                        "overrideparam": "1",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "IgniteLifetime",
+                        "overrideparam": "0",
+                        "delay": 0.0,
+                        "timestofire": -1
                     }
                 ]  
             }
@@ -400,60 +495,6 @@
                         "inputname": "KeyValue",
                         "overrideparam": "speed 1",
                         "delay": 5.0,
-                        "timestofire": -1
-                    }
-                ]  
-            }
-        },
-		// add functionality to reset applied player properties
-        {
-            "match":
-            {
-                "targetname": "[PR#]Reset",
-                "classname": "trigger_multiple"
-            },
-            "delete":
-            {
-                "io":
-                [				
-					{
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "RunScriptCode",
-                        "overrideparam": "thisEntity:SetFriction(1.00)",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "ModifySpeed",
-                        "overrideparam": "1",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-                ]    
-            },
-            "insert":
-            {
-                "io":
-                [
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "speed 1",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "IgniteLifetime",
-                        "overrideparam": "0",
-                        "delay": 0.0,
                         "timestofire": -1
                     }
                 ]  
