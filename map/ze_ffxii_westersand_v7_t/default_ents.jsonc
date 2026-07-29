@@ -210,60 +210,6 @@
         {
             "match":
             {
-                "targetname": "[PR#]Reset",
-                "classname": "trigger_multiple"
-            },
-            "delete":
-            {
-                "io":
-                [				
-					{
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "RunScriptCode",
-                        "overrideparam": "thisEntity:SetFriction(1.00)",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "ModifySpeed",
-                        "overrideparam": "1",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-                ]    
-            },
-            "insert":
-            {
-                "io":
-                [
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "speed 1",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnStartTouch",
-						"targetname": "!activator",
-                        "inputname": "IgniteLifetime",
-                        "overrideparam": "0",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-                ]  
-            }
-        },
-
-        {
-            "match":
-            {
                 "targetname": "/Cloak_(Balthier|Vaan|Ashe|Basch)_Knife/",
                 "classname": "weapon_knife"
             },
@@ -454,6 +400,60 @@
                         "inputname": "KeyValue",
                         "overrideparam": "speed 1",
                         "delay": 5.0,
+                        "timestofire": -1
+                    }
+                ]  
+            }
+        },
+		// add functionality to reset applied player properties
+        {
+            "match":
+            {
+                "targetname": "[PR#]Reset",
+                "classname": "trigger_multiple"
+            },
+            "delete":
+            {
+                "io":
+                [				
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(1.00)",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "ModifySpeed",
+                        "overrideparam": "1",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]    
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "!activator",
+                        "inputname": "IgniteLifetime",
+                        "overrideparam": "0",
+                        "delay": 0.0,
                         "timestofire": -1
                     }
                 ]  
