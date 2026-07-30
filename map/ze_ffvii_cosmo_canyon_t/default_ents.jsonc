@@ -10,34 +10,15 @@
     ],
 	"modify": 
     [
-        // convert AddOutput to Keyvalue format
         {
             "match":
             {
                 "classname": "logic_auto"
             },
-            "delete":
+            "delete": // remove unnecessary output
             {
                 "io":
                 [
-					{
-                        "outputname": "OnNewGame",
-				        "targetname": "[PR#]Map_Spawner",
-                        "inputname": "AddOutput",
-                        "overrideparam": "EntityTemplate Explosion_Temp_Huge",
-                        "delay": 15.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnNewGame",
-				        "targetname": "[PR#]Map_Spawner",
-                        "inputname": "AddOutput",
-                        "overrideparam": "origin 4666 -2513 159",
-                        "delay": 15.0,
-                        "timestofire": -1
-                    },
-					// remove unnecessary output
 					{
                         "outputname": "OnNewGame",
 				        "targetname": "[PR#]cmd",
@@ -47,28 +28,10 @@
                     }
 				]
 			},
-			"insert":
+			"insert": // stripper update log
             {
                 "io":
                 [
-                    {
-                        "outputname": "OnNewGame",
-				        "targetname": "Map_Spawner",
-                        "inputname": "KeyValue",
-                        "overrideparam": "EntityTemplate Explosion_Temp_Huge",
-                        "delay": 15.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnNewGame",
-				        "targetname": "Map_Spawner",
-                        "inputname": "KeyValue",
-                        "overrideparam": "origin 4666 -2513 159",
-                        "delay": 15.0,
-                        "timestofire": -1
-                    },
-                    // stripper update log
 					{
                         "outputname": "OnMapSpawn",
 				        "targetname": "cmd",
@@ -80,7 +43,7 @@
 				]
 			}
 		},
-
+		// convert AddOutput to Keyvalue format
         {
 		    "match":
             {
@@ -580,114 +543,6 @@
                         "overrideparam": "angles 0 0 0",
                         "delay": 0.05,
                         "timestofire": -1
-                    }
-				]
-			}
-		},
-
-        {
-            "match":
-            {
-                "targetname": "[PR#]Hold7_Trigger",
-				"classname": "trigger_once"
-            },
-			"delete":
-            {
-                "io":
-                [
-					{
-                        "outputname": "OnTrigger",
-				        "targetname": "[PR#]Map_Spawner",
-                        "inputname": "AddOutput",
-                        "overrideparam": "EntityTemplate Explosion_Temp_Huge",
-                        "delay": 34.95,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-				        "targetname": "[PR#]Map_Spawner",
-                        "inputname": "AddOutput",
-                        "overrideparam": "origin -1916 2828 396",
-                        "delay": 34.95,
-                        "timestofire": -1
-                    }
-				]
-			},
-			"insert":
-            {
-                "io":
-                [
-					{
-                        "outputname": "OnTrigger",
-				        "targetname": "Map_Spawner",
-                        "inputname": "KeyValue",
-                        "overrideparam": "EntityTemplate Explosion_Temp_Huge",
-                        "delay": 34.95,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-				        "targetname": "Map_Spawner",
-                        "inputname": "KeyValue",
-                        "overrideparam": "origin -1916 2828 396",
-                        "delay": 34.95,
-                        "timestofire": 1
-                    }
-				]
-			}
-		},
-
-        {
-            "match":
-            {
-                "targetname": "[PR#]Hold4_Trigger",
-				"classname": "trigger_once"
-            },
-			"delete":
-            {
-                "io":
-                [
-					{
-                        "outputname": "OnTrigger",
-				        "targetname": "[PR#]Map_Spawner",
-                        "inputname": "AddOutput",
-                        "overrideparam": "EntityTemplate Explosion_Temp_Huge",
-                        "delay": 25.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-				        "targetname": "[PR#]Map_Spawner",
-                        "inputname": "AddOutput",
-                        "overrideparam": "origin -4961 -3746 1907",
-                        "delay": 25.0,
-                        "timestofire": -1
-                    }
-				]
-			},
-			"insert":
-            {
-                "io":
-                [
-					{
-                        "outputname": "OnTrigger",
-				        "targetname": "Map_Spawner",
-                        "inputname": "KeyValue",
-                        "overrideparam": "EntityTemplate Explosion_Temp_Huge",
-                        "delay": 25.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "OnTrigger",
-				        "targetname": "Map_Spawner",
-                        "inputname": "KeyValue",
-                        "overrideparam": "origin -4961 -3746 1907",
-                        "delay": 25.0,
-                        "timestofire": 1
                     }
 				]
 			}
