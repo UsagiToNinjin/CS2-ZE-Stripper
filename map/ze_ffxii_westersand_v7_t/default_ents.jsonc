@@ -6,7 +6,7 @@
     "filter": // remove old zombie item pickup entities and convert them to the new entity system
     [
         {
-            "targetname": "/Knife_(Strip|Stripper_Template|Stripper_Maker))/"
+            "targetname": "/Knife_(Strip|Stripper_Template|Stripper_Maker)/"
         },
 
         {
