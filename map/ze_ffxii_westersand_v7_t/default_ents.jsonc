@@ -1,7 +1,7 @@
-// stripper by 兎RB 26.07.29
+// stripper by 兎RB 26.07.30
 // map ze_ffxii_westersand_v7_t
 // workshop id 3236270292
-// boss HP adjustment refet to L663~1082
+// boss HP adjustment refet to L635~1054
 {
     "filter": // remove old zombie item pickup entities and convert them to the new entity system
     [
@@ -30,7 +30,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "Cmd",
                         "inputname": "Command",
-                        "overrideparam": "say fix stripper update 26.07.29",
+                        "overrideparam": "say fix stripper update 26.07.30",
                         "delay": 7.0,
                         "timestofire": -1
                     }
@@ -500,94 +500,66 @@
                 ]  
             }
         },
-        // convert AddOutPut to Keyvalue format
+        // change volume control from all bgm to this bgm only, refer to L1058~1063
         {
             "match":
             {
-                "targetname": "[PR#]Map_Case_Zombieweapons",
-                "classname": "logic_case"
+                "targetname": "[PR#]Sound_God_end",
+                "classname": "point_soundevent"
             },
             "delete":
             {
                 "io":
                 [				
 					{
-                        "outputname": "OnCase01",
-						"targetname": "[PR#]Temp_Maker",
-                        "inputname": "AddOutput",
-                        "overrideparam": "origin -1456.01 -2656 2200",
+                        "outputname": "OnUser1",
+						"targetname": "[PR#]Cmd",
+                        "inputname": "Command",
+                        "overrideparam": "snd_musicvolumn 0.1",
                         "delay": 0.0,
                         "timestofire": -1
                     },
 
                     {
-                        "outputname": "OnCase02",
-						"targetname": "[PR#]Temp_Maker",
-                        "inputname": "AddOutput",
-                        "overrideparam": "origin -1456.01 -2272 2200",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnCase03",
-						"targetname": "[PR#]Temp_Maker",
-                        "inputname": "AddOutput",
-                        "overrideparam": "origin -1456.01 1632 2200",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnCase04",
-						"targetname": "[PR#]Temp_Maker",
-                        "inputname": "AddOutput",
-                        "overrideparam": "origin -1456.01 1248 2200",
-                        "delay": 0.0,
+                        "outputname": "OnUser1",
+						"targetname": "[PR#]Cmd",
+                        "inputname": "Command",
+                        "overrideparam": "snd_musicvolumn 1",
+                        "delay": 3.5,
                         "timestofire": -1
                     }
-                ]    
+                ]
             },
             "insert":
             {
                 "io":
                 [				
 					{
-                        "outputname": "OnCase01",
-						"targetname": "Temp_Maker",
-                        "inputname": "KeyValue",
-                        "overrideparam": "origin -1456.01 -2656 2200",
+                        "outputname": "OnUser1",
+						"targetname": "Sound_God_end_volume",
+                        "inputname": "SetFloatValue",
+                        "overrideparam": "0.1",
                         "delay": 0.0,
                         "timestofire": -1
                     },
 
                     {
-                        "outputname": "OnCase02",
-						"targetname": "Temp_Maker",
-                        "inputname": "KeyValue",
-                        "overrideparam": "origin -1456.01 -2272 2200",
-                        "delay": 0.0,
+                        "outputname": "OnUser1",
+						"targetname": "Sound_God_end_volume",
+                        "inputname": "SetFloatValue",
+                        "overrideparam": "1.0",
+                        "delay": 3.5,
                         "timestofire": -1
                     },
 
                     {
-                        "outputname": "OnCase03",
-						"targetname": "Temp_Maker",
-                        "inputname": "KeyValue",
-                        "overrideparam": "origin -1456.01 1632 2200",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnCase04",
-						"targetname": "Temp_Maker",
-                        "inputname": "KeyValue",
-                        "overrideparam": "origin -1456.01 1248 2200",
+                        "outputname": "SoundEventGuid",
+						"targetname": "Sound_God_end_volume",
+                        "inputname": "SetSoundEventGUID",
                         "delay": 0.0,
                         "timestofire": -1
                     }
-                ]    
+                ]
             }
         },
         // fix item origin
@@ -1080,5 +1052,14 @@
             }
         }
         */
+    ],
+    "add": // add music volume set entity
+    [
+        {
+			"targetname": "Sound_God_end_volume",
+			"classname": "snd_event_param",
+			"parametername": "volume",
+			"floatvalue": "1"
+        }    
     ]
 }
