@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.07.27
+// stripper by 兎RB 26.07.31
 // map ze_ffvii_cosmo_canyon_t
 // workshop id 3310260547
 {
@@ -84,8 +84,8 @@
 			"replace": 
             {
                 "classname": "point_worldtext",
-                "origin": "40 25 50",
-                "angles": "0 -90 90",
+                "origin": "15 -30 50",
+                "angles": "0 180 90",
 			    "scales": "1 1 1",
                 "parentname": "Weapon_Potion",
 			    "depth_render_offset": "0.125",
@@ -107,7 +107,41 @@
                 "renderfx": "kRenderFxNone"
 			}
 		},
-		// fix origin(animgraph 2 update)
+		// fix an incorrect inputname
+        {
+		    "match":
+            {
+				"targetname": "[PR#]Item_Relay_Potion",
+				"classname": "logic_relay"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnTrigger",
+						"targetname": "[PR#]Beam_Potion",
+						"inputname": "TurnOn", // env_beam
+						"delay": 0.02,
+						"timestofire": -1
+					}
+				]
+			},		
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnTrigger",
+						"targetname": "Beam_Potion",
+						"inputname": "Start", // info_particle_system
+						"delay": 0.02,
+						"timestofire": -1
+					}
+				]
+			}
+		},
+		// change to non-solid, replace the broken model with another model
 		{
 		    "match":
             {
@@ -115,8 +149,10 @@
 				"classname": "func_button"
             },
 			"replace": 
-            {
-				"origin": "0 -24 63.001007"	
+			{
+				"angles": "0 90 0",
+				"spawnflags": "17408",
+				"model": "maps\\ze_ffvii_cosmo_canyon_t\\entities\\Item_Fire_Button_20813.vmdl"
 			}
 		}
 	]

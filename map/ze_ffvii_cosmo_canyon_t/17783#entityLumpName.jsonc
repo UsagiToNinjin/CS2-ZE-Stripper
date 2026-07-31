@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.07.27
+// stripper by 兎RB 26.07.31
 // map ze_ffvii_cosmo_canyon_t
 // workshop id 3310260547
 {
@@ -164,7 +164,7 @@
 			"replace":
 			{
 				"origin": "0 26 33.877998",
-				"startdisabled": "0"
+				"startdisabled": "1"
 			}
 		},
 		// convert inputname Trigger(logic_relay) to Use(game_player_equip) 
