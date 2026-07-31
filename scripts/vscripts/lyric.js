@@ -17,6 +17,13 @@ Instance.OnScriptInput("Japanese", () => {
     });
 
     Instance.EntFireAtTarget({
+        target: "lyric_relay",
+        input: "Kill",
+        value: "",
+        delay: 0.05
+    });
+
+    Instance.EntFireAtTarget({
         target: "lyric_hud",
         input: "SetMessage",
         value: "Feariiteiru wa\n\u5FA1\u4F3D\u8A71\u0028\u30D5\u30A7\u30A2\u30EA\u30FC\u30C6\u30A4\u30EB\u0029\u306F",
@@ -206,6 +213,13 @@ Instance.OnScriptInput("English", () => {
         input: "CountPlayersInZone",
         value: "",
         delay: 0.0
+    });
+
+    Instance.EntFireAtTarget({
+        target: "lyric_relay",
+        input: "Kill",
+        value: "",
+        delay: 0.05
     });
 
     Instance.EntFireAtTarget({
