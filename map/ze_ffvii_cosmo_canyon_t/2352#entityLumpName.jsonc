@@ -1,0 +1,79 @@
+// stripper by 兎RB 26.07.26
+// map ze_ffvii_cosmo_canyon_t
+// workshop id 3310260547
+{
+	"modify": // convert RunScriptCode(lua script) to Keyvalue format
+    [
+        {
+		    "match":
+            {
+				"targetname": "[PR#]Item_Gravity_Trigger2",
+				"classname": "trigger_multiple"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnEndTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(1.00)",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(6.00)",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(1.00)",
+						"delay": 3.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnEndTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 0",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 1",
+						"delay": 3.0,
+						"timestofire": -1
+					}
+				]
+			}
+		}
+	]
+}

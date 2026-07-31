@@ -1,0 +1,187 @@
+// stripper by 兎RB 26.07.26
+// map ze_ffvii_cosmo_canyon_t
+// workshop id 3310260547
+{
+	"modify": // convert RunScriptCode(lua script), ModifySpeed(player_speedmod) to Keyvalue format
+    [
+        {
+		    "match":
+            {
+				"targetname": "[PR#]Item_Sleep_Trigger",
+				"classname": "trigger_push"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnEndTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(1.00)",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(2.00)",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(3.00)",
+						"delay": 0.3,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(4.00)",
+						"delay": 0.6,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(5.00)",
+						"delay": 0.8,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(6.00)",
+						"delay": 1.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "RunScriptCode",
+						"overrideparam": "thisEntity:SetFriction(1.00)",
+						"delay": 8.5,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "ModifySpeed",
+						"overrideparam": "0",
+						"delay": 1.0,
+						"timestofire": -1
+					},
+					// why isn't the default value 1 ?
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "ModifySpeed",
+						"overrideparam": "1.150000",
+						"delay": 8.5,
+						"timestofire": -1
+					},
+					// why isn't the default value 1 ?
+					{
+						"outputname": "OnEndTouch",
+						"targetname": "!activator",
+						"inputname": "ModifySpeed",
+						"overrideparam": "1.150000",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 0.8",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 0.6",
+						"delay": 0.3,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 0.4",
+						"delay": 0.6,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 0.2",
+						"delay": 0.8,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 0.1",
+						"delay": 1.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 0",
+						"delay": 1.2,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 1",
+						"delay": 8.5,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnEndTouch",
+						"targetname": "!activator",
+						"inputname": "KeyValue",
+						"overrideparam": "speed 1",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,914 @@
+// stripper by 兎RB 26.07.31
+// map ze_ffvii_cosmo_canyon_t
+// workshop id 3310260547
+{
+    "filter": // remove old zombie item pickup entities and convert them to the new entity system
+    [
+        {
+            "targetname": "/(Map_Stripper|Knife_(Strip|Stripper_Maker|Stripper_Template))/"
+        }
+    ],
+	"modify": 
+    [
+        {
+            "match":
+            {
+                "classname": "logic_auto"
+            },
+            "delete": // remove unnecessary output
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnNewGame",
+				        "targetname": "[PR#]cmd",
+                        "inputname": "Command",
+                        "overrideparam": "/sm_gravity/",
+                        "timestofire": 1
+                    }
+				]
+			},
+			"insert": // stripper update log
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnMapSpawn",
+				        "targetname": "cmd",
+                        "inputname": "Command",
+                        "overrideparam": "say fix stripper update 26.07.31",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+		// convert AddOutput to Keyvalue format
+        {
+		    "match":
+            {
+				"targetname": "[PR#]Relay_Rage",
+				"classname": "logic_relay"
+            },
+			"delete":
+			{
+				"io":
+				[
+                    {
+                        "outputname": "OnTrigger",
+				        "targetname": "[PR#]Hold_End_Trigger",
+                        "inputname": "AddOutput",
+                        "overrideparam": "OnTrigger>Explosion_Temp_Huge>AddOutput>origin 9062 6342 304>52>1",
+                        "delay": 2.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+				        "targetname": "[PR#]Hold_End_Trigger",
+                        "inputname": "AddOutput",
+                        "overrideparam": "OnTrigger>Explosion_Temp_Huge>AddOutput>origin 8148 4880 329>45>1",
+                        "delay": 2.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+				        "targetname": "[PR#]Hold6_Trigger",
+                        "inputname": "AddOutput",
+                        "overrideparam": "OnTrigger>Explosion_Temp>AddOutput>origin -1174 2550 270>13.5>1",
+                        "delay": 2.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+				        "targetname": "[PR#]Hold6_Trigger",
+                        "inputname": "AddOutput",
+                        "overrideparam": "OnTrigger>Explosion_Temp>AddOutput>origin -1218 312 305>13>1",
+                        "delay": 2.0,
+                        "timestofire": -1
+                    }
+                ]
+			},
+            "insert":
+			{
+				"io":
+				[
+                    {
+                        "outputname": "OnTrigger",
+				        "targetname": "Hold_End_Trigger",
+                        "inputname": "AddOutPut",
+                        "overrideparam": "OnTrigger>Explosion_Temp_Huge>KeyValue>origin 9062 6342 304>52>1",
+                        "delay": 2.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+				        "targetname": "Hold_End_Trigger",
+                        "inputname": "AddOutPut",
+                        "overrideparam": "OnTrigger>Explosion_Temp_Huge>KeyValue>origin 8148 4880 329>45>1",
+                        "delay": 2.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+				        "targetname": "Hold6_Trigger",
+                        "inputname": "AddOutPut",
+                        "overrideparam": "OnTrigger>Explosion_Temp>KeyValue>origin -1174 2550 270>13.5>1",
+                        "delay": 2.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+				        "targetname": "Hold6_Trigger",
+                        "inputname": "AddOutPut",
+                        "overrideparam": "OnTrigger>Explosion_Temp>KeyValue>origin -1218 312 305>13>1",
+                        "delay": 2.0,
+                        "timestofire": -1
+                    }
+                ]
+			}
+		},
+
+        {
+		    "match":
+            {
+				"targetname": "[PR#]Quest_Relay",
+				"classname": "logic_relay"
+            },
+			"delete":
+			{
+				"io":
+				[
+					{
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]Quest_Spawner",
+                        "inputname": "AddOutput",
+                        "overrideparam": "origin 3801 -3176 83",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]Quest_Spawner",
+                        "inputname": "AddOutput",
+                        "overrideparam": "angles 0 12 0",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]Quest_Spawner",
+                        "inputname": "AddOutput",
+                        "overrideparam": "angles 0 270 0",
+                        "delay": 2.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]Quest_Spawner",
+                        "inputname": "AddOutput",
+                        "overrideparam": "origin 2634 -1564 83",
+                        "delay": 2.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]Quest_Spawner",
+                        "inputname": "AddOutput",
+                        "overrideparam": "origin -2188 -3613 82",
+                        "delay": 3.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]Quest_Spawner",
+                        "inputname": "AddOutput",
+                        "overrideparam": "angles 0 90 0",
+                        "delay": 3.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]Quest_Spawner",
+                        "inputname": "AddOutput",
+                        "overrideparam": "origin -2259 -2748 1043",
+                        "delay": 4.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]Quest_Spawner",
+                        "inputname": "AddOutput",
+                        "overrideparam": "angles 0 90 0",
+                        "delay": 4.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]Quest_Spawner",
+                        "inputname": "AddOutput",
+                        "overrideparam": "origin -1891 -1571 1040",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]Quest_Spawner",
+                        "inputname": "AddOutput",
+                        "overrideparam": "angles 0 90 0",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]Quest_Spawner",
+                        "inputname": "AddOutput",
+                        "overrideparam": "origin -2042 -1026 939",
+                        "delay": 6.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]Quest_Spawner",
+                        "inputname": "AddOutput",
+                        "overrideparam": "angles 0 270 0",
+                        "delay": 6.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]Quest_Spawner",
+                        "inputname": "AddOutput",
+                        "overrideparam": "origin -3292 -1482 1365",
+                        "delay": 7.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]Quest_Spawner",
+                        "inputname": "AddOutput",
+                        "overrideparam": "angles 0 270 0",
+                        "delay": 7.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]Quest_Spawner",
+                        "inputname": "AddOutput",
+                        "overrideparam": "origin -2111 -2134 1683",
+                        "delay": 8.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]Quest_Spawner",
+                        "inputname": "AddOutput",
+                        "overrideparam": "angles 0 90 0",
+                        "delay": 8.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]Quest_Spawner",
+                        "inputname": "AddOutput",
+                        "overrideparam": "origin -7141 -62 1842",
+                        "delay": 9.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]Quest_Spawner",
+                        "inputname": "AddOutput",
+                        "overrideparam": "angles 0 54 0",
+                        "delay": 9.0,
+                        "timestofire": -1
+                    }
+                ]
+			},
+            "insert":
+			{
+				"io":
+				[
+					{
+                        "outputname": "OnTrigger",
+                        "targetname": "Quest_Spawner",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 3801 -3176 83",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "Quest_Spawner",
+                        "inputname": "KeyValue",
+                        "overrideparam": "angles 0 12 0",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "Quest_Spawner",
+                        "inputname": "KeyValue",
+                        "overrideparam": "angles 0 270 0",
+                        "delay": 2.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "Quest_Spawner",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 2634 -1564 334", // fix an incorrect position
+                        "delay": 2.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "Quest_Spawner",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -2188 -3613 82",
+                        "delay": 3.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "Quest_Spawner",
+                        "inputname": "KeyValue",
+                        "overrideparam": "angles 0 90 0",
+                        "delay": 3.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "Quest_Spawner",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -2259 -2748 1043",
+                        "delay": 4.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "Quest_Spawner",
+                        "inputname": "KeyValue",
+                        "overrideparam": "angles 0 90 0",
+                        "delay": 4.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "Quest_Spawner",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -1891 -1571 1040",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "Quest_Spawner",
+                        "inputname": "KeyValue",
+                        "overrideparam": "angles 0 90 0",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "Quest_Spawner",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -2042 -1026 939",
+                        "delay": 6.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "Quest_Spawner",
+                        "inputname": "KeyValue",
+                        "overrideparam": "angles 0 270 0",
+                        "delay": 6.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "Quest_Spawner",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -3292 -1482 1365",
+                        "delay": 7.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "Quest_Spawner",
+                        "inputname": "KeyValue",
+                        "overrideparam": "angles 0 270 0",
+                        "delay": 7.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "Quest_Spawner",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -2111 -2134 1683",
+                        "delay": 8.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "Quest_Spawner",
+                        "inputname": "KeyValue",
+                        "overrideparam": "angles 0 90 0",
+                        "delay": 8.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "Quest_Spawner",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -7141 -62 1842",
+                        "delay": 9.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "Quest_Spawner",
+                        "inputname": "KeyValue",
+                        "overrideparam": "angles 0 54 0",
+                        "delay": 9.0,
+                        "timestofire": -1
+                    }
+                ]
+			}
+        },
+        
+        {
+            "match":
+            {
+                "targetname": "[PR#]Shinra_ZM_Dmg_Control",
+				"classname": "trigger_multiple"
+            },
+			"delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+				        "targetname": "!activator",
+                        "inputname": "AddOutput",
+                        "overrideparam": "health 7500",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			},
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+				        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "health 7500",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Minion_Target_Select",
+				"classname": "trigger_multiple"
+            },
+			"delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+				        "targetname": "[PR#]Minion_End_Target*",
+                        "inputname": "AddOutput",
+                        "overrideparam": "angles 0 0 0",
+                        "delay": 0.05,
+                        "timestofire": -1
+                    }
+				]
+			},
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+				        "targetname": "Minion_End_Target*",
+                        "inputname": "KeyValue",
+                        "overrideparam": "angles 0 0 0",
+                        "delay": 0.05,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+		// convert RunScriptCode(lua script) to Keyvalue format
+		{
+            "match":
+            {
+                "targetname": "[PR#]Last_Genesis_Aspil_Hurt",
+				"classname": "trigger_hurt"
+            },
+			"delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+				        "targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(3.00)",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+				        "targetname": "!activator",
+                        "inputname": "RunScriptCode",
+                        "overrideparam": "thisEntity:SetFriction(1.00)",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    }
+				]
+			},
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+				        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 0.7",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+				        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1",
+                        "delay": 5.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+        // convert point_entity_finder to game_player_equip
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Strip_Knife",
+				"classname": "logic_relay"
+            },
+			"replace":
+			{
+				"classname": "game_player_equip"
+			},
+			"delete":
+			{
+				"passthroughcaller": "false",
+				"fastretrigger": "true",
+				"triggeronce": "false",
+				"startdisabled": "false",
+				"io":
+				[
+					{
+						"outputname": "OnTrigger"
+					}
+				]
+			},
+            "insert":
+			{
+				"spawnflags": "3"
+			}
+		},
+        // convert game_text to env_hudhint
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Quest_Game_Text",
+				"classname": "game_text"
+            },
+			"replace":
+			{
+                "classname": "env_hudhint"
+			},
+            "insert":
+            {
+                "message": ""
+            }
+		},
+        // convert AddOutput to SetMessage(env_hudhint)
+        {
+            "match":
+            {
+                "targetname": "[PR#]Quest_Case",
+				"classname": "logic_case"
+            },
+			"delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnCase01",
+                        "targetname": "[PR#]Quest_Game_Text",
+                        "inputname": "AddOutput",
+                        "overrideparam": "message 1/9 CHESTS FOUND",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+                        "targetname": "[PR#]Quest_Game_Text",
+                        "inputname": "AddOutput",
+                        "overrideparam": "message 2/9 CHESTS FOUND",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+                        "targetname": "[PR#]Quest_Game_Text",
+                        "inputname": "AddOutput",
+                        "overrideparam": "message 3/9 CHESTS FOUND",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+                        "targetname": "[PR#]Quest_Game_Text",
+                        "inputname": "AddOutput",
+                        "overrideparam": "message 4/9 CHESTS FOUND",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                
+                    {
+                        "outputname": "OnCase05",
+                        "targetname": "[PR#]Quest_Game_Text",
+                        "inputname": "AddOutput",
+                        "overrideparam": "message 5/9 CHESTS FOUND",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase06",
+                        "targetname": "[PR#]Quest_Game_Text",
+                        "inputname": "AddOutput",
+                        "overrideparam": "message 6/9 CHESTS FOUND",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase07",
+                        "targetname": "[PR#]Quest_Game_Text",
+                        "inputname": "AddOutput",
+                        "overrideparam": "message 7/9 CHESTS FOUND",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase08",
+                        "targetname": "[PR#]Quest_Game_Text",
+                        "inputname": "AddOutput",
+                        "overrideparam": "message 8/9 CHESTS FOUND",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase09",
+                        "targetname": "[PR#]Quest_Game_Text",
+                        "inputname": "AddOutput",
+                        "overrideparam": "message CHEST SIDEQUEST COMPLETED",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnCase01",
+                        "targetname": "Quest_Game_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": "1/9 CHESTS FOUND",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+                        "targetname": "Quest_Game_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": "2/9 CHESTS FOUND",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+                        "targetname": "Quest_Game_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": "3/9 CHESTS FOUND",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+                        "targetname": "Quest_Game_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": "4/9 CHESTS FOUND",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                
+                    {
+                        "outputname": "OnCase05",
+                        "targetname": "Quest_Game_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": "5/9 CHESTS FOUND",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase06",
+                        "targetname": "Quest_Game_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": "6/9 CHESTS FOUND",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase07",
+                        "targetname": "Quest_Game_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": "7/9 CHESTS FOUND",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase08",
+                        "targetname": "Quest_Game_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": "8/9 CHESTS FOUND",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase09",
+                        "targetname": "Quest_Game_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": "CHEST SIDEQUEST COMPLETED",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+        },
+        // add functionality to reset applied player properties
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Map_Start_Reset",
+				"classname": "trigger_multiple"
+            },
+			"insert":
+			{
+				"io":
+				[
+					{
+                        "outputname": "OnStartTouch",
+				        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "speed 1",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+				        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "gravity 1",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+				        "targetname": "!activator",
+                        "inputname": "Alpha",
+                        "overrideparam": "255",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+				        "targetname": "!activator",
+                        "inputname": "IgniteLifetime",
+                        "overrideparam": "0",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnStartTouch",
+				        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "targetname none",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+        // fix item origin
+        // 17783#entityLumpName
+		{
+		    "match":
+            {
+				"targetname": "[PR#]CactusZM_Spawner_Zombies",
+				"classname": "point_template"
+            },
+			"insert":
+			{
+				"template06": "CactusZM_Z_fix"
+			}
+		},
+        // add an env_hudhint entity for output
+        // 7714#entityLumpName
+		{
+		    "match":
+            {
+				"targetname": "[PR#]Chest_Temp",
+				"classname": "point_template"
+            },
+			"insert":
+			{
+				"template04": "Quest_Game_Trigger"
+			}
+		}
+	]
+}
