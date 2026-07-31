@@ -7,7 +7,7 @@
 //keep the text centered regardless of screen resolution
 import { Instance } from 'cs_script/point_script';
 
-Instance.OnScriptInput("Jpanese", () => {
+Instance.OnScriptInput("Japanese", () => {
 
     Instance.EntFireAtTarget({
         target: "lyric_relay",
