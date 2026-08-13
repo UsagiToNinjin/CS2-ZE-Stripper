@@ -8,7 +8,7 @@
         {
             "match":
             {
-                "targetname": "[PR#]weapon_winda"
+                "targetname": "[PR#]weapon_watera"
             },
             "delete":
             {
@@ -18,7 +18,7 @@
                         "outputname": "OnPlayerPickup",
 						"targetname": "[PR#]command",
                         "inputname": "Command",
-                        "overrideparam": "say ** 风神器拾取 CD:60s 持续：3s **",
+                        "overrideparam": "say ** 冰神器拾取 CD:120s 持续：8s **",
                         "delay": 0.0,
                         "timestofire": 1
                     }
