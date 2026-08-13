@@ -1,0 +1,90 @@
+// stripper by 兎RB 26.03.03
+// map ze_amdaporkeep
+// workshop id 3663857931
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Laser_Omega_F_Ending_Relay"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnUser3",
+						"targetname": "[PR#]Filter_Team_Human",
+                        "inputname": "AddOutput",
+                        "overrideparam": "OnFail>ServerCommand>Command>say ** 无心的兵器再次踏上寻“心”之旅 **>0>1",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+    ],
+    "add":
+    [
+        {
+			"targetname": "Laser_Omega_Ending_tl_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Filter_Team_Human",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnFail>ServerCommand>Command>say ** 無心の兵器は再び“心”を求める旅へ **>0>1",
+                    "delay": 0.0,
+                    "timestofire": 1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "!self",
+                    "inputname": "Kill",
+                    "delay": 0.05,
+                    "timestofire": 1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Filter_Team_Human",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnFail>ServerCommand>Command>say ** 무심한 병기는 다시 “마음”을 찾는 여정에 오른다 **>0>1",
+                    "delay": 0.0,
+                    "timestofire": 1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "!self",
+                    "inputname": "Kill",
+                    "delay": 0.05,
+                    "timestofire": 1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Filter_Team_Human",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnFail>ServerCommand>Command>say ** The heartless armament sets out once again on a journey to find a “heart” **>0>1",
+                    "delay": 0.0,
+                    "timestofire": 1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "!self",
+                    "inputname": "Kill",
+                    "delay": 0.05,
+                    "timestofire": 1
+                }
+            ]
+        }
+    ]           
+}

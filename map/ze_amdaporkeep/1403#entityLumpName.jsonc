@@ -1,0 +1,308 @@
+// stripper by 兎RB 26.05.01
+// map ze_amdaporkeep
+// workshop id 3663857931
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output, split duplicate targetname
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Extreme_Trigger",
+                "hammeruniqueid": "1194"
+            },
+            "replace":
+            {
+                "targetname": "Extreme_Trigger_1"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 防守直至大门打开 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Extreme_Trigger",
+                "hammeruniqueid": "1380"
+            },
+            "replace":
+            {
+                "targetname": "Extreme_Trigger_2"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 防守直至大门打开 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Extreme_Trigger",
+                "hammeruniqueid": "1872"
+            },
+            "replace":
+            {
+                "targetname": "Extreme_Trigger_3"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 防守直至大门打开 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say 侦测到内部水晶能量剧烈波动！只有破坏它我们才能暂时安全！",
+                        "delay": 30.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say 子弹好像打不穿那道屏障！绕到她后面去！",
+                        "delay": 38.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Extreme_Trigger",
+                "hammeruniqueid": "1958"
+            },
+            "replace":
+            {
+                "targetname": "Extreme_Trigger_4"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 防守直至大门打开 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Extreme_Trigger",
+                "hammeruniqueid": "1960"
+            },
+            "replace":
+            {
+                "targetname": "Extreme_Trigger_5"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 防守直至大门打开 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Extreme_Trigger",
+                "hammeruniqueid": "1974"
+            },
+            "replace":
+            {
+                "targetname": "Extreme_Trigger_6"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 防守直至大门打开 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Extreme_Trigger",
+                "hammeruniqueid": "3824"
+            },
+            "replace":
+            {
+                "targetname": "Extreme_Trigger_7"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 防守直至大门打开 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Level_Detect_Extreme"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 阴云正在重新聚集 **",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Level_Ending_Extreme"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 极限关卡完成! **",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+        // add lyric output
+        {
+            "match":
+            {
+                "targetname": "[PR#]Music_Extreme_2"
+            },    
+            "insert":
+            {
+                "io":
+                [
+					{
+						"outputname": "SoundEventGuid",
+						"targetname": "lyric_melt",
+						"inputname": "CountPlayersInZone",
+						"delay": 0.0,
+						"timestofire": 1
+					},
+
+                    {
+				    	"outputname": "SoundEventGuid",
+				    	"targetname": "ServerCommand",
+				    	"inputname": "Command",
+				    	"overrideparam": "say ♪ MUSIC [ SennaRin : melt(short ver) ]",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Music_Extreme_5"
+            },    
+            "insert":
+            {
+                "io":
+                [
+					{
+						"outputname": "SoundEventGuid",
+						"targetname": "lyric_scapegoat",
+						"inputname": "CountPlayersInZone",
+						"delay": 0.0,
+						"timestofire": 1
+					},
+
+                    {
+				    	"outputname": "SoundEventGuid",
+				    	"targetname": "ServerCommand",
+				    	"inputname": "Command",
+				    	"overrideparam": "say ♪ MUSIC [ 澤野弘之 : scaPEGoat(TV Size) ]",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    }
+				]
+			}
+		}
+	]
+}

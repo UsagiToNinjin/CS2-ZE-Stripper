@@ -1,0 +1,50 @@
+// stripper by 兎RB 26.03.02
+// map ze_amdaporkeep
+// workshop id 3663857931
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"add":
+    [
+        {
+			"targetname": "Hollow_Night_tl_relay&0000",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Hollow_Night_Text&0000",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>> 허공의 암야 <<<",
+                    "delay": 0.0,
+                    "timestofire": 1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "!self",
+                    "inputname": "Kill",
+                    "delay": 0.05,
+                    "timestofire": 1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Hollow_Night_Text&0000",
+                    "inputname": "SetMessage",
+                    "overrideparam": ">>> Void Dark Night <<<",
+                    "delay": 0.0,
+                    "timestofire": 1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "!self",
+                    "inputname": "Kill",
+                    "delay": 0.05,
+                    "timestofire": 1
+                }
+            ]
+        }        
+    ]
+}

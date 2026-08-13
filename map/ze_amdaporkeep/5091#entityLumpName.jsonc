@@ -1,0 +1,396 @@
+// stripper by 兎RB 26.08.13
+// map ze_amdaporkeep
+// workshop id 3663857931
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output, split duplicate targetname
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Omega_Trigger",
+                "hammeruniqueid": "5126"
+            },
+            "replace":
+            {
+                "targetname": "Omega_Trigger_1"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 防守直至大门打开 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Omega_Trigger",
+                "hammeruniqueid": "5141"
+            },
+            "replace":
+            {
+                "targetname": "Omega_Trigger_2"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 防守直至发生什么 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Omega_Trigger",
+                "hammeruniqueid": "5221"
+            },
+            "replace":
+            {
+                "targetname": "Omega_Trigger_3"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 防守直至大门打开 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnUser4",
+						"targetname": "[PR#]Omega_Trigger",
+                        "inputname": "Enable",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			},
+            "insert": // unify split targetname output
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnUser4",
+						"targetname": "Omega_Trigger*",
+                        "inputname": "Enable",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Omega_Trigger",
+                "hammeruniqueid": "5323"
+            },
+            "replace":
+            {
+                "targetname": "Omega_Trigger_4"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 防守直至大门打开 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Omega_Trigger",
+                "hammeruniqueid": "5333"
+            },
+            "replace":
+            {
+                "targetname": "Omega_Trigger_5"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say < 防守直至大门打开 >",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say 侦测到十二级时空能量波形！看来要想撤离得先击败它！",
+                        "delay": 30.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Level_Ending_Omega"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 恭喜你！你就是光之战士！ **",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+        // add lyric output
+        {
+            "match":
+            {
+                "targetname": "[PR#]Music_Omega_1_2"
+            },    
+            "insert":
+            {
+                "io":
+                [
+					{
+						"outputname": "SoundEventGuid",
+						"targetname": "lyric_keshin",
+						"inputname": "CountPlayersInZone",
+						"delay": 0.0,
+						"timestofire": 1
+					},
+
+                    {
+				    	"outputname": "SoundEventGuid",
+				    	"targetname": "ServerCommand",
+				    	"inputname": "Command",
+				    	"overrideparam": "say ♪ MUSIC [ Do As Infinity : 化身の獣 ]",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Music_Omega_1"
+            },    
+            "insert":
+            {
+                "io":
+                [
+					{
+						"outputname": "SoundEventGuid",
+						"targetname": "lyric_black_bullet",
+						"inputname": "CountPlayersInZone",
+						"delay": 0.0,
+						"timestofire": 1
+					},
+
+                    {
+				    	"outputname": "SoundEventGuid",
+				    	"targetname": "ServerCommand",
+				    	"inputname": "Command",
+				    	"overrideparam": "say ♪ MUSIC [ fripSide : Black Bullet ]",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Music_Omega_2"
+            },    
+            "insert":
+            {
+                "io":
+                [
+					{
+						"outputname": "SoundEventGuid",
+						"targetname": "lyric_alive",
+						"inputname": "CountPlayersInZone",
+						"delay": 0.0,
+						"timestofire": 1
+					},
+
+                    {
+				    	"outputname": "SoundEventGuid",
+				    	"targetname": "ServerCommand",
+				    	"inputname": "Command",
+				    	"overrideparam": "say ♪ MUSIC [ 澤野弘之 & Do As Infinity : Alive ]",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+                    {
+				    	"outputname": "SoundEventGuid",
+				    	"targetname": "lyric_black_bullet_hud",
+				    	"inputname": "Kill",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    },
+
+                    {
+				    	"outputname": "SoundEventGuid",
+				    	"targetname": "lyric_keshin_hud",
+				    	"inputname": "Kill",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Music_Omega_3"
+            },    
+            "insert":
+            {
+                "io":
+                [
+                    {
+				    	"outputname": "SoundEventGuid",
+				    	"targetname": "lyric_alive_hud",
+				    	"inputname": "Kill",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Omega_Sound_Case"
+            },    
+            "insert":
+            {
+                "io":
+                [
+					{
+						"outputname": "OnCase01",
+						"targetname": "Music_Omega_4",
+						"inputname": "AddOutPut",
+                        "overrideparam": "SoundEventGuid>lyric_reawaker>CountPlayersInZone>>0.0>1",
+						"delay": 0.1,
+						"timestofire": 1
+					},
+
+                    {
+						"outputname": "OnCase01",
+						"targetname": "Music_Omega_4",
+						"inputname": "AddOutPut",
+                        "overrideparam": "SoundEventGuid>ServerCommand>Command>say ♪ MUSIC [ LiSA : ReawakeR(feat. Felix of Stray Kids) ]>0.0>1",
+						"delay": 0.1,
+						"timestofire": 1
+					},
+
+                    {
+						"outputname": "OnCase02",
+						"targetname": "Music_Omega_4",
+						"inputname": "AddOutPut",
+                        "overrideparam": "SoundEventGuid>lyric_reawaker>CountPlayersInZone>>0.0>1",
+						"delay": 0.1,
+						"timestofire": 1
+					},
+
+                    {
+						"outputname": "OnCase02",
+						"targetname": "Music_Omega_4",
+						"inputname": "AddOutPut",
+                        "overrideparam": "SoundEventGuid>ServerCommand>Command>say ♪ MUSIC [ LiSA : ReawakeR(feat. Felix of Stray Kids) ]>0.0>1",
+						"delay": 0.1,
+						"timestofire": 1
+					},
+
+                    {
+						"outputname": "OnCase03",
+						"targetname": "Music_Omega_4",
+						"inputname": "AddOutPut",
+                        "overrideparam": "SoundEventGuid>lyric_provant>CountPlayersInZone>>0.0>1",
+						"delay": 0.1,
+						"timestofire": 1
+					},
+
+                    {
+						"outputname": "OnCase03",
+						"targetname": "Music_Omega_4",
+						"inputname": "AddOutPut",
+                        "overrideparam": "SoundEventGuid>ServerCommand>Command>say ♪ MUSIC [ 澤野弘之 : PROVANT(feat. Jean-Ken Johnny & TAKUMA) ]>0.0>1",
+						"delay": 0.1,
+						"timestofire": 1
+					},
+
+                    {
+						"outputname": "OnCase04",
+						"targetname": "Music_Omega_4",
+						"inputname": "AddOutPut",
+                        "overrideparam": "SoundEventGuid>lyric_provant>CountPlayersInZone>>0.0>1",
+						"delay": 0.1,
+						"timestofire": 1
+					},
+
+                    {
+						"outputname": "OnCase04",
+						"targetname": "Music_Omega_4",
+						"inputname": "AddOutPut",
+                        "overrideparam": "SoundEventGuid>ServerCommand>Command>say ♪ MUSIC [ 澤野弘之 : PROVANT(feat. Jean-Ken Johnny & TAKUMA) ]>0.0>1",
+						"delay": 0.1,
+						"timestofire": 1
+					}
+				]
+			}
+		}
+    ]
+}

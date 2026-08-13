@@ -1,0 +1,41 @@
+// stripper by 兎RB 26.06.08
+// map ze_amdaporkeep
+// workshop id 3663857931
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // unify split targetname output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Omega_HP_Blocks"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnHitMin",
+						"targetname": "[PR#]Omega_Trigger",
+                        "inputname": "Enable",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnHitMin",
+						"targetname": "Omega_Trigger*",
+                        "inputname": "Enable",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+    ]
+}

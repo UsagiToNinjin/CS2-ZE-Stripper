@@ -1,0 +1,29 @@
+// stripper by 兎RB 26.02.28
+// map ze_amdaporkeep
+// workshop id 3663857931
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Crystal_HP"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnHitMin",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say 你们成功了！那个水晶现在只是一堆烂石头了",
+                        "delay": 4.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+    ]
+}

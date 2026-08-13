@@ -1,0 +1,98 @@
+// stripper by 兎RB 26.06.08
+// map ze_amdaporkeep
+// workshop id 3663857931
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Diabolos_Hollow_Attack_Case"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnCase01",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say >* 虚空梦魇 *<",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say >* 虚空恐惧 *<",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say >* 虚空之惊 *<",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say >* 阴影直刺 *<",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase05",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say >* 虚空暗夜 *<",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+        // unify split targetname output
+        {
+            "match":
+            {
+                "targetname": "[PR#]Diabolos_Hollow_HP_Blocks"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnHitMin",
+						"targetname": "[PR#]Savage_Trigger",
+                        "inputname": "Enable",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnHitMin",
+						"targetname": "Savage_Trigger*",
+                        "inputname": "Enable",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+    ]
+}

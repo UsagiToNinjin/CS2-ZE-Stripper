@@ -1,0 +1,102 @@
+// stripper by 兎RB 26.08.13
+// map ze_amdaporkeep
+// workshop id 3663857931
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output, convert env_hudhint to point_worldtext
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Black_Mage_Elite"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 一位黑魔法师加入了队伍 **",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "Item_Black_Mage_Text",
+                        "inputname": "Enable",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Black_Mage_Text",
+                "classname": "env_hudhint"
+            },
+            "replace":
+            {
+                "classname": "point_worldtext",
+                "origin": "40 0 0",
+                "angles": "0 -90 90",
+			    "scales": "1 1 1",
+                "parentname": "Item_Black_Mage_Elite",
+			    "depth_render_offset": "0.125",
+			    "reorient_mode": "0",
+                "justify_vertical": "1",
+			    "justify_horizontal": "1",
+                "font_name": "Arial Black",
+                "font_size": "15",
+                "world_units_per_pixel": "0.25",
+                "color": "245 33 63",
+                "fullbright": "1",
+                "enabled": "0",
+                "message": "",
+			    "fademaxdist": "0",
+		        "fademindist": "-1",
+                "rendercolor": "255 255 255",
+                "renderamt": "255",
+                "rendermode": "kRenderNormal",
+                "renderfx": "kRenderFxNone"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+                        "inputname": "ShowHudHint"
+                    },
+
+					{
+                        "outputname": "OnUser1",
+						"targetname": "!self",
+                        "inputname": "SetMessage",
+                        "overrideparam": "被暴雷击中的敌方每隔5s会受到伤害，并有概率被减速，持续7次",
+                        "delay": 3.5,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+						"targetname": "!self",
+                        "inputname": "SetMessage",
+                        "overrideparam": "对头顶使用释放黑魔纹，玩家处于黑魔纹中可加速爆炎/暴雷冷却cd",
+                        "delay": 7.5,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+    ]
+}

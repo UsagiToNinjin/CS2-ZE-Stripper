@@ -1,0 +1,37 @@
+// stripper by 兎RB 26.05.02
+// map ze_amdaporkeep
+// workshop id 3663857931
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // add lyric output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Music_ZM"
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+						"outputname": "SoundEventGuid",
+						"targetname": "lyric_soragoto",
+						"inputname": "CountPlayersInZone",
+						"delay": 0.0,
+						"timestofire": 1
+					},
+
+                    {
+				    	"outputname": "SoundEventGuid",
+				    	"targetname": "ServerCommand",
+				    	"inputname": "Command",
+				    	"overrideparam": "say ♪ MUSIC [ 明透 : ソラゴト ]",
+				    	"delay": 0.0,
+				    	"timestofire": 1
+				    }
+				]
+			}
+		}
+    ]
+}
