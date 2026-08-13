@@ -505,7 +505,7 @@
 					"outputname": "OnCase01",
 					"targetname": "Filter_Exdeath_Egg_Enable",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>ServerCommand>Command>say さて, 帰ってまた我がダンジョンを見張るとするか>6.0>1",
+					"overrideparam": "OnPass>ServerCommand>Command>say もしかすると, かつて私は存在していたのかもしれない>6.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -928,7 +928,7 @@
 					"outputname": "OnCase02",
 					"targetname": "Filter_Exdeath_Egg_Enable",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>ServerCommand>Command>say 됐다, 돌아가서 다시 내 구역을 지킬 때다>6.0>1",
+					"overrideparam": "OnPass>ServerCommand>Command>say 어쩌면 나도 한때는 존재했던 걸지도 모르겠군>6.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1351,7 +1351,7 @@
 					"outputname": "OnCase03",
 					"targetname": "Filter_Exdeath_Egg_Enable",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>ServerCommand>Command>say Hmph, Time to head back and resume guarding my stage>6.0>1",
+					"overrideparam": "OnPass>ServerCommand>Command>say Maybe I once existed>6.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -11180,7 +11180,7 @@
                         "outputname": "OnPass",
 						"targetname": "[PR#]ServerCommand",
                         "inputname": "Command",
-                        "overrideparam": "say 入侵者, 与我一战！",
+                        "overrideparam": "say 入侵者，与我一战！",
                         "delay": 0.0,
                         "timestofire": 1
                     },
@@ -11189,7 +11189,7 @@
                         "outputname": "OnPass",
 						"targetname": "[PR#]ServerCommand",
                         "inputname": "Command",
-                        "overrideparam": "say 不对, 这里不是我的战斗领域, 可为什么我在这里",
+                        "overrideparam": "say 不对，这里不是我的副本，可为什么我在这里",
                         "delay": 3.0,
                         "timestofire": 1
                     },
@@ -11198,7 +11198,7 @@
                         "outputname": "OnPass",
 						"targetname": "[PR#]ServerCommand",
                         "inputname": "Command",
-                        "overrideparam": "say 罢了, 我该回去继续坐镇我的关卡了",
+                        "overrideparam": "say 也许我是曾经存在过吧",
                         "delay": 6.0,
                         "timestofire": 1
                     }
@@ -11219,7 +11219,7 @@
                         "outputname": "OnEntitySpawned",
 						"targetname": "[PR#]ServerCommand",
                         "inputname": "Command",
-                        "overrideparam": "say 这是一个废案喵, 有缘再见吧",
+                        "overrideparam": "say 这是一个废案喵，有缘再见吧",
                         "delay": 0.0,
                         "timestofire": -1
                     }
