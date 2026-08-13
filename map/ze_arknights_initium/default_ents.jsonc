@@ -3,7 +3,7 @@
 // workshop id 3330894823
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
 // serial number 日本語:"1" 한국어:"2" English:"3"
-// + fix bug L40~73, L2616~2753
+// + fix bug L40~76, L2616~2753
 {
     "modify":
     [
@@ -46,8 +46,11 @@
             },
             "replace":
             {
-				"targetname": "warmup_trigger",
 				"startdisabled": "1"
+            },
+			"insert":
+            {
+				"targetname": "warmup_trigger"
             }
         },
 
