@@ -1,0 +1,99 @@
+{
+	"modify": // rework output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_press1_core1_temprelay&0000",
+                "classname": "logic_relay"
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnSpawn",
+						"targetname": "radiation_press1_hurt*",
+                        "inputname": "Enable",
+                        "delay": 8.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_press1_core1_move1&0000",
+                "classname": "func_movelinear"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnFullyClosed",
+						"targetname": "[PR#]radiation_press1_prop1*",
+                        "inputname": "Kill",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnFullyClosed",
+						"targetname": "[PR#]radiation_press1_prop2*",
+                        "inputname": "Kill",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnFullyClosed",
+						"targetname": "[PR#]radiation_press1_prop3*",
+                        "inputname": "Kill",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnFullyClosed",
+						"targetname": "[PR#]radiation_press1_prop4*",
+                        "inputname": "Kill",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnFullyClosed",
+						"targetname": "[PR#]radiation_press1_prop5*",
+                        "inputname": "Kill",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnFullyClosed",
+						"targetname": "!self",
+                        "inputname": "Kill",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+		    		{
+                        "outputname": "OnFullyClosed",
+		    			"targetname": "!self",
+                        "inputname": "KillHierarchy",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+		    	]
+		    }
+		}
+	]
+}
