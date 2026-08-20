@@ -41,7 +41,20 @@ Both the original lyrics and their romanized version are displayed. This feature
 
 This feature is only available for Stripper configurations whose commit messages contain keywords such as `Lyrics`.
 
-It also includes a toggle (on/off) feature, allowing you to turn the lyrics off
+It also includes a toggle (on/off) feature, allowing you to turn the lyrics on or off.
+Modify the `overrideparam` value of `lyric_toggle` at the top of the `default_ents.jsonc` file.
+
+```jsonc
+{
+    "outputname": "OnMapSpawn",
+    "targetname": "language_counter",
+    "inputname": "SetValueTest",
+    "overrideparam": "1", // Enable:1, Disable:0
+    "delay": 0.0,
+    "timestofire": -1
+}
+
+**_NOTE:_** If this value is not changed, the default Enable setting will be applied.
 
 ## Lua Script
 
