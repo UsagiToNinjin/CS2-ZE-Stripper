@@ -1,4 +1,4 @@
-// stripper by 兎RB,Frame 26.06.11
+// stripper by 兎RB,Frame 26.08.20
 // map ze_ffxiv_great_gubal_library
 // workshop id 3373306757
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -23,12 +23,21 @@
 						"delay": 0.0,
 						"timestofire": -1
 					},
+
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "lyric_toggle",
+                        "inputname": "SetValueTest",
+                        "overrideparam": "1", // Enable:1, Disable:0
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
 					// stripper update log
 					{
 						"outputname": "OnMapSpawn",
 						"targetname": "cmd",
 						"inputname": "Command",
-						"overrideparam": "say language translation stripper 26.06.11 by 兎RB,Frame",
+						"overrideparam": "say language translation stripper 26.08.20 by 兎RB,Frame",
 						"delay": 5.0,
 						"timestofire": -1
 					}
@@ -69,7 +78,7 @@
 					"outputname": "OnCase01",
 					"targetname": "exdeath_void_case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase01>cmd>Command>say ＊＊ 無の力 暴雷 ＊＊>0.0>-1",
+					"overrideparam": "OnCase01>cmd>Command>say ** 無の力 暴雷 **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -78,7 +87,7 @@
 					"outputname": "OnCase01",
 					"targetname": "exdeath_void_case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase02>cmd>Command>say ＊＊ 無の力 爆炎 ＊＊>0.0>-1",
+					"overrideparam": "OnCase02>cmd>Command>say ** 無の力 爆炎 **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -87,7 +96,7 @@
 					"outputname": "OnCase01",
 					"targetname": "exdeath_void_case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase03>cmd>Command>say ＊＊ 無の力 氷封 ＊＊>0.0>-1",
+					"overrideparam": "OnCase03>cmd>Command>say ** 無の力 氷封 **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -96,7 +105,7 @@
 					"outputname": "OnCase01",
 					"targetname": "Temp_ZM_Viod",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnEntitySpawned>cmd>Command>say ＊＊ 無の力が解放されました ＊＊>0.0>1",
+					"overrideparam": "OnEntitySpawned>cmd>Command>say ** 無の力が解放されました **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -105,7 +114,7 @@
 					"outputname": "OnCase01",
 					"targetname": "Viod_End_Trigger_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 魔法陣が消えるまで待機 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 魔法陣が消えるまで待機 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -114,7 +123,7 @@
 					"outputname": "OnCase01",
 					"targetname": "Viod_End_Trigger_2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 魔法陣が消えるまで待機 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 魔法陣が消えるまで待機 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -123,7 +132,7 @@
 					"outputname": "OnCase01",
 					"targetname": "Viod_End_Trigger_3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊＊ 無の力がエクスデスの体内に戻った ＊＊>40.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ** 無の力がエクスデスの体内に戻った **>40.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -132,7 +141,7 @@
 					"outputname": "OnCase01",
 					"targetname": "Extreme_T_win_Trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＊＊ 残りのゾンビを即死 ＊＊>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ** 残りのゾンビを即死 **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -141,7 +150,7 @@
 					"outputname": "OnCase01",
 					"targetname": "Normal_T_win_Trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＊＊ 残りのゾンビを即死 ＊＊>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ** 残りのゾンビを即死 **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -150,7 +159,7 @@
 					"outputname": "OnCase01",
 					"targetname": "Hard_T_win_Trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＊＊ 残りのゾンビを即死 ＊＊>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ** 残りのゾンビを即死 **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -321,7 +330,7 @@
 				    "outputname": "OnCase01",
 					"targetname": "Temp_Flare1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnEntitySpawned>Flare1_hud*>SetMessage>貴方は核爆に指名されました，人混みや他の核爆から離れて下さい>0.0>-1",
+					"overrideparam": "OnEntitySpawned>Flare1_hud*>SetMessage>貴方は核爆に指名されました, 人混みや他の核爆から離れて下さい>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -330,7 +339,7 @@
 					"outputname": "OnCase01",
 					"targetname": "Temp_Flare2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnEntitySpawned>Flare2_hud*>SetMessage>貴方は核爆に指名されました，人混みや他の核爆から離れて下さい>0.0>-1",
+					"overrideparam": "OnEntitySpawned>Flare2_hud*>SetMessage>貴方は核爆に指名されました, 人混みや他の核爆から離れて下さい>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -339,7 +348,7 @@
 					"outputname": "OnCase01",
 					"targetname": "Temp_Flare3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnEntitySpawned>Flare3_hud*>SetMessage>貴方は核爆に指名されました，人混みや他の核爆から離れて下さい>0.0>-1",
+					"overrideparam": "OnEntitySpawned>Flare3_hud*>SetMessage>貴方は核爆に指名されました, 人混みや他の核爆から離れて下さい>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -384,7 +393,7 @@
 					"outputname": "OnCase02",
 					"targetname": "exdeath_void_case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase01>cmd>Command>say ＊＊ 무의 힘 폭뢰 ＊＊>0.0>-1",
+					"overrideparam": "OnCase01>cmd>Command>say ** 무의 힘 폭뢰 **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -393,7 +402,7 @@
 					"outputname": "OnCase02",
 					"targetname": "exdeath_void_case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase02>cmd>Command>say ＊＊ 무의 힘 폭염 ＊＊>0.0>-1",
+					"overrideparam": "OnCase02>cmd>Command>say ** 무의 힘 폭염 **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -402,7 +411,7 @@
 					"outputname": "OnCase02",
 					"targetname": "exdeath_void_case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase03>cmd>Command>say ＊＊ 무의 힘 빙봉 ＊＊>0.0>-1",
+					"overrideparam": "OnCase03>cmd>Command>say ** 무의 힘 빙봉 **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -411,7 +420,7 @@
 					"outputname": "OnCase02",
 					"targetname": "Temp_ZM_Viod",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnEntitySpawned>cmd>Command>say ＊＊ 무의 힘이 해방되었습니다 ＊＊>0.0>1",
+					"overrideparam": "OnEntitySpawned>cmd>Command>say ** 무의 힘이 해방되었습니다 **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -420,7 +429,7 @@
 					"outputname": "OnCase02",
 					"targetname": "Viod_End_Trigger_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 마법진이 사라질 때까지 대기 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 마법진이 사라질 때까지 대기 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -429,7 +438,7 @@
 					"outputname": "OnCase02",
 					"targetname": "Viod_End_Trigger_2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 마법진이 사라질 때까지 대기 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 마법진이 사라질 때까지 대기 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -438,7 +447,7 @@
 					"outputname": "OnCase02",
 					"targetname": "Viod_End_Trigger_3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊＊ 무의 힘이 엑스데스 체내에 돌아왔다 ＊＊>40.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ** 무의 힘이 엑스데스 체내에 돌아왔다 **>40.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -447,7 +456,7 @@
 					"outputname": "OnCase02",
 					"targetname": "Extreme_T_win_Trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＊＊ 남은 좀비 즉사 ＊＊>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ** 남은 좀비 즉사 **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -456,7 +465,7 @@
 					"outputname": "OnCase02",
 					"targetname": "Normal_T_win_Trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＊＊ 남은 좀비 즉사 ＊＊>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ** 남은 좀비 즉사 **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -465,7 +474,7 @@
 					"outputname": "OnCase02",
 					"targetname": "Hard_T_win_Trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＊＊ 남은 좀비 즉사 ＊＊>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ** 남은 좀비 즉사 **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -636,7 +645,7 @@
 					"outputname": "OnCase02",
 					"targetname": "Temp_Flare1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnEntitySpawned>Flare1_hud*>SetMessage>당신은 핵폭발로 지명되었습니다，사람이 붐비는 곳이나 다른 핵폭발로부터 떨어지세요>0.0>-1",
+					"overrideparam": "OnEntitySpawned>Flare1_hud*>SetMessage>당신은 핵폭발로 지명되었습니다, 사람이 붐비는 곳이나 다른 핵폭발로부터 떨어지세요>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -645,7 +654,7 @@
 					"outputname": "OnCase02",
 					"targetname": "Temp_Flare2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnEntitySpawned>Flare2_hud*>SetMessage>당신은 핵폭발로 지명되었습니다，사람이 붐비는 곳이나 다른 핵폭발로부터 떨어지세요>0.0>-1",
+					"overrideparam": "OnEntitySpawned>Flare2_hud*>SetMessage>당신은 핵폭발로 지명되었습니다, 사람이 붐비는 곳이나 다른 핵폭발로부터 떨어지세요>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -654,7 +663,7 @@
 					"outputname": "OnCase02",
 					"targetname": "Temp_Flare3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnEntitySpawned>Flare3_hud*>SetMessage>당신은 핵폭발로 지명되었습니다，사람이 붐비는 곳이나 다른 핵폭발로부터 떨어지세요>0.0>-1",
+					"overrideparam": "OnEntitySpawned>Flare3_hud*>SetMessage>당신은 핵폭발로 지명되었습니다, 사람이 붐비는 곳이나 다른 핵폭발로부터 떨어지세요>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -699,7 +708,7 @@
 					"outputname": "OnCase03",
 					"targetname": "exdeath_void_case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase01>cmd>Command>say ＊＊ Power of Nothingness Thunderstorm ＊＊>0.0>-1",
+					"overrideparam": "OnCase01>cmd>Command>say ** Power of Nothingness Thunderstorm **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -708,7 +717,7 @@
 					"outputname": "OnCase03",
 					"targetname": "exdeath_void_case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase02>cmd>Command>say ＊＊ Power of Nothingness Explosive flame ＊＊>0.0>-1",
+					"overrideparam": "OnCase02>cmd>Command>say ** Power of Nothingness Explosive flame **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -717,7 +726,7 @@
 					"outputname": "OnCase03",
 					"targetname": "exdeath_void_case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase03>cmd>Command>say ＊＊ Power of Nothingness Frozen ＊＊>0.0>-1",
+					"overrideparam": "OnCase03>cmd>Command>say ** Power of Nothingness Frozen **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -726,7 +735,7 @@
 					"outputname": "OnCase03",
 					"targetname": "Temp_ZM_Viod",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnEntitySpawned>cmd>Command>say ＊＊ Power of nothingness has been unleashed ＊＊>0.0>1",
+					"overrideparam": "OnEntitySpawned>cmd>Command>say ** Power of nothingness has been unleashed **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -735,7 +744,7 @@
 					"outputname": "OnCase03",
 					"targetname": "Viod_End_Trigger_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Wait until the magic array vanishes ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Wait until the magic array vanishes *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -744,7 +753,7 @@
 					"outputname": "OnCase03",
 					"targetname": "Viod_End_Trigger_2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Wait until the magic array vanishes ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Wait until the magic array vanishes *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -753,7 +762,7 @@
 					"outputname": "OnCase03",
 					"targetname": "Viod_End_Trigger_3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊＊ Power of Nothingness returned to Exdeath’s body ＊＊>40.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ** Power of Nothingness returned to Exdeath’s body **>40.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -762,7 +771,7 @@
 					"outputname": "OnCase03",
 					"targetname": "Extreme_T_win_Trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＊＊ Kill the remaining zombies ＊＊>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ** Kill the remaining zombies **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -771,7 +780,7 @@
 					"outputname": "OnCase03",
 					"targetname": "Normal_T_win_Trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＊＊ Kill the remaining zombies ＊＊>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ** Kill the remaining zombies **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -780,7 +789,7 @@
 					"outputname": "OnCase03",
 					"targetname": "Hard_T_win_Trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＊＊ Kill the remaining zombies ＊＊>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ** Kill the remaining zombies **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -951,7 +960,7 @@
 					"outputname": "OnCase03",
 					"targetname": "Temp_Flare1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnEntitySpawned>Flare1_hud*>SetMessage>You have been targeted by nuke，Stay away from crowds and other nuke>0.0>-1",
+					"overrideparam": "OnEntitySpawned>Flare1_hud*>SetMessage>You have been targeted by nuke, Stay away from crowds and other nuke>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -960,7 +969,7 @@
 					"outputname": "OnCase03",
 					"targetname": "Temp_Flare2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnEntitySpawned>Flare2_hud*>SetMessage>You have been targeted by nuke，Stay away from crowds and other nuke>0.0>-1",
+					"overrideparam": "OnEntitySpawned>Flare2_hud*>SetMessage>You have been targeted by nuke, Stay away from crowds and other nuke>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -969,7 +978,7 @@
 					"outputname": "OnCase03",
 					"targetname": "Temp_Flare3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnEntitySpawned>Flare3_hud*>SetMessage>You have been targeted by nuke，Stay away from crowds and other nuke>0.0>-1",
+					"overrideparam": "OnEntitySpawned>Flare3_hud*>SetMessage>You have been targeted by nuke, Stay away from crowds and other nuke>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1022,7 +1031,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Normal_Trigger_1*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで30秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで30秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1031,7 +1040,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Normal_Trigger_2*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで30秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで30秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1040,7 +1049,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Normal_Trigger_3*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで25秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで25秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1049,7 +1058,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Normal_Trigger_4*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで25秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで25秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1058,7 +1067,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Normal_Trigger_1*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 30초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 30초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1067,7 +1076,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Normal_Trigger_2*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 30초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 30초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1076,7 +1085,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Normal_Trigger_3*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 25초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 25초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1085,7 +1094,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Normal_Trigger_4*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 25초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 25초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1094,7 +1103,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Normal_Trigger_1*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 30 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 30 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1103,7 +1112,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Normal_Trigger_2*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 30 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 30 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1112,7 +1121,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Normal_Trigger_3*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 25 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 25 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1121,7 +1130,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Normal_Trigger_4*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 25 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 25 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -1138,7 +1147,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Hard_Trigger_1*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで20秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで20秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1147,7 +1156,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Hard_Trigger_2*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで32秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで32秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1156,7 +1165,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Hard_Trigger_3*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで22秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで22秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1165,7 +1174,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Hard_Trigger_4*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで25秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで25秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1174,7 +1183,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Hard_Trigger_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで25秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで25秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1183,7 +1192,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Hard_Trigger_6*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで25秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで25秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1192,7 +1201,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Hard_Trigger_7*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで20秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで20秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1201,7 +1210,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Hard_Trigger_1*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 20초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 20초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1210,7 +1219,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Hard_Trigger_2*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 32초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 32초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1219,7 +1228,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Hard_Trigger_3*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 22초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 22초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1228,7 +1237,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Hard_Trigger_4*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 25초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 25초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1237,7 +1246,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Hard_Trigger_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 25초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 25초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1246,7 +1255,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Hard_Trigger_6*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 25초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 25초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1255,7 +1264,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Hard_Trigger_7*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 20초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 20초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1264,7 +1273,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Hard_Trigger_1*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 20 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 20 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1273,7 +1282,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Hard_Trigger_2*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 32 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 32 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1282,7 +1291,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Hard_Trigger_3*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 22 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 22 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1291,7 +1300,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Hard_Trigger_4*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 25 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 25 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1300,7 +1309,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Hard_Trigger_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 25 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 25 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1309,7 +1318,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Hard_Trigger_6*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 25 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 25 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1318,7 +1327,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Hard_Trigger_7*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 20 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 20 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -1335,7 +1344,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Extreme_Trigger_1*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで15秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで15秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1344,7 +1353,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Extreme_Trigger_2*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで30秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで30秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1353,7 +1362,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Extreme_Trigger_3*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで30秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで30秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1362,7 +1371,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Extreme_Trigger_4*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで25秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで25秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1371,7 +1380,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Extreme_Trigger_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで25秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで25秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1380,7 +1389,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Extreme_Trigger_6*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで25秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで25秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1389,7 +1398,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Extreme_Trigger_1*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 15초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 15초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1398,7 +1407,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Extreme_Trigger_2*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 30초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 30초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1407,7 +1416,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Extreme_Trigger_3*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 30초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 30초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1416,7 +1425,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Extreme_Trigger_4*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 25초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 25초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1425,7 +1434,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Extreme_Trigger_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 25초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 25초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1434,7 +1443,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Extreme_Trigger_6*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 25초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 25초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1443,7 +1452,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Extreme_Trigger_1*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 15 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 15 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1452,7 +1461,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Extreme_Trigger_2*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 30 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 30 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1461,7 +1470,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Extreme_Trigger_3*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 30 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 30 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1470,7 +1479,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Extreme_Trigger_4*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 25 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 25 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1479,7 +1488,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Extreme_Trigger_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 25 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 25 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1488,7 +1497,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Extreme_Trigger_6*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 25 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 25 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -1505,7 +1514,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Ravana_ded_relay*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＊＊ ゾンビが13秒後に後方プラットフォームにテレポートされます ＊＊>46.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ** ゾンビが13秒後に後方プラットフォームにテレポートされます **>46.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1514,7 +1523,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Ravana_ded_relay*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＊＊ 좀비가 13초 후에 후방 플랫폼으로 텔레포트 됩니다 ＊＊>46.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ** 좀비가 13초 후에 후방 플랫폼으로 텔레포트 됩니다 **>46.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1523,7 +1532,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Ravana_ded_relay*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ＊＊ Zombies will be teleported to the rear platform in 13 seconds ＊＊>46.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ** Zombies will be teleported to the rear platform in 13 seconds **>46.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -1549,7 +1558,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Item_BLM_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 效果：正面Eキーで火球を生成してゾンビにダメージを与える，3回生成する度に雷撃に変化する ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 效果：正面Eキーで火球を生成してゾンビにダメージを与える, 3回生成する度に雷撃に変化する **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1558,7 +1567,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Item_BLM_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 頭上Eキーで足元に黒魔紋を生成，黒魔紋内では正面Eキーのクールダウンが5秒になる ＊＊>1.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 頭上Eキーで足元に黒魔紋を生成, 黒魔紋内では正面Eキーのクールダウンが5秒になる **>1.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1576,7 +1585,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Item_BLM_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 효과：정면 E키로 화구를 생성하여 좀비에게 피해를 줌，3번 생성할 때마다 뇌격으로 변화함 ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 효과：정면 E키로 화구를 생성하여 좀비에게 피해를 줌, 3번 생성할 때마다 뇌격으로 변화함 **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1585,7 +1594,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Item_BLM_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 머리 위 E키로 발밑에 흑마문을 생성，흑마문내에서는 정면 E키의 쿨타임이 5초가 된다 ＊＊>1.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 머리 위 E키로 발밑에 흑마문을 생성, 흑마문내에서는 정면 E키의 쿨타임이 5초가 된다 **>1.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1603,7 +1612,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Item_BLM_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ Effect：Front E-key creates a fireball that deals damage to zombies，every three casts it changes into a lightning strike；Overhead E-key creates a black magic sigil beneath the player ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** Effect：Front E-key creates a fireball that deals damage to zombies, every three casts it changes into a lightning strike；Overhead E-key creates a black magic sigil beneath the player **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1612,7 +1621,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Item_BLM_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ while inside the sigil the cooldown of Front E-key is 5 seconds ＊＊>1.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** while inside the sigil the cooldown of Front E-key is 5 seconds **>1.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -1664,7 +1673,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Item_ice_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊ あるプレイヤーが氷の元素を獲得した ＊>0.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say * あるプレイヤーが氷の元素を獲得した *>0.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1673,7 +1682,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Item_ice_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 效果：前方に氷の壁を生成する ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 效果：前方に氷の壁を生成する **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1682,7 +1691,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Item_ice_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊ 어느 플레이어가 얼음의 원소를 획득했다 ＊>0.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say * 어느 플레이어가 얼음의 원소를 획득했다 *>0.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1691,7 +1700,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Item_ice_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 효과：전방에 물의 벽을 생성한다 ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 효과：전방에 물의 벽을 생성한다 **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1700,7 +1709,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Item_ice_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊ A player obtained the Ice element ＊>0.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say * A player obtained the Ice element *>0.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1709,7 +1718,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Item_ice_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ Effect：Creates an ice wall in front ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** Effect：Creates an ice wall in front **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -1726,7 +1735,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Item_Blackhole_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊ あるプレイヤーがブラックホールを獲得した ＊>0.0>-1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say * あるプレイヤーがブラックホールを獲得した *>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1735,7 +1744,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Item_Blackhole_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 效果：前方にブラックホールを生成しゾンビを吸い込む 効果終了後にゾンビをテレポートさせる ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 效果：前方にブラックホールを生成しゾンビを吸い込む 効果終了後にゾンビをテレポートさせる **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1744,7 +1753,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Item_Blackhole_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊ 어느 플레이어가 블랙홀을 획득했다 ＊>0.0>-1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say * 어느 플레이어가 블랙홀을 획득했다 *>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1753,7 +1762,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Item_Blackhole_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 효과：전방에 블랙홀을 생성해 좀비를 끌어당김 효과종료후 좀비를 텔레포트 시킴 ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 효과：전방에 블랙홀을 생성해 좀비를 끌어당김 효과종료후 좀비를 텔레포트 시킴 **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1762,7 +1771,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Item_Blackhole_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊ A player obtained the Black Hole ＊>0.0>-1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say * A player obtained the Black Hole *>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1771,7 +1780,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Item_Blackhole_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ Effect：Creates a black hole in front that pulls zombies teleports them after the effect ends ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** Effect：Creates a black hole in front that pulls zombies teleports them after the effect ends **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -1797,7 +1806,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Item_SGE_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 效果：正面Eキーで前方の範囲に減速を与える；頭上Eキーで周囲の人間の体力を回復（3回まで保存可能） ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 效果：正面Eキーで前方の範囲に減速を与える；頭上Eキーで周囲の人間の体力を回復（3回まで保存可能） **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1815,7 +1824,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Item_SGE_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 효과：정면 E키로 전방 범위에 감속을 부여；머리 위 E키로 주위의 인간 체력을 회복（3번까지 저장가능） ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 효과：정면 E키로 전방 범위에 감속을 부여；머리 위 E키로 주위의 인간 체력을 회복（3번까지 저장가능） **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1833,7 +1842,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Item_SGE_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ Effect：Front E-key slows in the area ahead；Overhead E-key restores HP of nearby humans（max 3 stacks） ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** Effect：Front E-key slows in the area ahead；Overhead E-key restores HP of nearby humans（max 3 stacks） **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -1850,7 +1859,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Item_fire_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊ あるプレイヤーが火の元素を獲得した ＊>0.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say * あるプレイヤーが火の元素を獲得した *>0.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1859,7 +1868,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Item_fire_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 效果：前方に推進力のある炎を生成しダメージを与える ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 效果：前方に推進力のある炎を生成しダメージを与える **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1868,7 +1877,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Item_fire_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊ 어느 플레이어가 불의 원소를 획득했다 ＊>0.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say * 어느 플레이어가 불의 원소를 획득했다 *>0.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1877,7 +1886,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Item_fire_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 효과：전방에 추진력이 있는 화염을 생성해 데미지를 준다 ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 효과：전방에 추진력이 있는 화염을 생성해 데미지를 준다 **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1886,7 +1895,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Item_fire_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊ A player obtained a fire element ＊>0.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say * A player obtained a fire element *>0.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1895,7 +1904,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Item_fire_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ Effect：Creates a flame with thrust in front and deals damage ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** Effect：Creates a flame with thrust in front and deals damage **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -1912,7 +1921,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Item_Electricity_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊ あるプレイヤーが電気の元素を獲得した ＊>0.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say * あるプレイヤーが電気の元素を獲得した *>0.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1921,7 +1930,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Item_Electricity_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 效果：前方に減速エリアを生成する ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 效果：前方に減速エリアを生成する **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1930,7 +1939,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Item_Electricity_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊ 어느 플레이어가 전기의 원소를 획득했다 ＊>0.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say * 어느 플레이어가 전기의 원소를 획득했다 *>0.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1939,7 +1948,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Item_Electricity_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 효과：전방에 감속 에리아를 생성한다 ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 효과：전방에 감속 에리아를 생성한다 **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1948,7 +1957,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Item_Electricity_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊ A player obtained a electricity element ＊>0.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say * A player obtained a electricity element *>0.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1957,7 +1966,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Item_Electricity_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ Effect：Creates a slowing area in front ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** Effect：Creates a slowing area in front **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -1974,7 +1983,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Item_Wind_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊ あるプレイヤーが風の元素を獲得した ＊>0.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say * あるプレイヤーが風の元素を獲得した *>0.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1983,7 +1992,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Item_Wind_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 效果：自身に風を発生しゾンビを遮る；もう一度使用すると自分への追従が解除されて設置型の風になる ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 效果：自身に風を発生しゾンビを遮る；もう一度使用すると自分への追従が解除されて設置型の風になる **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1992,7 +2001,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Item_Wind_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊ 어느 플레이어가 바람의 원소를 획득했다 ＊>0.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say * 어느 플레이어가 바람의 원소를 획득했다 *>0.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2001,7 +2010,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Item_Wind_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 효과：자신에게 바람을 생성하여 좀비를 차단；다시 한 번 사용하면 자신에게 따라오던 효과가 취소되고 설치형 바람으로 변함 ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 효과：자신에게 바람을 생성하여 좀비를 차단；다시 한 번 사용하면 자신에게 따라오던 효과가 취소되고 설치형 바람으로 변함 **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2010,7 +2019,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Item_Wind_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊ A player obtained a wind element ＊>0.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say * A player obtained a wind element *>0.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2019,7 +2028,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Item_Wind_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ Effect：Creates wind around oneself to block zombies；Press again to cancel following the player and switch to a fixed wind ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** Effect：Creates wind around oneself to block zombies；Press again to cancel following the player and switch to a fixed wind **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -2036,7 +2045,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Item_Heal_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊ あるプレイヤーがヒールを獲得した ＊>0.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say * あるプレイヤーがヒールを獲得した *>0.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2045,7 +2054,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Item_Heal_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 效果：人間を治癒 ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 效果：人間を治癒 **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2054,7 +2063,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Item_Heal_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊ 어느 플레이어가 힐을 획득했다 ＊>0.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say * 어느 플레이어가 힐을 획득했다 *>0.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2063,7 +2072,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Item_Heal_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 효과：인간을 치유 ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 효과：인간을 치유 **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2072,7 +2081,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Item_Heal_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊ A player obtained a heal ＊>0.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say * A player obtained a heal *>0.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2081,7 +2090,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Item_Heal_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ Effect：Heal humans ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** Effect：Heal humans **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -2098,7 +2107,7 @@
 					"outputname": "OnUser2",
 					"targetname": "ZM_Gravity_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ ゾンビがブラックホールを拾っちゃった ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** ゾンビがブラックホールを拾っちゃった **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2107,7 +2116,7 @@
 					"outputname": "OnUser2",
 					"targetname": "ZM_Gravity_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 效果：周囲の人間を吸い込む  ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 效果：周囲の人間を吸い込む  **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2116,7 +2125,7 @@
 					"outputname": "OnUser3",
 					"targetname": "ZM_Gravity_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 좀비가 블랙홀을 주워버렸다 ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 좀비가 블랙홀을 주워버렸다 **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2125,7 +2134,7 @@
 					"outputname": "OnUser3",
 					"targetname": "ZM_Gravity_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 효과：주위의 인간을 끌어당김  ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 효과：주위의 인간을 끌어당김  **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2134,7 +2143,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_Gravity_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ A zombie picked up a black hole ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** A zombie picked up a black hole **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2143,7 +2152,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_Gravity_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ Effect：Pull in surrounding humans ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** Effect：Pull in surrounding humans **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -2160,7 +2169,7 @@
 					"outputname": "OnUser2",
 					"targetname": "ZM_heal_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ ゾンビがヒールを拾っちゃった ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** ゾンビがヒールを拾っちゃった **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2169,7 +2178,7 @@
 					"outputname": "OnUser2",
 					"targetname": "ZM_heal_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 效果：手榴弾と火炎瓶のダメージに免疫と自身と自身周囲のゾンビを加速させる ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 效果：手榴弾と火炎瓶のダメージに免疫と自身と自身周囲のゾンビを加速させる **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2178,7 +2187,7 @@
 					"outputname": "OnUser3",
 					"targetname": "ZM_heal_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 좀비가 힐을 주워버렸다 ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 좀비가 힐을 주워버렸다 **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2187,7 +2196,7 @@
 					"outputname": "OnUser3",
 					"targetname": "ZM_heal_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 효과：수류탄과 화염병의 데미지에 면역과 자신과 자신주위의 좀비를 가속시킴 ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 효과：수류탄과 화염병의 데미지에 면역과 자신과 자신주위의 좀비를 가속시킴 **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2196,7 +2205,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_heal_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ A zombie picked up a heal ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** A zombie picked up a heal **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2205,7 +2214,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_heal_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ Effect：Immune to damage from grenades and Molotovs and speeds up itself and nearby zombies ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** Effect：Immune to damage from grenades and Molotovs and speeds up itself and nearby zombies **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -2222,7 +2231,7 @@
 					"outputname": "OnUser2",
 					"targetname": "ZM_shield_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ ゾンビがシールドを拾っちゃった ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** ゾンビがシールドを拾っちゃった **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2231,7 +2240,7 @@
 					"outputname": "OnUser2",
 					"targetname": "ZM_shield_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 效果：その場にシールドを生成し人間の銃弾を防ぐ ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 效果：その場にシールドを生成し人間の銃弾を防ぐ **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2240,7 +2249,7 @@
 					"outputname": "OnUser3",
 					"targetname": "ZM_shield_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 좀비가 쉴드를 주워버렸다 ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 좀비가 쉴드를 주워버렸다 **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2249,7 +2258,7 @@
 					"outputname": "OnUser3",
 					"targetname": "ZM_shield_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 효과：제자리에 쉴드를 생성해 인간의 총알을 막음 ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 효과：제자리에 쉴드를 생성해 인간의 총알을 막음 **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2258,7 +2267,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_shield_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ A zombie picked up a shield ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** A zombie picked up a shield **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2267,7 +2276,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_shield_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ Effect：Create a shield at your location to block human bullets ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** Effect：Create a shield at your location to block human bullets **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -2284,7 +2293,7 @@
 					"outputname": "OnUser2",
 					"targetname": "ZM_silent_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ ゾンビがサイレンスを拾っちゃった ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** ゾンビがサイレンスを拾っちゃった **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2293,7 +2302,7 @@
 					"outputname": "OnUser2",
 					"targetname": "ZM_silent_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 效果：元素以外の全てのアイテムに沈黙効果を与える ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 效果：元素以外の全てのアイテムに沈黙効果を与える **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2302,7 +2311,7 @@
 					"outputname": "OnUser3",
 					"targetname": "ZM_silent_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 좀비가 사일런스를 주워버렸다 ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 좀비가 사일런스를 주워버렸다 **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2311,7 +2320,7 @@
 					"outputname": "OnUser3",
 					"targetname": "ZM_silent_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 효과：원소이외의 모든 아이템에 침묵효과를 부여함 ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 효과：원소이외의 모든 아이템에 침묵효과를 부여함 **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2320,7 +2329,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_silent_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ A zombie picked up a silence ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** A zombie picked up a silence **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2329,7 +2338,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_silent_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ Effect：All items except elemental ones inflict Silence ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** Effect：All items except elemental ones inflict Silence **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -2355,7 +2364,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Item_PLD_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 效果：順番に前方に推力 ダメージ バインド 減速を与える＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 效果：順番に前方に推力 ダメージ バインド 減速を与える**>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2373,7 +2382,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Item_PLD_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 효과：순서대로 전방에 추진력 데미지 바인드 감속을 부여함＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 효과：순서대로 전방에 추진력 데미지 바인드 감속을 부여함**>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2391,7 +2400,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Item_PLD_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ Effect：Sequentially deals thrust damage bind slow in the front＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** Effect：Sequentially deals thrust damage bind slow in the front**>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -2408,7 +2417,7 @@
 					"outputname": "OnUser2",
 					"targetname": "ZM_Ice_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ ゾンビがアイスを拾っちゃった ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** ゾンビがアイスを拾っちゃった **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2417,7 +2426,7 @@
 					"outputname": "OnUser2",
 					"targetname": "ZM_Ice_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 效果：周囲の人間にダメージと減速を与える ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 效果：周囲の人間にダメージと減速を与える **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2426,7 +2435,7 @@
 					"outputname": "OnUser3",
 					"targetname": "ZM_Ice_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 좀비가 아이스를 주워버렸다 ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 좀비가 아이스를 주워버렸다 **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2435,7 +2444,7 @@
 					"outputname": "OnUser3",
 					"targetname": "ZM_Ice_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 효과：주위의 인간에게 데미지와 감속을 부여함 ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 효과：주위의 인간에게 데미지와 감속을 부여함 **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2444,7 +2453,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_Ice_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ A zombie picked up a ice ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** A zombie picked up a ice **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2453,7 +2462,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_Ice_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ Effect：Inflicts damage and slow on nearby humans ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** Effect：Inflicts damage and slow on nearby humans **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -2470,7 +2479,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Viod_Trigger_1*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで30秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで30秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2479,7 +2488,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Viod_Trigger_2*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで20秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで20秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2488,7 +2497,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Viod_Trigger_3*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで25秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで25秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2497,7 +2506,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Viod_Trigger_4*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで45秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで45秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2506,7 +2515,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Viod_Trigger_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ ここで15秒間防御 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * ここで15秒間防御 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2515,7 +2524,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Viod_Trigger_6*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊＊ ここでテレポートするまで35秒間待機 ＊＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ** ここでテレポートするまで35秒間待機 **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2524,7 +2533,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Viod_Trigger_1*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 30초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 30초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2533,7 +2542,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Viod_Trigger_2*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 20초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 20초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2542,7 +2551,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Viod_Trigger_3*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 25초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 25초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2551,7 +2560,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Viod_Trigger_4*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 45초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 45초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2560,7 +2569,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Viod_Trigger_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ 여기서 15초간 방어 ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * 여기서 15초간 방어 *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2569,7 +2578,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Viod_Trigger_6*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊＊ 여기서 텔레포트할 때까지 35초간 대기 ＊＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ** 여기서 텔레포트할 때까지 35초간 대기 **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2578,7 +2587,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Viod_Trigger_1*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 30 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 30 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2587,7 +2596,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Viod_Trigger_2*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 20 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 20 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2596,7 +2605,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Viod_Trigger_3*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 25 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 25 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2605,7 +2614,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Viod_Trigger_4*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 45 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 45 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2614,7 +2623,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Viod_Trigger_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊ Hold this position for 15 seconds ＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say * Hold this position for 15 seconds *>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2623,7 +2632,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Viod_Trigger_6*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＊＊ Hold here for 35 seconds until teleport ＊＊>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ** Hold here for 35 seconds until teleport **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -2640,7 +2649,7 @@
 					"outputname": "OnUser2",
 					"targetname": "ZM_Viod_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 無の力が拾われた ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 無の力が拾われた **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2649,7 +2658,7 @@
 					"outputname": "OnUser2",
 					"targetname": "ZM_Viod_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 效果：無の力は生成済みの全ての元素アイテムの効果を削除，最後に使用された元素の強化効果を得る ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 效果：無の力は生成済みの全ての元素アイテムの効果を削除, 最後に使用された元素の強化効果を得る **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2658,7 +2667,7 @@
 					"outputname": "OnUser2",
 					"targetname": "ZM_Viod_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊（初回使用時元素効果を削除，光球が出現した時に使用すると対応する光球の効果を得られる。光球が無い場合でもまた使用してクールダウンに入れる必要がある）＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say **（初回使用時元素効果を削除, 光球が出現した時に使用すると対応する光球の効果を得られる。光球が無い場合でもまた使用してクールダウンに入れる必要がある）**>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2667,7 +2676,7 @@
 					"outputname": "OnUser2",
 					"targetname": "ZM_Viod_case*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase02>cmd>Command>say ＊＊ 無の力は火の元素を得た ＊＊>0.0>-1",
+					"overrideparam": "OnCase02>cmd>Command>say ** 無の力は火の元素を得た **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2676,7 +2685,7 @@
 					"outputname": "OnUser2",
 					"targetname": "ZM_Viod_case*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase03>cmd>Command>say ＊＊ 無の力は風の元素を得た ＊＊>0.0>-1",
+					"overrideparam": "OnCase03>cmd>Command>say ** 無の力は風の元素を得た **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2685,7 +2694,7 @@
 					"outputname": "OnUser2",
 					"targetname": "ZM_Viod_case*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase04>cmd>Command>say ＊＊ 無の力は氷の元素を得た ＊＊>0.0>-1",
+					"overrideparam": "OnCase04>cmd>Command>say ** 無の力は氷の元素を得た **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2694,7 +2703,7 @@
 					"outputname": "OnUser2",
 					"targetname": "ZM_Viod_case*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase05>cmd>Command>say ＊＊ 無の力は電気の元素を得た ＊＊>0.0>-1",
+					"overrideparam": "OnCase05>cmd>Command>say ** 無の力は電気の元素を得た **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2703,7 +2712,7 @@
 					"outputname": "OnUser2",
 					"targetname": "ZM_Viod_case*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase06>cmd>Command>say ＊＊ 無の力はブラックホールの元素を得た ＊＊>0.0>-1",
+					"overrideparam": "OnCase06>cmd>Command>say ** 無の力はブラックホールの元素を得た **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2712,7 +2721,7 @@
 					"outputname": "OnUser2",
 					"targetname": "ZM_Viod_case*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase01>cmd>Command>say ＊＊ 何の元素も得られなかった ＊＊>0.0>-1",
+					"overrideparam": "OnCase01>cmd>Command>say ** 何の元素も得られなかった **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2721,7 +2730,7 @@
 					"outputname": "OnUser3",
 					"targetname": "ZM_Viod_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 무의 힘이 주워졌다 ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 무의 힘이 주워졌다 **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2730,7 +2739,7 @@
 					"outputname": "OnUser3",
 					"targetname": "ZM_Viod_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ 효과：무의 힘은 생성을 마친 모든 원소 아이템의 효과를 제거，마지막에 사용된 원소의 강화효과를 얻음 ＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 효과：무의 힘은 생성을 마친 모든 원소 아이템의 효과를 제거, 마지막에 사용된 원소의 강화효과를 얻음 **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2739,7 +2748,7 @@
 					"outputname": "OnUser3",
 					"targetname": "ZM_Viod_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊（첫 번째 사용 시 원소 효과를 제거，광원이 출현할 때 사용하면 대응하는 광원의 효과를 얻을 수 있다。광원이 없을 경우에도 다시 사용하여 쿨타임에 들어가야 할 필요가 있음）＊＊>1.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say **（첫 번째 사용 시 원소 효과를 제거, 광원이 출현할 때 사용하면 대응하는 광원의 효과를 얻을 수 있다。광원이 없을 경우에도 다시 사용하여 쿨타임에 들어가야 할 필요가 있음）**>1.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2748,7 +2757,7 @@
 					"outputname": "OnUser3",
 					"targetname": "ZM_Viod_case*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase02>cmd>Command>say ＊＊ 무의 힘은 불의 원소를 얻었다 ＊＊>0.0>-1",
+					"overrideparam": "OnCase02>cmd>Command>say ** 무의 힘은 불의 원소를 얻었다 **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2757,7 +2766,7 @@
 					"outputname": "OnUser3",
 					"targetname": "ZM_Viod_case*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase03>cmd>Command>say ＊＊ 무의 힘은 바람의 원소를 얻었다 ＊＊>0.0>-1",
+					"overrideparam": "OnCase03>cmd>Command>say ** 무의 힘은 바람의 원소를 얻었다 **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2766,7 +2775,7 @@
 					"outputname": "OnUser3",
 					"targetname": "ZM_Viod_case*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase04>cmd>Command>say ＊＊ 무의 힘은 얼음의 원소를 얻었다 ＊＊>0.0>-1",
+					"overrideparam": "OnCase04>cmd>Command>say ** 무의 힘은 얼음의 원소를 얻었다 **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2775,7 +2784,7 @@
 					"outputname": "OnUser3",
 					"targetname": "ZM_Viod_case*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase05>cmd>Command>say ＊＊ 무의 힘은 전기의 원소를 얻었다 ＊＊>0.0>-1",
+					"overrideparam": "OnCase05>cmd>Command>say ** 무의 힘은 전기의 원소를 얻었다 **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2784,7 +2793,7 @@
 					"outputname": "OnUser3",
 					"targetname": "ZM_Viod_case*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase06>cmd>Command>say ＊＊ 무의 힘은 블랙홀의 원소를 얻었다 ＊＊>0.0>-1",
+					"overrideparam": "OnCase06>cmd>Command>say ** 무의 힘은 블랙홀의 원소를 얻었다 **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2793,7 +2802,7 @@
 					"outputname": "OnUser3",
 					"targetname": "ZM_Viod_case*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase01>cmd>Command>say ＊＊ 아무런 원소도 얻지 못했다 ＊＊>0.0>-1",
+					"overrideparam": "OnCase01>cmd>Command>say ** 아무런 원소도 얻지 못했다 **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2802,7 +2811,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_Viod_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ Power of Nothingness has been picked up ＊＊>0.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** Power of Nothingness has been picked up **>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2811,7 +2820,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_Viod_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊ Effect：Power of Nothingness removes all previously generated elemental item effects，gains the enhancement effect of the last element used＊＊>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** Effect：Power of Nothingness removes all previously generated elemental item effects, gains the enhancement effect of the last element used**>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2820,7 +2829,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_Viod_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ＊＊（On first use, elemental effects are removed，When used while an orb is present, the corresponding orb effect is obtained。If no orb is present it must be used again to trigger cooldown）＊＊>1.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say **（On first use, elemental effects are removed, When used while an orb is present, the corresponding orb effect is obtained。If no orb is present it must be used again to trigger cooldown）**>1.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2829,7 +2838,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_Viod_case*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase02>cmd>Command>say ＊＊ Power of Nothingness has obtained the fire element ＊＊>0.0>-1",
+					"overrideparam": "OnCase02>cmd>Command>say ** Power of Nothingness has obtained the fire element **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2838,7 +2847,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_Viod_case*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase03>cmd>Command>say ＊＊ Power of Nothingness has obtained the wind element ＊＊>0.0>-1",
+					"overrideparam": "OnCase03>cmd>Command>say ** Power of Nothingness has obtained the wind element **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2847,7 +2856,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_Viod_case*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase04>cmd>Command>say ＊＊ Power of Nothingness has obtained the ice element ＊＊>0.0>-1",
+					"overrideparam": "OnCase04>cmd>Command>say ** Power of Nothingness has obtained the ice element **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2856,7 +2865,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_Viod_case*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase05>cmd>Command>say ＊＊ Power of Nothingness has obtained the electricity element ＊＊>0.0>-1",
+					"overrideparam": "OnCase05>cmd>Command>say ** Power of Nothingness has obtained the electricity element **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2865,7 +2874,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_Viod_case*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase06>cmd>Command>say ＊＊ Power of Nothingness has obtained the black hole element ＊＊>0.0>-1",
+					"overrideparam": "OnCase06>cmd>Command>say ** Power of Nothingness has obtained the black hole element **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2874,7 +2883,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_Viod_case*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnCase01>cmd>Command>say ＊＊ Did not obtain any elements ＊＊>0.0>-1",
+					"overrideparam": "OnCase01>cmd>Command>say ** Did not obtain any elements **>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -2891,7 +2900,7 @@
 					"outputname": "OnUser2",
 					"targetname": "cmd",
 					"inputname": "Command",
-					"overrideparam": "say ＊＊ 全てのゾンビのアイテムが封じられました ＊＊",
+					"overrideparam": "say ** 全てのゾンビのアイテムが封じられました **",
 					"delay": 27.0,
 					"timestofire": 1
 				},
@@ -2909,7 +2918,7 @@
 					"outputname": "OnUser3",
 					"targetname": "cmd",
 					"inputname": "Command",
-					"overrideparam": "say ＊＊ 모든 좀비의 아이템의 봉인되었습니다 ＊＊",
+					"overrideparam": "say ** 모든 좀비의 아이템의 봉인되었습니다 **",
 					"delay": 27.0,
 					"timestofire": 1
 				},
@@ -2927,7 +2936,7 @@
 					"outputname": "OnUser4",
 					"targetname": "cmd",
 					"inputname": "Command",
-					"overrideparam": "say ＊＊ All zombie items have been disabled ＊＊",
+					"overrideparam": "say ** All zombie items have been disabled **",
 					"delay": 27.0,
 					"timestofire": 1
 				},
@@ -2943,29 +2952,105 @@
 			]
 		},
 		// add lyric entity
+		{
+            "targetname": "lyric_toggle",
+            "classname": "logic_branch",
+            "initialvalue": "1",
+            "io":
+            [
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_z",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_reaper",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_tooi_michi",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_gold",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_cage",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_sini",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_bloody_f8",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_lilas",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_kokoro",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+			]
+        },
 		// &Z
 		{
 			"targetname": "lyric_z",
-			"classname": "trigger_multiple",
-			"origin": "2396 -541 1834",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-			"wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_ffxiv_great_gubal_library/entities/nuke_27747.vmdl",
 			"io":
 			[
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
+					"outputname": "OnPlayerInZone",
+					"targetname": "lyric_z_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
-				{
-					"outputname": "OnStartTouch",
+                {
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_z_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -2973,10 +3058,18 @@
 				},
 
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_z_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
 			]
@@ -2996,11 +3089,28 @@
 					"timestofire": -1
 				},
 
-				{
+                {
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "cmd",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ 澤野弘之 : &Z(feat. 瑞葵) ]",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
@@ -3547,26 +3657,23 @@
 		// Reaper
 		{
 			"targetname": "lyric_reaper",
-			"classname": "trigger_multiple",
-			"origin": "2396 -541 1834",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-			"wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_ffxiv_great_gubal_library/entities/nuke_27747.vmdl",
 			"io":
 			[
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
+					"outputname": "OnPlayerInZone",
+					"targetname": "lyric_reaper_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
-				{
-					"outputname": "OnStartTouch",
+                {
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_reaper_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -3574,10 +3681,18 @@
 				},
 
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_reaper_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
 			]
@@ -3597,11 +3712,28 @@
 					"timestofire": -1
 				},
 
-				{
+                {
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "cmd",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ SennaRin : Reaper ]",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
@@ -3923,26 +4055,23 @@
 		// 遠い道の先で
 		{
 			"targetname": "lyric_tooi_michi",
-			"classname": "trigger_multiple",
-			"origin": "2396 -541 1834",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-			"wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_ffxiv_great_gubal_library/entities/nuke_27747.vmdl",
 			"io":
 			[
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
+					"outputname": "OnPlayerInZone",
+					"targetname": "lyric_tooi_michi_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
-				{
-					"outputname": "OnStartTouch",
+                {
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_tooi_michi_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -3950,10 +4079,18 @@
 				},
 
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_tooi_michi_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
 			]
@@ -3973,11 +4110,28 @@
 					"timestofire": -1
 				},
 
-				{
+                {
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "cmd",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ 武川アイ : 遠い道の先で ]",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
@@ -4380,26 +4534,23 @@
 		// Gold
 		{
 			"targetname": "lyric_gold",
-			"classname": "trigger_multiple",
-			"origin": "2396 -541 1834",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-			"wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_ffxiv_great_gubal_library/entities/nuke_27747.vmdl",
 			"io":
 			[
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
+					"outputname": "OnPlayerInZone",
+					"targetname": "lyric_gold_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
-				{
-					"outputname": "OnStartTouch",
+                {
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_gold_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -4407,10 +4558,18 @@
 				},
 
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_gold_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
 			]
@@ -4430,11 +4589,28 @@
 					"timestofire": -1
 				},
 
-				{
+                {
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "cmd",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ EGOIST : Gold ]",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
@@ -4801,26 +4977,23 @@
 		// Cage
 		{
 			"targetname": "lyric_cage",
-			"classname": "trigger_multiple",
-			"origin": "2396 -541 1834",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-			"wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_ffxiv_great_gubal_library/entities/nuke_27747.vmdl",
 			"io":
 			[
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
+					"outputname": "OnPlayerInZone",
+					"targetname": "lyric_cage_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
-				{
-					"outputname": "OnStartTouch",
+                {
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_cage_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -4828,10 +5001,18 @@
 				},
 
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_cage_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
 			]
@@ -4851,11 +5032,28 @@
 					"timestofire": -1
 				},
 
-				{
+                {
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "cmd",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ 澤野弘之,Tielie : Cage ]",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
@@ -5420,26 +5618,23 @@
 		// 死にゆく季節のきみへ
 		{
 			"targetname": "lyric_sini",
-			"classname": "trigger_multiple",
-			"origin": "2396 -541 1834",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-			"wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_ffxiv_great_gubal_library/entities/nuke_27747.vmdl",
 			"io":
 			[
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
+					"outputname": "OnPlayerInZone",
+					"targetname": "lyric_sini_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
-				{
-					"outputname": "OnStartTouch",
+                {
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_sini_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -5447,10 +5642,18 @@
 				},
 
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_sini_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
 			]
@@ -5470,13 +5673,30 @@
 					"timestofire": -1
 				},
 
-				{
+                {
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "cmd",
+                    "inputname": "Command",
+                    "overrideparam": "say ♪ MUSIC [ 麻枝 准,やなぎなぎ : 死にゆく季節のきみへ ]",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
 
 				{
 					"outputname": "OnUser2",
@@ -5886,26 +6106,23 @@
 		// bloody f8
         {
 			"targetname": "lyric_bloody_f8",
-			"classname": "trigger_multiple",
-			"origin": "2396 -541 1834",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-			"wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_ffxiv_great_gubal_library/entities/nuke_27747.vmdl",
 			"io":
 			[
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
+					"outputname": "OnPlayerInZone",
+					"targetname": "lyric_bloody_f8_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
-				{
-					"outputname": "OnStartTouch",
+                {
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_bloody_f8_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -5913,10 +6130,18 @@
 				},
 
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_bloody_f8_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
 			]
@@ -5936,11 +6161,28 @@
 					"timestofire": -1
 				},
 
-				{
+                {
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "cmd",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ Aimer,澤野弘之 : Bloody F8 ]",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
@@ -6875,26 +7117,23 @@
 		// LilaS
 		{
 			"targetname": "lyric_lilas",
-			"classname": "trigger_multiple",
-			"origin": "2396 -541 1834",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-			"wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_ffxiv_great_gubal_library/entities/nuke_27747.vmdl",
 			"io":
 			[
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
+					"outputname": "OnPlayerInZone",
+					"targetname": "lyric_lilas_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
-				{
-					"outputname": "OnStartTouch",
+                {
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_lilas_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -6902,10 +7141,18 @@
 				},
 
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_lilas_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
 			]
@@ -6925,11 +7172,28 @@
 					"timestofire": -1
 				},
 
-				{
+                {
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "cmd",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ 澤野弘之,たかはしほのか : LilaS ]",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
@@ -7269,26 +7533,15 @@
 		// 心の在り処
 		{
 			"targetname": "lyric_kokoro",
-			"classname": "trigger_multiple",
-			"origin": "2396 -541 1834",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-            "wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_ffxiv_great_gubal_library/entities/nuke_27747.vmdl",
 			"io":
 			[
                 {
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
-					"timestofire": -1
-				},
-
-			    {
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerInZone",
 					"targetname": "lyric_kokoro_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -7296,10 +7549,26 @@
 				},
 
                 {
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_kokoro_hud",
-					"inputname": "FireUser2",
+					"inputname": "FireUser1",
 					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
             ]
@@ -7319,13 +7588,30 @@
 					"timestofire": -1
 				},
 
-				{
+                {
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "cmd",
+                    "inputname": "Command",
+                    "overrideparam": "say ♪ MUSIC [ 澤野弘之,沢城みゆき : 心の在り処 ]",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
 
 				{
     				"outputname": "OnUser2",
@@ -8017,16 +8303,7 @@
 					{
 						"outputname": "SoundEventGuid",
 						"targetname": "lyric_bloody_f8",
-						"inputname": "Enable",
-						"delay": 0.0,
-						"timestofire": 1
-					},
-
-					{
-						"outputname": "SoundEventGuid",
-						"targetname": "cmd",
-						"inputname": "Command",
-						"overrideparam": "say ♪ MUSIC [ Aimer,澤野弘之 : Bloody F8 ]",
+						"inputname": "CountPlayersInZone",
 						"delay": 0.0,
 						"timestofire": 1
 					}
@@ -8046,16 +8323,7 @@
 					{
 						"outputname": "SoundEventGuid",
 						"targetname": "lyric_gold",
-						"inputname": "Enable",
-						"delay": 0.0,
-						"timestofire": 1
-					},
-
-					{
-						"outputname": "SoundEventGuid",
-						"targetname": "cmd",
-						"inputname": "Command",
-						"overrideparam": "say ♪ MUSIC [ EGOIST : Gold ]",
+						"inputname": "CountPlayersInZone",
 						"delay": 0.0,
 						"timestofire": 1
 					}
@@ -8075,16 +8343,7 @@
 					{
 						"outputname": "SoundEventGuid",
 						"targetname": "lyric_lilas",
-						"inputname": "Enable",
-						"delay": 0.0,
-						"timestofire": 1
-					},
-
-					{
-						"outputname": "SoundEventGuid",
-						"targetname": "cmd",
-						"inputname": "Command",
-						"overrideparam": "say ♪ MUSIC [ 澤野弘之,たかはしほのか : LilaS ]",
+						"inputname": "CountPlayersInZone",
 						"delay": 0.0,
 						"timestofire": 1
 					}
@@ -8104,16 +8363,7 @@
 					{
 						"outputname": "SoundEventGuid",
 						"targetname": "lyric_cage",
-						"inputname": "Enable",
-						"delay": 0.0,
-						"timestofire": 1
-					},
-
-					{
-						"outputname": "SoundEventGuid",
-						"targetname": "cmd",
-						"inputname": "Command",
-						"overrideparam": "say ♪ MUSIC [ 澤野弘之,Tielie : Cage ]",
+						"inputname": "CountPlayersInZone",
 						"delay": 0.0,
 						"timestofire": 1
 					}
@@ -8153,16 +8403,7 @@
 					{
 						"outputname": "SoundEventGuid",
 						"targetname": "lyric_tooi_michi",
-						"inputname": "Enable",
-						"delay": 0.0,
-						"timestofire": 1
-					},
-
-					{
-						"outputname": "SoundEventGuid",
-						"targetname": "cmd",
-						"inputname": "Command",
-						"overrideparam": "say ♪ MUSIC [ 武川アイ : 遠い道の先で ]",
+						"inputname": "CountPlayersInZone",
 						"delay": 0.0,
 						"timestofire": 1
 					}
@@ -8182,16 +8423,7 @@
 					{
 						"outputname": "SoundEventGuid",
 						"targetname": "lyric_z",
-						"inputname": "Enable",
-						"delay": 0.0,
-						"timestofire": 1
-					},
-
-					{
-						"outputname": "SoundEventGuid",
-						"targetname": "cmd",
-						"inputname": "Command",
-						"overrideparam": "say ♪ MUSIC [ 澤野弘之 : &Z(feat. 瑞葵) ]",
+						"inputname": "CountPlayersInZone",
 						"delay": 0.0,
 						"timestofire": 1
 					}
@@ -8211,16 +8443,7 @@
 					{
 						"outputname": "SoundEventGuid",
 						"targetname": "lyric_reaper",
-						"inputname": "Enable",
-						"delay": 0.0,
-						"timestofire": 1
-					},
-
-					{
-						"outputname": "SoundEventGuid",
-						"targetname": "cmd",
-						"inputname": "Command",
-						"overrideparam": "say ♪ MUSIC [ SennaRin : Reaper ]",
+						"inputname": "CountPlayersInZone",
 						"delay": 0.0,
 						"timestofire": 1
 					}
@@ -8240,16 +8463,7 @@
 					{
                         "outputname": "SoundEventGuid",
 						"targetname": "lyric_kokoro",
-                        "inputname": "Enable",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "SoundEventGuid",
-						"targetname": "cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say ♪ MUSIC [ 澤野弘之,沢城みゆき : 心の在り処 ]",
+                        "inputname": "CountPlayersInZone",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -8269,16 +8483,7 @@
 					{
                         "outputname": "SoundEventGuid",
 						"targetname": "lyric_sini",
-                        "inputname": "Enable",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "SoundEventGuid",
-						"targetname": "cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say ♪ MUSIC [ 麻枝 准,やなぎなぎ : 死にゆく季節のきみへ ]",
+                        "inputname": "CountPlayersInZone",
                         "delay": 0.0,
                         "timestofire": 1
                     }
