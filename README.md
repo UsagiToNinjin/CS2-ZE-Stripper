@@ -53,6 +53,7 @@ Modify the `overrideparam` value of `lyric_toggle` at the top of the `default_en
     "delay": 0.0,
     "timestofire": -1
 }
+```
 
 **_NOTE:_** If this value is not changed, the default Enable setting will be applied.
 
