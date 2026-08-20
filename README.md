@@ -39,7 +39,9 @@ Both the original lyrics and their romanized version are displayed. This feature
 
 <img width="1280" height="424" alt="730_73" src="https://github.com/user-attachments/assets/81741f67-1b99-4094-b643-5932901f7058" />
 
-For information on this feature, please refer to the `// add lyric entity` comment in `default_ents.jsonc`.
+This feature is only available for Stripper configurations whose commit messages contain keywords such as `Lyrics`.
+
+It also includes a toggle (on/off) feature, allowing you to turn the lyrics off
 
 ## Lua Script
 
