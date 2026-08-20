@@ -3593,7 +3593,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：With the remaining power of winter, this anomaly will be completely resolved ***>10.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：With the remaining power of winter, This anomaly will be completely resolved ***>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3629,7 +3629,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl2_enda_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** ？？？：Are you the ones who harbor sinister schemes, as Sonia said ***>90.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** ？？？：Are you the ones who harbor sinister schemes, As Sonia said ***>90.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3638,7 +3638,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl2_enda_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** ？？？：You’d better leave, human, before I change my mind ***>100.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** ？？？：You’d better leave human, Before I change my mind ***>100.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3674,7 +3674,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl2_enda_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** ？？？：This place is now secure, But if you still intend to cause trouble, do not lament when I become merciless ***>230.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** ？？？：This place is now secure, But if you still intend to cause trouble, Do not lament when I become merciless ***>230.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3701,7 +3701,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：We’ve already found the place where the power of autumn gathers, There’s no time to waste, let’s hurry ***>30.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：We’ve already found the place where the power of autumn gathers, There’s no time to waste, Let’s hurry ***>30.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3728,7 +3728,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：There’s no need to worry about trivial matters, We can’t afford to relax now, our success is right before us ***>25.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：There’s no need to worry about trivial matters, We can’t afford to relax now, Our success is right before us ***>25.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3764,7 +3764,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_final_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：She’s already lost her sanity, we can’t predict what she might do, Right now our priority is to get out of here ***>38.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：She’s already lost her sanity, We can’t predict what she might do, Right now our priority is to get out of here ***>38.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3791,7 +3791,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_final_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Sonia：Well, it can’t be helped ***>94.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Sonia：Well, It can’t be helped ***>94.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3872,7 +3872,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：It would be wise to withdraw from here, bringing the power of autumn with you ***>5.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：It would be wise to withdraw from here, Bringing the power of autumn with you ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3899,7 +3899,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_crystal_hp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnHitMin>command>Command>say *** A：With this, you won’t be able to perform your anomaly ritual anymore ***>7.0>1",
+					"overrideparam": "OnHitMin>command>Command>say *** A：With this, You won’t be able to perform your anomaly ritual anymore ***>7.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3935,7 +3935,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_crystal_hp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnHitMin>command>Command>say *** Dorothy：You keep obstructing me, you are little more than demons ***>22.0>1",
+					"overrideparam": "OnHitMin>command>Command>say *** Dorothy：You keep obstructing me, You are little more than demons ***>22.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3953,7 +3953,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_crystal_hp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnHitMin>command>Command>say *** A：Something’s strange……Bathory, wasn’t he a bad guy？ How did he become a god？ ***>32.0>1",
+					"overrideparam": "OnHitMin>command>Command>say *** A：Something’s strange……Bathory, Wasn’t he a bad guy？ How did he become a god？ ***>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3980,7 +3980,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_gotoboss_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：I can feel it, she’s here ***>5.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：I can feel it, She’s here ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4079,7 +4079,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Has she fled？ Worry not Lords of the Court of Order, we have already obtained the power of spring ***>14.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Has she fled？ Worry not Lords of the Court of Order, We have already obtained the power of spring ***>14.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4106,7 +4106,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_door1_counter",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ** We did it, the barrier will disappear soon **>2.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ** We did it, The barrier will disappear soon **>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4223,7 +4223,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_ir_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：As far as I know, this place is not merely a place filled with the power of autumn ***>0.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：As far as I know, This place is not merely a place filled with the power of autumn ***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4232,7 +4232,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_ir_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Sonia, who previously caused chaos is also here, continues to sustain the anomaly ***>5.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Sonia, Who previously caused chaos is also here, Continues to sustain the anomaly ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4286,7 +4286,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_ir_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：There is a strong and chaotic energy reaction there, even near it, I can feel my ice melting ***>3.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：There is a strong and chaotic energy reaction there, Even near it, I can feel my ice melting ***>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4349,7 +4349,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** A：But it seems she can’t solve the problem with her power alone, so we need to help ***>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** A：But it seems she can’t solve the problem with her power alone, So we need to help ***>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4358,7 +4358,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** It’s just the beginning of spring, the air in the Court of Order is unusually hot ***>6.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** It’s just the beginning of spring, The air in the Court of Order is unusually hot ***>6.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4367,7 +4367,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** B：Then, let’s go see what’s happening, it’s unbearably hot ***>20.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** B：Then, Let’s go see what’s happening, It’s unbearably hot ***>20.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4394,7 +4394,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：The seasons in every region are in chaos, summer cicadas cry in winter, spring shoots emerge in autumn ***>3.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：The seasons in every region are in chaos, Summer cicadas cry in winter, Spring shoots emerge in autumn ***>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4412,7 +4412,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Therefore, your help is absolutely necessary ***>12.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Therefore, Your help is absolutely necessary ***>12.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4430,7 +4430,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：You’ve probably had enough of this awful weather these past few days, haven’t you? ***>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：You’ve probably had enough of this awful weather these past few days, Haven’t you? ***>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4439,7 +4439,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** No need for unnecessary talk, just show me the way ***>22.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** No need for unnecessary talk, Just show me the way ***>22.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4448,7 +4448,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：A weapon called the Power of the Four Seasons can absorb the strength of all four seasons, with it dealing with this anomaly won’t be a problem ***>17.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：A weapon called the Power of the Four Seasons can absorb the strength of all four seasons, With it dealing with this anomaly won’t be a problem ***>17.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4484,7 +4484,7 @@
 					"outputname": "OnCase03",
 					"targetname": "s4_boss_die_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Since it has already come to this, there’s no need for me to hide anything anymore ***>14.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Since it has already come to this, There’s no need for me to hide anything anymore ***>14.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4511,7 +4511,7 @@
 					"outputname": "OnCase03",
 					"targetname": "s4_boss_die_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：I’ve studied undead magic in depth, and now I finally get it ***>25.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：I’ve studied undead magic in depth, And now I finally get it ***>25.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4610,7 +4610,7 @@
 					"outputname": "OnCase03",
 					"targetname": "s4_end1_cmd1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：I, Bathory, can’t believe… ***>2.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：I, Bathory, Can’t believe… ***>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4619,7 +4619,7 @@
 					"outputname": "OnCase03",
 					"targetname": "s4_end1_cmd1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Finally, Bathory has stopped thinking, you have once again upheld the order of the world ***>4.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Finally, Bathory has stopped thinking, You have once again upheld the order of the world ***>4.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4646,7 +4646,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_trigger5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：Now is the perfect opportunity, Her ritual has reached its critical stage, if destroy her protective wards, we can force her to awaken ***>5.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：Now is the perfect opportunity, Her ritual has reached its critical stage, If destroy her protective wards, We can force her to awaken ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4655,7 +4655,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_trigger5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** B：Leave it to me, fire in the hole！ ***>10.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** B：Leave it to me, Fire in the hole！ ***>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4736,7 +4736,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_trigger7",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** ???：I never imagined you’d destroy the Purification Ritual, here can be no forgiveness ***>28.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** ???：I never imagined you’d destroy the Purification Ritual, Here can be no forgiveness ***>28.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4745,7 +4745,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_trigger7",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Sonia：My name is Sonia, you are beings who must die ***>32.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Sonia：My name is Sonia, You are beings who must die ***>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4781,7 +4781,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_door2_button",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>command>Command>say *** A：Let's see, what’s written here, hmm…… ***>0.0>1",
+					"overrideparam": "OnPressed>command>Command>say *** A：Let's see, What’s written here, Hmm…… ***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4799,7 +4799,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_door2_button",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>command>Command>say *** A：The colors of life swirl in a vortex, the Sevenfold Gate appears in this world, the Tower of Power reigns over the Nine Heavens…………Amazing I’m gradually understanding everything！！！ ***>3.0>1",
+					"overrideparam": "OnPressed>command>Command>say *** A：The colors of life swirl in a vortex, The Sevenfold Gate appears in this world, The Tower of Power reigns over the Nine Heavens…………Amazing I’m gradually understanding everything！！！ ***>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4826,7 +4826,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_stat_protect_push",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：This time, we have to defeat Sonia’s older sister ***>5.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：This time, We have to defeat Sonia’s older sister ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4835,7 +4835,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_stat_protect_push",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：My informants tell me that she is carrying out a crucial ritual, causing an even greater anomaly ***>10.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：My informants tell me that she is carrying out a crucial ritual, Causing an even greater anomaly ***>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4844,7 +4844,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_stat_protect_push",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：This is an opportunity, by then, her power will be terrifyingly weak, it’s our best chance to defeat her ***>20.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：This is an opportunity, By then her power will be terrifyingly weak, It’s our best chance to defeat her ***>20.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4853,7 +4853,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_stat_protect_push",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** B：So you’ve understood everything, but what about our captain ***>24.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** B：So you’ve understood everything, But what about our captain ***>24.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4862,7 +4862,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_trigger1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：bitter winter, my favorite kind of weather ***>25.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：bitter winter, My favorite kind of weather ***>25.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4871,7 +4871,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_trigger1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：I’ll activate the magic crystal to open the path, you all help me hold off the corpses ***>35.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：I’ll activate the magic crystal to open the path, You all help me hold off the corpses ***>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4889,7 +4889,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_tele",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：Crossing this door, will mark the journey’s end, Is everyone ready? ***>0.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：Crossing this door, Will mark the journey’s end, Is everyone ready? ***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4907,7 +4907,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl2_trigger1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：But it seems that to move forward, we’ll need a bit more skill ***>35.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：But it seems that to move forward, We’ll need a bit more skill ***>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5015,7 +5015,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_goto_library_tele",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：Anyway, let’s go upstairs first, see what’s going on ***>7.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：Anyway, Let’s go upstairs first, See what’s going on ***>7.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5042,7 +5042,7 @@
 					"outputname": "OnCase03",
 					"targetname": "9094",
 					"inputname": "SetMessage",
-					"overrideparam": "Corrupt Tide Crystal/zmspeed\nAfter casting, creates a stationary crystal that accelerates zombies within its range\nEach activation increases the acceleration effect, total 5 times\nThe final activation gains a massive boost, crystal can be destroyed by humans",
+					"overrideparam": "Corrupt Tide Crystal/zmspeed\nAfter casting, Creates a stationary crystal that accelerates zombies within its range\nEach activation increases the acceleration effect, Total 5 times\nThe final activation gains a massive boost, Crystal can be destroyed by humans",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5060,7 +5060,7 @@
 					"outputname": "OnCase03",
 					"targetname": "9095",
 					"inputname": "SetMessage",
-					"overrideparam": "Emma\nLeft-key：Damages humans in front\nShift+Left-key：Creates an area field, no CoolTime\nShift+Right-key：Pulls zombies within the area field to itself for 8 sec, CoolTime 30sec",
+					"overrideparam": "Emma\nLeft-key：Damages humans in front\nShift+Left-key：Creates an area field, No CoolTime\nShift+Right-key：Pulls zombies within the area field to itself for 8 sec, CoolTime 30sec",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5096,7 +5096,7 @@
 					"outputname": "OnCase03",
 					"targetname": "9099",
 					"inputname": "SetMessage",
-					"overrideparam": "Four Seasons’ Power/season\nNew form is unlocked at the end of each stage\nPress E-key Overhead to switch forms\nCoolTime 60sec\n\nSpring：Creates a stationary weak gravity field\nthat attracts zombies\nAfter 6 sec it explodes into weak slowing field\nthat slows zombies\n\nSummer：Creates a stationary lightning field\nthat randomly strikes zombies within its range\nStrikes,binds zombies within range\n\nAutumn：Creates a stationary wind field\ncontinuously pushes away nearby zombies",
+					"overrideparam": "Four Seasons’ Power/season\nNew form is unlocked at the end of each stage\nPress E-key Overhead to switch forms\nCoolTime 60sec\n\nSpring：Creates a stationary weak gravity field\nthat attracts zombies\nAfter 6 sec it explodes into weak slowing field\nthat slows zombies\n\nSummer：Creates a stationary lightning field\nthat randomly strikes zombies within its range\nStrikes,Binds zombies within range\n\nAutumn：Creates a stationary wind field\ncontinuously pushes away nearby zombies",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5186,7 +5186,7 @@
 					"outputname": "OnCase03",
 					"targetname": "9141",
 					"inputname": "SetMessage",
-					"overrideparam": "Bathory\nSkill1：Left-key shoot a slowing orb\nSkill2：Right-key Double-click Create gravitational fields on left and right\n            grouping the zombies use the Extreme Ice Thunder Gun to push them away, CoolTime 60sec\nSkill3：Press E-key Overhead, after causing a large-area slow effect\n            deliver a devastating blow to the zombies, one time only",
+					"overrideparam": "Bathory\nSkill1：Left-key shoot a slowing orb\nSkill2：Right-key Double-click Create gravitational fields on left and right\n            grouping the zombies use the Extreme Ice Thunder Gun to push them away, CoolTime 60sec\nSkill3：Press E-key Overhead, After causing a large-area slow effect\n            deliver a devastating blow to the zombies, one time only",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5195,7 +5195,7 @@
 					"outputname": "OnCase03",
 					"targetname": "9142",
 					"inputname": "SetMessage",
-					"overrideparam": "Bitru\nPassive：skill damaging humans with skills grants stacking buffs, Each stack provides an additional 0.1 speed\nEffect, Max 4 stacks（1.4 speed）, 1 stack is lost every 20 sec\nLeft-key：Damages humans in front\nSkill1：Right-key shoot Abyssal Arrow, dealing 2 damage to humans and granting 1 buff stack, CoolTime 10sec\nSkill2：Shift+Right-key unleash the Power of Purgatory, instantly killing humans in the area and granting 2 buff stacks\n            only Lamia, Use 40% HP",
+					"overrideparam": "Bitru\nPassive：skill damaging humans with skills grants stacking buffs, Each stack provides an additional 0.1 speed\nEffect, Max 4 stacks（1.4 speed）, 1 stack is lost every 20 sec\nLeft-key：Damages humans in front\nSkill1：Right-key shoot Abyssal Arrow, Dealing 2 damage to humans and granting 1 buff stack, CoolTime 10sec\nSkill2：Shift+Right-key unleash the Power of Purgatory, Instantly killing humans in the area and granting 2 buff stacks\n            only Lamia, Use 40% HP",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5204,7 +5204,7 @@
 					"outputname": "OnCase03",
 					"targetname": "9143",
 					"inputname": "SetMessage",
-					"overrideparam": "Lamia\nDefault Mode：Left-key slash, push zombies\nUpgrade Mode：Acquire 2 new abilities\nShift+Right-key, enter Upgrade Mode, creates a brief water stream that binds\nNearby zombies, Increase Left-key attack range, duration 30sec, CoolTime 60sec\nShift+Left-key, 1 Stage dash forward pushing zombies away\n2 Stage Step back creat a brief bind stream for zombies, CoolTime 20sec\n",
+					"overrideparam": "Lamia\nDefault Mode：Left-key slash, Push zombies\nUpgrade Mode：Acquire 2 new abilities\nShift+Right-key, Enter Upgrade Mode, creates a brief water stream that binds\nNearby zombies, Increase Left-key attack range, Duration 30sec, CoolTime 60sec\nShift+Left-key, 1 Stage dash forward pushing zombies away\n2 Stage Step back creat a brief bind stream for zombies, CoolTime 20sec\n",
 					"delay": 0.0,
 					"timestofire": -1
 				},
