@@ -1,4 +1,4 @@
-// stripper by 兎RB,kokopekko,小彩旗 26.01.17
+// stripper by 兎RB,kokopekko,小彩旗 26.08.20
 // map ze_minecraft_sakura
 // workshop id 3184013959
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -24,12 +24,21 @@
                         "delay": 0.0,
                         "timestofire": -1
                     },
+
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "lyric_toggle",
+                        "inputname": "SetValueTest",
+                        "overrideparam": "1", // Enable:1, Disable:0
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
                     // stripper update log
                     {
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.01.17 by 兎RB,kokopekko,小彩旗",
+                        "overrideparam": "say language translation stripper 26.08.20 by 兎RB,kokopekko,小彩旗",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -439,7 +448,7 @@
 					"outputname": "OnCase01",
 					"targetname": "48183",
 					"inputname": "SetMessage",
-					"overrideparam": "この力こそ，\n王となる理由だ！",
+					"overrideparam": "この力こそ, \n王となる理由だ！",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -466,7 +475,7 @@
 					"outputname": "OnCase01",
 					"targetname": "48505",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ああ！こんなにベットが多いなんて，まさかアクアちゃんしちゃうの>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ああ！こんなにベットが多いなんて, まさかアクアちゃんしちゃうの>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -556,7 +565,7 @@
 					"outputname": "OnCase01",
 					"targetname": "nonono",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say サタン:“ふむ，礼儀も知らんとは”>0.0>1",
+					"overrideparam": "OnPressed>cmd>Command>say サタン:“ふむ, 礼儀も知らんとは”>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -583,7 +592,7 @@
 					"outputname": "OnCase01",
 					"targetname": "48188",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say 小さなサキュバス:“ふむ，あんたに少し力を分けてあげる”>1.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say 小さなサキュバス:“ふむ, あんたに少し力を分けてあげる”>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -601,7 +610,7 @@
 					"outputname": "OnCase01",
 					"targetname": "yesyesyes",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say 小さなサキュバス:“我に祈りなさい，人間！”>0.0>1",
+					"overrideparam": "OnPressed>cmd>Command>say 小さなサキュバス:“我に祈りなさい, 人間！”>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -736,7 +745,7 @@
 					"outputname": "OnCase01",
 					"targetname": "piz",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say 早く見て，noobがピザを食べたいみたいだね ˶ᵒ ֊ ˂˶>0.0>-1",
+					"overrideparam": "OnStartTouch>cmd>Command>say 早く見て, noobがピザを食べたいみたいだね ˶ᵒ ֊ ˂˶>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -772,7 +781,7 @@
 					"outputname": "OnCase01",
 					"targetname": "warm_up_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>cmd>Command>say サーバーの人数が45人以下の場合，ゾンビがドアハグした際の核爆発効果を削除します！！>0.0>1",
+					"overrideparam": "OnUser1>cmd>Command>say サーバーの人数が45人以下の場合, ゾンビがドアハグした際の核爆発効果を削除します！！>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -781,7 +790,7 @@
 					"outputname": "OnCase01",
 					"targetname": "warm_up_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>cmd>Command>say サーバーの人数が45人以下の場合，ゾンビがドアハグした際の核爆発効果を削除します！！>0.3>1",
+					"overrideparam": "OnUser1>cmd>Command>say サーバーの人数が45人以下の場合, ゾンビがドアハグした際の核爆発効果を削除します！！>0.3>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -934,7 +943,7 @@
 					"outputname": "OnCase01",
 					"targetname": "qworliusndfgsdhbb",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say ここから通りたければ，金になるものを置いて行け！>1.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say ここから通りたければ, 金になるものを置いて行け！>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1069,7 +1078,7 @@
 					"outputname": "OnCase01",
 					"targetname": "relay_tree",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>cmd>Command>say (ゾンビが20秒後テレポートされます，オープンラン！）>32.0>1",
+					"overrideparam": "OnUser1>cmd>Command>say (ゾンビが20秒後テレポートされます, オープンラン！）>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1132,7 +1141,7 @@
 					"outputname": "OnCase01",
 					"targetname": "42319",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say 三文字，もっとみんなに守ってもらうよ40秒(/ω＼*)>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say 三文字, もっとみんなに守ってもらうよ40秒(/ω＼*)>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2068,7 +2077,7 @@
 					"outputname": "OnCase02",
 					"targetname": "48183",
 					"inputname": "SetMessage",
-					"overrideparam": "이 힘이야 말로，\n왕이 되는 이유다！",
+					"overrideparam": "이 힘이야 말로, \n왕이 되는 이유다！",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2095,7 +2104,7 @@
 					"outputname": "OnCase02",
 					"targetname": "48505",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say 아아！이렇게나 침대가 많다니，설마 아쿠아 하는거야?>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say 아아！이렇게나 침대가 많다니, 설마 아쿠아 하는거야?>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2185,7 +2194,7 @@
 					"outputname": "OnCase02",
 					"targetname": "nonono",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say 사탄:“흠，예의도 모르는군”>0.0>1",
+					"overrideparam": "OnPressed>cmd>Command>say 사탄:“흠, 예의도 모르는군”>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2212,7 +2221,7 @@
 					"outputname": "OnCase02",
 					"targetname": "48188",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say 작은 서큐버스:“흠，너에게 잠시 힘을 나눠주지”>1.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say 작은 서큐버스:“흠, 너에게 잠시 힘을 나눠주지”>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2230,7 +2239,7 @@
 					"outputname": "OnCase02",
 					"targetname": "yesyesyes",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say 작은 서큐버스:“나에게 기도해，인간！”>0.0>1",
+					"overrideparam": "OnPressed>cmd>Command>say 작은 서큐버스:“나에게 기도해, 인간！”>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2365,7 +2374,7 @@
 					"outputname": "OnCase02",
 					"targetname": "piz",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say 빨리 봐봐，noob이 피자가 먹고싶은가 봐 ˶ᵒ ֊ ˂˶>0.0>-1",
+					"overrideparam": "OnStartTouch>cmd>Command>say 빨리 봐봐, noob이 피자가 먹고싶은가 봐 ˶ᵒ ֊ ˂˶>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2401,7 +2410,7 @@
 					"outputname": "OnCase02",
 					"targetname": "warm_up_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>cmd>Command>say 서버의 인원 수가 45명 이하인 경우，좀비가 도어 허그시 뉴크가 발생하는 트리거를 제거합니다！！>0.0>1",
+					"overrideparam": "OnUser1>cmd>Command>say 서버의 인원 수가 45명 이하인 경우, 좀비가 도어 허그시 뉴크가 발생하는 트리거를 제거합니다！！>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2410,7 +2419,7 @@
 					"outputname": "OnCase02",
 					"targetname": "warm_up_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>cmd>Command>say 서버의 인원 수가 45명 이하인 경우，좀비가 도어 허그시 뉴크가 발생하는 트리거를 제거합니다！！>0.3>1",
+					"overrideparam": "OnUser1>cmd>Command>say 서버의 인원 수가 45명 이하인 경우, 좀비가 도어 허그시 뉴크가 발생하는 트리거를 제거합니다！！>0.3>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2581,7 +2590,7 @@
 					"outputname": "OnCase02",
 					"targetname": "qworliusndfgsdhbb",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say 여기서부터 지나가고 싶으면，돈이 되는 물건을 놓고 가！>1.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say 여기서부터 지나가고 싶으면, 돈이 되는 물건을 놓고 가！>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2716,7 +2725,7 @@
 					"outputname": "OnCase02",
 					"targetname": "relay_tree",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>cmd>Command>say (좀비가 20초 후 텔레포트 됩니다，오픈 런！）>32.0>1",
+					"overrideparam": "OnUser1>cmd>Command>say (좀비가 20초 후 텔레포트 됩니다, 오픈 런！）>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2779,7 +2788,7 @@
 					"outputname": "OnCase02",
 					"targetname": "42319",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say 세글자，좀 더 모두들에게 지켜 받을께 40초(/ω＼*)>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say 세글자, 좀 더 모두들에게 지켜 받을께 40초(/ω＼*)>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3715,7 +3724,7 @@
 					"outputname": "OnCase03",
 					"targetname": "48183",
 					"inputname": "SetMessage",
-					"overrideparam": "This power is the，\nreason to become a king！",
+					"overrideparam": "This power is the, \nreason to become a king！",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3742,7 +3751,7 @@
 					"outputname": "OnCase03",
 					"targetname": "48505",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say aa！so many beds，Aqua are you seriously do it?>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say aa！so many beds, Aqua are you seriously do it?>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3832,7 +3841,7 @@
 					"outputname": "OnCase03",
 					"targetname": "nonono",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say Satan:“Hmph, you have no manners”>0.0>1",
+					"overrideparam": "OnPressed>cmd>Command>say Satan:“Hmph, You have no manners”>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3859,7 +3868,7 @@
 					"outputname": "OnCase03",
 					"targetname": "48188",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say Little Succubus:“Hmm，I’ll share some of my power with you for a while”>1.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say Little Succubus:“Hmm, I’ll share some of my power with you for a while”>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3877,7 +3886,7 @@
 					"outputname": "OnCase03",
 					"targetname": "yesyesyes",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>cmd>Command>say Little Succubus:“Pray to me，human！”>0.0>1",
+					"overrideparam": "OnPressed>cmd>Command>say Little Succubus:“Pray to me, Human！”>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4012,7 +4021,7 @@
 					"outputname": "OnCase03",
 					"targetname": "piz",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say Quick look，noob seems to want some pizza ˶ᵒ ֊ ˂˶>0.0>-1",
+					"overrideparam": "OnStartTouch>cmd>Command>say Quick look, Noob seems to want some pizza ˶ᵒ ֊ ˂˶>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4048,7 +4057,7 @@
 					"outputname": "OnCase03",
 					"targetname": "warm_up_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>cmd>Command>say If the number of players on the server is 45 or fewer, the trigger that causes a nuke when a zombie door hug will be removed！！>0.0>1",
+					"overrideparam": "OnUser1>cmd>Command>say If the number of players on the server is 45 or fewer, The trigger that causes a nuke when a zombie door hug will be removed！！>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4057,7 +4066,7 @@
 					"outputname": "OnCase03",
 					"targetname": "warm_up_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>cmd>Command>say If the number of players on the server is 45 or fewer, the trigger that causes a nuke when a zombie door hug will be removed！！>0.3>1",
+					"overrideparam": "OnUser1>cmd>Command>say If the number of players on the server is 45 or fewer, The trigger that causes a nuke when a zombie door hug will be removed！！>0.3>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4228,7 +4237,7 @@
 					"outputname": "OnCase03",
 					"targetname": "qworliusndfgsdhbb",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say If you want to pass from here, leave something valuable behind！>1.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say If you want to pass from here, Leave something valuable behind！>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4363,7 +4372,7 @@
 					"outputname": "OnCase03",
 					"targetname": "relay_tree",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>cmd>Command>say (The zombie will teleport in 20 seconds，Open run！）>32.0>1",
+					"overrideparam": "OnUser1>cmd>Command>say (The zombie will teleport in 20 seconds, Open run！）>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4426,7 +4435,7 @@
 					"outputname": "OnCase03",
 					"targetname": "42319",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say Three characters，I’ll hold on for everyone a bit longer 40 seconds(/ω＼*)>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say Three characters, I’ll hold on for everyone a bit longer 40 seconds(/ω＼*)>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4705,7 +4714,7 @@
 					"outputname": "OnCase03",
 					"targetname": "42453",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say Boss, two cups of warm sake and a plate of fennel beans please。>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say Boss, Two cups of warm sake and a plate of fennel beans please。>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4867,7 +4876,7 @@
 					"outputname": "OnCase03",
 					"targetname": "42499",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>cmd>Command>say Speak of the devil, there’s actually a secret passage right under our feet╰(*°▽°*)╯>0.0>1",
+					"overrideparam": "OnTrigger>cmd>Command>say Speak of the devil, There’s actually a secret passage right under our feet╰(*°▽°*)╯>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5095,7 +5104,7 @@
 					"outputname": "OnUser1",
 					"targetname": "xm1014_kill_relay*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>cmd>Command>say あれ，捨てられちゃった 悲しくて手首切っちゃうにゃんQAQ>0.0>1",
+					"overrideparam": "OnUser1>cmd>Command>say あれ, 捨てられちゃった 悲しくて手首切っちゃうにゃんQAQ>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5104,7 +5113,7 @@
 					"outputname": "OnUser2",
 					"targetname": "xm1014_kill_relay*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>cmd>Command>say 어라，버려졌어 슬퍼서 손목 자를 거야 냐아QAQ>0.0>1",
+					"overrideparam": "OnUser1>cmd>Command>say 어라, 버려졌어 슬퍼서 손목 자를 거야 냐아QAQ>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5113,36 +5122,64 @@
 					"outputname": "OnUser3",
 					"targetname": "xm1014_kill_relay*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>cmd>Command>say Huh，I’ve been abandoned cut my wrists nyaQAQ>0.0>1",
+					"overrideparam": "OnUser1>cmd>Command>say Huh, I’ve been abandoned cut my wrists nyaQAQ>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
 			]
 		},	
 		// add lyric entity
+		{
+            "targetname": "lyric_toggle",
+            "classname": "logic_branch",
+            "initialvalue": "1",
+            "io":
+            [
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_inmyroom",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_good_dream",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_sunny_rain",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_aurora_vip",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+			]
+        },
 		// In My Room
         {
 			"targetname": "lyric_inmyroom",
-			"classname": "trigger_multiple",
-			"origin": "1096 -436 236",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-            "wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_minecraft_sakura/entities/nuke_hurt_42519.vmdl",
 			"io":
 			[
                 {
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
-					"timestofire": -1
-				},
-
-			    {
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerInZone",
 					"targetname": "lyric_inmyroom_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -5150,10 +5187,26 @@
 				},
 
                 {
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_inmyroom_hud",
-					"inputname": "FireUser2",
+					"inputname": "FireUser1",
 					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
             ]
@@ -5177,9 +5230,26 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "cmd",
+                    "inputname": "Command",
+                    "overrideparam": "say ♪ MUSIC [ キツネDJ : In My Room ]",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
 
 				{
 					"outputname": "OnUser2",
@@ -5688,26 +5758,15 @@
 		// Good Dream
         {
 			"targetname": "lyric_good_dream",
-			"classname": "trigger_multiple",
-			"origin": "1096 -436 236",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-            "wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_minecraft_sakura/entities/nuke_hurt_42519.vmdl",
 			"io":
 			[
                 {
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
-					"timestofire": -1
-				},
-
-			    {
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerInZone",
 					"targetname": "lyric_good_dream_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -5715,10 +5774,26 @@
 				},
 
                 {
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_good_dream_hud",
-					"inputname": "FireUser2",
+					"inputname": "FireUser1",
 					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
             ]
@@ -5742,9 +5817,26 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "cmd",
+                    "inputname": "Command",
+                    "overrideparam": "say ♪ MUSIC [ Kirara Magic : Good Dream(feat. Shion) ]",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
 				
 				{
   					"outputname": "OnUser2",
@@ -6037,26 +6129,15 @@
 		// Sunny Rain
         {
 			"targetname": "lyric_sunny_rain",
-			"classname": "trigger_multiple",
-			"origin": "1096 -436 236",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-            "wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_minecraft_sakura/entities/nuke_hurt_42519.vmdl",
 			"io":
 			[
                 {
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
-					"timestofire": -1
-				},
-
-			    {
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerInZone",
 					"targetname": "lyric_sunny_rain_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -6064,10 +6145,26 @@
 				},
 
                 {
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_sunny_rain_hud",
-					"inputname": "FireUser2",
+					"inputname": "FireUser1",
 					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
             ]
@@ -6091,9 +6188,26 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "cmd",
+                    "inputname": "Command",
+                    "overrideparam": "say ♪ MUSIC [ Kirara Magic : Sunny Rain(feat. Shion) ]",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
 
 				{
   					"outputname": "OnUser2",
@@ -6404,26 +6518,15 @@
 		// Aurora VIP
         {
 			"targetname": "lyric_aurora_vip",
-			"classname": "trigger_multiple",
-			"origin": "1096 -436 236",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-            "wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_minecraft_sakura/entities/nuke_hurt_42519.vmdl",
 			"io":
 			[
                 {
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
-					"timestofire": -1
-				},
-
-			    {
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerInZone",
 					"targetname": "lyric_aurora_vip_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -6431,10 +6534,26 @@
 				},
 
                 {
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_aurora_vip_hud",
-					"inputname": "FireUser2",
+					"inputname": "FireUser1",
 					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
             ]
@@ -6458,9 +6577,26 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "cmd",
+                    "inputname": "Command",
+                    "overrideparam": "say ♪ MUSIC [ Kirara Magic : Aurora VIP(feat. Shion) ]",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
 
 				{
   					"outputname": "OnUser2",
@@ -9259,16 +9395,7 @@
 				    {
                         "outputname": "SoundEventGuid",
 						"targetname": "lyric_inmyroom",
-                        "inputname": "Enable",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "SoundEventGuid",
-						"targetname": "cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say ♪ MUSIC [ キツネDJ : In My Room ]",
+                        "inputname": "CountPlayersInZone",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -9288,16 +9415,7 @@
 				    {
                         "outputname": "SoundEventGuid",
 						"targetname": "lyric_good_dream",
-                        "inputname": "Enable",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "SoundEventGuid",
-						"targetname": "cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say ♪ MUSIC [ Kirara Magic : Good Dream(feat. Shion) ]",
+                        "inputname": "CountPlayersInZone",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -9317,16 +9435,7 @@
 				    {
                         "outputname": "SoundEventGuid",
 						"targetname": "lyric_sunny_rain",
-                        "inputname": "Enable",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "SoundEventGuid",
-						"targetname": "cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say ♪ MUSIC [ Kirara Magic : Sunny Rain(feat. Shion) ]",
+                        "inputname": "CountPlayersInZone",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -9346,16 +9455,7 @@
 				    {
                         "outputname": "SoundEventGuid",
 						"targetname": "lyric_aurora_vip",
-                        "inputname": "Enable",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "SoundEventGuid",
-						"targetname": "cmd",
-                        "inputname": "Command",
-                        "overrideparam": "say ♪ MUSIC [ Kirara Magic : Aurora VIP(feat. Shion) ]",
+                        "inputname": "CountPlayersInZone",
                         "delay": 0.0,
                         "timestofire": 1
                     }
