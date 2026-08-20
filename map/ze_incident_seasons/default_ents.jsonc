@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.04.08
+// stripper by 兎RB 26.08.20
 // map ze_incident_seasons
 // workshop id 3472606171
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -46,12 +46,21 @@
                         "delay": 0.0,
                         "timestofire": -1
                     },
+
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "lyric_toggle",
+                        "inputname": "SetValueTest",
+                        "overrideparam": "1", // Enable:1, Disable:0
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
                     // stripper update log
                     {
                         "outputname": "OnMapSpawn",
 						"targetname": "command",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.04.08 by 兎RB",
+                        "overrideparam": "say language translation stripper 26.08.20 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -101,7 +110,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl4_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：なんと素晴らしいことでしょう，秩序の廷の御方々よ ***>5.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：なんと素晴らしいことでしょう, 秩序の廷の御方々よ ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -110,7 +119,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl4_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** A：ちょっと疑問があるんだけど，天気はだんだん安定してきてるとはいえ ***>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** A：ちょっと疑問があるんだけど, 天気はだんだん安定してきてるとはいえ ***>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -137,7 +146,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl4_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：あとは冬の力のみ，この度の異変も完全に解決されるでしょう ***>10.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：あとは冬の力のみ, この度の異変も完全に解決されるでしょう ***>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -182,7 +191,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl2_enda_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** ？？？：立ち去るがよい，人間よ，私が心変わりする前に ***>100.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** ？？？：立ち去るがよい, 人間よ, 私が心変わりする前に ***>100.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -209,7 +218,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl2_enda_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** ？？？：よかろう，そなたの命 今回は赦してやろう ***>228.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** ？？？：よかろう, そなたの命 今回は赦してやろう ***>228.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -218,7 +227,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl2_enda_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** ？？？：ここはもう安全である，それでも騒ぎを起こすというのなら，我が無情になっても嘆くでない ***>230.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** ？？？：ここはもう安全である, それでも騒ぎを起こすというのなら, 我が無情になっても嘆くでない ***>230.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -245,7 +254,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl3_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：秋の力が集う場所はすでに見つけました，悠長にしてはいられません，急ぎましょう ***>30.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：秋の力が集う場所はすでに見つけました, 悠長にしてはいられません, 急ぎましょう ***>30.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -272,7 +281,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl3_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：細かいことはお気になさらず，悠長にしてはいられません，我々の成功はすぐそこにございます ***>25.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：細かいことはお気になさらず, 悠長にしてはいられません, 我々の成功はすぐそこにございます ***>25.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -281,7 +290,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl3_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** B：問題ない，隊長は隊を引っ張ることだけやればいい，俺たち隊員は考えることが多いからな ***>35.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** B：問題ない, 隊長は隊を引っ張ることだけやればいい, 俺たち隊員は考えることが多いからな ***>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -308,7 +317,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl3_final_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：彼女はすでに正気を失われております，何をなさるかわかりません，今はただ立ち去ることが急務でございます ***>38.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：彼女はすでに正気を失われております, 何をなさるかわかりません, 今はただ立ち去ることが急務でございます ***>38.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -353,7 +362,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl3_final_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：参りましょう!，前方にテレポートゲートがございます，我らは撤退の準備をしております ***>80.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：参りましょう!, 前方にテレポートゲートがございます, 我らは撤退の準備をしております ***>80.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -407,7 +416,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl3_boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：お見事でございます，秩序の方，我らは彼女を討ち取りました! ***>2.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：お見事でございます, 秩序の方, 我らは彼女を討ち取りました! ***>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -416,7 +425,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl3_boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：ここを去るのがよろしいでしょう，秋の力を伴いまして ***>5.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：ここを去るのがよろしいでしょう, 秋の力を伴いまして ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -461,7 +470,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl4_crystal_hp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnHitMin>command>Command>say *** ドロシー：我が名は，ドロシー ***>15.0>1",
+					"overrideparam": "OnHitMin>command>Command>say *** ドロシー：我が名は, ドロシー ***>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -479,7 +488,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl4_crystal_hp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnHitMin>command>Command>say *** ドロシー：あなたたち 何度も何度も私を邪魔して，悪魔と変わらないわよ ***>22.0>1",
+					"overrideparam": "OnHitMin>command>Command>say *** ドロシー：あなたたち 何度も何度も私を邪魔して, 悪魔と変わらないわよ ***>22.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -497,7 +506,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl4_crystal_hp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnHitMin>command>Command>say *** A：なんかおかしいな……バートリー，こいつって悪人じゃなかったっけ？ どうして神様になっちまったんだ？ ***>32.0>1",
+					"overrideparam": "OnHitMin>command>Command>say *** A：なんかおかしいな……バートリー, こいつって悪人じゃなかったっけ？ どうして神様になっちまったんだ？ ***>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -506,7 +515,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl4_crystal_hp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnHitMin>command>Command>say *** バートリー：事態は急を要しておりますゆえ 説明の暇はございません，彼女の妖しき言葉に惑わされてはなりません, この瞬間こそが彼女を退ける絶好の時でございます! ***>35.0>1",
+					"overrideparam": "OnHitMin>command>Command>say *** バートリー：事態は急を要しておりますゆえ 説明の暇はございません, 彼女の妖しき言葉に惑わされてはなりません, この瞬間こそが彼女を退ける絶好の時でございます! ***>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -524,7 +533,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl3_gotoboss_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：感じ取れます，彼女はここにおられます ***>5.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：感じ取れます, 彼女はここにおられます ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -533,7 +542,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl3_gotoboss_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：いいですよ，少々のお時間をいただければ，彼女が身を潜めている場所を見つけ出してまいります ***>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：いいですよ, 少々のお時間をいただければ, 彼女が身を潜めている場所を見つけ出してまいります ***>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -551,7 +560,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl3_boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** ソニア：ちょうどいいところに来たじゃない，前に受けた恥を返すわ ***>5.0>-1",
+					"overrideparam": "OnTrigger>command>Command>say *** ソニア：ちょうどいいところに来たじゃない, 前に受けた恥を返すわ ***>5.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -605,7 +614,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** ソニア：この死体たち……分かった，姉上に伝えに戻るわ ***>8.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** ソニア：この死体たち……分かった, 姉上に伝えに戻るわ ***>8.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -614,7 +623,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** ソニア：ふん，失礼 ***>9.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** ソニア：ふん, 失礼 ***>9.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -623,7 +632,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：彼女に逃げられましたか？ ご安心ください 秩序の方々，我々はすでに春の力を手に入れております ***>14.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：彼女に逃げられましたか？ ご安心ください 秩序の方々, 我々はすでに春の力を手に入れております ***>14.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -632,7 +641,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：この場所のエネルギーを私に導かせていただき 私たちを外へ送り出させていただきます，少々お時間を頂戴いたします ***>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：この場所のエネルギーを私に導かせていただき 私たちを外へ送り出させていただきます, 少々お時間を頂戴いたします ***>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -650,7 +659,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl3_door1_counter",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ** よくやった，結界はまもなく消える **>2.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ** よくやった, 結界はまもなく消える **>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -659,7 +668,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl2_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：さすがは秩序の方でございます，私にはできなかったことをこんなにも容易に成し遂げられるのですから ***>3.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：さすがは秩序の方でございます, 私にはできなかったことをこんなにも容易に成し遂げられるのですから ***>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -668,7 +677,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl2_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：少し考えさせていただきます，次に向かうべきは……迷いの森でしょうか ***>7.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：少し考えさせていただきます, 次に向かうべきは……迷いの森でしょうか ***>7.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -767,7 +776,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl3_ir_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：私が知る限り，ここには単に大量の秋の力が宿っているだけではございません ***>0.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：私が知る限り, ここには単に大量の秋の力が宿っているだけではございません ***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -776,7 +785,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl3_ir_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：以前に混乱を引き起こしたソニアもここにおり，異変を持続させております ***>5.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：以前に混乱を引き起こしたソニアもここにおり, 異変を持続させております ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -812,7 +821,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl2_ir_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** B：ボス。心配すんな，後ろは俺が食い止めてやる ***>10.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** B：ボス。心配すんな, 後ろは俺が食い止めてやる ***>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -830,7 +839,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_ir_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：あの場所には激しく乱れたエネルギー反応がございます，近づくだけで 私の氷が解けていくのを感じます ***>3.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：あの場所には激しく乱れたエネルギー反応がございます, 近づくだけで 私の氷が解けていくのを感じます ***>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -893,7 +902,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** A：でも どうやら彼女の力だけでは問題を解決できそうにない，だから俺たちの助けが必要だ ***>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** A：でも どうやら彼女の力だけでは問題を解決できそうにない, だから俺たちの助けが必要だ ***>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -902,7 +911,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** まだ春になったばかりなのに，秩序の庭の空気はやけに熱い ***>6.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** まだ春になったばかりなのに, 秩序の庭の空気はやけに熱い ***>6.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -911,7 +920,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** B：じゃあ行くか，状況を見に行こうぜ，暑くて死にそうだ ***>20.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** B：じゃあ行くか, 状況を見に行こうぜ, 暑くて死にそうだ ***>20.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -929,7 +938,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：皆さまがお越しになられましたね，秩序の者よ ***>1.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：皆さまがお越しになられましたね, 秩序の者よ ***>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -938,7 +947,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：各地の季節が乱れております，夏のセミが冬に鳴き，春の筍が秋に芽吹いてく ***>3.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：各地の季節が乱れております, 夏のセミが冬に鳴き, 春の筍が秋に芽吹いてく ***>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -947,7 +956,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：私の調査によりますと，これら全ては何者かが背後で操っておられるものでございます ***>8.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：私の調査によりますと, これら全ては何者かが背後で操っておられるものでございます ***>8.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -956,7 +965,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：故に，皆さまのお力をお借りする必要がございます ***>12.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：故に, 皆さまのお力をお借りする必要がございます ***>12.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -965,7 +974,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：彼らはあまりにも強大で，私一人では対処しきれません ***>10.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：彼らはあまりにも強大で, 私一人では対処しきれません ***>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -983,7 +992,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 余計な話は無駄だ，道を案内してくれ ***>22.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 余計な話は無駄だ, 道を案内してくれ ***>22.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -992,7 +1001,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：四季の力という武器は四季それぞれの力を吸収することが可能でございます，それを用いればこの異変を解決することは何ら問題ございません ***>17.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：四季の力という武器は四季それぞれの力を吸収することが可能でございます, それを用いればこの異変を解決することは何ら問題ございません ***>17.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1028,7 +1037,7 @@
 					"outputname": "OnCase01",
 					"targetname": "s4_boss_die_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** バートリー：ここまで事態が進んだ以上，私が何かを隠しておく必要はないわ ***>14.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** バートリー：ここまで事態が進んだ以上, 私が何かを隠しておく必要はないわ ***>14.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1118,7 +1127,7 @@
 					"outputname": "OnCase01",
 					"targetname": "s4_boss_die_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** A：神になるだと? 面白いじゃねか，俺にてめえの実力を見せてみろ! ***>55.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** A：神になるだと? 面白いじゃねか, 俺にてめえの実力を見せてみろ! ***>55.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1163,7 +1172,7 @@
 					"outputname": "OnCase01",
 					"targetname": "s4_end1_cmd1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 最後に，バトリは思考を止め，あなたたちは再び世界の秩序を守った ***>4.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 最後に, バトリは思考を止め, あなたたちは再び世界の秩序を守った ***>4.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1190,7 +1199,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl4_trigger5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：今こそ好機でございます，彼女の儀式はまさに要の時，彼女の防御結晶を砕けば，強制的に目覚めさせることができましょう ***>5.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：今こそ好機でございます, 彼女の儀式はまさに要の時, 彼女の防御結晶を砕けば, 強制的に目覚めさせることができましょう ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1199,7 +1208,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl4_trigger5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** B：俺に任せろ，fire in the hole！ ***>10.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** B：俺に任せろ, fire in the hole！ ***>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1253,7 +1262,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_win_tele",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** 春の力が固定されました，次のステージでも引き続き使用できます…… ***>9.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** 春の力が固定されました, 次のステージでも引き続き使用できます…… ***>9.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1262,7 +1271,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_trigger7",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：よろしい……確かめさせていただきます，なかなか容易ではございませんね…… ***>5.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：よろしい……確かめさせていただきます, なかなか容易ではございませんね…… ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1280,7 +1289,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_trigger7",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** ???：まさか浄化の儀式を壊すとは，許しはありえませんわ ***>28.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** ???：まさか浄化の儀式を壊すとは, 許しはありえませんわ ***>28.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1289,7 +1298,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_trigger7",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** ソニア：私の名はソニア，あなたたちは死ぬべき存在 ***>32.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** ソニア：私の名はソニア, あなたたちは死ぬべき存在 ***>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1298,7 +1307,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_trigger7",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：秩序の庭の皆さま，彼女のことは皆さまにお任せいたします ***>35.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：秩序の庭の皆さま, 彼女のことは皆さまにお任せいたします ***>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1316,7 +1325,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lv1_tower_button3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>command>Command>say ** バートリー：ここで間違いございません，お上へ上がりください，私がこの場の儀式を破壊できるか試してみましょう **>5.0>1",
+					"overrideparam": "OnPressed>command>Command>say ** バートリー：ここで間違いございません, お上へ上がりください, 私がこの場の儀式を破壊できるか試してみましょう **>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1325,7 +1334,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_door2_button",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>command>Command>say *** A：見てみよう，ここに何が書かれているか，うん…… ***>0.0>1",
+					"overrideparam": "OnPressed>command>Command>say *** A：見てみよう, ここに何が書かれているか, うん…… ***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1343,7 +1352,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_door2_button",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>command>Command>say *** A：生命の色が渦巻き，七重の門が世に現れ，力の塔が九天に君臨する…………俺は少しずつ全てを理解してきた！！！ ***>3.0>1",
+					"overrideparam": "OnPressed>command>Command>say *** A：生命の色が渦巻き, 七重の門が世に現れ, 力の塔が九天に君臨する…………俺は少しずつ全てを理解してきた！！！ ***>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1370,7 +1379,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl4_stat_protect_push",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：今回は，私たちはソニアの姉を倒さねばなりませんわ ***>5.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：今回は, 私たちはソニアの姉を倒さねばなりませんわ ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1379,7 +1388,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl4_stat_protect_push",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：私の諜報員によりますと彼女は重要な儀式を行っており，更なる異変を引き起こしております ***>10.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：私の諜報員によりますと彼女は重要な儀式を行っており, 更なる異変を引き起こしております ***>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1388,7 +1397,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl4_stat_protect_push",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：これは絶好の機会です，あの時 彼女の力は恐ろしく弱まっておるはず，私たちが彼女を討つ絶好の機会でございますわ ***>20.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：これは絶好の機会です, あの時 彼女の力は恐ろしく弱まっておるはず, 私たちが彼女を討つ絶好の機会でございますわ ***>20.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1397,7 +1406,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl4_stat_protect_push",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** B：お前は全部理解したのに，うちの隊長はどうすりゃいいんだ ***>24.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** B：お前は全部理解したのに, うちの隊長はどうすりゃいいんだ ***>24.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1406,7 +1415,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl4_trigger1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：凍り付く冬，私の最も愛する気候でございます ***>25.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：凍り付く冬, 私の最も愛する気候でございます ***>25.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1415,7 +1424,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl4_trigger1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：私が魔晶を起動し道を開きましょう，そなたらは屍どもをしばし押しとどめていただけますか ***>35.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：私が魔晶を起動し道を開きましょう, そなたらは屍どもをしばし押しとどめていただけますか ***>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1433,7 +1442,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl4_tele",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：この扉をくぐれば，旅の終着へと至りましょう，皆さま もうお心の準備はできておりますか? ***>0.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：この扉をくぐれば, 旅の終着へと至りましょう, 皆さま もうお心の準備はできておりますか? ***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1451,7 +1460,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl2_trigger1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：でも この先に進むには，まだ少しの腕前が必要でございます ***>35.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：でも この先に進むには, まだ少しの腕前が必要でございます ***>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1460,7 +1469,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl2_trigger1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** A：俺に任せろ，一日1000回の腕立て伏せなんて問題ない ***>40.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** A：俺に任せろ, 一日1000回の腕立て伏せなんて問題ない ***>40.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1487,7 +1496,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl3_win_tele",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** 秋の力が固定されました，次のステージでも引き続き使用できます…… ***>6.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** 秋の力が固定されました, 次のステージでも引き続き使用できます…… ***>6.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1523,7 +1532,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl2_win_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** 夏の力が固定されました，次のステージでも引き続き使用できます…… ***>4.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** 夏の力が固定されました, 次のステージでも引き続き使用できます…… ***>4.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1550,7 +1559,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_goto_library_tele",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：以前 遠くからお一人が此処へ入るのを見ました，彼こそ 我々が対処すべき対象であるようでございます ***>5.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：以前 遠くからお一人が此処へ入るのを見ました, 彼こそ 我々が対処すべき対象であるようでございます ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1559,7 +1568,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lvl1_goto_library_tele",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：ともあれ，先に上に上がり，状況をお確かめになりましょう ***>7.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** バートリー：ともあれ, 先に上に上がり, 状況をお確かめになりましょう ***>7.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1577,7 +1586,7 @@
 					"outputname": "OnCase01",
 					"targetname": "9094",
 					"inputname": "SetMessage",
-					"overrideparam": "腐潮の晶/zmspeed\n発動後 指定地点に水晶を生成し範囲内のゾンビを加速させる\n音が鳴るたび加速効果が高まる，計5回\n最後は大幅加速，水晶は人間が壊せる",
+					"overrideparam": "腐潮の晶/zmspeed\n発動後 指定地点に水晶を生成し範囲内のゾンビを加速させる\n音が鳴るたび加速効果が高まる, 計5回\n最後は大幅加速, 水晶は人間が壊せる",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1586,7 +1595,7 @@
 					"outputname": "OnCase01",
 					"targetname": "9095",
 					"inputname": "SetMessage",
-					"overrideparam": "エマ/Emma\n左キー：前方の人間にダメージを与える\nShift+左キー：範囲フィールドを生成，クールタイムなし\nShift+右キー：範囲フィールド内のゾンビを自分に引き寄せる，持続8秒，クールタイム30秒",
+					"overrideparam": "エマ/Emma\n左キー：前方の人間にダメージを与える\nShift+左キー：範囲フィールドを生成, クールタイムなし\nShift+右キー：範囲フィールド内のゾンビを自分に引き寄せる, 持続8秒, クールタイム30秒",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1604,7 +1613,7 @@
 					"outputname": "OnCase01",
 					"targetname": "9096",
 					"inputname": "SetMessage",
-					"overrideparam": "蝕輝の怒り/zmshield\n右キーで球体を発射，人間に当てるとエネルギー1個獲得\nエネルギー6個を集めた後Eキーを押すとエネルギーを全て消費して\n1秒間スタン，その後 自身は弾丸免疫と速度小幅上昇",
+					"overrideparam": "蝕輝の怒り/zmshield\n右キーで球体を発射, 人間に当てるとエネルギー1個獲得\nエネルギー6個を集めた後Eキーを押すとエネルギーを全て消費して\n1秒間スタン, その後 自身は弾丸免疫と速度小幅上昇",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1613,7 +1622,7 @@
 					"outputname": "OnCase01",
 					"targetname": "9097",
 					"inputname": "SetMessage",
-					"overrideparam": "灼熱の炎/fire\n指定地点に火炎のフィールドを生成し\nゾンビを減速 炎上させる，クールタイム60秒",
+					"overrideparam": "灼熱の炎/fire\n指定地点に火炎のフィールドを生成し\nゾンビを減速 炎上させる, クールタイム60秒",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1622,7 +1631,7 @@
 					"outputname": "OnCase01",
 					"targetname": "9099",
 					"inputname": "SetMessage",
-					"overrideparam": "四季の力/season\n毎ステージ終了時 新形態を解放\n頭上のEキーで形態を切り替え，クールタイム60秒\n\n春：指定地点に弱い重力場を生成し\nゾンビを引き寄せる\n6秒後に爆発し弱いフィールドを生成し\nゾンビを減速させる\n\n夏：指定地点に弱い雷フィールドを生成し\n範囲内のゾンビにランダムで天罰を与える\n天罰,範囲内のゾンビをスタン\n\n秋：指定地点に風フィールドを生成し",
+					"overrideparam": "四季の力/season\n毎ステージ終了時 新形態を解放\n頭上のEキーで形態を切り替え, クールタイム60秒\n\n春：指定地点に弱い重力場を生成し\nゾンビを引き寄せる\n6秒後に爆発し弱いフィールドを生成し\nゾンビを減速させる\n\n夏：指定地点に弱い雷フィールドを生成し\n範囲内のゾンビにランダムで天罰を与える\n天罰,範囲内のゾンビをスタン\n\n秋：指定地点に風フィールドを生成し",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1676,7 +1685,7 @@
 					"outputname": "OnCase01",
 					"targetname": "9104",
 					"inputname": "SetMessage",
-					"overrideparam": "恒星の引力/warp\n指定地点にブラックホールを\n生成し範囲内のゾンビを\n引き寄せる，クールタイム60秒",
+					"overrideparam": "恒星の引力/warp\n指定地点にブラックホールを\n生成し範囲内のゾンビを\n引き寄せる, クールタイム60秒",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1694,7 +1703,7 @@
 					"outputname": "OnCase01",
 					"targetname": "9141",
 					"inputname": "SetMessage",
-					"overrideparam": "バートリー/Bathory\nスキル1：左キーで減速球発射\nスキル2：右キーダブルクリックで左右に重力場を生成，ゾンビを集めた後 極氷雷銃で押し出す，クールタイム60秒\nスキル3：頭上のEキー，広範囲に減速を与えた後，ゾンビに壊滅的な攻撃を加える，一回限定",
+					"overrideparam": "バートリー/Bathory\nスキル1：左キーで減速球発射\nスキル2：右キーダブルクリックで左右に重力場を生成, ゾンビを集めた後 極氷雷銃で押し出す, クールタイム60秒\nスキル3：頭上のEキー, 広範囲に減速を与えた後, ゾンビに壊滅的な攻撃を加える, 一回限定",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1712,7 +1721,7 @@
 					"outputname": "OnCase01",
 					"targetname": "9142",
 					"inputname": "SetMessage",
-					"overrideparam": "ビトル/Bitru\nパッシブ：スキル使用後 人間にダメージを与えた後 バフ獲得，各バフは0.1の追加速度を提供\n效果，最大4スタック（1.4地上速度），20秒ごとに1スタック消失\n左キー：前方の人間にダメージを与える\nスキル1：右キーで深淵の矢気を発動，人間に2のダメージを与えバフ1個獲得，クールタイム10秒\nスキル2：shift+右キーで煉獄の力を発射，範囲内の人間は即死 バフ2個獲得",
+					"overrideparam": "ビトル/Bitru\nパッシブ：スキル使用後 人間にダメージを与えた後 バフ獲得, 各バフは0.1の追加速度を提供\n效果, 最大4スタック（1.4地上速度）, 20秒ごとに1スタック消失\n左キー：前方の人間にダメージを与える\nスキル1：右キーで深淵の矢気を発動, 人間に2のダメージを与えバフ1個獲得, クールタイム10秒\nスキル2：shift+右キーで煉獄の力を発射, 範囲内の人間は即死 バフ2個獲得",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1721,7 +1730,7 @@
 					"outputname": "OnCase01",
 					"targetname": "9142_2",
 					"inputname": "SetMessage",
-					"overrideparam": "            ラミア限定，HPの40%を消費",
+					"overrideparam": "            ラミア限定, HPの40%を消費",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1730,7 +1739,7 @@
 					"outputname": "OnCase01",
 					"targetname": "9143",
 					"inputname": "SetMessage",
-					"overrideparam": "ラミア/Lamia\n通常状態：左キーで斬撃，ゾンビを押しのける\n強化状態：2つの新スキルを獲得\nshift+右キー，強化状態に進入，進入後 周囲のゾンビを短時間拘束する水流を生成\n自身周囲のゾンビ，左キーの攻撃範囲強化，持続30秒，クールタイム60秒\nshift+左キー，一段目で前方へ突進しゾンビを押しのける\n二段目で後退しながらゾンビを短時間拘束する激流を生成，クールタイム20秒",
+					"overrideparam": "ラミア/Lamia\n通常状態：左キーで斬撃, ゾンビを押しのける\n強化状態：2つの新スキルを獲得\nshift+右キー, 強化状態に進入, 進入後 周囲のゾンビを短時間拘束する水流を生成\n自身周囲のゾンビ, 左キーの攻撃範囲強化, 持続30秒, クールタイム60秒\nshift+左キー, 一段目で前方へ突進しゾンビを押しのける\n二段目で後退しながらゾンビを短時間拘束する激流を生成, クールタイム20秒",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1748,7 +1757,7 @@
 					"outputname": "OnCase01",
 					"targetname": "9098",
 					"inputname": "SetMessage",
-					"overrideparam": "蒼瀾の涣/water\n指定地点に水場を生成し\nゾンビを拘束する，クールタイム 60秒",
+					"overrideparam": "蒼瀾の涣/water\n指定地点に水場を生成し\nゾンビを拘束する, クールタイム 60秒",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1793,7 +1802,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl4_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：어쩜 훌륭한 일이로군요，질서의 정원분들이여 ***>5.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：어쩜 훌륭한 일이로군요, 질서의 정원분들이여 ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1802,7 +1811,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl4_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** A：잠깐 의문이 있는데，날씨는 점차 좋아지고 있다고는 하나 ***>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** A：잠깐 의문이 있는데, 날씨는 점차 좋아지고 있다고는 하나 ***>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1829,7 +1838,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl4_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：이제 남은 건 겨울의 힘뿐이니，이번 이변도 완전히 해결되겠지요 ***>10.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：이제 남은 건 겨울의 힘뿐이니, 이번 이변도 완전히 해결되겠지요 ***>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1874,7 +1883,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl2_enda_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** ？？？：떠나는게 좋을 것이다，인간이여，내가 마음이 바뀌기 전에 ***>100.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** ？？？：떠나는게 좋을 것이다, 인간이여, 내가 마음이 바뀌기 전에 ***>100.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1901,7 +1910,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl2_enda_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** ？？？：좋다，그대의 목숨 이번만 살려주지 ***>228.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** ？？？：좋다, 그대의 목숨 이번만 살려주지 ***>228.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1910,7 +1919,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl2_enda_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** ？？？：여긴 이젠 안전하다，그럼에도 소란을 피울 생각이라면，내가 무정해져도 탄식하지 말거라 ***>230.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** ？？？：여긴 이젠 안전하다, 그럼에도 소란을 피울 생각이라면, 내가 무정해져도 탄식하지 말거라 ***>230.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1937,7 +1946,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl3_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：가을의 힘이 모여든 장소는 이미 찾았습니다，여유 부리고 있을 때가 아닙니다，서둘립시다 ***>30.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：가을의 힘이 모여든 장소는 이미 찾았습니다, 여유 부리고 있을 때가 아닙니다, 서둘립시다 ***>30.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1964,7 +1973,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl3_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：사소한 것들에 마음 쓰실 필요는 없습니다，여유 부리고 있을 수는 없습니다，우리의 성공은 바로 눈앞에 있습니다 ***>25.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：사소한 것들에 마음 쓰실 필요는 없습니다, 여유 부리고 있을 수는 없습니다, 우리의 성공은 바로 눈앞에 있습니다 ***>25.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1973,7 +1982,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl3_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** B：문제없지，대장은 그냥 부대만 이끌어 주면 돼，저희 대원들은 신경 쓸 일이 많아서요 ***>35.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** B：문제없지, 대장은 그냥 부대만 이끌어 주면 돼, 저희 대원들은 신경 쓸 일이 많아서요 ***>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2000,7 +2009,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl3_final_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：그녀는 이미 제정신을 잃었습니다，무엇을 할지 알 수 없습니다，지금은 단지 자리를 떠나는 것이 급선무입니다 ***>38.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：그녀는 이미 제정신을 잃었습니다, 무엇을 할지 알 수 없습니다, 지금은 단지 자리를 떠나는 것이 급선무입니다 ***>38.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2045,7 +2054,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl3_final_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：가시죠!，전방에 텔레포트 게이트가 있습니다，저희는 철수 준비를 하고 있습니다 ***>80.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：가시죠!, 전방에 텔레포트 게이트가 있습니다, 저희는 철수 준비를 하고 있습니다 ***>80.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2099,7 +2108,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl3_boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：정말 훌륭하십니다，질서의 분들，저희가 그녀를 쓰러뜨렸습니다! ***>2.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：정말 훌륭하십니다, 질서의 분들, 저희가 그녀를 쓰러뜨렸습니다! ***>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2108,7 +2117,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl3_boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：여기서 물러나는 게 옳을 겁니다，가을의 힘을 동반하여 ***>5.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：여기서 물러나는 게 옳을 겁니다, 가을의 힘을 동반하여 ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2153,7 +2162,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl4_crystal_hp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnHitMin>command>Command>say *** 도로시：내 이름은，도로시 ***>15.0>1",
+					"overrideparam": "OnHitMin>command>Command>say *** 도로시：내 이름은, 도로시 ***>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2171,7 +2180,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl4_crystal_hp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnHitMin>command>Command>say *** 도로시：너희는 여러 번이나 나를 방해하고，악마나 다름없어 ***>22.0>1",
+					"overrideparam": "OnHitMin>command>Command>say *** 도로시：너희는 여러 번이나 나를 방해하고, 악마나 다름없어 ***>22.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2189,7 +2198,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl4_crystal_hp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnHitMin>command>Command>say *** A：뭔가 이상한데……바토리，이 녀석은 나쁜 놈이 아니였던가？ 어째서 신이 되버린거지？ ***>32.0>1",
+					"overrideparam": "OnHitMin>command>Command>say *** A：뭔가 이상한데……바토리, 이 녀석은 나쁜 놈이 아니였던가？ 어째서 신이 되버린거지？ ***>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2198,7 +2207,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl4_crystal_hp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnHitMin>command>Command>say *** 바토리：사태가 급박하여 설명할 틈이 없습니다，그녀의 요사스러운 말에 현혹되어서는 안 됩니다, 이 순간이야말로 그녀를 물리칠 절호의 기회입니다! ***>35.0>1",
+					"overrideparam": "OnHitMin>command>Command>say *** 바토리：사태가 급박하여 설명할 틈이 없습니다, 그녀의 요사스러운 말에 현혹되어서는 안 됩니다, 이 순간이야말로 그녀를 물리칠 절호의 기회입니다! ***>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2216,7 +2225,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl3_gotoboss_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：느껴집니다，그녀가 여기에 있습니다 ***>5.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：느껴집니다, 그녀가 여기에 있습니다 ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2225,7 +2234,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl3_gotoboss_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：좋군요，조금만 시간을 주신다면，그녀가 숨어 있는 장소를 찾아오겠습니다 ***>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：좋군요, 조금만 시간을 주신다면, 그녀가 숨어 있는 장소를 찾아오겠습니다 ***>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2243,7 +2252,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl3_boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 소니아：딱 좋은 타이밍에 왔잖아，전에 당한 굴욕 이제 갚아주겠어 ***>5.0>-1",
+					"overrideparam": "OnTrigger>command>Command>say *** 소니아：딱 좋은 타이밍에 왔잖아, 전에 당한 굴욕 이제 갚아주겠어 ***>5.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2297,7 +2306,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 소니아：이 시체들……알겠군，언니에게 전하러 돌아가겠어 ***>8.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 소니아：이 시체들……알겠군, 언니에게 전하러 돌아가겠어 ***>8.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2306,7 +2315,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 소니아：흠，실례 ***>9.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 소니아：흠, 실례 ***>9.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2315,7 +2324,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：그녀가 도망쳤습니까？ 걱정 마십시오 질서의 여러분，저희는 이미 봄의 힘을 손에 넣었습니다 ***>14.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：그녀가 도망쳤습니까？ 걱정 마십시오 질서의 여러분, 저희는 이미 봄의 힘을 손에 넣었습니다 ***>14.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2324,7 +2333,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：이곳의 에너지를 저에게 인도하게 하시고 우리를 밖으로 이동시키겠습니다，잠시만 시간을 허락해 주십시오 ***>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：이곳의 에너지를 저에게 인도하게 하시고 우리를 밖으로 이동시키겠습니다, 잠시만 시간을 허락해 주십시오 ***>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2342,7 +2351,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl3_door1_counter",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ** 해냈다，결계가 곧 사라진다 **>2.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ** 해냈다, 결계가 곧 사라진다 **>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2351,7 +2360,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl2_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：역시 질서의 분이십니다，저로서는 할 수 없었던 일을 이렇게 쉽게 해내시다니요 ***>3.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：역시 질서의 분이십니다, 저로서는 할 수 없었던 일을 이렇게 쉽게 해내시다니요 ***>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2360,7 +2369,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl2_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：잠시 생각할 시간을 갖겠습니다，다음에 향해야 할 곳은……미로의 숲일까요 ***>7.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：잠시 생각할 시간을 갖겠습니다, 다음에 향해야 할 곳은……미로의 숲일까요 ***>7.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2459,7 +2468,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl3_ir_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：제가 아는 한，여기는 단순히 많은 가을의 힘이 깃든 곳만은 아닙니다 ***>0.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：제가 아는 한, 여기는 단순히 많은 가을의 힘이 깃든 곳만은 아닙니다 ***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2468,7 +2477,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl3_ir_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：이전에 혼란을 일으켰던 소니아도 이곳에 있으며，이상 현상을 지속시키고 있습니다 ***>5.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：이전에 혼란을 일으켰던 소니아도 이곳에 있으며, 이상 현상을 지속시키고 있습니다 ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2504,7 +2513,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl2_ir_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** B：보스。걱정하지 마，뒤는 내가 막아줄게 ***>10.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** B：보스。걱정하지 마, 뒤는 내가 막아줄게 ***>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2522,7 +2531,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_ir_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：저 장소에는 격렬하게 혼란스러운 에너지 반응이 있습니다，가까이 가는 것만으로도 제 얼음이 녹아가는 것을 느낍니다 ***>3.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：저 장소에는 격렬하게 혼란스러운 에너지 반응이 있습니다, 가까이 가는 것만으로도 제 얼음이 녹아가는 것을 느낍니다 ***>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2585,7 +2594,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** A：하지만 아무래도 그녀의 힘만으로는 문제를 해결할 수 없을 것 같아，그래서 우리들의 도움이 필요하다 ***>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** A：하지만 아무래도 그녀의 힘만으로는 문제를 해결할 수 없을 것 같아, 그래서 우리들의 도움이 필요하다 ***>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2594,7 +2603,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 아직 봄이 된 지 얼마 되지 않았는데，질서의 정원의 공기가 유난히 뜨겁다 ***>6.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 아직 봄이 된 지 얼마 되지 않았는데, 질서의 정원의 공기가 유난히 뜨겁다 ***>6.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2603,7 +2612,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** B：그럼 가볼까，상황 보러 가자，더워서 진짜 죽겠네 ***>20.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** B：그럼 가볼까, 상황 보러 가자, 더워서 진짜 죽겠네 ***>20.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2621,7 +2630,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：여러분께서 도착하셨군요，질서의 자들이시여 ***>1.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：여러분께서 도착하셨군요, 질서의 자들이시여 ***>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2630,7 +2639,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：각지의 계절이 혼란스러워지고 있습니다，여름의 매미가 겨울에 울고，봄의 죽순이 가을에 돋아나고 있습니다 ***>3.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：각지의 계절이 혼란스러워지고 있습니다, 여름의 매미가 겨울에 울고, 봄의 죽순이 가을에 돋아나고 있습니다 ***>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2639,7 +2648,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：제가 조사해 본 바로는，이 모든 일은 누군가가 뒤에서 조종하고 있는 듯합니다 ***>8.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：제가 조사해 본 바로는, 이 모든 일은 누군가가 뒤에서 조종하고 있는 듯합니다 ***>8.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2648,7 +2657,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：그러므로，여러분의 도움이 꼭 필요합니다 ***>12.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：그러므로, 여러분의 도움이 꼭 필요합니다 ***>12.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2657,7 +2666,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：그들은 너무나 강대하여，저 혼자서는 도저히 대응할 수 없습니다 ***>10.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：그들은 너무나 강대하여, 저 혼자서는 도저히 대응할 수 없습니다 ***>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2675,7 +2684,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 쓸데없는 얘기는 필요 없다，길을 안내해 줘 ***>22.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 쓸데없는 얘기는 필요 없다, 길을 안내해 줘 ***>22.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2684,7 +2693,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：사계의 힘이라는 무기는 사계절 각각의 힘을 흡수하는 것이 가능합니다，그것이 있으면 이번 이변을 해결하는 데 아무런 문제가 없을 것입니다 ***>17.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：사계의 힘이라는 무기는 사계절 각각의 힘을 흡수하는 것이 가능합니다, 그것이 있으면 이번 이변을 해결하는 데 아무런 문제가 없을 것입니다 ***>17.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2720,7 +2729,7 @@
 					"outputname": "OnCase02",
 					"targetname": "s4_boss_die_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 바토리：여기까지 상황이 진행된 이상，내가 뭔가를 감출 필요는 없겠어 ***>14.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 바토리：여기까지 상황이 진행된 이상, 내가 뭔가를 감출 필요는 없겠어 ***>14.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2810,7 +2819,7 @@
 					"outputname": "OnCase02",
 					"targetname": "s4_boss_die_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** A：신이 된다고? 재밌는데，나한테 네 실력을 보여봐라! ***>55.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** A：신이 된다고? 재밌는데, 나한테 네 실력을 보여봐라! ***>55.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2855,7 +2864,7 @@
 					"outputname": "OnCase02",
 					"targetname": "s4_end1_cmd1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** 마지막으로，바토리는 생각을 멈추고，당신들은 다시 세계의 질서를 지켰다 ***>4.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** 마지막으로, 바토리는 생각을 멈추고, 당신들은 다시 세계의 질서를 지켰다 ***>4.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2882,7 +2891,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl4_trigger5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：지금이야말로 절호의 기회입니다，그녀의 의식은 마침 핵심 단계에 있으며，그 방어결정을 파괴한다면，강제로 각성시킬 수 있을 것입니다 ***>5.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：지금이야말로 절호의 기회입니다, 그녀의 의식은 마침 핵심 단계에 있으며, 그 방어결정을 파괴한다면, 강제로 각성시킬 수 있을 것입니다 ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2891,7 +2900,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl4_trigger5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** B：나에게 맡겨 줘，fire in the hole！ ***>10.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** B：나에게 맡겨 줘, fire in the hole！ ***>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2945,7 +2954,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_win_tele",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** 봄의 힘의 고정되었습니다，다음 스테이지에서도 이어서 사용 가능합니다…… ***>9.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** 봄의 힘의 고정되었습니다, 다음 스테이지에서도 이어서 사용 가능합니다…… ***>9.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2954,7 +2963,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_trigger7",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：좋습니다……확인하도록 하지요，결코 쉬운 일이 아니군요…… ***>5.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：좋습니다……확인하도록 하지요, 결코 쉬운 일이 아니군요…… ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2972,7 +2981,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_trigger7",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** ???：설마 정화의 의식을 파괴할 줄은，용서란 있을 수 없습니다 ***>28.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** ???：설마 정화의 의식을 파괴할 줄은, 용서란 있을 수 없습니다 ***>28.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2981,7 +2990,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_trigger7",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** 소니아：내 이름은 소니아，당신들은 죽어야 할 존재 ***>32.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** 소니아：내 이름은 소니아, 당신들은 죽어야 할 존재 ***>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2990,7 +2999,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_trigger7",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：질서의 정원 여러분，그녀의 일은 여러분께 맡기겠습니다 ***>35.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：질서의 정원 여러분, 그녀의 일은 여러분께 맡기겠습니다 ***>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3008,7 +3017,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lv1_tower_button3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>command>Command>say ** 바토리：여기가 틀림없습니다，위로 올라가십시오，제가 이곳의 의식을 파괴할 수 있는지 시험해 보도록 하겠습니다 **>5.0>1",
+					"overrideparam": "OnPressed>command>Command>say ** 바토리：여기가 틀림없습니다, 위로 올라가십시오, 제가 이곳의 의식을 파괴할 수 있는지 시험해 보도록 하겠습니다 **>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3017,7 +3026,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_door2_button",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>command>Command>say *** A：한번 보자，여기에 무엇이 쓰여 있는지，음…… ***>0.0>1",
+					"overrideparam": "OnPressed>command>Command>say *** A：한번 보자, 여기에 무엇이 쓰여 있는지, 음…… ***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3035,7 +3044,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_door2_button",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>command>Command>say *** A：생명의 색이 소용돌이치고，칠중의 문이 세상에 모습을 드러내，힘의 탑이 아홉 하늘 위에 군림한다…………나는 조금씩 모든 것을 이해해 가고 있다！！！ ***>3.0>1",
+					"overrideparam": "OnPressed>command>Command>say *** A：생명의 색이 소용돌이치고, 칠중의 문이 세상에 모습을 드러내, 힘의 탑이 아홉 하늘 위에 군림한다…………나는 조금씩 모든 것을 이해해 가고 있다！！！ ***>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3062,7 +3071,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl4_stat_protect_push",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：이번에는，저희들은 소니아의 언니를 쓰러뜨려야만 합니다 ***>5.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：이번에는, 저희들은 소니아의 언니를 쓰러뜨려야만 합니다 ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3071,7 +3080,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl4_stat_protect_push",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：제 첩자에 따르면 그녀는 중대한 의식을 치르고 있으며，더 큰 이변을 일으키고 있습니다 ***>10.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：제 첩자에 따르면 그녀는 중대한 의식을 치르고 있으며, 더 큰 이변을 일으키고 있습니다 ***>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3080,7 +3089,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl4_stat_protect_push",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：지금이 절호의 기회입니다，그때 그녀의 힘은 무서울 정도로 약해질 것이며，우리가 그녀를 물리칠 가장 좋은 기회이기도 합니다 ***>20.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：지금이 절호의 기회입니다, 그때 그녀의 힘은 무서울 정도로 약해질 것이며, 우리가 그녀를 물리칠 가장 좋은 기회이기도 합니다 ***>20.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3089,7 +3098,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl4_stat_protect_push",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** B：너는 다 이해했구나，그럼 우리 대장은 어떻게 해 ***>24.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** B：너는 다 이해했구나, 그럼 우리 대장은 어떻게 해 ***>24.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3098,7 +3107,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl4_trigger1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：매서운 겨울，제가 가장 사랑하는 기후이지요 ***>25.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：매서운 겨울, 제가 가장 사랑하는 기후이지요 ***>25.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3107,7 +3116,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl4_trigger1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：제가 마정을 가동하여 길을 열겠습니다，그대들은 잠시 동안 시체들을 막아줄 수 있겠습니까 ***>35.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：제가 마정을 가동하여 길을 열겠습니다, 그대들은 잠시 동안 시체들을 막아줄 수 있겠습니까 ***>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3125,7 +3134,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl4_tele",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：이 문을 지나면，여정의 종착에 이르게 될 것입니다，여러분 마음의 준비는 되어 계십니까? ***>0.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：이 문을 지나면, 여정의 종착에 이르게 될 것입니다, 여러분 마음의 준비는 되어 계십니까? ***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3143,7 +3152,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl2_trigger1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：허나 이 앞으로 나아가려면，아직은 조금 더 실력이 필요하답니다 ***>35.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：허나 이 앞으로 나아가려면, 아직은 조금 더 실력이 필요하답니다 ***>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3152,7 +3161,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl2_trigger1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** A：나한테 맡겨，하루 1000번 팔굽혀펴기 정도는 문제없어 ***>40.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** A：나한테 맡겨, 하루 1000번 팔굽혀펴기 정도는 문제없어 ***>40.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3179,7 +3188,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl3_win_tele",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** 가을의 힘의 고정되었습니다，다음 스테이지에서도 이어서 사용 가능합니다…… ***>6.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** 가을의 힘의 고정되었습니다, 다음 스테이지에서도 이어서 사용 가능합니다…… ***>6.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3215,7 +3224,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl2_win_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** 여름의 힘의 고정되었습니다，다음 스테이지에서도 이어서 사용 가능합니다…… ***>4.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** 여름의 힘의 고정되었습니다, 다음 스테이지에서도 이어서 사용 가능합니다…… ***>4.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3242,7 +3251,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_goto_library_tele",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：이전에 멀리서 한 인물이 이곳으로 들어가는 것을 목격한 바 있습니다，그 자야 말로 우리들이 상대해야 할 대상인 듯합니다 ***>5.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：이전에 멀리서 한 인물이 이곳으로 들어가는 것을 목격한 바 있습니다, 그 자야 말로 우리들이 상대해야 할 대상인 듯합니다 ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3251,7 +3260,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lvl1_goto_library_tele",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：어쨌든，먼저 위로 올라가셔서，상황을 확인하시지요 ***>7.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** 바토리：어쨌든, 먼저 위로 올라가셔서, 상황을 확인하시지요 ***>7.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3278,7 +3287,7 @@
 					"outputname": "OnCase02",
 					"targetname": "9094",
 					"inputname": "SetMessage",
-					"overrideparam": "부조의 결정/zmspeed\n발동후 지정지점에 수정을 생성해 범위내의 좀비를 가속시킴\n소리가 울릴 때마다 가속효과가 높아짐，합 5회\n마지막은 대폭가속，수정은 인간이 부술 수 있다",
+					"overrideparam": "부조의 결정/zmspeed\n발동후 지정지점에 수정을 생성해 범위내의 좀비를 가속시킴\n소리가 울릴 때마다 가속효과가 높아짐, 합 5회\n마지막은 대폭가속, 수정은 인간이 부술 수 있다",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3287,7 +3296,7 @@
 					"outputname": "OnCase02",
 					"targetname": "9095",
 					"inputname": "SetMessage",
-					"overrideparam": "에마/Emma\n좌측 키：전방의 인간에게 데미지를 줌\nShift+좌측 키：범위필드를 생성，쿨타임 없음\nShift+우측 키：범위필드내의 좀비를 자신에게 끌어당김，지속 8초，쿨타임 30초",
+					"overrideparam": "에마/Emma\n좌측 키：전방의 인간에게 데미지를 줌\nShift+좌측 키：범위필드를 생성, 쿨타임 없음\nShift+우측 키：범위필드내의 좀비를 자신에게 끌어당김, 지속 8초, 쿨타임 30초",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3296,7 +3305,7 @@
 					"outputname": "OnCase02",
 					"targetname": "9096",
 					"inputname": "SetMessage",
-					"overrideparam": "식휘의 분노/zmshield\n우측 키로 구체를 발사，인간에게 맞추면 에너지 1개 획득\n에너지 6개를 모은 후 E키를 누르면 에너지를 모두 소모해 1초간 스턴\n그 후 자신은 총알면역과 속도 소폭상승",
+					"overrideparam": "식휘의 분노/zmshield\n우측 키로 구체를 발사, 인간에게 맞추면 에너지 1개 획득\n에너지 6개를 모은 후 E키를 누르면 에너지를 모두 소모해 1초간 스턴\n그 후 자신은 총알면역과 속도 소폭상승",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3314,7 +3323,7 @@
 					"outputname": "OnCase02",
 					"targetname": "9097",
 					"inputname": "SetMessage",
-					"overrideparam": "치렬의 화염/fire\n지정지점에 화염필드를 생성해 좀비를\n감속 불태움，쿨타임 60초",
+					"overrideparam": "치렬의 화염/fire\n지정지점에 화염필드를 생성해 좀비를\n감속 불태움, 쿨타임 60초",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3332,7 +3341,7 @@
 					"outputname": "OnCase02",
 					"targetname": "9099",
 					"inputname": "SetMessage",
-					"overrideparam": "사계의 힘/season\n매 스테이지 종료시 새로운 형태가 해금\n머리 위 E키로 형태를 전환，쿨타임 60초\n\n봄：지정지점에 약한 중력장을 생성해\n좀비를 끌어당김\n6초 후에 폭발하여 약한 감속장을 생성해\n좀비를 감속\n\n여름：지정지점에 약한 번개필드 생성해\n범위내의 좀비에게 무작위로 천벌을 내림\n천벌,범위내의 좀비를 스턴\n\n가을：지정지점에 바람필드를 생성\n근처의 좀비를 계속해서 밀어냄",
+					"overrideparam": "사계의 힘/season\n매 스테이지 종료시 새로운 형태가 해금\n머리 위 E키로 형태를 전환, 쿨타임 60초\n\n봄：지정지점에 약한 중력장을 생성해\n좀비를 끌어당김\n6초 후에 폭발하여 약한 감속장을 생성해\n좀비를 감속\n\n여름：지정지점에 약한 번개필드 생성해\n범위내의 좀비에게 무작위로 천벌을 내림\n천벌,범위내의 좀비를 스턴\n\n가을：지정지점에 바람필드를 생성\n근처의 좀비를 계속해서 밀어냄",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3422,7 +3431,7 @@
 					"outputname": "OnCase02",
 					"targetname": "9141",
 					"inputname": "SetMessage",
-					"overrideparam": "바토리/Bathory\n스킬1：좌측 키로 감속구 발사\n스킬2：우측 키 더블클릭으로 좌우에 중력장을 생성，좀비를 모은 후 극빙뢰총으로 밀어냄，쿨타임 60초\n스킬3：머리 위 E키로，광범위에 감속을 부여한 후，좀비에게 파멸적인 공격을 가함，1회한정",
+					"overrideparam": "바토리/Bathory\n스킬1：좌측 키로 감속구 발사\n스킬2：우측 키 더블클릭으로 좌우에 중력장을 생성, 좀비를 모은 후 극빙뢰총으로 밀어냄, 쿨타임 60초\n스킬3：머리 위 E키로, 광범위에 감속을 부여한 후, 좀비에게 파멸적인 공격을 가함, 1회한정",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3431,7 +3440,7 @@
 					"outputname": "OnCase02",
 					"targetname": "9142",
 					"inputname": "SetMessage",
-					"overrideparam": "비토루/Bitru\n패시브：스킬 사용후 인간에게 데미지를 부여한 후 버프 획득，각 버프는 0.1의 추가가속을 제공\n효과，최대 4스택（1.4지상속도），20초 씩 1스택 소실\n좌측 키：전방의 인간에게 피해를 줌\n스킬1：우측 키로 심연의 화살을 발사，인간에게 2의 데미지를 주고 버프 1개 획득，쿨타임 10초\n스킬2：shift+우측 키로 연옥의 힘을 발동，범위내의 인간은 즉사 버프 2개 획득",
+					"overrideparam": "비토루/Bitru\n패시브：스킬 사용후 인간에게 데미지를 부여한 후 버프 획득, 각 버프는 0.1의 추가가속을 제공\n효과, 최대 4스택（1.4지상속도）, 20초 씩 1스택 소실\n좌측 키：전방의 인간에게 피해를 줌\n스킬1：우측 키로 심연의 화살을 발사, 인간에게 2의 데미지를 주고 버프 1개 획득, 쿨타임 10초\n스킬2：shift+우측 키로 연옥의 힘을 발동, 범위내의 인간은 즉사 버프 2개 획득",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3449,7 +3458,7 @@
 					"outputname": "OnCase02",
 					"targetname": "9143",
 					"inputname": "SetMessage",
-					"overrideparam": "라미아/Lamia\n일반상태：좌측 키로 참격，좀비를 밀어냄\n강화상태：2개의 새로운 스킬 획득\nshift+우측 키，강화상태에 돌입，돌입후 주위의 좀비를 단시간 구속하는 수류를 생성\n자신 주위의 좀비，좌측 키의 공격범위 강화，지속 30초，쿨타임 60초\nshift+좌측 키，1단계로 전방으로 돌진해 좀비를 밀어냄\n2단계로 후퇴하면서 좀비를 단시간 구속하는 격류를 생성，쿨타임 20초\n",
+					"overrideparam": "라미아/Lamia\n일반상태：좌측 키로 참격, 좀비를 밀어냄\n강화상태：2개의 새로운 스킬 획득\nshift+우측 키, 강화상태에 돌입, 돌입후 주위의 좀비를 단시간 구속하는 수류를 생성\n자신 주위의 좀비, 좌측 키의 공격범위 강화, 지속 30초, 쿨타임 60초\nshift+좌측 키, 1단계로 전방으로 돌진해 좀비를 밀어냄\n2단계로 후퇴하면서 좀비를 단시간 구속하는 격류를 생성, 쿨타임 20초\n",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3548,7 +3557,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Excellent，Lords of the Court of Order ***>5.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Excellent, Lords of the Court of Order ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3557,7 +3566,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** A：I have a question，Although the weather is gradually becoming more stable ***>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** A：I have a question, Although the weather is gradually becoming more stable ***>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3584,7 +3593,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：With the remaining power of winter，this anomaly will be completely resolved ***>10.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：With the remaining power of winter, this anomaly will be completely resolved ***>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3629,7 +3638,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl2_enda_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** ？？？：You’d better leave，human，before I change my mind ***>100.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** ？？？：You’d better leave, human, before I change my mind ***>100.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3656,7 +3665,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl2_enda_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** ？？？：Hmph，I’ll spare your life ***>228.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** ？？？：Hmph, I’ll spare your life ***>228.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3665,7 +3674,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl2_enda_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** ？？？：This place is now secure，But if you still intend to cause trouble，do not lament when I become merciless ***>230.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** ？？？：This place is now secure, But if you still intend to cause trouble, do not lament when I become merciless ***>230.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3692,7 +3701,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：We’ve already found the place where the power of autumn gathers，There’s no time to waste，let’s hurry ***>30.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：We’ve already found the place where the power of autumn gathers, There’s no time to waste, let’s hurry ***>30.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3719,7 +3728,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：There’s no need to worry about trivial matters，We can’t afford to relax now，our success is right before us ***>25.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：There’s no need to worry about trivial matters, We can’t afford to relax now, our success is right before us ***>25.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3728,7 +3737,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** B：No problem，You just need to lead the squad，Captain，We have plenty of things to take care of ourselves ***>35.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** B：No problem, You just need to lead the squad, Captain, We have plenty of things to take care of ourselves ***>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3755,7 +3764,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_final_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：She’s already lost her sanity，we can’t predict what she might do，Right now our priority is to get out of here ***>38.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：She’s already lost her sanity, we can’t predict what she might do, Right now our priority is to get out of here ***>38.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3800,7 +3809,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_final_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Let’s go!，There’s a teleport gate ahead，We’re preparing to withdraw ***>80.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Let’s go!, There’s a teleport gate ahead, We’re preparing to withdraw ***>80.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3854,7 +3863,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Excellent，Lords of the Court of Order，We’ve defeated her! ***>2.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Excellent, Lords of the Court of Order, We’ve defeated her! ***>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3863,7 +3872,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：It would be wise to withdraw from here，bringing the power of autumn with you ***>5.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：It would be wise to withdraw from here, bringing the power of autumn with you ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3908,7 +3917,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_crystal_hp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnHitMin>command>Command>say *** Dorothy：My name is，Dorothy ***>15.0>1",
+					"overrideparam": "OnHitMin>command>Command>say *** Dorothy：My name is, Dorothy ***>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3926,7 +3935,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_crystal_hp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnHitMin>command>Command>say *** Dorothy：You keep obstructing me，you are little more than demons ***>22.0>1",
+					"overrideparam": "OnHitMin>command>Command>say *** Dorothy：You keep obstructing me, you are little more than demons ***>22.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3944,7 +3953,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_crystal_hp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnHitMin>command>Command>say *** A：Something’s strange……Bathory，wasn’t he a bad guy？ How did he become a god？ ***>32.0>1",
+					"overrideparam": "OnHitMin>command>Command>say *** A：Something’s strange……Bathory, wasn’t he a bad guy？ How did he become a god？ ***>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3953,7 +3962,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_crystal_hp",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnHitMin>command>Command>say *** Bathory：The situation is too critical for explanations，Don’t let her deceitful words fool you, This moment is our perfect opportunity to strike her down! ***>35.0>1",
+					"overrideparam": "OnHitMin>command>Command>say *** Bathory：The situation is too critical for explanations, Don’t let her deceitful words fool you, This moment is our perfect opportunity to strike her down! ***>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3971,7 +3980,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_gotoboss_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：I can feel it，she’s here ***>5.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：I can feel it, she’s here ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3980,7 +3989,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_gotoboss_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Very well，If you give me a little time，I will find where she is hiding ***>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Very well, If you give me a little time, I will find where she is hiding ***>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -3998,7 +4007,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_boss_start_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Sonia：Perfect timing，Now I can repay you for the humiliation you caused me ***>5.0>-1",
+					"overrideparam": "OnTrigger>command>Command>say *** Sonia：Perfect timing, Now I can repay you for the humiliation you caused me ***>5.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4052,7 +4061,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Sonia：These corpses……I understand，I’ll return and inform my sister ***>8.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Sonia：These corpses……I understand, I’ll return and inform my sister ***>8.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4061,7 +4070,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Sonia：Hmm，Excuse me ***>9.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Sonia：Hmm, Excuse me ***>9.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4070,7 +4079,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Has she fled？ Worry not Lords of the Court of Order，we have already obtained the power of spring ***>14.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Has she fled？ Worry not Lords of the Court of Order, we have already obtained the power of spring ***>14.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4079,7 +4088,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_boss_defeat_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Allow me to channel the energy here and move us outside，Please give me a moment ***>15.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Allow me to channel the energy here and move us outside, Please give me a moment ***>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4097,7 +4106,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_door1_counter",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say ** We did it，the barrier will disappear soon **>2.0>1",
+					"overrideparam": "OnTrigger>command>Command>say ** We did it, the barrier will disappear soon **>2.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4106,7 +4115,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl2_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：As expected Lords of the Court of Order，You accomplished so easily what I could never do ***>3.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：As expected Lords of the Court of Order, You accomplished so easily what I could never do ***>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4115,7 +4124,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl2_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：I need a moment to think，Should our next destination be……the Forest of Labyrinths ***>7.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：I need a moment to think, Should our next destination be……the Forest of Labyrinths ***>7.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4214,7 +4223,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_ir_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：As far as I know，this place is not merely a place filled with the power of autumn ***>0.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：As far as I know, this place is not merely a place filled with the power of autumn ***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4223,7 +4232,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_ir_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Sonia, who previously caused chaos is also here，continues to sustain the anomaly ***>5.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Sonia, who previously caused chaos is also here, continues to sustain the anomaly ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4259,7 +4268,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl2_ir_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** B：Boss。don't worry，I’ll cover the rear ***>10.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** B：Boss。don't worry, I’ll cover the rear ***>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4277,7 +4286,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_ir_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：There is a strong and chaotic energy reaction there，even near it, I can feel my ice melting ***>3.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：There is a strong and chaotic energy reaction there, even near it, I can feel my ice melting ***>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4349,7 +4358,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** It’s just the beginning of spring，the air in the Court of Order is unusually hot ***>6.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** It’s just the beginning of spring, the air in the Court of Order is unusually hot ***>6.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4358,7 +4367,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** B：Then，let’s go see what’s happening，it’s unbearably hot ***>20.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** B：Then, let’s go see what’s happening, it’s unbearably hot ***>20.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4376,7 +4385,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：you’ve all arrived，Lords of the Court of Order ***>1.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：you’ve all arrived, Lords of the Court of Order ***>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4385,7 +4394,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：The seasons in every region are in chaos，summer cicadas cry in winter，spring shoots emerge in autumn ***>3.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：The seasons in every region are in chaos, summer cicadas cry in winter, spring shoots emerge in autumn ***>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4394,7 +4403,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：From what I’ve investigated，All of this is being controlled by someone behind the scenes ***>8.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：From what I’ve investigated, All of this is being controlled by someone behind the scenes ***>8.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4412,7 +4421,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：They are so powerful that，I can't possibly handle them alone ***>10.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：They are so powerful that, I can't possibly handle them alone ***>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4439,7 +4448,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_relay_1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：A weapon called the Power of the Four Seasons can absorb the strength of all four seasons，with it dealing with this anomaly won’t be a problem ***>17.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：A weapon called the Power of the Four Seasons can absorb the strength of all four seasons, with it dealing with this anomaly won’t be a problem ***>17.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4475,7 +4484,7 @@
 					"outputname": "OnCase03",
 					"targetname": "s4_boss_die_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Since it has already come to this，there’s no need for me to hide anything anymore ***>14.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Bathory：Since it has already come to this, there’s no need for me to hide anything anymore ***>14.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4610,7 +4619,7 @@
 					"outputname": "OnCase03",
 					"targetname": "s4_end1_cmd1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>command>Command>say *** Finally，Bathory has stopped thinking，you have once again upheld the order of the world ***>4.0>1",
+					"overrideparam": "OnTrigger>command>Command>say *** Finally, Bathory has stopped thinking, you have once again upheld the order of the world ***>4.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4637,7 +4646,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_trigger5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：Now is the perfect opportunity，Her ritual has reached its critical stage，if destroy her protective wards，we can force her to awaken ***>5.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：Now is the perfect opportunity, Her ritual has reached its critical stage, if destroy her protective wards, we can force her to awaken ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4646,7 +4655,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_trigger5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** B：Leave it to me，fire in the hole！ ***>10.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** B：Leave it to me, fire in the hole！ ***>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4700,7 +4709,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_win_tele",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** The power of spring is secured，Usable in the following stage…… ***>9.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** The power of spring is secured, Usable in the following stage…… ***>9.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4709,7 +4718,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_trigger7",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：Very well……let’s check it，It’s certainly not an easy task…… ***>5.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：Very well……let’s check it, It’s certainly not an easy task…… ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4727,7 +4736,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_trigger7",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** ???：I never imagined you’d destroy the Purification Ritual，here can be no forgiveness ***>28.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** ???：I never imagined you’d destroy the Purification Ritual, here can be no forgiveness ***>28.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4736,7 +4745,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_trigger7",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Sonia：My name is Sonia，you are beings who must die ***>32.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Sonia：My name is Sonia, you are beings who must die ***>32.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4745,7 +4754,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_trigger7",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：Lords of the Court of Order，I will leave her matter to you ***>35.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：Lords of the Court of Order, I will leave her matter to you ***>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4763,7 +4772,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lv1_tower_button3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>command>Command>say ** Bathory：This is definitely the place，go upstairs，I can attempt to break the ritual here **>5.0>1",
+					"overrideparam": "OnPressed>command>Command>say ** Bathory：This is definitely the place, go upstairs, I can attempt to break the ritual here **>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4772,7 +4781,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_door2_button",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>command>Command>say *** A：Let's see，what’s written here，hmm…… ***>0.0>1",
+					"overrideparam": "OnPressed>command>Command>say *** A：Let's see, what’s written here, hmm…… ***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4790,7 +4799,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_door2_button",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>command>Command>say *** A：The colors of life swirl in a vortex，the Sevenfold Gate appears in this world，the Tower of Power reigns over the Nine Heavens…………Amazing I’m gradually understanding everything！！！ ***>3.0>1",
+					"overrideparam": "OnPressed>command>Command>say *** A：The colors of life swirl in a vortex, the Sevenfold Gate appears in this world, the Tower of Power reigns over the Nine Heavens…………Amazing I’m gradually understanding everything！！！ ***>3.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4817,7 +4826,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_stat_protect_push",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：This time，we have to defeat Sonia’s older sister ***>5.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：This time, we have to defeat Sonia’s older sister ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4826,7 +4835,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_stat_protect_push",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：My informants tell me that she is carrying out a crucial ritual，causing an even greater anomaly ***>10.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：My informants tell me that she is carrying out a crucial ritual, causing an even greater anomaly ***>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4835,7 +4844,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_stat_protect_push",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：This is an opportunity，by then, her power will be terrifyingly weak，it’s our best chance to defeat her ***>20.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：This is an opportunity, by then, her power will be terrifyingly weak, it’s our best chance to defeat her ***>20.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4844,7 +4853,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_stat_protect_push",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** B：So you’ve understood everything，but what about our captain ***>24.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** B：So you’ve understood everything, but what about our captain ***>24.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4853,7 +4862,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_trigger1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：bitter winter，my favorite kind of weather ***>25.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：bitter winter, my favorite kind of weather ***>25.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4862,7 +4871,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_trigger1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：I’ll activate the magic crystal to open the path，you all help me hold off the corpses ***>35.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：I’ll activate the magic crystal to open the path, you all help me hold off the corpses ***>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4880,7 +4889,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl4_tele",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：Crossing this door，will mark the journey’s end，Is everyone ready? ***>0.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：Crossing this door, will mark the journey’s end, Is everyone ready? ***>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4898,7 +4907,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl2_trigger1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：But it seems that to move forward，we’ll need a bit more skill ***>35.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：But it seems that to move forward, we’ll need a bit more skill ***>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4907,7 +4916,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl2_trigger1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** A：Leave it to me，Doing 1,000 push-ups a day is no problem ***>40.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** A：Leave it to me, Doing 1,000 push-ups a day is no problem ***>40.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4934,7 +4943,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl3_win_tele",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** The power of autumn is secured，Usable in the following stage…… ***>6.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** The power of autumn is secured, Usable in the following stage…… ***>6.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4970,7 +4979,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl2_win_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** The power of summer is secured，Usable in the following stage…… ***>4.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** The power of summer is secured, Usable in the following stage…… ***>4.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -4997,7 +5006,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_goto_library_tele",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：I saw someone enter here from a distance before，They seem to be the one we need to deal with ***>5.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：I saw someone enter here from a distance before, They seem to be the one we need to deal with ***>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5006,7 +5015,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lvl1_goto_library_tele",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：Anyway，let’s go upstairs first，see what’s going on ***>7.0>1",
+					"overrideparam": "OnStartTouch>command>Command>say *** Bathory：Anyway, let’s go upstairs first, see what’s going on ***>7.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5033,7 +5042,7 @@
 					"outputname": "OnCase03",
 					"targetname": "9094",
 					"inputname": "SetMessage",
-					"overrideparam": "Corrupt Tide Crystal/zmspeed\nAfter casting, creates a stationary crystal that accelerates zombies within its range\nEach activation increases the acceleration effect，total 5 times\nThe final activation gains a massive boost，crystal can be destroyed by humans",
+					"overrideparam": "Corrupt Tide Crystal/zmspeed\nAfter casting, creates a stationary crystal that accelerates zombies within its range\nEach activation increases the acceleration effect, total 5 times\nThe final activation gains a massive boost, crystal can be destroyed by humans",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5051,7 +5060,7 @@
 					"outputname": "OnCase03",
 					"targetname": "9095",
 					"inputname": "SetMessage",
-					"overrideparam": "Emma\nLeft-key：Damages humans in front\nShift+Left-key：Creates an area field，no CoolTime\nShift+Right-key：Pulls zombies within the area field to itself for 8 sec，CoolTime 30sec",
+					"overrideparam": "Emma\nLeft-key：Damages humans in front\nShift+Left-key：Creates an area field, no CoolTime\nShift+Right-key：Pulls zombies within the area field to itself for 8 sec, CoolTime 30sec",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5060,7 +5069,7 @@
 					"outputname": "OnCase03",
 					"targetname": "9096",
 					"inputname": "SetMessage",
-					"overrideparam": "Eclipse Fury/zmshield\nRight-key Shoot orb，Gain 1 energy point after hitting a human\nAfter collecting 6 energy press E to consume all energy and\nbecome stun for 1 sec，Gain bullet immunity and\na minor speed boost afterwards",
+					"overrideparam": "Eclipse Fury/zmshield\nRight-key Shoot orb, Gain 1 energy point after hitting a human\nAfter collecting 6 energy press E to consume all energy and\nbecome stun for 1 sec, Gain bullet immunity and\na minor speed boost afterwards",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5078,7 +5087,7 @@
 					"outputname": "OnCase03",
 					"targetname": "9097",
 					"inputname": "SetMessage",
-					"overrideparam": "Blazing Inferno/fire\nCreates a stationary fire zone that slows and\nburns zombies，CoolTime 60sec",
+					"overrideparam": "Blazing Inferno/fire\nCreates a stationary fire zone that slows and\nburns zombies, CoolTime 60sec",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5159,7 +5168,7 @@
 					"outputname": "OnCase03",
 					"targetname": "9104",
 					"inputname": "SetMessage",
-					"overrideparam": "Stellar Pull/warp\nCreates a stationary black hole\nthat attracts zombieswithin\nits range，CoolTime 60sec",
+					"overrideparam": "Stellar Pull/warp\nCreates a stationary black hole\nthat attracts zombieswithin\nits range, CoolTime 60sec",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5177,7 +5186,7 @@
 					"outputname": "OnCase03",
 					"targetname": "9141",
 					"inputname": "SetMessage",
-					"overrideparam": "Bathory\nSkill1：Left-key shoot a slowing orb\nSkill2：Right-key Double-click Create gravitational fields on left and right\n            grouping the zombies use the Extreme Ice Thunder Gun to push them away，CoolTime 60sec\nSkill3：Press E-key Overhead，after causing a large-area slow effect\n            deliver a devastating blow to the zombies，one time only",
+					"overrideparam": "Bathory\nSkill1：Left-key shoot a slowing orb\nSkill2：Right-key Double-click Create gravitational fields on left and right\n            grouping the zombies use the Extreme Ice Thunder Gun to push them away, CoolTime 60sec\nSkill3：Press E-key Overhead, after causing a large-area slow effect\n            deliver a devastating blow to the zombies, one time only",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5186,7 +5195,7 @@
 					"outputname": "OnCase03",
 					"targetname": "9142",
 					"inputname": "SetMessage",
-					"overrideparam": "Bitru\nPassive：skill damaging humans with skills grants stacking buffs，Each stack provides an additional 0.1 speed\nEffect，Max 4 stacks（1.4 speed），1 stack is lost every 20 sec\nLeft-key：Damages humans in front\nSkill1：Right-key shoot Abyssal Arrow，dealing 2 damage to humans and granting 1 buff stack，CoolTime 10sec\nSkill2：Shift+Right-key unleash the Power of Purgatory，instantly killing humans in the area and granting 2 buff stacks\n            only Lamia, Use 40% HP",
+					"overrideparam": "Bitru\nPassive：skill damaging humans with skills grants stacking buffs, Each stack provides an additional 0.1 speed\nEffect, Max 4 stacks（1.4 speed）, 1 stack is lost every 20 sec\nLeft-key：Damages humans in front\nSkill1：Right-key shoot Abyssal Arrow, dealing 2 damage to humans and granting 1 buff stack, CoolTime 10sec\nSkill2：Shift+Right-key unleash the Power of Purgatory, instantly killing humans in the area and granting 2 buff stacks\n            only Lamia, Use 40% HP",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5195,7 +5204,7 @@
 					"outputname": "OnCase03",
 					"targetname": "9143",
 					"inputname": "SetMessage",
-					"overrideparam": "Lamia\nDefault Mode：Left-key slash，push zombies\nUpgrade Mode：Acquire 2 new abilities\nShift+Right-key，enter Upgrade Mode，creates a brief water stream that binds\nNearby zombies，Increase Left-key attack range，duration 30sec，CoolTime 60sec\nShift+Left-key，1 Stage dash forward pushing zombies away\n2 Stage Step back creat a brief bind stream for zombies，CoolTime 20sec\n",
+					"overrideparam": "Lamia\nDefault Mode：Left-key slash, push zombies\nUpgrade Mode：Acquire 2 new abilities\nShift+Right-key, enter Upgrade Mode, creates a brief water stream that binds\nNearby zombies, Increase Left-key attack range, duration 30sec, CoolTime 60sec\nShift+Left-key, 1 Stage dash forward pushing zombies away\n2 Stage Step back creat a brief bind stream for zombies, CoolTime 20sec\n",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5213,7 +5222,7 @@
 					"outputname": "OnCase03",
 					"targetname": "9098",
 					"inputname": "SetMessage",
-					"overrideparam": "Surging Tide/water\nCreates a stationary water field\nthat binds zombies，CoolTime 60sec",
+					"overrideparam": "Surging Tide/water\nCreates a stationary water field\nthat binds zombies, CoolTime 60sec",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -5428,29 +5437,49 @@
 			"renderfx": "kRenderFxNone"
 		},
 		// add lyric entity
+		{
+            "targetname": "lyric_toggle",
+            "classname": "logic_branch",
+            "initialvalue": "1",
+            "io":
+            [
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_nameless",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_nameless_ext",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+			]
+        },
 		// Nameless Passion
 		{
 			"targetname": "lyric_nameless",
-			"classname": "trigger_multiple",
-			"origin": "13935 -2155 8000",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
-			"scales": "9 9 9",
-			"startdisabled": "1",
-			"wait": "1",
-			"spawnflags": "4097",
+			"scales": "1 1 1",
 			"model": "maps/ze_incident_seasons/entities/unnamed_11449.vmdl",
 			"io":
 			[
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
+					"outputname": "OnPlayerInZone",
+					"targetname": "lyric_nameless_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
-				{
-					"outputname": "OnStartTouch",
+                {
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_nameless_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -5458,10 +5487,18 @@
 				},
 
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_nameless_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
 			]
@@ -5481,13 +5518,30 @@
 					"timestofire": -1
 				},
 
-				{
+                {
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "command",
+                    "inputname": "Command",
+                    "overrideparam": "say ♪ MUSIC [ 天束 : Nameless Passion(feat.Sennzai) ]",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
 
 				{
 					"outputname": "OnUser2",
@@ -5789,26 +5843,23 @@
 		// Nameless Passion Extend ver.
 		{
 			"targetname": "lyric_nameless_ext",
-			"classname": "trigger_multiple",
-			"origin": "-12000 -13150 -14120",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
-			"scales": "9 9 9",
-			"startdisabled": "1",
-			"wait": "1",
-			"spawnflags": "4097",
+			"scales": "1 1 1",
 			"model": "maps/ze_incident_seasons/entities/unnamed_11449.vmdl",
 			"io":
 			[
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
+					"outputname": "OnPlayerInZone",
+					"targetname": "lyric_nameless_ext_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
-				{
-					"outputname": "OnStartTouch",
+                {
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_nameless_ext_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -5816,10 +5867,18 @@
 				},
 
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_nameless_ext_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
 			]
@@ -5839,13 +5898,30 @@
 					"timestofire": -1
 				},
 
-				{
+                {
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "command",
+                    "inputname": "Command",
+                    "overrideparam": "say ♪ MUSIC [ 天束 : Nameless Passion(feat.Sennzai) Extend ver. ]",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
 
 				{
 					"outputname": "OnUser2",
@@ -8887,7 +8963,7 @@
 				]
 			}
 		},
-
+		// add lyric output
 		{
             "match":
             {
@@ -8900,16 +8976,7 @@
 					{
                         "outputname": "SoundEventGuid",
 						"targetname": "lyric_nameless",
-                        "inputname": "Enable",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "SoundEventGuid",
-						"targetname": "command",
-                        "inputname": "Command",
-                        "overrideparam": "say ♪ MUSIC [ 天束 : Nameless Passion(feat.Sennzai) ]",
+                        "inputname": "CountPlayersInZone",
                         "delay": 0.0,
                         "timestofire": 1
                     }
@@ -8929,16 +8996,7 @@
 					{
                         "outputname": "SoundEventGuid",
 						"targetname": "lyric_nameless_ext",
-                        "inputname": "Enable",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "SoundEventGuid",
-						"targetname": "command",
-                        "inputname": "Command",
-                        "overrideparam": "say ♪ MUSIC [ 天束 : Nameless Passion(feat.Sennzai) Extend ver. ]",
+                        "inputname": "CountPlayersInZone",
                         "delay": 0.0,
                         "timestofire": 1
                     }
