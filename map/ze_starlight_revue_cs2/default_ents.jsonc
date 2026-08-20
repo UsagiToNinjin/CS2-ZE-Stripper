@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.06.17
+// stripper by 兎RB 26.08.20
 // map ze_starlight_revue_cs2
 // workshop id 3519985936
 // if find mistranslation tell me　https://steamcommunity.com/profiles/76561198343767968/
@@ -23,12 +23,21 @@
                         "delay": 0.0,
                         "timestofire": -1
                     },
+
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "lyric_toggle",
+                        "inputname": "SetValueTest",
+                        "overrideparam": "1", // Enable:1, Disable:0
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
                     // stripper update log
                     {
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.06.17 by 兎RB",
+                        "overrideparam": "say language translation stripper 26.08.20 by 兎RB",
                         "delay": 3.0,
                         "timestofire": -1
                     }
@@ -2227,6 +2236,53 @@
 			]
 		},
 		// add lyric entity
+		{
+            "targetname": "lyric_toggle",
+            "classname": "logic_branch",
+            "initialvalue": "1",
+            "io":
+            [
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_re_create",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_koi",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_aoi",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_iwantyou",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_haru",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+			]
+        },
 		// RE:CREATE
         {
 			"targetname": "lyric_re_create",
