@@ -47,7 +47,7 @@ Modify the `overrideparam` value of `lyric_toggle` at the top of the `default_en
 ```jsonc
 {
     "outputname": "OnMapSpawn",
-    "targetname": "language_counter",
+    "targetname": "lyric_toggle",
     "inputname": "SetValueTest",
     "overrideparam": "1", // Enable:1, Disable:0
     "delay": 0.0,
