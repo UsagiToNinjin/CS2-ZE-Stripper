@@ -1612,7 +1612,7 @@
 					"outputname": "OnUser4",
 					"targetname": "Item_BLM_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ** Effect：Front E-key creates a fireball that deals damage to zombies, every three casts it changes into a lightning strike；Overhead E-key creates a black magic sigil beneath the player **>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** Effect：Front E-key creates a fireball that deals damage to zombies, Every three casts it changes into a lightning strike；Overhead E-key creates a black magic sigil beneath the player **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1762,7 +1762,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Item_Blackhole_elite*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 효과：전방에 블랙홀을 생성해 좀비를 끌어당김 효과종료후 좀비를 텔레포트 시킴 **>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** 효과：전방에 블랙홀을 생성해 좀비를 끌어당김 효과 종료후 좀비를 텔레포트 시킴 **>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2820,7 +2820,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_Viod_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say ** Effect：Power of Nothingness removes all previously generated elemental item effects, gains the enhancement effect of the last element used**>1.0>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say ** Effect：Power of Nothingness removes all previously generated elemental item effects, Gains the enhancement effect of the last element used**>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -2829,7 +2829,7 @@
 					"outputname": "OnUser4",
 					"targetname": "ZM_Viod_knife*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPlayerPickup>cmd>Command>say **（On first use, elemental effects are removed, When used while an orb is present, the corresponding orb effect is obtained。If no orb is present it must be used again to trigger cooldown）**>1.1>1",
+					"overrideparam": "OnPlayerPickup>cmd>Command>say **（On first use, Elemental effects are removed, When used while an orb is present, The corresponding orb effect is obtained。If no orb is present it must be used again to trigger cooldown）**>1.1>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
