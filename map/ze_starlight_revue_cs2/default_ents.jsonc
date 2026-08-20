@@ -2345,7 +2345,7 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
 
@@ -2770,7 +2770,7 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
 
@@ -3446,7 +3446,7 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
 
@@ -3880,7 +3880,7 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
 
@@ -4494,7 +4494,7 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
 
