@@ -1,12 +1,12 @@
-// stripper by 兎RB,Frame 26.06.06
+// stripper by 兎RB,Frame 26.08.22
 // map ze_ffxiv_pharos_sirius
 // workshop id 3435645851
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
 // serial number 日本語:"1" 한국어:"2" English:"3"
-// + convert lua script L46~225, L6205~6247, L6267~6309, L6329~6371, L6391~6451, L6471~6513
-// + fix bug L226~251
+// + fix bug L235~264
+// + convert lua script L55~234, L6456~6498, L6518~6560, L6580~6622, L6642~6702, L6722~6764
 {
-	"filter": // remove old zombie item pickup entities and convert them to the new entity system, refer to L226
+	"filter": // remove old zombie item pickup entities and convert them to the new entity system
 	[
 		{
 			"targetname": "/((FD|Temp)_Knife|Knife_Strip_(PT|MK)|Temp_Knife_Strip)/"
@@ -31,19 +31,28 @@
 						"delay": 0.0,
 						"timestofire": -1
 					},
+
+					{
+                        "outputname": "OnSpawn",
+						"targetname": "lyric_toggle",
+                        "inputname": "SetValueTest",
+                        "overrideparam": "0", // Enable:1, Disable:0
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
 					// stripper update log
 					{
 						"outputname": "OnSpawn",
 						"targetname": "Server",
 						"inputname": "Command",
-						"overrideparam": "say language translation stripper 26.06.06 by 兎RB,Frame",
+						"overrideparam": "say language translation stripper 26.08.22 by 兎RB,Frame",
 						"delay": 6.0,
 						"timestofire": -1
 					}
 				]
 			}
 		},
-		// convert RunScriptCode(lua script) to keyvalue format
+		// convert RunScriptCode(lua script) to Keyvalue format
 		{
             "match":
             {
@@ -223,7 +232,7 @@
 				]
 			}
 		},
-		// convert player_weaponstrip to game_player_equip
+		// convert point_entity_finder to game_player_equip
 		{
 		    "match":
             {
@@ -232,8 +241,8 @@
             },
 			"replace":
 			{
-				"classname": "game_player_equip",
-				"spawnflags": "3"
+				"classname": "game_player_equip"
+				
 			},
 			"delete":
 			{
@@ -247,6 +256,10 @@
 						"outputname": "OnTrigger"
 					}	
 				]
+			},
+			"insert":
+			{
+				"spawnflags": "3"
 			}		
 		}
 	],
@@ -2275,29 +2288,97 @@
 			]
 		},
 		// add lyric entity
+		{
+            "targetname": "lyric_toggle",
+            "classname": "logic_branch",
+            "initialvalue": "1",
+            "io":
+            [
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_great_plains",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_god",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_invincible",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_utakata",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_narrative",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_cry",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_scream",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_n01r",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+			]
+        },
 		// Great Plains of eternity(dummy music)
 		{
 			"targetname": "lyric_great_plains",
-			"classname": "trigger_multiple",
-			"origin": "-768 512 4864",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-			"wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_ffxiv_pharos_sirius/entities/Nuke_Hurt_27964.vmdl",
 			"io":
 			[
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
+					"outputname": "OnPlayerInZone",
+					"targetname": "lyric_great_plains_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
-				{
-					"outputname": "OnStartTouch",
+                {
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_great_plains_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -2305,10 +2386,18 @@
 				},
 
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_great_plains_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
 			]
@@ -2332,8 +2421,16 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
 				},
 
                 {
@@ -2546,26 +2643,23 @@
 		// God of ink
 		{
 			"targetname": "lyric_god",
-			"classname": "trigger_multiple",
-			"origin": "-768 512 4864",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-			"wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_ffxiv_pharos_sirius/entities/Nuke_Hurt_27964.vmdl",
 			"io":
 			[
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
+					"outputname": "OnPlayerInZone",
+					"targetname": "lyric_god_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
-				{
-					"outputname": "OnStartTouch",
+                {
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_god_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -2573,10 +2667,18 @@
 				},
 
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_god_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
 			]
@@ -2600,7 +2702,24 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Server",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ 澤野弘之 : God Of Ink ]",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
@@ -3093,26 +3212,23 @@
 		// Invincible
 		{
 			"targetname": "lyric_invincible",
-			"classname": "trigger_multiple",
-			"origin": "-768 512 4864",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-			"wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_ffxiv_pharos_sirius/entities/Nuke_Hurt_27964.vmdl",
 			"io":
 			[
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
+					"outputname": "OnPlayerInZone",
+					"targetname": "lyric_invincible_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
-				{
-					"outputname": "OnStartTouch",
+                {
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_invincible_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -3120,10 +3236,18 @@
 				},
 
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_invincible_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
 			]
@@ -3147,7 +3271,24 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Server",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ やまだ豊 : invincible ]",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
@@ -3586,26 +3727,23 @@
 		// UTAKATA～泡沫～
 		{
 			"targetname": "lyric_utakata",
-			"classname": "trigger_multiple",
-			"origin": "-768 512 4864",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-			"wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_ffxiv_pharos_sirius/entities/Nuke_Hurt_27964.vmdl",
 			"io":
 			[
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
+					"outputname": "OnPlayerInZone",
+					"targetname": "lyric_utakata_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
-				{
-					"outputname": "OnStartTouch",
+                {
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_utakata_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -3613,10 +3751,18 @@
 				},
 
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_utakata_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
 			]
@@ -3640,7 +3786,24 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Server",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ 石元丈晴 : UTAKATA～泡沫～ ]",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
@@ -4106,26 +4269,23 @@
 		// narrative
 		{
 			"targetname": "lyric_narrative",
-			"classname": "trigger_multiple",
-			"origin": "-768 512 4864",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-			"wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_ffxiv_pharos_sirius/entities/Nuke_Hurt_27964.vmdl",
 			"io":
 			[
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
+					"outputname": "OnPlayerInZone",
+					"targetname": "lyric_narrative_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
-				{
-					"outputname": "OnStartTouch",
+                {
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_narrative_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -4133,10 +4293,18 @@
 				},
 
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_narrative_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
 			]
@@ -4160,7 +4328,24 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Server",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ 澤野弘之 : narrative(feat.LiSA) ]",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
@@ -4536,26 +4721,23 @@
 		// cry
 		{
 			"targetname": "lyric_cry",
-			"classname": "trigger_multiple",
-			"origin": "-768 512 4864",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-			"wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_ffxiv_pharos_sirius/entities/Nuke_Hurt_27964.vmdl",
 			"io":
 			[
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
+					"outputname": "OnPlayerInZone",
+					"targetname": "lyric_cry_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
-				{
-					"outputname": "OnStartTouch",
+                {
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_cry_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -4563,10 +4745,18 @@
 				},
 
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_cry_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
 			]
@@ -4590,7 +4780,24 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Server",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ 澤野弘之 : CRY(feat.mizuki) ]",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
@@ -5065,26 +5272,23 @@
 		// Scream
 		{
 			"targetname": "lyric_scream",
-			"classname": "trigger_multiple",
-			"origin": "-768 512 4864",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-			"wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_ffxiv_pharos_sirius/entities/Nuke_Hurt_27964.vmdl",
 			"io":
 			[
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
+					"outputname": "OnPlayerInZone",
+					"targetname": "lyric_scream_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
-				{
-					"outputname": "OnStartTouch",
+                {
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_scream_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -5092,10 +5296,18 @@
 				},
 
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_scream_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
 			]
@@ -5119,7 +5331,24 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Server",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ 祖堅正慶 : Scream ]",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
@@ -5611,26 +5840,23 @@
 		// n01r
 		{
 			"targetname": "lyric_n01r",
-			"classname": "trigger_multiple",
-			"origin": "-768 512 4864",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-			"wait": "1",
-			"spawnflags": "4097",
 			"model": "maps/ze_ffxiv_pharos_sirius/entities/Nuke_Hurt_27964.vmdl",
 			"io":
 			[
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
+					"outputname": "OnPlayerInZone",
+					"targetname": "lyric_n01r_hud",
+					"inputname": "FireUser1",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
-				{
-					"outputname": "OnStartTouch",
+                {
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_n01r_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -5638,10 +5864,18 @@
 				},
 
 				{
-					"outputname": "OnStartTouch",
-					"targetname": "lyric_n01r_hud",
-					"inputname": "FireUser2",
-					"delay": 0.0,
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
 			]
@@ -5665,7 +5899,24 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "Server",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ 澤野弘之 : N01R(feat.Tielle) ]",
+					"delay": 0.0,
 					"timestofire": -1
 				},
 
@@ -6202,7 +6453,7 @@
 						"delay": 0.0,
 						"timestofire": 1
 					},
-					// convert RunScriptCode(lua script) to keyvalue format L6205~6247
+					// convert RunScriptCode(lua script) to Keyvalue format L6456~6498
 					{
                         "outputname": "OnTrigger",
 						"targetname": "!activator",
@@ -6264,7 +6515,7 @@
 						"delay": 0.0,
 						"timestofire": 1
 					},
-					// convert RunScriptCode(lua script) to keyvalue format L6267~6309
+					// convert RunScriptCode(lua script) to Keyvalue format L6518~6560
 					{
                         "outputname": "OnTrigger",
 						"targetname": "!activator",
@@ -6326,7 +6577,7 @@
 						"delay": 0.0,
 						"timestofire": 1
 					},
-					// convert RunScriptCode(lua script) to keyvalue format L6329~6371
+					// convert RunScriptCode(lua script) to Keyvalue format L6580~6622
 					{
                         "outputname": "OnTrigger",
 						"targetname": "!activator",
@@ -6388,7 +6639,7 @@
 						"delay": 0.0,
 						"timestofire": 1
 					},
-					// convert RunScriptCode(lua script) to keyvalue format L6391~6451
+					// convert RunScriptCode(lua script) to Keyvalue format L6642~6702
 					{
                         "outputname": "OnTrigger",
 						"targetname": "!activator",
@@ -6468,7 +6719,7 @@
 						"delay": 0.0,
 						"timestofire": 1
 					},
-					// convert RunScriptCode(lua script) to keyvalue format L6471~6513
+					// convert RunScriptCode(lua script) to Keyvalue format L6722~6764
 					{
                         "outputname": "OnTrigger",
 						"targetname": "!activator",
@@ -7284,16 +7535,7 @@
 					{
 						"outputname": "SoundEventGuid",
 						"targetname": "lyric_god",
-						"inputname": "Enable",
-						"delay": 0.0,
-						"timestofire": 1
-					},
-
-					{
-						"outputname": "SoundEventGuid",
-						"targetname": "Server",
-						"inputname": "Command",
-						"overrideparam": "say ♪ MUSIC [ 澤野弘之 : God Of Ink ]",
+						"inputname": "CountPlayersInZone",
 						"delay": 0.0,
 						"timestofire": 1
 					}
@@ -7313,16 +7555,7 @@
 					{
 						"outputname": "SoundEventGuid",
 						"targetname": "lyric_invincible",
-						"inputname": "Enable",
-						"delay": 0.0,
-						"timestofire": 1
-					},
-
-					{
-						"outputname": "SoundEventGuid",
-						"targetname": "Server",
-						"inputname": "Command",
-						"overrideparam": "say ♪ MUSIC [ やまだ豊 : invincible ]",
+						"inputname": "CountPlayersInZone",
 						"delay": 0.0,
 						"timestofire": 1
 					}
@@ -7342,16 +7575,7 @@
 					{
 						"outputname": "SoundEventGuid",
 						"targetname": "lyric_utakata",
-						"inputname": "Enable",
-						"delay": 0.0,
-						"timestofire": 1
-					},
-
-					{
-						"outputname": "SoundEventGuid",
-						"targetname": "Server",
-						"inputname": "Command",
-						"overrideparam": "say ♪ MUSIC [ 石元丈晴 : UTAKATA～泡沫～ ]",
+						"inputname": "CountPlayersInZone",
 						"delay": 0.0,
 						"timestofire": 1
 					}
@@ -7391,16 +7615,7 @@
 					{
 						"outputname": "SoundEventGuid",
 						"targetname": "lyric_narrative",
-						"inputname": "Enable",
-						"delay": 0.0,
-						"timestofire": 1
-					},
-
-					{
-						"outputname": "SoundEventGuid",
-						"targetname": "Server",
-						"inputname": "Command",
-						"overrideparam": "say ♪ MUSIC [ 澤野弘之 : narrative(feat.LiSA) ]",
+						"inputname": "CountPlayersInZone",
 						"delay": 0.0,
 						"timestofire": 1
 					}
@@ -7420,16 +7635,7 @@
 					{
 						"outputname": "SoundEventGuid",
 						"targetname": "lyric_cry",
-						"inputname": "Enable",
-						"delay": 0.0,
-						"timestofire": 1
-					},
-
-					{
-						"outputname": "SoundEventGuid",
-						"targetname": "Server",
-						"inputname": "Command",
-						"overrideparam": "say ♪ MUSIC [ 澤野弘之 : CRY(feat.mizuki) ]",
+						"inputname": "CountPlayersInZone",
 						"delay": 0.0,
 						"timestofire": 1
 					}
@@ -7449,16 +7655,7 @@
 					{
 						"outputname": "SoundEventGuid",
 						"targetname": "lyric_scream",
-						"inputname": "Enable",
-						"delay": 0.0,
-						"timestofire": 1
-					},
-
-					{
-						"outputname": "SoundEventGuid",
-						"targetname": "Server",
-						"inputname": "Command",
-						"overrideparam": "say ♪ MUSIC [ 祖堅正慶 : Scream ]",
+						"inputname": "CountPlayersInZone",
 						"delay": 0.0,
 						"timestofire": 1
 					}
@@ -7478,16 +7675,7 @@
 					{
 						"outputname": "SoundEventGuid",
 						"targetname": "lyric_n01r",
-						"inputname": "Enable",
-						"delay": 0.0,
-						"timestofire": 1
-					},
-
-					{
-						"outputname": "SoundEventGuid",
-						"targetname": "Server",
-						"inputname": "Command",
-						"overrideparam": "say ♪ MUSIC [ 澤野弘之 : N01R(feat.Tielle) ]",
+						"inputname": "CountPlayersInZone",
 						"delay": 0.0,
 						"timestofire": 1
 					}

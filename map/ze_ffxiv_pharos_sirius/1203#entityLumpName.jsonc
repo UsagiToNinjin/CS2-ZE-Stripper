@@ -1,8 +1,8 @@
-// stripper by 兎RB 26.05.15
+// stripper by 兎RB 26.08.22
 // map ze_ffxiv_pharos_sirius
 // workshop id 3435645851
 {
-	"modify": // convert RunScriptCode(lua script) to keyvalue format
+	"modify": // convert RunScriptCode(lua script) to Keyvalue format
     [
         {
             "match":

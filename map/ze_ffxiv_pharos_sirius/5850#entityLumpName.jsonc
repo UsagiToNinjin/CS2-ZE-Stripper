@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.06.06
+// stripper by 兎RB 26.08.22
 // map ze_ffxiv_pharos_sirius
 // workshop id 3435645851
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -44,7 +44,7 @@
 				]
 			}
 		},
-        // convert to game_player_equip input
+        // convert inputname Trigger(logic_relay) to Use(game_player_equip)
         {
 		    "match":
             {
