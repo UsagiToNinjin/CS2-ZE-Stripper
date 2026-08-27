@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.11.11
+// stripper by 兎RB 26.08.27
 // map ze_bh3rd_nagazoracity_z
 // workshop id 3423221710
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -24,12 +24,21 @@
                         "delay": 0.0,
                         "timestofire": -1
                     },
+
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "lyric_toggle",
+                        "inputname": "SetValueTest",
+                        "overrideparam": "1", // Enable:1, Disable:0
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
                     // stripper update log
                     {
                         "outputname": "OnMapSpawn",
 						"targetname": "juben",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.11.11 by 兎RB",
+                        "overrideparam": "say language translation stripper 26.08.27 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -133,7 +142,7 @@
 					"outputname": "OnCase01",
 					"targetname": "Level_Case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnDefault>juben>Command>say ＜＜＜間違っているステージです，作者に連絡してください＞＞＞>0.0>-1",
+					"overrideparam": "OnDefault>juben>Command>say ＜＜＜間違っているステージです, 作者に連絡してください＞＞＞>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -250,7 +259,7 @@
 					"outputname": "OnCase02",
 					"targetname": "Level_Case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnDefault>juben>Command>say ＜＜＜잘못되어 있는 스테이지입니다，작자에게 연락해 주세요＞＞＞>0.0>-1",
+					"overrideparam": "OnDefault>juben>Command>say ＜＜＜잘못되어 있는 스테이지입니다, 작자에게 연락해 주세요＞＞＞>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -367,7 +376,7 @@
 					"outputname": "OnCase03",
 					"targetname": "Level_Case",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnDefault>juben>Command>say ＜＜＜This stage is incorrect，Please contact the creator＞＞＞>0.0>-1",
+					"overrideparam": "OnDefault>juben>Command>say ＜＜＜This stage is incorrect, Please contact the creator＞＞＞>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1696,29 +1705,33 @@
 			]
 		},
 		// add lyric entity
+		{
+            "targetname": "lyric_toggle",
+            "classname": "logic_branch",
+            "initialvalue": "1",
+            "io":
+            [
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_dacapo",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+			]
+		},		
 		// Da Capo
         {
 			"targetname": "lyric_dacapo",
-			"classname": "trigger_multiple",
-			"origin": "10647.8125 -544.000061 -3614.8125",
+			"classname": "game_zone_player",
+			"origin": "0 0 0",
 			"angles": "0 0 0",
 			"scales": "1 1 1",
-			"startdisabled": "1",
-            "wait": "1",
-			"spawnflags": "4097",
-			"model": "maps/ze_bh3rd_nagazoracity_z/entities/cthurt_3616.vmdl",
+			"model": "maps\\ze_bh3rd_nagazoracity_z\\entities\\unnamed_3310.vmdl",
 			"io":
 			[
                 {
-					"outputname": "OnStartTouch",
-					"targetname": "!self",
-					"inputname": "Kill",
-					"delay": 0.1,
-					"timestofire": -1
-				},
-
-			    {
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerInZone",
 					"targetname": "lyric_dacapo_hud",
 					"inputname": "FireUser1",
 					"delay": 0.0,
@@ -1726,10 +1739,26 @@
 				},
 
                 {
-					"outputname": "OnStartTouch",
+					"outputname": "OnPlayerOutZone",
 					"targetname": "lyric_dacapo_hud",
-					"inputname": "FireUser2",
+					"inputname": "FireUser1",
 					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerInZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnPlayerOutZone",
+					"targetname": "!self",
+					"inputname": "Kill",
+					"delay": 0.1,
 					"timestofire": -1
 				}
             ]
@@ -1753,9 +1782,26 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
+
+				{
+					"outputname": "OnUser1",
+					"targetname": "!self",
+					"inputname": "FireUser2",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "juben",
+                    "inputname": "Command",
+                    "overrideparam": "say ♪ MUSIC [ 蔡近翰 Zoe (HOYO-MiX) : Da Capo ]",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
 
 				{
 					"outputname": "OnUser2",
@@ -2112,16 +2158,7 @@
 				    {
                         "outputname": "SoundEventGuid",
 						"targetname": "lyric_dacapo",
-                        "inputname": "Enable",
-                        "delay": 0.0,
-                        "timestofire": 1
-                    },
-
-                    {
-                        "outputname": "SoundEventGuid",
-						"targetname": "juben",
-                        "inputname": "Command",
-                        "overrideparam": "say ♪ MUSIC [ 蔡近翰 Zoe (HOYO-MiX) : Da Capo ]",
+                        "inputname": "CountPlayersInZone",
                         "delay": 0.0,
                         "timestofire": 1
                     }
