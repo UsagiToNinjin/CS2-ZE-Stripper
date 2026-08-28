@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.08.13
+// stripper by 兎RB 26.08.28
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -201,16 +201,7 @@
 						"inputname": "CountPlayersInZone",
 						"delay": 0.0,
 						"timestofire": 1
-					},
-
-                    {
-				    	"outputname": "SoundEventGuid",
-				    	"targetname": "ServerCommand",
-				    	"inputname": "Command",
-				    	"overrideparam": "say ♪ MUSIC [ Do As Infinity : 化身の獣 ]",
-				    	"delay": 0.0,
-				    	"timestofire": 1
-				    }
+					}
 				]
 			}
 		},
@@ -230,16 +221,7 @@
 						"inputname": "CountPlayersInZone",
 						"delay": 0.0,
 						"timestofire": 1
-					},
-
-                    {
-				    	"outputname": "SoundEventGuid",
-				    	"targetname": "ServerCommand",
-				    	"inputname": "Command",
-				    	"overrideparam": "say ♪ MUSIC [ fripSide : Black Bullet ]",
-				    	"delay": 0.0,
-				    	"timestofire": 1
-				    }
+					}
 				]
 			}
 		},
@@ -259,32 +241,7 @@
 						"inputname": "CountPlayersInZone",
 						"delay": 0.0,
 						"timestofire": 1
-					},
-
-                    {
-				    	"outputname": "SoundEventGuid",
-				    	"targetname": "ServerCommand",
-				    	"inputname": "Command",
-				    	"overrideparam": "say ♪ MUSIC [ 澤野弘之 & Do As Infinity : Alive ]",
-				    	"delay": 0.0,
-				    	"timestofire": 1
-				    },
-
-                    {
-				    	"outputname": "SoundEventGuid",
-				    	"targetname": "lyric_black_bullet_hud",
-				    	"inputname": "Kill",
-				    	"delay": 0.0,
-				    	"timestofire": 1
-				    },
-
-                    {
-				    	"outputname": "SoundEventGuid",
-				    	"targetname": "lyric_keshin_hud",
-				    	"inputname": "Kill",
-				    	"delay": 0.0,
-				    	"timestofire": 1
-				    }
+					}
 				]
 			}
 		},
@@ -328,15 +285,6 @@
 					},
 
                     {
-						"outputname": "OnCase01",
-						"targetname": "Music_Omega_4",
-						"inputname": "AddOutPut",
-                        "overrideparam": "SoundEventGuid>ServerCommand>Command>say ♪ MUSIC [ LiSA : ReawakeR(feat. Felix of Stray Kids) ]>0.0>1",
-						"delay": 0.1,
-						"timestofire": 1
-					},
-
-                    {
 						"outputname": "OnCase02",
 						"targetname": "Music_Omega_4",
 						"inputname": "AddOutPut",
@@ -346,34 +294,7 @@
 					},
 
                     {
-						"outputname": "OnCase02",
-						"targetname": "Music_Omega_4",
-						"inputname": "AddOutPut",
-                        "overrideparam": "SoundEventGuid>ServerCommand>Command>say ♪ MUSIC [ LiSA : ReawakeR(feat. Felix of Stray Kids) ]>0.0>1",
-						"delay": 0.1,
-						"timestofire": 1
-					},
-
-                    {
 						"outputname": "OnCase03",
-						"targetname": "Music_Omega_4",
-						"inputname": "AddOutPut",
-                        "overrideparam": "SoundEventGuid>lyric_provant>CountPlayersInZone>>0.0>1",
-						"delay": 0.1,
-						"timestofire": 1
-					},
-
-                    {
-						"outputname": "OnCase03",
-						"targetname": "Music_Omega_4",
-						"inputname": "AddOutPut",
-                        "overrideparam": "SoundEventGuid>ServerCommand>Command>say ♪ MUSIC [ 澤野弘之 : PROVANT(feat. Jean-Ken Johnny & TAKUMA) ]>0.0>1",
-						"delay": 0.1,
-						"timestofire": 1
-					},
-
-                    {
-						"outputname": "OnCase04",
 						"targetname": "Music_Omega_4",
 						"inputname": "AddOutPut",
                         "overrideparam": "SoundEventGuid>lyric_provant>CountPlayersInZone>>0.0>1",
@@ -385,7 +306,7 @@
 						"outputname": "OnCase04",
 						"targetname": "Music_Omega_4",
 						"inputname": "AddOutPut",
-                        "overrideparam": "SoundEventGuid>ServerCommand>Command>say ♪ MUSIC [ 澤野弘之 : PROVANT(feat. Jean-Ken Johnny & TAKUMA) ]>0.0>1",
+                        "overrideparam": "SoundEventGuid>lyric_provant>CountPlayersInZone>>0.0>1",
 						"delay": 0.1,
 						"timestofire": 1
 					}

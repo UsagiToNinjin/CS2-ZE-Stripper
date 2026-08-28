@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.05.01
+// stripper by 兎RB 26.08.28
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -262,16 +262,7 @@
 						"inputname": "CountPlayersInZone",
 						"delay": 0.0,
 						"timestofire": 1
-					},
-
-                    {
-				    	"outputname": "SoundEventGuid",
-				    	"targetname": "ServerCommand",
-				    	"inputname": "Command",
-				    	"overrideparam": "say ♪ MUSIC [ SennaRin : melt(short ver) ]",
-				    	"delay": 0.0,
-				    	"timestofire": 1
-				    }
+					}
 				]
 			}
 		},
@@ -291,16 +282,7 @@
 						"inputname": "CountPlayersInZone",
 						"delay": 0.0,
 						"timestofire": 1
-					},
-
-                    {
-				    	"outputname": "SoundEventGuid",
-				    	"targetname": "ServerCommand",
-				    	"inputname": "Command",
-				    	"overrideparam": "say ♪ MUSIC [ 澤野弘之 : scaPEGoat(TV Size) ]",
-				    	"delay": 0.0,
-				    	"timestofire": 1
-				    }
+					}
 				]
 			}
 		}
