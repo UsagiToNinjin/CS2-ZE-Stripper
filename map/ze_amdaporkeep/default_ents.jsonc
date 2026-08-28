@@ -1,4 +1,4 @@
-// stripper by 兎RB,Frame 26.08.13
+// stripper by 兎RB,Frame 26.08.28
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -72,12 +72,21 @@
                         "delay": 0.0,
                         "timestofire": -1
                     },
+
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "lyric_toggle",
+                        "inputname": "SetValueTest",
+                        "overrideparam": "1", // Enable:1, Disable:0
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
                     // stripper update log
                     {
                         "outputname": "OnMapSpawn",
 						"targetname": "ServerCommand",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.08.13 by 兎RB,Frame",
+                        "overrideparam": "say language translation stripper 26.08.28 by 兎RB,Frame",
                         "delay": 12.0,
                         "timestofire": -1
                     }
@@ -5001,6 +5010,101 @@
             ]
         },
         // add lyric entity
+		{
+            "targetname": "lyric_toggle",
+            "classname": "logic_branch",
+            "initialvalue": "1",
+            "io":
+            [
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_melt",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_scapegoat",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_everlasting",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_black_tar",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_collage",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_keshin",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_black_bullet",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_alive",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_reawaker",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_provant",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_soragoto",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+			]
+		},		
 		// melt
 		{
 			"targetname": "lyric_melt",
@@ -5063,7 +5167,7 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
 
@@ -5073,6 +5177,15 @@
 					"inputname": "FireUser2",
 					"delay": 0.0,
 					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "ServerCommand",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ SennaRin : melt(short ver) ]",
+					"delay": 0.0,
+					"timestofire": -1
 				},
 
                 {
@@ -5290,7 +5403,7 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
 
@@ -5300,6 +5413,15 @@
 					"inputname": "FireUser2",
 					"delay": 0.0,
 					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "ServerCommand",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ 澤野弘之 : scaPEGoat(TV Size) ]",
+					"delay": 0.0,
+					"timestofire": -1
 				},
 
                 {
@@ -5526,7 +5648,7 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
 
@@ -5536,6 +5658,15 @@
 					"inputname": "FireUser2",
 					"delay": 0.0,
 					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "ServerCommand",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ EGOIST : The Everlasting Guilty Crown ]",
+					"delay": 0.0,
+					"timestofire": -1
 				},
 
                 {
@@ -6050,7 +6181,7 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
 
@@ -6060,6 +6191,15 @@
 					"inputname": "FireUser2",
 					"delay": 0.0,
 					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "ServerCommand",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ 澤野弘之 : Black tar(feat. mpi & David Whitaker) ]",
+					"delay": 0.0,
+					"timestofire": -1
 				},
 
                 {
@@ -7006,7 +7146,7 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
 
@@ -7016,6 +7156,15 @@
 					"inputname": "FireUser2",
 					"delay": 0.0,
 					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "ServerCommand",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ reche : Collage ]",
+					"delay": 0.0,
+					"timestofire": -1
 				},
 
                 {
@@ -7530,7 +7679,7 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
 
@@ -7540,6 +7689,15 @@
 					"inputname": "FireUser2",
 					"delay": 0.0,
 					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "ServerCommand",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ Do As Infinity : 化身の獣 ]",
+					"delay": 0.0,
+					"timestofire": -1
 				},
 
                 {
@@ -7937,7 +8095,7 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
 
@@ -7947,6 +8105,15 @@
 					"inputname": "FireUser2",
 					"delay": 0.0,
 					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "ServerCommand",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ fripSide : Black Bullet ]",
+					"delay": 0.0,
+					"timestofire": -1
 				},
 
                 {
@@ -8551,7 +8718,7 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
 
@@ -8561,6 +8728,31 @@
 					"inputname": "FireUser2",
 					"delay": 0.0,
 					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "lyric_black_bullet_hud",
+					"inputname": "Kill",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnUser2",
+					"targetname": "lyric_keshin_hud",
+					"inputname": "Kill",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "ServerCommand",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ 澤野弘之 & Do As Infinity : Alive ]",
+					"delay": 0.0,
+					"timestofire": -1
 				},
 
                 {
@@ -9075,7 +9267,7 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
 
@@ -9085,6 +9277,15 @@
 					"inputname": "FireUser2",
 					"delay": 0.0,
 					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "ServerCommand",
+					"inputname": "Command",
+                    "overrideparam": "say ♪ MUSIC [ LiSA : ReawakeR(feat. Felix of Stray Kids) ]",
+					"delay": 0.1,
+					"timestofire": -1
 				},
 
                 {
@@ -9707,7 +9908,7 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
 
@@ -9717,6 +9918,15 @@
 					"inputname": "FireUser2",
 					"delay": 0.0,
 					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "ServerCommand",
+					"inputname": "Command",
+                    "overrideparam": "say ♪ MUSIC [ 澤野弘之 : PROVANT(feat. Jean-Ken Johnny & TAKUMA) ]",
+					"delay": 0.0,
+					"timestofire": -1
 				},
 
                 {
@@ -10519,7 +10729,7 @@
 					"outputname": "OnUser1",
 					"targetname": "!self",
 					"inputname": "FireUser1",
-					"delay": 0.01,
+					"delay": 0.02,
 					"timestofire": -1
 				},
 
@@ -10529,6 +10739,15 @@
 					"inputname": "FireUser2",
 					"delay": 0.0,
 					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnUser2",
+					"targetname": "ServerCommand",
+					"inputname": "Command",
+					"overrideparam": "say ♪ MUSIC [ 明透 : ソラゴト ]",
+					"delay": 0.0,
+					"timestofire": -1
 				},
 
                 {
