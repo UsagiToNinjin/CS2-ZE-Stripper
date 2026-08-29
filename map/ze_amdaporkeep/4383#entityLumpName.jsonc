@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.08.13
+// stripper by 兎RB 26.08.29
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -85,9 +85,88 @@
                         "inputname": "Enable",
                         "delay": 0.0,
                         "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+						"targetname": "!self",
+                        "inputname": "Disable",
+                        "delay": 11.5,
+                        "timestofire": 1
                     }
 				]
 			}
-		}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Red_Mage_Ulti_Hint_Branch"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrue",
+						"targetname": "[PR#]Item_Red_Mage_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": "按下WASD切换技能，当前技能：Holy",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnFalse",
+						"targetname": "[PR#]Item_Red_Mage_Text",
+                        "inputname": "SetMessage",
+                        "overrideparam": "按下WASD切换技能，当前技能：Flare",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "inputname": "ShowHudHint"
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrue",
+						"targetname": "Item_Red_Mage_Text",
+                        "inputname": "Enable",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrue",
+						"targetname": "Item_Red_Mage_Text",
+                        "inputname": "Disable",
+                        "delay": 4.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnFalse",
+						"targetname": "Item_Red_Mage_Text",
+                        "inputname": "Enable",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnFalse",
+						"targetname": "Item_Red_Mage_Text",
+                        "inputname": "Disable",
+                        "delay": 4.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+        }
     ]
 }
