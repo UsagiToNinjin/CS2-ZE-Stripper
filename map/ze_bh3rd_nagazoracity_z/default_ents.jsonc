@@ -1,9 +1,17 @@
-// stripper by 兎RB 26.08.27
+// stripper by 兎RB 26.08.29
 // map ze_bh3rd_nagazoracity_z
 // workshop id 3423221710
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
 // serial number 日本語:"1" 한국어:"2" English:"3"
+// + fix bug L8~14
 {
+	"filter": // remove broken water post_processing_volume(purple)
+	[
+		{
+			"classname": "post_processing_volume",
+			"hammeruniqueid": "3837"
+		}
+	],
     "modify":
     [
         {
@@ -38,7 +46,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "juben",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.08.27 by 兎RB",
+                        "overrideparam": "say language translation stripper 26.08.29 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
