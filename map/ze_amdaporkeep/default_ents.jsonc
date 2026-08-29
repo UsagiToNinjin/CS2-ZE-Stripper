@@ -1,4 +1,4 @@
-// stripper by 兎RB,Frame 26.08.28
+// stripper by 兎RB,Frame 26.08.29
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -86,7 +86,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "ServerCommand",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.08.28 by 兎RB,Frame",
+                        "overrideparam": "say language translation stripper 26.08.29 by 兎RB,Frame",
                         "delay": 12.0,
                         "timestofire": -1
                     }
@@ -4118,6 +4118,24 @@
                     "delay": 0.0,
                     "timestofire": -1
                 },
+
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Red_Mage_Ulti_Hint_Branch",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrue>Item_Red_Mage_Text>SetMessage>WASDでスキルを切り替え\n現在のスキル：Holy>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Red_Mage_Ulti_Hint_Branch",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnFalse>Item_Red_Mage_Text>SetMessage>WASDでスキルを切り替え\n現在のスキル：Flare>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
                 // 한국어
 				{
                     "outputname": "OnUser2",
@@ -4145,6 +4163,24 @@
                     "delay": 0.0,
                     "timestofire": -1
                 },
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Red_Mage_Ulti_Hint_Branch",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrue>Item_Red_Mage_Text>SetMessage>WASD키로 스킬을 변환\n현재 스킬：Holy>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Red_Mage_Ulti_Hint_Branch",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnFalse>Item_Red_Mage_Text>SetMessage>WASD키로 스킬을 변환\n현재 스킬：Flare>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
                 // English
 				{
                     "outputname": "OnUser3",
@@ -4169,6 +4205,24 @@
 					"targetname": "Item_Red_Mage_Text",
                     "inputname": "AddOutPut",
                     "overrideparam": "OnUser1>!self>SetMessage>Gather mana, Unleash powerful skills>7.5>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Red_Mage_Ulti_Hint_Branch",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrue>Item_Red_Mage_Text>SetMessage>WASD-key to change skills\nCurrent skill：Holy>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Red_Mage_Ulti_Hint_Branch",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnFalse>Item_Red_Mage_Text>SetMessage>WASD-key to change skills\nCurrent skill：Flare>0.0>-1",
                     "delay": 0.0,
                     "timestofire": -1
                 }
