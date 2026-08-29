@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.08.13
+// stripper by 兎RB 26.08.29
 // map ze_purification_a1
 // workshop id 3128279930
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -40,12 +40,21 @@
                         "delay": 0.0,
                         "timestofire": -1
                     },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "lyric_toggle",
+                        "inputname": "SetValueTest",
+                        "overrideparam": "1", // Enable:1, Disable:0
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
                     // stripper update log
                     {
                         "outputname": "OnMapSpawn",
 						"targetname": "command",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.08.13 by 兎RB",
+                        "overrideparam": "say language translation stripper 26.08.29 by 兎RB",
                         "delay": 2.0,
                         "timestofire": -1
                     }
@@ -4623,6 +4632,15 @@
 
                 {
 					"outputname": "OnCase03",
+					"targetname": "301",
+					"inputname": "KeyValue",
+					"overrideparam": "origin 9004 5118.855469 -7967.320801",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase03",
 					"targetname": "39040",
 					"inputname": "SetMessage",
 					"overrideparam": "Thanks\n3gcao 专业划水99年\n\nSpecial Thanks\n7ychu5     Lopb\n",
@@ -6988,6 +7006,21 @@
             ]
         },
 		// add lyric entity
+        {
+            "targetname": "lyric_toggle",
+            "classname": "logic_branch",
+            "initialvalue": "1",
+            "io":
+            [
+				{
+                    "outputname": "OnFalse",
+					"targetname": "lyric_burn",
+                    "inputname": "Kill",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+			]
+		},
 		// Burn
 		{
 			"targetname": "lyric_burn",
