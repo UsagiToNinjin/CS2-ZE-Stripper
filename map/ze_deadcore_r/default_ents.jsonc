@@ -1,0 +1,151 @@
+// stripper by 兎RB 26.09.03
+// ze_deadcore_r
+// workshop id 3331345627
+{
+	"modify":
+    [
+		 // rework level system
+		{
+		    "match":
+            {
+				"targetname": "[PR#]escape_relay",
+				"classname": "logic_relay"
+            },
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnTrigger",
+						"targetname": "escape_platform_temp6",
+						"inputname": "AddOutPut",
+						"overrideparam": "OnEntitySpawned>win_d>FireUser1>>0.0>1",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "/escape_(red|purple)_relay/",
+				"classname": "logic_relay"
+            },
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnTrigger",
+						"targetname": "escape_platform_temp6",
+						"inputname": "AddOutPut",
+						"overrideparam": "OnEntitySpawned>win_d>FireUser2>>0.0>1",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}
+		},
+		// rework fog value
+		{
+		    "match":
+            {
+				"targetname": "[PR#]fade_secret",
+				"classname": "env_fade"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnBeginFade",
+						"targetname": "[PR#]fog_dark",
+						"inputname": "SetFogEndDistance",
+						"overrideparam": "4500",
+						"delay": 1.5,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnBeginFade",
+						"targetname": "[PR#]fog_dark",
+						"inputname": "SetFogEndHeight",
+						"overrideparam": "4500",
+						"delay": 1.5,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnBeginFade",
+						"targetname": "[PR#]fog_dark",
+						"inputname": "SetFogStartHeight",
+						"overrideparam": "2500",
+						"delay": 1.5,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnBeginFade",
+						"targetname": "fog_dark",
+						"inputname": "SetFogEndDistance",
+						"overrideparam": "3500",
+						"delay": 1.5,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnBeginFade",
+						"targetname": "fog_dark",
+						"inputname": "SetFogEndHeight",
+						"overrideparam": "3500",
+						"delay": 1.5,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnBeginFade",
+						"targetname": "fog_dark",
+						"inputname": "SetFogStartHeight",
+						"overrideparam": "1500",
+						"delay": 1.5,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnBeginFade",
+						"targetname": "radiation_red_startrelay1",
+						"inputname": "AddOutPut",
+						"overrideparam": "OnTrigger>fog_dark>SetFogStartHeight>2500>23>-1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnBeginFade",
+						"targetname": "radiation_red_startrelay1",
+						"inputname": "AddOutPut",
+						"overrideparam": "OnTrigger>fog_dark>SetFogEndHeight>4500>23>-1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnBeginFade",
+						"targetname": "radiation_red_startrelay1",
+						"inputname": "AddOutPut",
+						"overrideparam": "OnTrigger>fog_dark>SetFogEndDistance>4500>23>-1",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}
+		}
+	]
+}

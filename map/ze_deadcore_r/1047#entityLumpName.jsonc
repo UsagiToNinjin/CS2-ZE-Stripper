@@ -1,0 +1,84 @@
+// stripper by 兎RB 26.09.03
+// ze_deadcore_r
+// workshop id 3331345627
+{
+	"modify": // rework level system
+    [
+        {
+		    "match":
+            {
+				"targetname": "[PR#]win_d",
+				"classname": "trigger_once"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]Level_Counter",
+						"inputname": "Add",
+						"overrideparam": "1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]zr_toggle_respawn",
+						"inputname": "Disable",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]skip_white_d_relay",
+						"inputname": "Trigger",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "zr_toggle_respawn",
+						"inputname": "Disable",
+						"delay": 0.0,
+						"timestofire": 1 // Only Once
+					},
+
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "skip_white_d_relay",
+						"inputname": "Trigger",
+						"delay": 0.0,
+						"timestofire": 1 // Only Once
+					},
+
+					{
+						"outputname": "OnUser1",
+						"targetname": "!self",
+						"inputname": "AddOutPut",
+						"overrideparam": "OnStartTouch>Level_Counter>Add>1>0.0>1", // Only Once
+						"delay": 0.0,
+						"timestofire": 1 // Only Once
+					},
+
+					{
+						"outputname": "OnUser2",
+						"targetname": "!self",
+						"inputname": "AddOutPut",
+						"overrideparam": "OnStartTouch>Level_Counter>SetValue>0>0.0>1", // Only Once
+						"delay": 0.0,
+						"timestofire": 1 // Only Once
+					}
+				]
+			}		
+		}
+	]	
+}
