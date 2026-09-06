@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.09.05
+// stripper by 兎RB 26.09.06
 // ze_deadcore_r
 // workshop id 3331345627
 {
@@ -81,7 +81,7 @@
 						"outputname": "OnPressed",
 						"targetname": "map_brush",
 						"inputname": "RunScriptInput",
-						"overrideparam": "Skip A",
+						"overrideparam": "Skip_A",
 						"delay": 0.0,
 						"timestofire": -1
 					}
@@ -117,7 +117,7 @@
 						"outputname": "OnPressed",
 						"targetname": "map_brush",
 						"inputname": "RunScriptInput",
-						"overrideparam": "Skip B",
+						"overrideparam": "Skip_B",
 						"delay": 0.0,
 						"timestofire": -1
 					}
@@ -153,7 +153,7 @@
 						"outputname": "OnPressed",
 						"targetname": "map_brush",
 						"inputname": "RunScriptInput",
-						"overrideparam": "Skip C",
+						"overrideparam": "Skip_C",
 						"delay": 0.0,
 						"timestofire": -1
 					}

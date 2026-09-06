@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.09.05
+// stripper by 兎RB 26.09.06
 // ze_deadcore_r
 // workshop id 3331345627
 {
@@ -14,7 +14,7 @@
 		{
 			"targetname": "extra_counter",
 			"classname": "math_counter",
-			"max": "3",
+			"max": "2",
 			"min": "0",
 			"startvalue": "0",
 			"io":
