@@ -197,6 +197,12 @@ function Reset()
     skipC = false;
 
     currentStage = "";
+
+    Instance.EntFireAtName({
+                name: "extra_counter",
+                input: "SetValue",
+                value: "0"
+            });
 }
 
 
