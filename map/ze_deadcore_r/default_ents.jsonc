@@ -2,24 +2,86 @@
 // ze_deadcore_r
 // workshop id 3331345627
 {
+	"filter":
+	[
+		{
+			"targetname": "[PR#]Level_Case",
+			"classname": "logic_case"
+		}
+	],
 	"modify":
     [
-		 // rework level system
 		{
 		    "match":
             {
-				"targetname": "[PR#]escape_relay",
-				"classname": "logic_relay"
+				"classname": "logic_auto"
             },
-			"insert": 
+			"delete":
             {
                 "io":
                 [
 					{
-						"outputname": "OnTrigger",
-						"targetname": "escape_platform_temp6",
-						"inputname": "AddOutPut",
-						"overrideparam": "OnEntitySpawned>win_d>FireUser1>>0.0>1",
+						"outputname": "OnMapSpawn",
+						"targetname": "[PR#]Level_Counter",
+						"inputname": "GetValue",
+						"delay": 3.0,
+						"timestofire": 1
+					}
+				]
+			},
+			"insert":
+            {
+                "io":
+                [
+					{
+						"outputname": "OnMapSpawn",
+						"targetname": "extra_counter",
+						"inputname": "GetValue",
+						"delay": 2.0,
+						"timestofire": 1
+					},
+
+					{
+						"outputname": "OnMapSpawn",
+						"targetname": "map_brush",
+						"inputname": "RunScriptInput",
+						"overrideparam": "MapStart",
+						"delay": 3.0,
+						"timestofire": 1
+					}
+				]
+			}
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]admin_skip_a",
+				"classname": "func_button"
+            },
+			"delete":
+            {
+                "io":
+                [
+					{
+						"outputname": "OnPressed",
+						"targetname": "[PR#]Level_Counter",
+						"inputname": "Add",
+						"overrideparam": "1",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert":
+            {
+                "io":
+                [
+					{
+						"outputname": "OnPressed",
+						"targetname": "map_brush",
+						"inputname": "RunScriptInput",
+						"overrideparam": "Skip A",
 						"delay": 0.0,
 						"timestofire": -1
 					}
@@ -30,23 +92,248 @@
 		{
 		    "match":
             {
-				"targetname": "/escape_(red|purple)_relay/",
-				"classname": "logic_relay"
+				"targetname": "[PR#]admin_skip_b",
+				"classname": "func_button"
             },
-			"insert": 
+			"delete":
             {
                 "io":
                 [
 					{
-						"outputname": "OnTrigger",
-						"targetname": "escape_platform_temp6",
-						"inputname": "AddOutPut",
-						"overrideparam": "OnEntitySpawned>win_d>FireUser2>>0.0>1",
+						"outputname": "OnPressed",
+						"targetname": "[PR#]Level_Counter",
+						"inputname": "Add",
+						"overrideparam": "2",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert":
+            {
+                "io":
+                [
+					{
+						"outputname": "OnPressed",
+						"targetname": "map_brush",
+						"inputname": "RunScriptInput",
+						"overrideparam": "Skip B",
 						"delay": 0.0,
 						"timestofire": -1
 					}
 				]
 			}
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]admin_skip_c",
+				"classname": "func_button"
+            },
+			"delete":
+            {
+                "io":
+                [
+					{
+						"outputname": "OnPressed",
+						"targetname": "[PR#]Level_Counter",
+						"inputname": "Add",
+						"overrideparam": "4",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert":
+            {
+                "io":
+                [
+					{
+						"outputname": "OnPressed",
+						"targetname": "map_brush",
+						"inputname": "RunScriptInput",
+						"overrideparam": "Skip C",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]admin_reset",
+				"classname": "func_button"
+            },
+			"delete":
+            {
+                "io":
+                [
+					{
+						"outputname": "OnPressed",
+						"targetname": "[PR#]Level_Counter",
+						"inputname": "SetValue",
+						"overrideparam": "0",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert":
+            {
+                "io":
+                [
+					{
+						"outputname": "OnPressed",
+						"targetname": "map_brush",
+						"inputname": "RunScriptInput",
+						"overrideparam": "Reset",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]admin_red_d",
+				"classname": "func_button"
+            },
+			"delete":
+            {
+                "io":
+                [
+					{
+						"outputname": "OnPressed",
+						"targetname": "[PR#]Level_Counter",
+						"inputname": "SetValue",
+						"overrideparam": "8",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert":
+            {
+                "io":
+                [
+					{
+						"outputname": "OnPressed",
+						"targetname": "extra_counter",
+						"inputname": "SetValue",
+						"overrideparam": "1",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnPressed",
+						"targetname": "map_brush",
+						"inputname": "RunScriptInput",
+						"overrideparam": "Reset",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]admin_purple_d",
+				"classname": "func_button"
+            },
+			"delete":
+            {
+                "io":
+                [
+					{
+						"outputname": "OnPressed",
+						"targetname": "[PR#]Level_Counter",
+						"inputname": "SetValue",
+						"overrideparam": "9",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert":
+            {
+                "io":
+                [
+					{
+						"outputname": "OnPressed",
+						"targetname": "extra_counter",
+						"inputname": "SetValue",
+						"overrideparam": "2",
+						"delay": 0.0,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnPressed",
+						"targetname": "map_brush",
+						"inputname": "RunScriptInput",
+						"overrideparam": "Reset",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}
+		}
+	],
+	"add":
+	[
+		{
+			"targetname": "map_brush",
+			"classname": "point_script",
+			"cs_script": "scripts/vscripts/deadcore.vjs"
+		},
+
+		{
+			"targetname": "extra_case",
+			"classname": "logic_case",
+			"case01": "1",
+			"case02": "2",
+			"io":
+            [
+				{
+					"outputname": "OnCase01",
+					"targetname": "stage_d_red_relay",
+					"inputname": "Trigger",
+					"delay": 1.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnCase01",
+					"targetname": "map_brush",
+					"inputname": "Kill",
+					"delay": 0.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "stage_d_purple_relay",
+					"inputname": "Trigger",
+					"delay": 1.0,
+					"timestofire": 1
+				},
+
+				{
+					"outputname": "OnCase02",
+					"targetname": "map_brush",
+					"inputname": "Kill",
+					"delay": 0.0,
+					"timestofire": 1
+				}
+			]
 		}
 	]
 }
