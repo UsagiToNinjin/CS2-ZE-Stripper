@@ -7,6 +7,11 @@
 		{
 			"targetname": "[PR#]Level_Case",
 			"classname": "logic_case"
+		},
+
+		{
+			"targetname": "/(lyric|game_hudhint)_script/",
+			"classname": "point_script"
 		}
 	],
 	"modify":
@@ -280,6 +285,78 @@
 						"targetname": "map_brush",
 						"inputname": "RunScriptInput",
 						"overrideparam": "Reset",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "/music_red_escape_j(1|2)/",
+				"classname": "point_soundevent"
+            },
+			"delete":
+            {
+                "io":
+                [
+					{
+						"outputname": "OnUser1",
+						"targetname": "[PR#]lyric_script",
+						"inputname": "RunScriptInput",
+						"overrideparam": "lyric_JP",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert":
+            {
+                "io":
+                [
+					{
+						"outputname": "OnUser1",
+						"targetname": "map_brush",
+						"inputname": "RunScriptInput",
+						"overrideparam": "lyric_JP",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			}
+		},
+
+		{
+		    "match":
+            {
+				"targetname": "[PR#]music_red_escape_e",
+				"classname": "point_soundevent"
+            },
+			"delete":
+            {
+                "io":
+                [
+					{
+						"outputname": "OnUser1",
+						"targetname": "[PR#]lyric_script",
+						"inputname": "RunScriptInput",
+						"overrideparam": "lyric_EN",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert":
+            {
+                "io":
+                [
+					{
+						"outputname": "OnUser1",
+						"targetname": "map_brush",
+						"inputname": "RunScriptInput",
+						"overrideparam": "lyric_EN",
 						"delay": 0.0,
 						"timestofire": -1
 					}
