@@ -143,10 +143,6 @@ function SelectStage()
 
 function MapStart()
 {
-    skipA = false;
-    skipB = false;
-    skipC = false;
-
     currentStage = "";
 
     SelectStage();
