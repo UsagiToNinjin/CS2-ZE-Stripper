@@ -1,0 +1,43 @@
+// stripper by 兎RB 26.09.05
+// ze_deadcore_r
+// workshop id 3331345627
+{
+	"modify":
+    [
+        {
+		    "match":
+            {
+				"targetname": "[PR#]b_win_detecttrigger",
+				"classname": "trigger_once"
+            },
+			"delete": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]Level_Counter",
+						"inputname": "Add",
+						"overrideparam": "2",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+				]
+			},
+			"insert": 
+            {
+                "io":
+                [
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "map_brush",
+						"inputname": "RunScriptInput",
+						"overrideparam": "Skip B",
+						"delay": 0.0,
+						"timestofire": 1
+					}
+				]
+			}		
+		}
+	]	
+}
