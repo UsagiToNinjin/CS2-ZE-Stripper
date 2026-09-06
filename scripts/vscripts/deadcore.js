@@ -160,7 +160,6 @@ function MapStart()
 function SkipA()
 {
     skipA = true;
-    SelectStage();
 }
 
 
@@ -171,7 +170,6 @@ function SkipA()
 function SkipB()
 {
     skipB = true;
-    SelectStage();
 }
 
 
@@ -182,7 +180,6 @@ function SkipB()
 function SkipC()
 {
     skipC = true;
-    SelectStage();
 }
 
 
