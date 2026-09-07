@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.05.25
+// stripper by 兎RB 26.09.07
 // map ze_aooka
 // workshop id 3310240982
 {
@@ -8,7 +8,7 @@
 		    "match":
             {
 				"targetname": "[PR#]Gold_Spwan",
-				"classname": "classname"
+				"classname": "logic_relay"
             },
 			"delete": 
             {
