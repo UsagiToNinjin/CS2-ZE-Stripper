@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.06.20
+// stripper by 兎RB 26.09.07
 // map ze_aooka
 // workshop id 3310240982
 {
@@ -18,7 +18,7 @@
                         "outputname": "OnMapSpawn",
 				        "targetname": "Command",
                         "inputname": "Command",
-                        "overrideparam": "say fix stripper update 26.06.20",
+                        "overrideparam": "say fix stripper update 26.09.07",
                         "delay": 7.0,
                         "timestofire": -1
                     }
