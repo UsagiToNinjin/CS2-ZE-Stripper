@@ -96,7 +96,7 @@ function SelectStage()
         return;
     }
 
-    // Only A, Skip → B / C
+    // Only Skip A → B / C
     if (skipA)
     {
         if (RandomInt(0, 1) == 0)
@@ -107,7 +107,7 @@ function SelectStage()
         return;
     }
 
-    // Only B, Skip → A / C
+    // Only Skip B → A / C
     if (skipB)
     {
         if (RandomInt(0, 1) == 0)
@@ -118,7 +118,7 @@ function SelectStage()
         return;
     }
 
-    // Only C, Skip → A / B
+    // Only Skip C → A / B
     if (skipC)
     {
         if (RandomInt(0, 1) == 0)
