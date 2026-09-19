@@ -1,0 +1,14 @@
+<root>
+    <styles>
+        <include src="s2r://panorama/styles/custom_game/game_text.vcss_c" />
+    </styles>
+
+    <Panel class="Root" hittest="false">
+        <Panel id="hud" class="gametext" hittest="false">
+            <Label id="stage_label"
+                   class="Stage"
+                   hittest="false"
+                   text="> STAGE - #ERROR <" />
+        </Panel>
+    </Panel>
+</root>
