@@ -6,7 +6,6 @@ let skipC = false;
 
 let currentStage = "";
 
-
 // ============================================================
 // Random
 // ============================================================
@@ -15,7 +14,6 @@ function RandomInt(min, max)
 {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
 
 // ============================================================
 // Stage Trigger
@@ -61,7 +59,6 @@ function TriggerStage(stage)
     }
 }
 
-
 // ============================================================
 // Stage Select
 // ============================================================
@@ -96,7 +93,7 @@ function SelectStage()
         return;
     }
 
-    // Only Skip A → B / C
+    // Only A Skip → B / C
     if (skipA)
     {
         if (RandomInt(0, 1) == 0)
@@ -107,7 +104,7 @@ function SelectStage()
         return;
     }
 
-    // Only Skip B → A / C
+    // Only B Skip → A / C
     if (skipB)
     {
         if (RandomInt(0, 1) == 0)
@@ -118,7 +115,7 @@ function SelectStage()
         return;
     }
 
-    // Only Skip C → A / B
+    // Only C Skip → A / B
     if (skipC)
     {
         if (RandomInt(0, 1) == 0)
@@ -140,7 +137,6 @@ function SelectStage()
         TriggerStage("C");
 }
 
-
 // ============================================================
 // MapStart
 // ============================================================
@@ -152,7 +148,6 @@ function MapStart()
     SelectStage();
 }
 
-
 // ============================================================
 // Skip A
 // ============================================================
@@ -161,7 +156,6 @@ function SkipA()
 {
     skipA = true;
 }
-
 
 // ============================================================
 // Skip B
@@ -172,7 +166,6 @@ function SkipB()
     skipB = true;
 }
 
-
 // ============================================================
 // Skip C
 // ============================================================
@@ -181,7 +174,6 @@ function SkipC()
 {
     skipC = true;
 }
-
 
 // ============================================================
 // Reset
@@ -202,7 +194,6 @@ function Reset()
         delay: 0.0
     });
 }
-
 
 // ============================================================
 // Script Input
@@ -299,3 +290,29 @@ Instance.OnScriptInput("lyric_EN", () =>
     Instance.EntFireAtName({ name: "lyric_hud", input: "SetMessage", value: "We'll walk ahead as one becoming a monster", delay: 110.9 });
     Instance.EntFireAtName({ name: "lyric_hud", input: "Kill", delay: 113.8 });
 });
+
+// ============================================================
+// Convert game_text to custom_hud_layout
+// ============================================================
+
+const stage_index = [
+    "> STAGE - #ERROR <",
+    "> STAGE - A <",
+    "> STAGE - B <",
+    "> STAGE - C <",
+    "> STAGE - D <",
+    "> STAGE - Red D <",
+    "> STAGE - Purple D <"
+];
+
+function SetStageName(num) {
+    const index = Number(num);
+
+    if (stage_index[index] !== undefined) {
+        const text = stage_index[index];
+
+        $.DispatchEvent("set_text", $("#stage_label"), text);
+
+        log("SetStageName(" + index + ") -> " + text);
+    }
+}
