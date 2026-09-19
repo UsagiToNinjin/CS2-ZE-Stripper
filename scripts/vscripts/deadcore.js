@@ -316,3 +316,5 @@ function SetStageName(num) {
         log("SetStageName(" + index + ") -> " + text);
     }
 }
+
+// ent_fire > map_brush > runscriptinput > SetStageName(1) = > STAGE - A <
