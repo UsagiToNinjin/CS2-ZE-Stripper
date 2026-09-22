@@ -178,7 +178,7 @@
                 "targetname": "[PR#]radiation_filterdamage1"
             }
         },
-        // fix stacking damage(based on CS:GO delay 0.5sec) | exclude instant-kill damage
+        // fix stacking damage | exclude instant-kill damage
         {
             "match":
             {
@@ -216,7 +216,7 @@
                         "targetname": "!activator",
                         "inputname": "RemoveContext",
                         "overrideparam": "gap",
-                        "delay": 0.5,
+                        "delay": 0.25,
                         "timestofire": -1
                     }
                 ]
