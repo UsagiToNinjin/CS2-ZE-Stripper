@@ -2,8 +2,33 @@
 // map ze_deadcore_r
 // workshop id 3331345627
 {
-    "modify": // rework filter
+    "filter": // remove unnecessary entities
     [
+        {
+            "targetname": "[PR#]game_hudhint_trigger2",
+            "classname": "trigger_multiple"
+        },
+
+        {
+            "targetname": "[PR#]radiation_meteor_temp1",
+            "classname": "point_template"
+        }
+    ],
+    "modify":
+    [
+        // replace to new template(Improve even though it’s a dummy entity v1_3)
+        {
+            "match":
+            {
+                "targetname": "/radiation_meteorattack_maker/",
+                "classname": "env_entity_maker"
+            },
+            "replace":
+            {
+                "entitytemplate": "radiation_meteor_temp2"
+            }
+        },
+        // rework filter
         {
             "match":
             {
@@ -36,47 +61,7 @@
                 "io":
                 [
                     {
-                        "outputname": "OnStartTouch",
-                        "targetname": "!activator",
-                        "inputname": "Alpha",
-                        "overrideparam": "255",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnStartTouch",
-                        "targetname": "!activator",
-                        "inputname": "ClearContext",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnStartTouch",
-                        "targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "speed 1",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnStartTouch",
-                        "targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "movetype 2",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-                    {
-                        "outputname": "OnStartTouch",
-                        "targetname": "!activator",
-                        "inputname": "KeyValue",
-                        "overrideparam": "gravity 1",
-                        "delay": 0.0,
-                        "timestofire": -1
+                        "outputname": "OnStartTouch"
                     }
                 ]
             },
@@ -177,6 +162,22 @@
                 ]
             }        
         },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_filterdamage1",
+                "classname": "trigger_hurt"
+            },
+            "replace":
+            {
+                "filtername": "human"
+            },
+            "delete":
+            {
+                "targetname": "[PR#]radiation_filterdamage1"
+            }
+        },
         // fix stacking damage(based on CS:GO delay 0.5sec) | exclude instant-kill damage
         {
             "match":
@@ -188,7 +189,7 @@
             {
                 "filtername": "gap"
             },
-            "delete": // delete Output all "OnStartTouch"
+            "delete": // replace outputname of trigger_hurt "OnStartTouch" to "OnHurtPlayer"
             {
                 "io":
                 [
