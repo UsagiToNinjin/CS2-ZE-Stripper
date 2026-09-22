@@ -181,7 +181,7 @@
         {
             "match":
             {
-                "targetname": "/(radiation_(link_hurt[1-2]|beam_move1_hurt|ball_hurt[1-9]|ball_hurt1[0-8])|enemy4_attack_hurt[1-3])/",
+                "targetname": "/(radiation_(link_hurt[1-2]|beam_move1_hurt|ball_hurt[1-9]|ball_hurt1[0-8]|meteor_hurt2)|enemy4_attack_hurt[1-3])/",
                 "classname": "trigger_hurt"
             },
             "replace":
