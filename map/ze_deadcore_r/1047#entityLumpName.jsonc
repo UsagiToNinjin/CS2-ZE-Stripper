@@ -1,0 +1,44 @@
+// stripper by 兎RB 26.09.23
+// map ze_deadcore_r
+// workshop id 3331345627
+{
+    "modify": 
+    [
+        // remove inputname "GetValue/SetValue" from in skybox math_counter(26.09.22 update broken it)
+        {
+            "match":
+            {
+                "targetname": "[PR#]win_d",
+                "classname": "trigger_once"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]extra_counter",
+                        "inputname": "Add",
+                        "overrideparam": "1",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "map_brush",
+                        "inputname": "RunScriptInput",
+                        "overrideparam": "Skip_D",
+                        "delay": 0.0,
+                        "timestofire": 1 // Only Once
+                    }
+                ]
+            }
+        }
+    ]    
+}

@@ -1,0 +1,152 @@
+// stripper by 兎RB 26.09.23
+// map ze_deadcore_r
+// workshop id 3331345627
+{
+    "filter": // remove invalue of logic_case from in skybox math_counter(26.09.22 update broken it)
+    [
+        {
+            "targetname": "[PR#]extra_case",
+            "classname": "logic_case"
+        }
+    ],
+    "modify": 
+    [
+        // remove inputname "GetValue/SetValue" from in skybox math_counter(26.09.22 update broken it)
+        {
+            "match":
+            {
+                "classname": "logic_auto"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]extra_counter",
+                        "inputname": "GetValue",
+                        "delay": 2.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]admin_red_d",
+                "classname": "func_button"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]map_brush",
+                        "inputname": "RunScriptInput",
+                        "overrideparam": "Reset",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]extra_counter",
+                        "inputname": "SetValue",
+                        "overrideparam": "1",
+                        "delay": 0.1,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "map_brush",
+                        "inputname": "RunScriptInput",
+                        "overrideparam": "Skip_A",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "map_brush",
+                        "inputname": "RunScriptInput",
+                        "overrideparam": "Skip_B",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "map_brush",
+                        "inputname": "RunScriptInput",
+                        "overrideparam": "Skip_C",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "map_brush",
+                        "inputname": "RunScriptInput",
+                        "overrideparam": "Skip_D",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]admin_purple_d",
+                "classname": "func_button"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]map_brush",
+                        "inputname": "RunScriptInput",
+                        "overrideparam": "Reset",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "[PR#]extra_counter",
+                        "inputname": "SetValue",
+                        "overrideparam": "2",
+                        "delay": 0.1,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnPressed",
+						"targetname": "map_brush",
+                        "inputname": "RunScriptInput",
+                        "overrideparam": "Reset",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        }
+    ]    
+}
