@@ -31,14 +31,41 @@
                 [
                     {
                         "outputname": "OnStartTouch",
-						"targetname": "map_brush",
-                        "inputname": "RunScriptInput",
-                        "overrideparam": "Skip_D",
+						"targetname": "escape_branch",
+                        "inputname": "Test",
                         "delay": 0.0,
                         "timestofire": 1 // Only Once
                     }
                 ]
             }
         }
-    ]    
+    ],
+    "add":
+    [
+        {
+            "targetname": "escape_branch",
+            "classname": "logic_branch",
+            "initialvalue": "1", // true
+            "io":
+            [
+                {
+                    "outputname": "OnTrue",
+					"targetname": "map_brush",
+                    "inputname": "RunScriptInput",
+                    "overrideparam": "Skip_D",
+                    "delay": 0.0,
+                    "timestofire": 1 // Only Once
+                },
+
+                {
+                    "outputname": "OnFalse",
+					"targetname": "map_brush",
+                    "inputname": "RunScriptInput",
+                    "overrideparam": "Reset",
+                    "delay": 0.0,
+                    "timestofire": 1 // Only Once
+                }
+            ]
+        }
+    ]  
 }

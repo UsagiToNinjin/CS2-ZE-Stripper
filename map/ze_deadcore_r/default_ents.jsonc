@@ -103,7 +103,7 @@
                 ]
             }
         },
-		// pending purple D(=reset)
+
         {
             "match":
             {
@@ -143,6 +143,28 @@
                         "inputname": "RunScriptInput",
                         "overrideparam": "Reset",
                         "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "/escape_(red|purple)_relay/",
+                "classname": "logic_relay"
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnTrigger",
+						"targetname": "escape_branch",
+                        "inputname": "SetValue",
+                        "overrideparam": "0",
+                        "delay": 46.0,
                         "timestofire": -1
                     }
                 ]
