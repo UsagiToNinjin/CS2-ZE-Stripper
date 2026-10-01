@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.08.13
+// stripper by 兎RB 26.10.01
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -104,7 +104,16 @@
                         "outputname": "OnUser4",
 						"targetname": "ZM_C_O_D_Filter",
                         "inputname": "AddOutPut",
-                        "overrideparam": "OnPass>ZM_C_O_D_Text>Enable>>0>-1",
+                        "overrideparam": "OnPass>ZM_C_O_D_Text>Enable>>0.0>-1",
+                        "delay": 0.02,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnUser4",
+						"targetname": "ZM_C_O_D_Filter",
+                        "inputname": "AddOutPut",
+                        "overrideparam": "OnPass>ZM_C_O_D_Text>Disable>>4.0>-1",
                         "delay": 0.02,
                         "timestofire": 1
                     }
