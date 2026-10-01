@@ -1,4 +1,4 @@
-// stripper by 兎RB,Frame 26.08.29
+// stripper by 兎RB,Frame 26.10.01
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -17,37 +17,10 @@
                 [
 					// readjusting the delay to apply AddOutPut +0.1 sec
 					{
-                        "outputname": "OnMapSpawn",
-						"targetname": "[PR#]Stage_counter",
-                        "inputname": "GetValue",
+                        "outputname": "OnNewGame",
+						"targetname": "[PR#]Stage_Stocker",
+                        "inputname": "FireUser1",
                         "delay": 0.0,
-                        "timestofire": -1
-                    },
-					// remove message output
-					{
-                        "outputname": "OnNewGame",
-						"targetname": "[PR#]ServerCommand",
-                        "inputname": "Command",
-						"overrideparam": "say < MAP BY vueru >",
-                        "delay": 3.0,
-                        "timestofire": 1
-                    },
-
-					{
-                        "outputname": "OnNewGame",
-						"targetname": "[PR#]ServerCommand",
-                        "inputname": "Command",
-						"overrideparam": "say < Collaborative Eugen&7ychu5 >",
-                        "delay": 5.0,
-                        "timestofire": 1
-                    },
-
-					{
-                        "outputname": "OnNewGame",
-						"targetname": "[PR#]ServerCommand",
-                        "inputname": "Command",
-						"overrideparam": "say < Complete Runa  >",
-                        "delay": 7.0,
                         "timestofire": 1
                     }
                 ]
@@ -57,11 +30,11 @@
                 "io":
                 [
 					{
-                        "outputname": "OnMapSpawn",
-						"targetname": "Stage_counter",
-                        "inputname": "GetValue",
+                        "outputname": "OnNewGame",
+						"targetname": "Stage_Stocker",
+                        "inputname": "FireUser1",
                         "delay": 0.1,
-                        "timestofire": -1
+                        "timestofire": 1
                     },
 
 					{
@@ -86,7 +59,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "ServerCommand",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.08.29 by 兎RB,Frame",
+                        "overrideparam": "say language translation stripper 26.10.01 by 兎RB,Frame",
                         "delay": 12.0,
                         "timestofire": -1
                     }
@@ -117,9 +90,9 @@
         {
 			"targetname": "language_case",
 			"classname": "logic_case",
-			"case01": "1", // 日本語
-			"case02": "2", // 한국어
-			"case03": "3", // English
+			"case01": "1.0", // 日本語
+			"case02": "2.0", // 한국어
+			"case03": "3.0", // English
 			"io":
 			[
                 // 日本語
@@ -130,33 +103,6 @@
 					"overrideparam": "OnUser1>ServerCommand>Command>say ＜ サベージモード ＞>9.0>1",
 					"delay": 0.0,
 					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "ServerCommand",
-					"inputname": "Command",
-					"overrideparam": "say < マップ制作 vueru >",
-					"delay": 3.0,
-					"timestofire": 1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "ServerCommand",
-					"inputname": "Command",
-					"overrideparam": "say < 共同制作 Eugen&7ychu5 >",
-					"delay": 5.0,
-					"timestofire": 1
-				},
-
-				{
-					"outputname": "OnCase01",
-					"targetname": "ServerCommand",
-					"inputname": "Command",
-					"overrideparam": "say < 完成 Runa >",
-					"delay": 7.0,
-					"timestofire": 1
 				},
 
 				{
@@ -544,33 +490,6 @@
 					"overrideparam": "OnUser1>ServerCommand>Command>say ＜ 새비지 모드 ＞>9.0>1",
 					"delay": 0.0,
 					"timestofire": -1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "ServerCommand",
-					"inputname": "Command",
-					"overrideparam": "say < 맵 제작 vueru >",
-					"delay": 3.0,
-					"timestofire": 1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "ServerCommand",
-					"inputname": "Command",
-					"overrideparam": "say < 공동 제작 Eugen&7ychu5 >",
-					"delay": 5.0,
-					"timestofire": 1
-				},
-
-				{
-					"outputname": "OnCase02",
-					"targetname": "ServerCommand",
-					"inputname": "Command",
-					"overrideparam": "say < 완성 Runa >",
-					"delay": 7.0,
-					"timestofire": 1
 				},
 
 				{
@@ -968,33 +887,6 @@
 					"delay": 0.0,
 					"timestofire": -1
 				},
-
-				{
-                    "outputname": "OnCase03",
-					"targetname": "ServerCommand",
-                    "inputname": "Command",
-					"overrideparam": "say < MAP BY vueru >",
-                    "delay": 3.0,
-                    "timestofire": 1
-                },
-
-				{
-                    "outputname": "OnCase03",
-					"targetname": "ServerCommand",
-                    "inputname": "Command",
-					"overrideparam": "say < Collaborative Eugen&7ychu5 >",
-                    "delay": 5.0,
-                    "timestofire": 1
-                },
-
-				{
-                    "outputname": "OnCase03",
-					"targetname": "ServerCommand",
-                    "inputname": "Command",
-					"overrideparam": "say < Complete Runa >",
-                    "delay": 7.0,
-                    "timestofire": 1
-                },
 
 				{
 					"outputname": "OnCase03",
