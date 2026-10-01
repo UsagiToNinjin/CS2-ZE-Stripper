@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.08.13
+// stripper by 兎RB 26.10.01
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -97,6 +97,15 @@
 						"targetname": "ZM_Storm_Button",
                         "inputname": "AddOutPut",
                         "overrideparam": "OnPressed>ZM_Storm_Text>Enable>>0>1",
+                        "delay": 0.02,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnUser3",
+						"targetname": "ZM_Storm_Button",
+                        "inputname": "AddOutPut",
+                        "overrideparam": "OnPressed>ZM_Storm_Text>Disable>>4>1",
                         "delay": 0.02,
                         "timestofire": 1
                     }
