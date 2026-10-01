@@ -96,7 +96,7 @@
                         "outputname": "OnUser3",
 						"targetname": "ZM_Storm_Button",
                         "inputname": "AddOutPut",
-                        "overrideparam": "OnPressed>ZM_Storm_Text>Enable>>0>1",
+                        "overrideparam": "OnPressed>ZM_Storm_Text>Enable>>0.0>1",
                         "delay": 0.02,
                         "timestofire": 1
                     },
@@ -105,7 +105,7 @@
                         "outputname": "OnUser3",
 						"targetname": "ZM_Storm_Button",
                         "inputname": "AddOutPut",
-                        "overrideparam": "OnPressed>ZM_Storm_Text>Disable>>4>1",
+                        "overrideparam": "OnPressed>ZM_Storm_Text>Disable>>4.0>1",
                         "delay": 0.02,
                         "timestofire": 1
                     }
