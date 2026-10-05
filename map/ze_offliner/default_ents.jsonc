@@ -1,0 +1,134 @@
+// stripper by 兎RB 26.10.05
+// map ze_offliner
+// workshop id 3255547370
+{
+	"modify": 
+    [
+		{
+            "match":
+            {
+                "classname": "logic_auto"
+            },
+            "insert":
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnMapSpawn",
+						"targetname": "cmd",
+						"inputname": "Command",
+						"overrideparam": "say fix stripper update 26.10.05",
+						"delay": 3.0,
+						"timestofire": -1
+					}
+                ]
+            }
+		},
+		// change zombie respawn logic
+        {
+            "match":
+            {
+				"targetname": "[PR#]once_end_win",
+                "classname": "trigger_once"
+            },
+			"delete":
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "[PR#]zr_toggle_respawn",
+						"inputname": "trigger",
+						"delay": 0.0,
+						"timestofire": -1
+					}
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnStartTouch",
+						"targetname": "zr_toggle_respawn",
+						"inputname": "Disable",
+						"delay": 0.0,
+						"timestofire": 1
+					}
+                ]
+            }
+		},
+		// convert AddOutput to Keyvalue format
+		{
+            "match":
+            {
+				"targetname": "[PR#]shockwave_item_filter",
+                "classname": "filter_activator_context"
+            },
+			"delete":
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnPass",
+						"targetname": "[PR#]shockwave_item_hurt",
+						"inputname": "AddOutput",
+						"overrideparam": "angles 0 0 0",
+						"delay": 14.98,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnPass",
+						"targetname": "[PR#]shockwave_item_particle_start",
+						"inputname": "AddOutput",
+						"overrideparam": "angles 0 0 0",
+						"delay": 0.08,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnPass",
+						"targetname": "[PR#]shockwave_item_particle_explode",
+						"inputname": "AddOutput",
+						"overrideparam": "angles 0 0 0",
+						"delay": 14.9,
+						"timestofire": -1
+					}
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnPass",
+						"targetname": "shockwave_item_hurt",
+						"inputname": "KeyValue",
+						"overrideparam": "angles 0 0 0",
+						"delay": 14.98,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnPass",
+						"targetname": "shockwave_item_particle_start",
+						"inputname": "KeyValue",
+						"overrideparam": "angles 0 0 0",
+						"delay": 0.08,
+						"timestofire": -1
+					},
+
+					{
+						"outputname": "OnPass",
+						"targetname": "shockwave_item_particle_explode",
+						"inputname": "KeyValue",
+						"overrideparam": "angles 0 0 0",
+						"delay": 14.9,
+						"timestofire": -1
+					}
+                ]
+            }
+		}
+	]
+}
