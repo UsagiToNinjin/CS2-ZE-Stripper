@@ -1,0 +1,120 @@
+// stripper by 兎RB 26.10.06
+// map ze_deadcore_r
+// workshop id 3331345627
+{
+    "modify": // fix particle rendering issues depending on the PC client
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_beam_temprelay1&0000",
+                "classname": "logic_relay"
+            },
+			"delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnSpawn",
+				        "targetname": "[PR#]radiation_beam1&0000",
+                        "inputname": "Start",
+                        "delay": 0.5,
+                        "timestofire": -1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnSpawn",
+				        "targetname": "radiation_beam1&0000",
+                        "inputname": "FireUser1",
+                        "delay": 0.5,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnSpawn",
+				        "targetname": "radiation_beam2&0000",
+                        "inputname": "DestroyImmediately",
+                        "delay": 3.2,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_beam1&0000",
+                "classname": "info_particle_system"
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnUser1",
+				        "targetname": "!self",
+                        "inputname": "Start",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+				        "targetname": "radiation_beam2&0000",
+                        "inputname": "DestroyImmediately",
+                        "delay": 0.1,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+				        "targetname": "radiation_beam2&0000",
+                        "inputname": "Start",
+                        "delay": 0.5,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+				        "targetname": "!self",
+                        "inputname": "DestroyImmediately",
+                        "delay": 0.6,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+				        "targetname": "!self",
+                        "inputname": "FireUser1",
+                        "delay": 1.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		}
+    ],    
+    "add":
+    [
+        {
+            "targetname": "radiation_beam2&0000",
+            "classname": "info_particle_system",
+            "origin":"0 0 44",
+            "angles": "89.999992 0 0",
+            "scales": "1 1 1",
+            "parentname": "radiation_beam_moveforward1&0000",
+            "start_active": "0", // false
+            "tint_cp_color": "255 255 255",
+            "tint_cp": "-1",
+            "data_cp_value": "0 0 0",
+            "data_cp": "-1",
+            "cpoint1": "radiation_beam_move1l&0000",
+            "effect_name": "particles/ring_beam.vpcf"
+        }
+    ]
+}
