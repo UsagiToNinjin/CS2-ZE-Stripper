@@ -1,0 +1,35 @@
+// stripper by 兎RB 26.10.08
+// map ze_paradise_t
+// workshop id 3404515839
+{
+	"filter": // remove broken water post_processing_volume(purple)
+	[
+		{
+			"classname": "post_processing_volume",
+			"hammeruniqueid": "1349"
+		}
+	],
+    "modify": // stripper update log
+    [
+		{
+            "match":
+            {
+                "classname": "logic_auto"
+            },
+            "insert":
+            {
+                "io":
+                [	
+					{
+						"outputname": "OnMapSpawn",
+						"targetname": "Command",
+						"inputname": "Command",
+						"overrideparam": "say fix stripper update 26.10.08",
+						"delay": 3.0,
+						"timestofire": -1
+					}
+                ]
+            }
+		}
+    ]    
+}    
