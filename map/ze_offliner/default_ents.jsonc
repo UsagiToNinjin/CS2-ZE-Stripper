@@ -4,6 +4,7 @@
 {
 	"modify": 
     [
+		// stripper update log
 		{
             "match":
             {
