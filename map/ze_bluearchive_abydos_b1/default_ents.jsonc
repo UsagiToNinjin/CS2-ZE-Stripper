@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.06.20
+// stripper by 兎RB 26.10.09
 // map ze_bluearchive_abydos_b1
 // workshop id 3610014260
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -29,7 +29,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "severadmin",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.06.20 兎RB",
+                        "overrideparam": "say language translation stripper 26.10.09 兎RB",
                         "delay": 3.0,
                         "timestofire": -1
                     }
@@ -183,9 +183,9 @@
         {
 			"targetname": "language_case",
 			"classname": "logic_case",
-			"case01": "1", // 日本語
-			"case02": "2", // 한국어
-			"case03": "3", // English
+			"case01": "1.0", // 日本語
+			"case02": "2.0", // 한국어
+			"case03": "3.0", // English
 			"io":
 			[
                 // 日本語
