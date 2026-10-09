@@ -7,7 +7,7 @@ https://github.com/Source2ZE/StripperCS2
 
 ## Translation
 
-Maps that display in-game messages in languages other than English have been modified to support multiple languages(including English)
+Maps that display in-game messages in languages other than English have been modified to support multiple languages
 
 Supported entities:
 
@@ -18,19 +18,19 @@ Supported entities:
 This feature is only available for Stripper configurations whose commit messages contain keywords such as `language`>`other languages/...`.
 
 You can change the language by referring to the comments at the top of the `default_ents.jsonc` file.
-Please enter the desired language serial number in the `overrideparam` value of `language_counter`.
+Please enter the desired language serial code in the `overrideparam` value of `language_case`.
 
 ```jsonc
 {
     "outputname": "OnMapSpawn",
-    "targetname": "language_counter",
-    "inputname": "SetValue",
-    "overrideparam": "1", // please enter the language serial number here
+    "targetname": "language_case",
+    "inputname": "InValue",
+    "overrideparam": "en", // please enter the language serial code here
     "delay": 0.0,
     "timestofire": -1
 }
 ```
-**_NOTE:_** If this value is not changed, the default Japanese setting will be applied.
+**_NOTE:_** If this value is not changed, the default English setting will be applied.
 ## Lyrics
 
 For maps that contain music, the song title, artist, and lyrics have been added for display.
@@ -74,4 +74,4 @@ Various bugs present in the map have been fixed.
 
 This feature is applied to all Stripper configurations whose commit messages contain `fix bug`.
 
-For detailed information, please refer to the `// + fix bug` comments at the top of the corresponding Stripper files.
+For detailed information, please refer to the `// fix bug` comments at the top of the corresponding Stripper files.
