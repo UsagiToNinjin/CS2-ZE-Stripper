@@ -42,7 +42,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "language_case",
                         "inputname": "InValue",
-                        "overrideparam": "en", // please type language serial number here
+                        "overrideparam": "en", // please type language serial code here
                         "delay": 0.0,
                         "timestofire": -1
                     },
