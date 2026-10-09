@@ -446,7 +446,7 @@
 					"outputname": "OnUser1",
 					"targetname": "Lvl1_Tr_1*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 実験室の資料検索完了.速やかに配電室に入りなさい!>45.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 実験室の資料検索完了, 速やかに配電室に入りなさい!>45.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -473,7 +473,7 @@
 					"outputname": "OnUser1",
 					"targetname": "Lvl1_Tr_2*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say このドアは長く持ちません,裏口から逃げましょう!>22.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say このドアは長く持ちません, 裏口から逃げましょう!>22.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -482,7 +482,7 @@
 					"outputname": "OnUser1",
 					"targetname": "Lvl1_Tr_3*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say ここを守りなさい,c4が爆発するまで!>40.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say ここを守りなさい, c4が爆発するまで!>40.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -491,7 +491,7 @@
 					"outputname": "OnUser1",
 					"targetname": "Lvl1_Tr_3*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 橋はもう破壊されてる,撤退!>55.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 橋が破壊された, 撤退!>55.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -509,7 +509,7 @@
 					"outputname": "OnUser1",
 					"targetname": "Lvl1_Tr_4*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 守りなさい,車を指定の位置に移すまで!>5.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 守りなさい, 車を指定の位置に移すまで!>5.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -536,7 +536,7 @@
 					"outputname": "OnUser1",
 					"targetname": "Lvl1_Tr_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say おおお,これは学園長じゃないですか?数日会わなかったらこんなにだらしなくなって~>13.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say おおお, これは学園長じゃないですか?数日会わなかったらこんなにだらしなくなって~>13.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -545,7 +545,7 @@
 					"outputname": "OnUser1",
 					"targetname": "Lvl1_Tr_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 擬似律者を討伐してるときにやられたの?君らしいね>16.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 擬似律者を討伐してるときにやられたの? 君らしいね>16.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -554,7 +554,7 @@
 					"outputname": "OnUser1",
 					"targetname": "Lvl1_Tr_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 学園長を守りなさい,巫女さんの治療が完了するまで(ゾンビをテレサと八重桜に触れさせないでください)>19.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 学園長を守りなさい, 巫女さんの治療が完了するまで(ゾンビをテレサと八重桜に触れさせないでください)>19.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -563,7 +563,7 @@
 					"outputname": "OnUser1",
 					"targetname": "Lvl1_Tr_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say とりあえず死士を撃退して,速やかにセーフハウスに入りなさい!>60.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say とりあえず死士を撃退して, 速やかにセーフハウスに入りなさい!>60.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -572,7 +572,7 @@
 					"outputname": "OnUser1",
 					"targetname": "Lvl1_Tr_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say セーフハウスのドアが開きました,速やかに入りなさい!>71.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say セーフハウスのドアが開きました, 速やかに入りなさい!>71.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -581,7 +581,7 @@
 					"outputname": "OnUser1",
 					"targetname": "Lvl1_Relay*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 情報を入手しました,神社の下の実験室は大崩壊に関わっている可能性があります!>5.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 情報を入手しました, 神社の下の実験室は大崩壊に関わっている可能性があります!>5.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -617,7 +617,7 @@
 					"outputname": "OnUser1",
 					"targetname": "part1zombiecheack*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>juben>Command>say 死士が入ってきたのを探知,殲滅プログラム起動!>0.0>-1",
+					"overrideparam": "OnStartTouch>juben>Command>say 死士が入ってきたのを探知, 殲滅プログラム起動!>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -626,7 +626,7 @@
 					"outputname": "OnUser1",
 					"targetname": "savedls*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 学園長を守れなかった,任務失敗!>0.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 学園長を守れなかった, 任務失敗!>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -653,7 +653,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Lvl1_Tr_1*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 실험실 자료탐색완료.신속히 배전실로 들어가세요!>45.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 실험실 자료탐색완료, 신속히 배전실로 들어가세요!>45.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -680,7 +680,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Lvl1_Tr_2*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 이 문은 오래 버티지 못합니다,뒷 문으로부터 도망갑시다!>22.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 이 문은 오래 버티지 못합니다, 뒷 문으로부터 도망갑시다!>22.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -689,7 +689,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Lvl1_Tr_3*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 이곳을 지키세요,c4가 폭발할 때까지!>40.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 이곳을 지키세요, c4가 폭발할 때까지!>40.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -698,7 +698,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Lvl1_Tr_3*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 다리는 이미 파괴되어 있다,철수!>55.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 다리가 파괴되었다, 철수!>55.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -716,7 +716,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Lvl1_Tr_4*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 지키세요,차를 지정위치로 이동시킬때 까지!>5.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 지키세요, 차를 지정위치로 이동시킬때 까지!>5.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -743,7 +743,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Lvl1_Tr_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 오오오,이건 학원장 아니신가요? 며칠 동안 안만났더니 이렇게 흐트러져서~>13.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 오오오, 이건 학원장 아니신가요? 며칠 동안 안만났더니 이렇게 흐트러져서~>13.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -761,7 +761,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Lvl1_Tr_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 학원장을 지키세요,무녀의 치료가 완료될때 까지(좀비를 테레사와 아예 사쿠라에게 닿지 않게 해 주세요)>19.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 학원장을 지키세요, 무녀의 치료가 완료될때 까지(좀비를 테레사와 아예 사쿠라에게 닿지 않게 해 주세요)>19.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -770,7 +770,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Lvl1_Tr_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 일단 망자를 격퇴해,신속히 안전 쉘터에 들어가세요!>60.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 일단 망자를 격퇴해, 신속히 안전 쉘터에 들어가세요!>60.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -779,7 +779,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Lvl1_Tr_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 안전 쉘터문이 열렸습니다,신속히 들어가세요!>71.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 안전 쉘터문이 열렸습니다, 신속히 들어가세요!>71.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -788,7 +788,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Lvl1_Relay*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 정보를 입수했습니다,신사 아래의 실험실은 대붕괴와 관련되어 있을 가능성이 있습니다!>5.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 정보를 입수했습니다, 신사 아래의 실험실은 대붕괴와 관련되어 있을 가능성이 있습니다!>5.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -824,7 +824,7 @@
 					"outputname": "OnUser2",
 					"targetname": "part1zombiecheack*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>juben>Command>say 망자가 들어온 것을 탐지,전멸 프로그램 가동!>0.0>-1",
+					"overrideparam": "OnStartTouch>juben>Command>say 망자가 들어온 것을 탐지, 전멸 프로그램 가동!>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -860,7 +860,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Lvl1_Tr_1*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Laboratory data search complete.Enter the electrical room immediately!>45.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Laboratory data search complete, Enter the electrical room immediately!>45.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -887,7 +887,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Lvl1_Tr_2*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say This door won’t hold for long,Let’s escape through the back door!>22.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say This door won’t hold for long, Let’s escape through the back door!>22.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -896,7 +896,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Lvl1_Tr_3*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Hold this position,until the C4 explodes!>40.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Hold this position, Until the C4 explodes!>40.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -905,7 +905,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Lvl1_Tr_3*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say The bridge has already been destroyed,Retreat!>55.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say The bridge has already been destroyed, Retreat!>55.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -923,7 +923,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Lvl1_Tr_4*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Hold this position,until the car reaches the designated location!>5.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Hold this position, Until the car reaches the designated location!>5.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -950,7 +950,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Lvl1_Tr_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Oh wow,isn’t this the principal? We haven’t seen each other for a few days, and you’ve gotten so disheveled~>13.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Oh wow, Isn’t this the principal? We haven’t seen each other for a few days, And you’ve gotten so disheveled~>13.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -959,7 +959,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Lvl1_Tr_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Did you fail to subdue Pseudo Herrscher?Typical of you>16.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Did you fail to subdue Pseudo Herrscher? Typical of you>16.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -968,7 +968,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Lvl1_Tr_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Protect the principal,until the shrine maiden’s treatment is complete(Don’t let the zombies touch Theresa and Yae Sakura)>19.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Protect the principal, Until the shrine maiden’s treatment is complete(Don’t let the zombies touch Theresa and Yae Sakura)>19.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -977,7 +977,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Lvl1_Tr_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say First repel the revenant,then quickly get into a safe shelter!>60.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say First repel the revenant, Then quickly get into a safe shelter!>60.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -986,7 +986,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Lvl1_Tr_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say The safe shelter door is open,Enter quickly!>71.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say The safe shelter door is open, Enter quickly!>71.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -995,7 +995,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Lvl1_Relay*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Got information,The lab under the shrine might be connected to the Great Collapse!>5.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Got information, The lab under the shrine might be connected to the Great Collapse!>5.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1031,7 +1031,7 @@
 					"outputname": "OnUser3",
 					"targetname": "part1zombiecheack*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>juben>Command>say Revenant intrusion detected,activating extermination program!>0.0>-1",
+					"overrideparam": "OnStartTouch>juben>Command>say Revenant intrusion detected, Activating extermination program!>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1040,7 +1040,7 @@
 					"outputname": "OnUser3",
 					"targetname": "savedls*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Failed to protect the principal,Mission failed!>0.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Failed to protect the principal, Mission failed!>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
@@ -1056,7 +1056,7 @@
 					"outputname": "OnUser1",
 					"targetname": "Lvl2_Relay*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 資料によると,この付近には事務所と倉庫があります.>0.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 資料によると, この付近には事務所と倉庫があります.>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1065,7 +1065,7 @@
 					"outputname": "OnUser1",
 					"targetname": "Lvl2_Relay*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say このバスが道を塞いでいる.ここを守りなさい,c4が爆発するまで!>40.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say このバスが道を塞いでいる, ここを守りなさい, c4が爆発するまで!>40.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1074,7 +1074,7 @@
 					"outputname": "OnUser1",
 					"targetname": "part2zombechack*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>juben>Command>say 畜生!死士がヘリに乗っちゃった,任務失敗>0.0>-1",
+					"overrideparam": "OnStartTouch>juben>Command>say 畜生!死士がヘリに乗っちゃった, 任務失敗>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1083,7 +1083,7 @@
 					"outputname": "OnUser1",
 					"targetname": "Lvl2_Tr_1*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say ここを守りなさい,ハシゴが降りるまで!>5.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say ここを守りなさい, ハシゴが降りるまで!>5.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1164,7 +1164,7 @@
 					"outputname": "OnUser1",
 					"targetname": "Lvl2_Tr_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say ここを守りなさい,調査が完了するまで!>70.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say ここを守りなさい, 調査が完了するまで!>70.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1182,7 +1182,7 @@
 					"outputname": "OnUser1",
 					"targetname": "Lvl2_Tr_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 倉庫の調査完了.最後のピースも揃った!>100.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 倉庫の調査完了, 最後のピースも揃った!>100.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1200,7 +1200,7 @@
 					"outputname": "OnUser1",
 					"targetname": "Lvl2_Tr_6*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>juben>Command>say すでに撤退用のヘリコプターを呼びました,持ちこたえなさい!>0.0>-1",
+					"overrideparam": "OnStartTouch>juben>Command>say すでに撤退用のヘリコプターを呼びました, 持ちこたえなさい!>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1209,7 +1209,7 @@
 					"outputname": "OnUser1",
 					"targetname": "Lvl2_Tr_6*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>juben>Command>say ヘリコプターがもうすぐ到着する,撤退せよ!>30.0>-1",
+					"overrideparam": "OnStartTouch>juben>Command>say ヘリコプターがもうすぐ到着する, 撤退せよ!>30.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1218,7 +1218,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Lvl2_Relay*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 자료에 따르면,이 부근에는 사무소와 창고가 있습니다.>0.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 자료에 따르면, 이 부근에는 사무소와 창고가 있습니다.>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1227,7 +1227,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Lvl2_Relay*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 이 버스가 길을 막고 있다.이곳을 지키세요,c4가 폭발할때 까지!>40.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 이 버스가 길을 막고 있다.이곳을 지키세요, c4가 폭발할때 까지!>40.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1236,7 +1236,7 @@
 					"outputname": "OnUser2",
 					"targetname": "part2zombechack*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>juben>Command>say 이런!망자가 헬리콥터에 타버렸다,임무실패!>0.0>-1",
+					"overrideparam": "OnStartTouch>juben>Command>say 이런!망자가 헬리콥터에 타버렸다, 임무실패!>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1245,7 +1245,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Lvl2_Tr_1*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 이곳을 지키세요,사다리가 내려올때 까지!>5.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 이곳을 지키세요, 사다리가 내려올때 까지!>5.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1326,7 +1326,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Lvl2_Tr_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 이곳을 지키세요,조사가 완료할때 까지!>70.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 이곳을 지키세요, 조사가 완료할때 까지!>70.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1344,7 +1344,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Lvl2_Tr_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 창고조사완료.마지막 조각도 모였다!>100.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 창고조사완료, 마지막 조각도 모였다!>100.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1362,7 +1362,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Lvl2_Tr_6*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>juben>Command>say 이미 철수용 헬리콥터를 불렸습니다,계속 버티세요!>0.0>-1",
+					"overrideparam": "OnStartTouch>juben>Command>say 이미 철수용 헬리콥터를 불렸습니다, 계속 버티세요!>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1371,7 +1371,7 @@
 					"outputname": "OnUser2",
 					"targetname": "Lvl2_Tr_6*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>juben>Command>say 헬리콥터가 곧 도착한다,철수!>30.0>-1",
+					"overrideparam": "OnStartTouch>juben>Command>say 헬리콥터가 곧 도착한다, 철수!>30.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1380,7 +1380,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Lvl2_Relay*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say According to the data,there is an office and a warehouse in this area.>0.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say According to the data, There is an office and a warehouse in this area.>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1389,7 +1389,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Lvl2_Relay*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say This bus is blocking the road.Hold this position,until the c4 explodes!>40.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say This bus is blocking the road, Hold this position,until the c4 explodes!>40.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1398,7 +1398,7 @@
 					"outputname": "OnUser3",
 					"targetname": "part2zombechack*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>juben>Command>say Damn!The revenant got on the helicopter,Mission failed!>0.0>-1",
+					"overrideparam": "OnStartTouch>juben>Command>say Damn! The revenant got on the helicopter, Mission failed!>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1407,7 +1407,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Lvl2_Tr_1*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Hold this position,Until the ladder is lowered!>5.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Hold this position, Until the ladder is lowered!>5.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1434,7 +1434,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Lvl2_Tr_3*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say Called the elevator.>0.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say Called the elevator>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1488,7 +1488,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Lvl2_Tr_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Hold this position,Until the investigation is complete!>70.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Hold this position, Until the investigation is complete!>70.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1506,7 +1506,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Lvl2_Tr_5*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Warehouse investigation complete.The final piece has also been gathered!>100.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Warehouse investigation complete, The final piece has also been gathered!>100.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1524,7 +1524,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Lvl2_Tr_6*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>juben>Command>say already called the retreat helicopter,Hang on!>0.0>-1",
+					"overrideparam": "OnStartTouch>juben>Command>say already called the retreat helicopter, Hang on!>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1533,7 +1533,7 @@
 					"outputname": "OnUser3",
 					"targetname": "Lvl2_Tr_6*",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>juben>Command>say The helicopter will arrive soon,Fall back!>30.0>-1",
+					"overrideparam": "OnStartTouch>juben>Command>say The helicopter will arrive soon, Fall back!>30.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				}
