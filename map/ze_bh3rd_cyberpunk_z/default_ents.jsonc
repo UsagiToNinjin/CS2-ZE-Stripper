@@ -158,7 +158,7 @@
 					"outputname": "OnCase01",
 					"targetname": "cheak3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 天穹市警察署:了解,ヘリが私たちへ向かってくる!>36.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 天穹市警察署:了解, ヘリが私たちへ向かってくる!>36.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -185,7 +185,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lt1kg",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say 畜生,モーターが詰まった!>3.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say 畜生, モーターが詰まった!>3.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -203,7 +203,7 @@
 					"outputname": "OnCase01",
 					"targetname": "lt1kg",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say 運が良かった,モーターが焼ける前に,なんとかハシゴを下ろせた!>20.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say 運が良かった, モーターが焼ける前になんとかハシゴを下ろせた!>20.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -212,7 +212,7 @@
 					"outputname": "OnCase01",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 今のところ,生き残りたければ進める道は一つしかない.>5.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 今のところ, 生き残りたければ進める道は一つしかない>5.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -221,7 +221,7 @@
 					"outputname": "OnCase01",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say もしもし,天穹市警察署ですか?今閉じ込められています,助けが必要です>8.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say もしもし, 天穹市警察署ですか?今閉じ込められています, 助けが必要です>8.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -230,7 +230,7 @@
 					"outputname": "OnCase01",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 天穹市警察署:申し訳ないが,今 街全体が混乱状態で,人手が足りません.>11.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 天穹市警察署:申し訳ないが, 今 街全体が混乱状態で人手が足りません>11.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -239,7 +239,7 @@
 					"outputname": "OnCase01",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 人の命はみんな平等でしょう,あなたたちの助けが必要なんです!>14.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 人の命はみんな平等でしょう, あなたたちの助けが必要なんです!>14.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -248,7 +248,7 @@
 					"outputname": "OnCase01",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 天穹市警察署:俺たちはみんな平等だ,中にはもっと平等な者もいる>17.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 天穹市警察署:俺たちはみんな平等だ, 中にはもっと平等な者もいる>17.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -275,7 +275,7 @@
 					"outputname": "OnCase01",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 私たちは外勤職員を回収するという理由で,あなたたちを連れて行くことができます.>26.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 私たちは外勤職員を回収するという理由で, あなたたちを連れて行くことができます>26.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -284,7 +284,7 @@
 					"outputname": "OnCase01",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say この波死士が片付いた,さっさと降りていこう!>71.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say この波死士が片付いた, さっさと降りていこう!>71.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -293,7 +293,7 @@
 					"outputname": "OnCase01",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 書類の場所:高架橋の下の屋上,老王の地元料理店の倉庫,別のビルの屋上.>29.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 書類の場所:高架橋の下の屋上, 老王の地元料理店の倉庫, 別のビルの屋上>29.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -302,7 +302,7 @@
 					"outputname": "OnCase01",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 老王の地元料理店の鍵は建物の裏の角に隠されている,先に鍵を探さなきゃならない.>32.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 老王の地元料理店の鍵は建物の裏の角に隠されている, 先に鍵を探さなきゃならない>32.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -329,7 +329,7 @@
 					"outputname": "OnCase01",
 					"targetname": "part5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say この波死士が片付いた,気をつけろ,また波死士が家から出てくる!>43.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say この波死士が片付いた, 気をつけろ, また波死士が家から出てくる!>43.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -347,7 +347,7 @@
 					"outputname": "OnCase01",
 					"targetname": "Boss_Relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 仲介人:お前たちがどれだけ大きなトラブルを起こしたか分かっているのか!神城製薬に手を出したら死しかないぞ!>23.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 仲介人:お前たちがどれだけ大きなトラブルを起こしたか分かっているのか! 神城製薬に手を出したら死しかないぞ!>23.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -356,7 +356,7 @@
 					"outputname": "OnCase01",
 					"targetname": "Boss_Relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 仲介人:天下に名を轟かせるって?どうやら来世まで待つしかなさそうだな!>26.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 仲介人:天下に名を轟かせるって? どうやら来世まで待つしかなさそうだな!>26.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -365,7 +365,7 @@
 					"outputname": "OnCase01",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 神城製薬の最新研究成果を手に入れた,すぐ撤退しよう!>4.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 神城製薬の最新研究成果を手に入れた, すぐ撤退しよう!>4.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -374,7 +374,7 @@
 					"outputname": "OnCase01",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 仲介人:畜生!サンプルを取りに行かせたのに,どうしてこんな大騒ぎになってるんだよ!>7.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 仲介人:畜生! サンプルを取りに行かせたのに, どうしてこんな大騒ぎになってるんだよ!>7.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -383,7 +383,7 @@
 					"outputname": "OnCase01",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say それは私たちとは関係ない,私たちが出てきたときには,ここはすでに崩壊が起きていた.>10.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say それは私たちとは関係ない, 私たちが出てきたときにはここはすでに崩壊が起きていた>10.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -392,7 +392,7 @@
 					"outputname": "OnCase01",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 仲介人:この件は後でまた話す.機体の観測システムが壊れちゃったの.>13.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 仲介人:この件は後でまた話す, 機体の観測システムが壊れちゃったの>13.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -401,7 +401,7 @@
 					"outputname": "OnCase01",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 仲介人:着陸プラットフォームのサーチライトを点けて欲しい.>14.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 仲介人:着陸プラットフォームのサーチライトを点けて欲しい>14.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -419,7 +419,7 @@
 					"outputname": "OnCase01",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 仲介人:よし,任務完了,今回の取り分は40％あげるね!スイッチはヘリポート左側のビル内にあるよ.>19.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 仲介人:よし, 任務完了, 今回の取り分は40％あげるね!スイッチはヘリポート左側のビル内にあるよ>19.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -455,7 +455,7 @@
 					"outputname": "OnCase01",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 回線接続まであと5秒,撤退準備!>164.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 回線接続まであと5秒, 撤退準備!>164.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -464,7 +464,7 @@
 					"outputname": "OnCase01",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 注意,下の階段で死士を検知した!>199.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 注意, 下の階段で死士を検知した!>199.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -473,7 +473,7 @@
 					"outputname": "OnCase01",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 権限取得まであと10秒,撤退準備!>224.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 権限取得まであと10秒, 撤退準備!>224.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -482,7 +482,7 @@
 					"outputname": "OnCase01",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 権限取得完了,夜間着陸誘導システムを起動中!>234.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 権限取得完了, 夜間着陸誘導システムを起動中!>234.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -500,7 +500,7 @@
 					"outputname": "OnCase01",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 情報を受け取った,撤退用の飛行機はもう目標地点に到着している,ここから離れよう!>297.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 情報を受け取った, 撤退用の飛行機はもう目標地点に到着している, ここから離れよう!>297.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -590,7 +590,7 @@
 					"outputname": "OnCase02",
 					"targetname": "cheak3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 천궁 경찰국:알겠습니다,헬리콥터가 우리쪽으로 향해 온다!>36.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 천궁 경찰국:알겠습니다, 헬리콥터가 우리쪽으로 향해 온다!>36.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -617,7 +617,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lt1kg",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say 젠장,모터가 걸렸어!>3.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say 젠장, 모터가 걸렸어!>3.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -635,7 +635,7 @@
 					"outputname": "OnCase02",
 					"targetname": "lt1kg",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say 운이 좋았어,모터가 타버리기 전에,어떻게든 사다리를 내릴 수 있었다!>20.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say 운이 좋았어, 모터가 타버리기 전에 어떻게든 사다리를 내릴 수 있었다!>20.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -644,7 +644,7 @@
 					"outputname": "OnCase02",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 지금 시점에서,살아 남고 싶으면 갈 수 있는 길은 하나 밖에 없다.>5.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 지금 시점에서 살아 남고 싶으면 갈 수 있는 길은 하나 밖에 없다>5.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -653,7 +653,7 @@
 					"outputname": "OnCase02",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 여보세요,천궁 경찰국 입니까?지금 같혀 있습니다,도움이 필요해요>8.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 여보세요, 천궁 경찰국 입니까?지금 같혀 있습니다,도움이 필요해요>8.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -662,7 +662,7 @@
 					"outputname": "OnCase02",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 천궁 경찰국:죄송합니다만,지금 거리 전체가 혼잡상황이라,인력이 부족합니다.>11.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 천궁 경찰국:죄송합니다만, 지금 거리 전체가 혼잡상황이라 인력이 부족합니다>11.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -671,7 +671,7 @@
 					"outputname": "OnCase02",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 사람의 목숨은 모두 평등하잖아요,당신들의 도움이 필요해요!>14.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 사람의 목숨은 모두 평등하잖아요, 당신들의 도움이 필요해요!>14.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -680,7 +680,7 @@
 					"outputname": "OnCase02",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 천궁 경찰국:우리들은 모두 평등하다,안에는 좀 더 평등한 자도 있다>17.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 천궁 경찰국:우리들은 모두 평등하다, 안에는 좀 더 평등한 자도 있다>17.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -707,7 +707,7 @@
 					"outputname": "OnCase02",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 우리들은 외근 직원을 회수한다는 이유로,당신들을 대리고 가는 것이 가능합니다.>26.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 우리들은 외근 직원을 회수한다는 이유로 당신들을 대리고 가는 것이 가능합니다>26.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -716,7 +716,7 @@
 					"outputname": "OnCase02",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 파도의 망령이 정리되었다,즉시 내려가자!>71.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 파도의 망령이 정리되었다, 즉시 내려가자!>71.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -725,7 +725,7 @@
 					"outputname": "OnCase02",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 서류 장소:고가 아래의 옥상,왕씨의 지역 음식점의 창고,다른 빌딩의 옥상.>29.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 서류 장소:고가 아래의 옥상, 왕씨의 지역 음식점의 창고, 다른 빌딩의 옥상>29.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -734,7 +734,7 @@
 					"outputname": "OnCase02",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 왕씨의 지역 음식점 열쇠는 건물 뒷편 모서리에 숨겨져 있다,먼저 열쇠를 찾지 않으면 안된다.>32.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 왕씨의 지역 음식점 열쇠는 건물 뒷편 모서리에 숨겨져 있다, 먼저 열쇠를 찾지 않으면 안된다>32.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -743,7 +743,7 @@
 					"outputname": "OnCase02",
 					"targetname": "part3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 문이 열렸다,바로 후퇴하자!>0.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 문이 열렸다, 바로 후퇴하자!>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -761,7 +761,7 @@
 					"outputname": "OnCase02",
 					"targetname": "part5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 파도의 망령이 정리되었다,조심해,또 파도의 망령이 집에서 나온다!>43.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 파도의 망령이 정리되었다, 조심해, 또 파도의 망령이 집에서 나온다!>43.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -788,7 +788,7 @@
 					"outputname": "OnCase02",
 					"targetname": "Boss_Relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 중개인:천하에 이름을 떨친다고?아무래도 다음 생까지 기다릴 수밖에 없겠군!>26.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 중개인:천하에 이름을 떨친다고? 아무래도 다음 생까지 기다릴 수밖에 없겠군!>26.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -797,7 +797,7 @@
 					"outputname": "OnCase02",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 신성의약의 최종연구결과를 얻었다,바로 후퇴하자!>4.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 신성의약의 최종연구결과를 얻었다, 바로 후퇴하자!>4.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -806,7 +806,7 @@
 					"outputname": "OnCase02",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 중개인:젠장!샘플을 가지러 보냈는데,어째서 큰 소란이 되어있는거야!>7.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 중개인:젠장!샘플을 가지러 보냈는데, 어째서 큰 소란이 되어있는거야!>7.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -815,7 +815,7 @@
 					"outputname": "OnCase02",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 그건 우리들과 상관없어,우리들이 나올 때,여긴 이미 붕괴가 일어났었어.>10.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 그건 우리들과 상관없어, 우리들이 나올 때 여긴 이미 붕괴가 일어났었어>10.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -824,7 +824,7 @@
 					"outputname": "OnCase02",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 중개인:이건 다음으로 하고.비행 관측시스템이 망가져버렸어.>13.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 중개인:이건 다음으로 하고 비행 관측시스템이 망가져버렸어>13.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -833,7 +833,7 @@
 					"outputname": "OnCase02",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 중개인:착륙 플랫폼의 서치라이트를 켰으면 좋겠어.>14.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 중개인:착륙 플랫폼의 서치라이트를 켰으면 좋겠어>14.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -851,7 +851,7 @@
 					"outputname": "OnCase02",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 중개인:좋아,임무완료,이번 배당은40％줄게!스위치는 헬리포트 왼쪽의 빌딩 안에 있어.>19.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 중개인:좋아, 임무완료, 이번 배당은40％줄게! 스위치는 헬리포트 왼쪽의 빌딩 안에 있어>19.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -887,7 +887,7 @@
 					"outputname": "OnCase02",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 회선 연결까지 앞으로 5초,철수준비!>164.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 회선 연결까지 앞으로 5초, 철수준비!>164.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -905,7 +905,7 @@
 					"outputname": "OnCase02",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 권한취득까지 앞으로 10초,철수준비!>224.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 권한취득까지 앞으로 10초, 철수준비!>224.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -914,7 +914,7 @@
 					"outputname": "OnCase02",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 권한취득완료,야간착륙유도시스템을 가동중!>234.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 권한취득완료, 야간착륙유도시스템을 가동중!>234.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -932,7 +932,7 @@
 					"outputname": "OnCase02",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 정보를 받았다,철수용 비행기가 이미 목표지점에 도착해 있다,여기서 떠나자!>297.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 정보를 받았다, 철수용 비행기가 이미 목표지점에 도착해 있다,여기서 떠나자!>297.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1022,7 +1022,7 @@
 					"outputname": "OnCase03",
 					"targetname": "cheak3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Arc city Police Bureau:Roger,The helicopter’s coming our way!>36.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Arc city Police Bureau:Roger, The helicopter’s coming our way!>36.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1049,7 +1049,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lt1kg",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say Damn,the motor’s stuck!>3.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say Damn, the motor’s stuck!>3.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1067,7 +1067,7 @@
 					"outputname": "OnCase03",
 					"targetname": "lt1kg",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say I was lucky,I somehow got the ladder down before the motor burned out!>20.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say I was lucky, I somehow got the ladder down before the motor burned out!>20.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1076,7 +1076,7 @@
 					"outputname": "OnCase03",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Right now,the only way to survive is to take that one path.>5.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Right now, The only way to survive is to take that one path>5.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1085,7 +1085,7 @@
 					"outputname": "OnCase03",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Hello,it's Arc city Police Bureau?I’m trapped right now,need help>8.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Hello, It's Arc city Police Bureau?I’m trapped right now, Need help>8.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1094,7 +1094,7 @@
 					"outputname": "OnCase03",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Arc city Police Bureau:I’m sorry,the entire street is congested right now,we are understaffed.>11.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Arc city Police Bureau:I’m sorry, The entire street is congested right now, We are understaffed>11.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1103,7 +1103,7 @@
 					"outputname": "OnCase03",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Every life is equal,I need your help!>14.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Every life is equal, I need your help!>14.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1112,7 +1112,7 @@
 					"outputname": "OnCase03",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Arc city Police Bureau:We are all equal,but some are more equal than others>17.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Arc city Police Bureau:We are all equal, But some are more equal than others>17.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1139,7 +1139,7 @@
 					"outputname": "OnCase03",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say It is possible for us to take you with us on the grounds that we are retrieving our field staff.>26.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say It is possible for us to take you with us on the grounds that we are retrieving our field staff>26.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1148,7 +1148,7 @@
 					"outputname": "OnCase03",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say The revenant of sea has been cleared,Let’s go down immediately!>71.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say The revenant of sea has been cleared, Let’s go down immediately!>71.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1157,7 +1157,7 @@
 					"outputname": "OnCase03",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Document locations:rooftop under the overpass,storage room of Mr. Wang’s local restaurant,rooftop of another building.>29.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Document locations:rooftop under the overpass, Storage room of Mr. Wang’s local restaurant, Rooftop of another building>29.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1166,7 +1166,7 @@
 					"outputname": "OnCase03",
 					"targetname": "part2",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say The key to Mr. Wang’s local restaurant is hidden at the back corner of the building,You must find the key first.>32.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say The key to Mr.Wang’s local restaurant is hidden at the back corner of the building, You must find the key first>32.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1175,7 +1175,7 @@
 					"outputname": "OnCase03",
 					"targetname": "part3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say The door has opened,Let’s retreat immediately!>0.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say The door has opened, Let’s retreat immediately!>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1193,7 +1193,7 @@
 					"outputname": "OnCase03",
 					"targetname": "part5",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say The revenant of sea has been cleared,Watch out,revenant of sea is coming out of the house again!>43.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say The revenant of sea has been cleared, Watch out,revenant of sea is coming out of the house again!>43.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1211,7 +1211,7 @@
 					"outputname": "OnCase03",
 					"targetname": "Boss_Relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Broker:Do you even realize what kind of trouble you’ve caused!If you touch Heliopolis Life Science there’s nothing but death!>23.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Broker:Do you even realize what kind of trouble you’ve caused! If you touch Heliopolis Life Science there’s nothing but death!>23.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1220,7 +1220,7 @@
 					"outputname": "OnCase03",
 					"targetname": "Boss_Relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Broker:make a name for yourself across the world?you’ll have to wait until your next life!>26.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Broker:make a name for yourself across the world? you’ll have to wait until your next life!>26.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1229,7 +1229,7 @@
 					"outputname": "OnCase03",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say We’ve obtained the final research results of Heliopolis Life Science,Let’s retreat immediately!>4.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say We’ve obtained the final research results of Heliopolis Life Science, Let’s retreat immediately!>4.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1238,7 +1238,7 @@
 					"outputname": "OnCase03",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Broker:Damn it!I dispatched someone to get the sample,so why is there such a commotion!>7.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Broker:Damn it!I dispatched someone to get the sample, So why is there such a commotion!>7.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1247,7 +1247,7 @@
 					"outputname": "OnCase03",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say That has nothing to do with us,By the time we got here,the collapse had already happened.>10.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say That has nothing to do with us, By the time we got here, The collapse had already happened>10.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1256,7 +1256,7 @@
 					"outputname": "OnCase03",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Broker:Let’s leave this for later.he flight observation system has broken down.>13.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Broker:Let’s leave this for later, He flight observation system has broken down>13.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1265,7 +1265,7 @@
 					"outputname": "OnCase03",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Broker:I wish the searchlights on the landing platform were turned on.>14.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Broker:I wish the searchlights on the landing platform were turned on>14.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1274,7 +1274,7 @@
 					"outputname": "OnCase03",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Ha!Do you know how many revenants are in this area right now!>16.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Ha! Do you know how many revenants are in this area right now!>16.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1283,7 +1283,7 @@
 					"outputname": "OnCase03",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Broker:Alright,mission complete,Here’s 40% for your share!The switch is inside the building to the left of the helipad.>19.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Broker:Alright, Mission complete,Here’s 40% for your share! The switch is inside the building to the left of the helipad>19.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1319,7 +1319,7 @@
 					"outputname": "OnCase03",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 5 seconds until the line is connected,get ready to withdraw!>164.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 5 seconds until the line is connected, Get ready to withdraw!>164.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1328,7 +1328,7 @@
 					"outputname": "OnCase03",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Warning,The revenant has been detected at the lower stairs!>199.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Warning, The revenant has been detected at the lower stairs!>199.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1337,7 +1337,7 @@
 					"outputname": "OnCase03",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 10 seconds until access is granted,get ready to withdraw!>224.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 10 seconds until access is granted, Get ready to withdraw!>224.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1346,7 +1346,7 @@
 					"outputname": "OnCase03",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Access granted,The night landing guidance system is active!>234.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Access granted, The night landing guidance system is active!>234.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1364,7 +1364,7 @@
 					"outputname": "OnCase03",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Information received,The extraction plane’s already at the target,Let’s move out!>297.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Information received, The extraction plane’s already at the target, Let’s move out!>297.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1416,7 +1416,7 @@
                     "outputname": "OnUser1",
 					"targetname": "Delta_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say この少女が携帯しているある物質には興奮剤と似たような効果がある......>0.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say この少女が携帯しているある物質には興奮剤と似たような効果がある.....>0.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1443,7 +1443,7 @@
                     "outputname": "OnUser2",
 					"targetname": "Delta_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say 이 소녀가 휴대하고 있는 어느 물질에는 흥분제와 비슷한 효과가 있다......>0.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say 이 소녀가 휴대하고 있는 어느 물질에는 흥분제와 비슷한 효과가 있다.....>0.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1470,7 +1470,7 @@
                     "outputname": "OnUser3",
 					"targetname": "Delta_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say A certain substance that this girl is carrying has effects similar to a stimulant......>0.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say A certain substance that this girl is carrying has effects similar to a stimulant.....>0.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1513,7 +1513,7 @@
                     "outputname": "OnUser1",
 					"targetname": "Sakura_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say 彼女は看護師というより,むしろ侍のようだ.>1.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say 彼女は看護師というより,むしろ侍のようだ>1.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1549,7 +1549,7 @@
                     "outputname": "OnUser2",
 					"targetname": "Sakura_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say 그녀는 간호사라고 하기 보다,오히려 사무라이인 듯 하다.>1.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say 그녀는 간호사라고 하기 보다,오히려 사무라이인 듯 하다>1.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1585,7 +1585,7 @@
                     "outputname": "OnUser3",
 					"targetname": "Sakura_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say She seems more like a samurai than a nurse.>1.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say She seems more like a samurai than a nurse>1.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1619,7 +1619,7 @@
                     "outputname": "OnUser1",
 					"targetname": "Rita_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say 見つけたのは鍵だけではなさそうだ.>0.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say 見つけたのは鍵だけではなさそうだ>0.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1628,7 +1628,7 @@
                     "outputname": "OnUser1",
 					"targetname": "Rita_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say 天命の女武神?神城製薬に裏をかかれた?今追われているのか?.>1.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say 天命の女武神?神城製薬に裏をかかれた?今追われているのか?>1.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1664,7 +1664,7 @@
                     "outputname": "OnUser2",
 					"targetname": "Rita_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say 찾은건 열쇠뿐만은 아닌 듯 하다.>0.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say 찾은건 열쇠뿐만은 아닌 듯 하다>0.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1673,7 +1673,7 @@
                     "outputname": "OnUser2",
 					"targetname": "Rita_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say 천명의 발키리?신성제약의 계략에 당했나?지금 쫓기고 있는건가?.>1.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say 천명의 발키리?신성제약의 계략에 당했나?지금 쫓기고 있는건가?>1.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1709,7 +1709,7 @@
                     "outputname": "OnUser3",
 					"targetname": "Rita_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say It seems that what we found is not just the key.>0.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say It seems that what we found is not just the key>0.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1718,7 +1718,7 @@
                     "outputname": "OnUser3",
 					"targetname": "Rita_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say Valkyrie of destiny?Deceived by Heliopolis Life Science?Is she being hunted now?.>1.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say Valkyrie of destiny?Deceived by Heliopolis Life Science?Is she being hunted now?>1.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
