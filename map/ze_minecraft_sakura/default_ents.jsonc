@@ -1,4 +1,4 @@
-// stripper by 兎RB,kokopekko,小彩旗 26.08.20
+// stripper by 兎RB,kokopekko,小彩旗 26.10.09
 // map ze_minecraft_sakura
 // workshop id 3184013959
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -38,7 +38,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.08.20 by 兎RB,kokopekko,小彩旗",
+                        "overrideparam": "say language translation stripper 26.10.09 by 兎RB,kokopekko,小彩旗",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -69,9 +69,9 @@
         {
 			"targetname": "language_case",
 			"classname": "logic_case",
-			"case01": "1", // 日本語
-			"case02": "2", // 한국어
-			"case03": "3", // English
+			"case01": "1.0", // 日本語
+			"case02": "2.0", // 한국어
+			"case03": "3.0", // English
 			"io":
 			[
                 // 日本語
