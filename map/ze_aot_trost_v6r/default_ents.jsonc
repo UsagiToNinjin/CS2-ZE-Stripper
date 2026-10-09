@@ -2,9 +2,9 @@
 // map ze_aot_trost_v6r
 // workshop id 3262920150
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
-// serial number 日本語:"1" 한국어:"2" English:"3"
-// + convert lua script L59~979, L1634~4093
-// + fix bug L46~58
+// serial code L30 日本語:"jp" 한국어:"kr" English:"en"
+// convert lua script L59~979, L1616~4075
+// fix bug L46~58
 {
 	"filter": // remove unnecessary lua script
 	[
@@ -25,9 +25,9 @@
                 [
 					{
                         "outputname": "OnMapSpawn",
-						"targetname": "language_counter",
-                        "inputname": "SetValue",
-                        "overrideparam": "1", // please type language serial number here
+						"targetname": "language_case",
+                        "inputname": "InValue",
+                        "overrideparam": "en", // please type language serial code here
                         "delay": 0.0,
                         "timestofire": -1
                     },
@@ -981,29 +981,11 @@
     "add":
     [
         {
-			"targetname": "language_counter",
-			"classname": "math_counter",
-            "startvalue": "0",
-            "min": "0",
-            "max": "3",
-			"io":
-            [
-				{
-                    "outputname": "OutValue",
-                    "targetname": "language_case",
-                    "inputname": "InValue",
-                    "delay": 0.0,
-                    "timestofire": -1
-                }
-            ]
-        },
-
-        {
 			"targetname": "language_case",
 			"classname": "logic_case",
-			"case01": "1.0", // 日本語
-			"case02": "2.0", // 한국어
-			"case03": "3.0", // English
+			"case01": "jp", // 日本語
+			"case02": "kr", // 한국어
+			"case03": "en", // English
 			"io":
 			[
                 // 日本語
