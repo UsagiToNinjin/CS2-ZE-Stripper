@@ -100,7 +100,7 @@
 					"outputname": "OnCase01",
 					"targetname": "nuke_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 40秒後全員テレポートされます ＜＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 40秒後に全員テレポートされます ＜＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -109,7 +109,7 @@
 					"outputname": "OnCase01",
 					"targetname": "nuke_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10秒後橋が切れます ＜＜＜>55.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10秒後に橋が切れます ＜＜＜>55.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -118,7 +118,7 @@
 					"outputname": "OnCase01",
 					"targetname": "nuke_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10秒後全員テレポートされます ＜＜＜>30.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10秒後に全員テレポートされます ＜＜＜>30.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -127,7 +127,7 @@
 					"outputname": "OnCase01",
 					"targetname": "nuke_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 5秒後全員テレポートされます ＜＜＜>35.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 5秒後に全員テレポートされます ＜＜＜>35.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -136,7 +136,7 @@
 					"outputname": "OnCase01",
 					"targetname": "nuke_trigger",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 60秒後橋が切れます ＜＜＜>5.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 60秒後に橋が切れます ＜＜＜>5.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -145,7 +145,7 @@
 					"outputname": "OnCase01",
 					"targetname": "708",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ ゾンビが15秒後釈放されます ＜＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ ゾンビが15秒後に解放されます ＜＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -154,7 +154,7 @@
 					"outputname": "OnCase01",
 					"targetname": "526",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30秒後全員テレポートされます ＜＜＜>15.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30秒後に全員テレポートされます ＜＜＜>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -163,7 +163,7 @@
 					"outputname": "OnCase01",
 					"targetname": "526",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 防御60秒後人間がテレポートされます ＜＜＜>10.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 防御60秒後に人間がテレポートされます ＜＜＜>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -172,7 +172,7 @@
 					"outputname": "OnCase01",
 					"targetname": "885",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ ゾンビが15秒後釈放されます ＜＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ ゾンビが15秒後に解放されます ＜＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -181,7 +181,7 @@
 					"outputname": "OnCase01",
 					"targetname": "524",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 防御60秒後人間がテレポートされます ＜＜＜>10.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 防御60秒後に人間がテレポートされます ＜＜＜>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -190,7 +190,7 @@
 					"outputname": "OnCase01",
 					"targetname": "524",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30秒後全員テレポートされます ＜＜＜>15.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30秒後に全員テレポートされます ＜＜＜>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -199,7 +199,7 @@
 					"outputname": "OnCase01",
 					"targetname": "873",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ ゾンビが15秒後釈放されます ＜＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ ゾンビが15秒後に解放されます ＜＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -208,7 +208,7 @@
 					"outputname": "OnCase01",
 					"targetname": "866",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ ゾンビが15秒後釈放されます ＜＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ ゾンビが15秒後に解放されます ＜＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -217,7 +217,7 @@
 					"outputname": "OnCase01",
 					"targetname": "665",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10秒後テレポートします ＜＜＜>10.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 10秒後にテレポートします ＜＜＜>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -226,7 +226,7 @@
 					"outputname": "OnCase01",
 					"targetname": "522",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 防御60秒後人間がテレポートされます ＜＜＜>10.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 防御60秒後に人間がテレポートされます ＜＜＜>10.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -235,7 +235,7 @@
 					"outputname": "OnCase01",
 					"targetname": "522",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30秒後全員テレポートされます ＜＜＜>15.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 30秒後に全員テレポートされます ＜＜＜>15.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -307,7 +307,7 @@
 					"outputname": "OnCase02",
 					"targetname": "708",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 좀비가 15초 후 석방됩니다 ＜＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 좀비가 15초 후 해방됩니다 ＜＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -334,7 +334,7 @@
 					"outputname": "OnCase02",
 					"targetname": "885",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 좀비가 15초 후 석방됩니다 ＜＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 좀비가 15초 후 해방됩니다 ＜＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -361,7 +361,7 @@
 					"outputname": "OnCase02",
 					"targetname": "873",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 좀비가 15초 후 석방됩니다 ＜＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 좀비가 15초 후 해방됩니다 ＜＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -370,7 +370,7 @@
 					"outputname": "OnCase02",
 					"targetname": "866",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 좀비가 15초 후 석방됩니다 ＜＜＜>0.0>1",
+					"overrideparam": "OnStartTouch>cmd>Command>say ＞＞＞ 좀비가 15초 후 해방됩니다 ＜＜＜>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
