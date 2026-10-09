@@ -961,7 +961,7 @@
 					"outputname": "OnCase02",
 					"targetname": "Ravana_Start",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnUser1>Server>Command>say 〉라바나가 공격태세에 들어가면 수류탄 데미지에 면역을 가짐>1.0>1",
+					"overrideparam": "OnUser1>Server>Command>say 〉라바나가 공격태세에 들어가면 수류탄 대미지에 면역을 가짐>1.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1123,7 +1123,7 @@
 					"outputname": "OnCase02",
 					"targetname": "Boss_Relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>Server>Command>say 〉수류탄은 높은 데미지를 주는 것이 가능합니다>0.0>1",
+					"overrideparam": "OnTrigger>Server>Command>say 〉수류탄은 높은 대미지를 주는 것이 가능합니다>0.0>1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
