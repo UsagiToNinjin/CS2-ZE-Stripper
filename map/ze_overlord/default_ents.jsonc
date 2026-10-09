@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.10.23
+// stripper by 兎RB 26.10.09
 // map ze_overlord
 // workshop id 3259318150
 // if find mistranslation tell me　https://steamcommunity.com/profiles/76561198343767968/
@@ -28,7 +28,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 25.10.23 by 兎RB",
+                        "overrideparam": "say language translation stripper 26.10.09 by 兎RB",
                         "delay": 1.0,
                         "timestofire": -1
                     }
@@ -59,9 +59,9 @@
         {
 			"targetname": "language_case",
 			"classname": "logic_case",
-			"case01": "1", // 日本語
-			"case02": "2", // 한국어
-            "case03": "3", // English
+			"case01": "1.0", // 日本語
+			"case02": "2.0", // 한국어
+            "case03": "3.0", // English
 			"io":
 			[
                 // 日本語
