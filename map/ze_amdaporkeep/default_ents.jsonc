@@ -1,4 +1,4 @@
-// stripper by 兎RB,Frame 26.10.01
+// stripper by 兎RB,Frame 26.10.09
 // map ze_amdaporkeep
 // workshop id 3663857931
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -59,7 +59,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "ServerCommand",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.10.01 by 兎RB,Frame",
+                        "overrideparam": "say language translation stripper 26.10.09 by 兎RB,Frame",
                         "delay": 12.0,
                         "timestofire": -1
                     }
