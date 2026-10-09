@@ -1587,7 +1587,7 @@
 					"outputname": "OnUser1",
 					"targetname": "juben",
 					"inputname": "Command",
-					"overrideparam": "say 今,ここを守れ!",
+					"overrideparam": "say 今, ここを守れ!",
 					"delay": 5.0,
 					"timestofire": -1
 				},
@@ -1614,7 +1614,7 @@
 					"outputname": "OnUser2",
 					"targetname": "juben",
 					"inputname": "Command",
-					"overrideparam": "say 지금,여기를 지켜!",
+					"overrideparam": "say 지금, 여기를 지켜!",
 					"delay": 5.0,
 					"timestofire": -1
 				},
