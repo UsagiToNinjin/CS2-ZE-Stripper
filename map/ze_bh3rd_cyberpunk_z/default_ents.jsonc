@@ -1504,7 +1504,7 @@
                     "outputname": "OnUser1",
 					"targetname": "Sakura_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say 一人の生存者を見つけた,彼女は私たちに医療の手助けをしてくれるでしょう!>0.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say 一人の生存者を見つけた, 彼女は私たちに医療の手助けをしてくれるでしょう!>0.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1513,7 +1513,7 @@
                     "outputname": "OnUser1",
 					"targetname": "Sakura_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say 彼女は看護師というより,むしろ侍のようだ>1.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say 彼女は看護師というより寧ろ侍のようだ>1.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1540,7 +1540,7 @@
                     "outputname": "OnUser2",
 					"targetname": "Sakura_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say 한 명의 생존자를 찾았다,그녀는 우리들에게 의료도움을 해 줄 것이다!>0.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say 한 명의 생존자를 찾았다, 그녀는 우리들에게 의료도움을 해 줄 것이다!>0.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1549,7 +1549,7 @@
                     "outputname": "OnUser2",
 					"targetname": "Sakura_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say 그녀는 간호사라고 하기 보다,오히려 사무라이인 듯 하다>1.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say 그녀는 간호사라고 하기 보다 오히려 사무라이인 듯 하다>1.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1576,7 +1576,7 @@
                     "outputname": "OnUser3",
 					"targetname": "Sakura_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say I found a survivor,She will provide us with medical aid!>0.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say I found a survivor, She will provide us with medical aid!>0.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1628,7 +1628,7 @@
                     "outputname": "OnUser1",
 					"targetname": "Rita_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say 天命の女武神?神城製薬に裏をかかれた?今追われているのか?>1.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say 天命の女武神? 神城製薬に裏をかかれた? 今追われているのか?>1.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1637,7 +1637,7 @@
                     "outputname": "OnUser1",
 					"targetname": "Rita_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say よし,どうせ神城製薬とは因縁ができてしまったし,もうトラブルを起こしても構わない!>2.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say よし, どうせ神城製薬とは因縁ができてしまったし, もうトラブルを起こしても構わない!>2.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1673,7 +1673,7 @@
                     "outputname": "OnUser2",
 					"targetname": "Rita_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say 천명의 발키리?신성제약의 계략에 당했나?지금 쫓기고 있는건가?>1.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say 천명의 발키리? 신성제약의 계략에 당했나? 지금 쫓기고 있는건가?>1.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1682,7 +1682,7 @@
                     "outputname": "OnUser2",
 					"targetname": "Rita_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say 좋아,어차피 신성제약과는 원한이 생겨버렸으니,이젠 트러블을 일으켜도 상관없겠지!>2.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say 좋아, 어차피 신성제약과는 원한이 생겨버렸으니, 이젠 트러블을 일으켜도 상관없겠지!>2.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1718,7 +1718,7 @@
                     "outputname": "OnUser3",
 					"targetname": "Rita_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say Valkyrie of destiny?Deceived by Heliopolis Life Science?Is she being hunted now?>1.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say Valkyrie of destiny? Deceived by Heliopolis Life Science? Is she being hunted now?>1.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1727,7 +1727,7 @@
                     "outputname": "OnUser3",
 					"targetname": "Rita_Weapon*",
                     "inputname": "AddOutPut",
-                    "overrideparam": "OnPlayerPickup>juben>Command>say Alright,since we’ve already made an enemy of Heliopolis Life Science,it doesn’t matter if we cause some trouble!>2.0>1",
+                    "overrideparam": "OnPlayerPickup>juben>Command>say Alright, Since we’ve already made an enemy of Heliopolis Life Science, It doesn’t matter if we cause some trouble!>2.0>1",
                     "delay": 0.0,
                     "timestofire": -1
                 },
