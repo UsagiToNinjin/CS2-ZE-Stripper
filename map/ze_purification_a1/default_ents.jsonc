@@ -2,8 +2,8 @@
 // map ze_purification_a1
 // workshop id 3128279930
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
-// serial code L40 日本語:"jp" 한국어:"kr" English:"en"
-// lyrics toggle L49
+// serial code L62 日本語:"jp" 한국어:"kr" English:"en"
+// lyrics toggle L71
 {
     "filter": // remove vip entities
     [
@@ -18,8 +18,7 @@
         },
 
         {
-            "targetname": "[PR#]sn_temp_vip",
-            "classname": "point_template"
+            "targetname": "/vip/"
         }
     ],
     "modify":
@@ -29,6 +28,29 @@
             {
                 "classname": "logic_auto"
             },
+            "delete": // remove message output
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 扁担模型脚本实体支持作者:PokieeAkuno **",
+                        "delay": 8.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]command",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 扁担模型脚本实体支持作者:PokieeAkuno **",
+                        "delay": 9.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
             "insert":
             {
                 "io":
@@ -37,7 +59,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "language_case",
                         "inputname": "InValue",
-                        "overrideparam": "en", // please type language serial code here
+                        "overrideparam": "jp", // please type language serial code here
                         "delay": 0.0,
                         "timestofire": -1
                     },
@@ -74,6 +96,24 @@
 			"io":
 			[
                 // 日本語
+                {
+                    "outputname": "OnCase01",
+					"targetname": "command",
+                    "inputname": "Command",
+                    "overrideparam": "say ** 扁担モデルのスクリプトエンティティ対応:PokieeAkuno **",
+                    "delay": 8.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+					"targetname": "command",
+                    "inputname": "Command",
+                    "overrideparam": "say ** 扁担モデルのスクリプトエンティティ対応:PokieeAkuno **",
+                    "delay": 9.0,
+                    "timestofire": -1
+                },
+
                 {
 					"outputname": "OnCase01",
 					"targetname": "301",
@@ -2343,6 +2383,24 @@
 				},
                 // 한국어
                 {
+                    "outputname": "OnCase02",
+					"targetname": "command",
+                    "inputname": "Command",
+                    "overrideparam": "say ** 扁担 모델의 스크립트 엔티티 지원:PokieeAkuno **",
+                    "delay": 8.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase02",
+					"targetname": "command",
+                    "inputname": "Command",
+                    "overrideparam": "say ** 扁担 모델의 스크립트 엔티티 지원:PokieeAkuno **",
+                    "delay": 9.0,
+                    "timestofire": -1
+                },
+
+                {
 					"outputname": "OnCase02",
 					"targetname": "301",
 					"inputname": "SetMessage",
@@ -4604,6 +4662,24 @@
 					"timestofire": -1
 				},
 				// English
+                {
+                    "outputname": "OnCase03",
+					"targetname": "command",
+                    "inputname": "Command",
+                    "overrideparam": "say ** 扁担 Model Script Entity Support:PokieeAkuno **",
+                    "delay": 8.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase03",
+					"targetname": "command",
+                    "inputname": "Command",
+                    "overrideparam": "say ** 扁担 Model Script Entity Support:PokieeAkuno **",
+                    "delay": 9.0,
+                    "timestofire": -1
+                },
+
                 {
 					"outputname": "OnCase03",
 					"targetname": "301",
