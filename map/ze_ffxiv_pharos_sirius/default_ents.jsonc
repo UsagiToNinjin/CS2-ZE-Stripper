@@ -2,9 +2,10 @@
 // map ze_ffxiv_pharos_sirius
 // workshop id 3435645851
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
-// serial number 日本語:"1" 한국어:"2" English:"3"
-// + fix bug L235~264
-// + convert lua script L55~234, L6456~6498, L6518~6560, L6580~6622, L6642~6702, L6722~6764
+// serial code L31 日本語:"jp" 한국어:"kr" English:"en"
+// lyrics toggle L40
+// fix bug L236~265
+// convert lua script L56~235, L6439~6481, L6501~6543, L6563~6605, L6625~6685, L6705~6747
 {
 	"filter": // remove old zombie item pickup entities and convert them to the new entity system
 	[
@@ -25,9 +26,9 @@
 				[
 					{
 						"outputname": "OnSpawn",
-						"targetname": "language_counter",
-						"inputname": "SetValue",
-						"overrideparam": "1", // please type language serial number here
+						"targetname": "language_case",
+						"inputname": "InValue",
+						"overrideparam": "en", // please type language serial code here
 						"delay": 0.0,
 						"timestofire": -1
 					},
@@ -266,29 +267,11 @@
 	"add":
 	[
 		{
-			"targetname": "language_counter",
-			"classname": "math_counter",
-			"startvalue": "0",
-			"min": "0",
-			"max": "3",
-			"io":
-			[
-				{
-					"outputname": "OutValue",
-					"targetname": "language_case",
-					"inputname": "InValue",
-					"delay": 0.0,
-					"timestofire": -1
-				}
-			]
-		},
-
-		{
 			"targetname": "language_case",
 			"classname": "logic_case",
-			"case01": "1.0", // 日本語
-			"case02": "2.0", // 한국어
-			"case03": "3.0", // English
+			"case01": "jp", // 日本語
+			"case02": "kr", // 한국어
+			"case03": "en", // English
 			"io":
 			[
 				// 日本語
@@ -6453,7 +6436,7 @@
 						"delay": 0.0,
 						"timestofire": 1
 					},
-					// convert RunScriptCode(lua script) to Keyvalue format L6456~6498
+					// convert RunScriptCode(lua script) to Keyvalue format L6439~6481
 					{
                         "outputname": "OnTrigger",
 						"targetname": "!activator",
@@ -6515,7 +6498,7 @@
 						"delay": 0.0,
 						"timestofire": 1
 					},
-					// convert RunScriptCode(lua script) to Keyvalue format L6518~6560
+					// convert RunScriptCode(lua script) to Keyvalue format L6501~6543
 					{
                         "outputname": "OnTrigger",
 						"targetname": "!activator",
@@ -6577,7 +6560,7 @@
 						"delay": 0.0,
 						"timestofire": 1
 					},
-					// convert RunScriptCode(lua script) to Keyvalue format L6580~6622
+					// convert RunScriptCode(lua script) to Keyvalue format L6563~6605
 					{
                         "outputname": "OnTrigger",
 						"targetname": "!activator",
@@ -6639,7 +6622,7 @@
 						"delay": 0.0,
 						"timestofire": 1
 					},
-					// convert RunScriptCode(lua script) to Keyvalue format L6642~6702
+					// convert RunScriptCode(lua script) to Keyvalue format L6625~6685
 					{
                         "outputname": "OnTrigger",
 						"targetname": "!activator",
@@ -6719,7 +6702,7 @@
 						"delay": 0.0,
 						"timestofire": 1
 					},
-					// convert RunScriptCode(lua script) to Keyvalue format L6722~6764
+					// convert RunScriptCode(lua script) to Keyvalue format L6705~6747
 					{
                         "outputname": "OnTrigger",
 						"targetname": "!activator",
