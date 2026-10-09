@@ -191,7 +191,7 @@
 					"outputname": "OnCase01",
 					"targetname": "1474",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>juben>Command>say 上部は未知の力により封鎖されている,現在 解除を試みている>0.0>-1",
+					"overrideparam": "OnStartTouch>juben>Command>say 上部は未知の力により封鎖されている, 現在 解除を試みている>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -227,7 +227,7 @@
 					"outputname": "OnCase01",
 					"targetname": "fly3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>juben>Command>say では,親愛なる司教様にこれは一体どういうことなのかしっかり説明していただかないといけませんね>18.0>-1",
+					"overrideparam": "OnPass>juben>Command>say では, 親愛なる司教様にこれは一体どういうことなのかしっかり説明していただかないといけませんね>18.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -245,7 +245,7 @@
 					"outputname": "OnCase01",
 					"targetname": "1665",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say 畜生!彼女が私たちを見つけちゃった>15.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say 畜生! 彼女が私たちを見つけちゃった>15.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -254,7 +254,7 @@
 					"outputname": "OnCase01",
 					"targetname": "1665",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say 守って,データ転送完了まで待機>20.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say 守って, データ転送完了まで待機>20.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -290,7 +290,7 @@
 					"outputname": "OnCase01",
 					"targetname": "fyl",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say ここを守れ,崩壊炉が完全に停止するまで>5.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say ここを守れ, 崩壊炉が完全に停止するまで>5.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -299,7 +299,7 @@
 					"outputname": "OnCase01",
 					"targetname": "fyl",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say 虚数空間の波動を感知 大量の死士が接近中!>45.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say 虚数空間の波動を感知, 大量の死士が接近中!>45.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -326,7 +326,7 @@
 					"outputname": "OnCase01",
 					"targetname": "p3a4d1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say 持ちこたえろ!エレベーターが来るまで待機!>0.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say 持ちこたえろ! エレベーターが来るまで待機!>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -335,7 +335,7 @@
 					"outputname": "OnCase01",
 					"targetname": "p3a3d1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say この中が制御センターだ ゲートの解除が完了するまで持ちこたえろ!>0.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say この中が制御センターだ, ゲートの解除が完了するまで持ちこたえろ!>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -353,7 +353,7 @@
 					"outputname": "OnCase01",
 					"targetname": "part3door1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say 早く撤退!早く撤退!急いでエレベーターに乗れ!>40.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say 早く撤退 !早く撤退! 急いでエレベーターに乗れ!>40.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -362,7 +362,7 @@
 					"outputname": "OnCase01",
 					"targetname": "part3door1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say ここを守れ!エレベーターが来るまで待機!>0.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say ここを守れ! エレベーターが来るまで待機!>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -371,7 +371,7 @@
 					"outputname": "OnCase01",
 					"targetname": "part1door4x",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say ドアが鍵がかかっている,カードキーがないから解除するには時間がかかる!>0.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say ドアが鍵がかかっている, カードキーがないから解除するには時間がかかる!>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -398,7 +398,7 @@
 					"outputname": "OnCase01",
 					"targetname": "part1door4x",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say 安全システムを起動して崩壊能濃度を下げろ そうしないと先に進めない!>26.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say 安全システムを起動して崩壊能濃度を下げろ, そうしないと先に進めない!>26.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -407,7 +407,7 @@
 					"outputname": "OnCase01",
 					"targetname": "part1door1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say システム起動中……崩壊能濃度低下中……>0.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say システム起動中…… 崩壊能濃度低下中……>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -425,7 +425,7 @@
 					"outputname": "OnCase01",
 					"targetname": "part1door1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say よし!今からあのクソったれの崩壊炉を止めに行く,さもなければ第二律者が更に強くなる>40.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say よし! 今からあのクソったれの崩壊炉を止めに行く, さもなければ第二律者が更に強くなる>40.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -452,7 +452,7 @@
 					"outputname": "OnCase01",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 環境データ 同期完了>19.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 環境データ同期完了>19.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -470,7 +470,7 @@
 					"outputname": "OnCase01",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say くそっ,キアナがどうしてバビロン実験室の記憶を持っているんだ>21.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say くそっ, キアナがどうしてバビロン実験室の記憶を持っているんだ>21.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -488,7 +488,7 @@
 					"outputname": "OnCase01",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 戦闘準備完了 ハッチが閉まるまで防御!>24.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 戦闘準備完了, ハッチが閉まるまで防御!>24.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -515,7 +515,7 @@
 					"outputname": "OnCase01",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say くそっ!この死士たちは一体どこから来たんだ?>57.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say くそっ! この死士たちは一体どこから来たんだ?>57.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -524,7 +524,7 @@
 					"outputname": "OnCase01",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 第二律者だ,彼女が私たちの方に死士を送り込んでいる>59.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 第二律者だ, 彼女が私たちの方に死士を送り込んでいる>59.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -533,7 +533,7 @@
 					"outputname": "OnCase01",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 上に逃げろ,早く早く早く!>61.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 上に逃げろ, 早く早く早く!>61.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -542,7 +542,7 @@
 					"outputname": "OnCase01",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say くそっ,上にも死士が出現した!>129.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say くそっ, 上にも死士が出現した!>129.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -560,7 +560,7 @@
 					"outputname": "OnCase01",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 次の攻撃が来る前に,急いでここを離れよう!>165.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 次の攻撃が来る前に, 急いでここを離れよう!>165.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -604,7 +604,7 @@
 					"outputname": "OnCase01",
 					"targetname": "7319",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 早く反撃しろ 彼女は第二律者だ!>18.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 早く反撃しろ, 彼女は第二律者だ!>18.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -649,7 +649,7 @@
 					"outputname": "OnCase02",
 					"targetname": "1474",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>juben>Command>say 상부는 미지의 힘에 의해 봉쇄되어 있다,현재 해제를 시도하고 있다>0.0>-1",
+					"overrideparam": "OnStartTouch>juben>Command>say 상부는 미지의 힘에 의해 봉쇄되어 있다, 현재 해제를 시도하고 있다>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -685,7 +685,7 @@
 					"outputname": "OnCase02",
 					"targetname": "fly3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>juben>Command>say 그럼,친애하는 주교님께서 이것이 어떻게 된 것인지 잘 설명해 주서야겠군요>18.0>-1",
+					"overrideparam": "OnPass>juben>Command>say 그럼, 친애하는 주교님께서 이것이 어떻게 된 것인지 잘 설명해 주서야겠군요>18.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -703,7 +703,7 @@
 					"outputname": "OnCase02",
 					"targetname": "1665",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say 젠장!그녀가 우리들을 찾아버렸어>15.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say 젠장! 그녀가 우리들을 찾아버렸어>15.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -712,7 +712,7 @@
 					"outputname": "OnCase02",
 					"targetname": "1665",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say 지켜 줘,데이터 전송완료까지 대기>20.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say 지켜 줘, 데이터 전송완료까지 대기>20.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -748,7 +748,7 @@
 					"outputname": "OnCase02",
 					"targetname": "fyl",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say 이곳을 지켜,붕괴로가 완전히 정지할 때까지>5.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say 이곳을 지켜, 붕괴로가 완전히 정지할 때까지>5.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -784,7 +784,7 @@
 					"outputname": "OnCase02",
 					"targetname": "p3a4d1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say 버텨 내!엘리베이터가 올 때까지 대기!>0.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say 버텨 내! 엘리베이터가 올 때까지 대기!>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -811,7 +811,7 @@
 					"outputname": "OnCase02",
 					"targetname": "part3door1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say 빠르게 철수!빠르게 철수!서둘러 엘리베이터에 타!>40.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say 빠르게 철수! 빠르게 철수! 서둘러 엘리베이터에 타!>40.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -820,7 +820,7 @@
 					"outputname": "OnCase02",
 					"targetname": "part3door1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say 이곳을 지켜!엘리베이터가 올 때까지 대기!>0.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say 이곳을 지켜! 엘리베이터가 올 때까지 대기!>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -829,7 +829,7 @@
 					"outputname": "OnCase02",
 					"targetname": "part1door4x",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say 문이 잠겨 있다,카드 키가 없어 해제하기에는 시간이 걸린다!>0.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say 문이 잠겨 있다, 카드 키가 없어 해제하기에는 시간이 걸린다!>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -865,7 +865,7 @@
 					"outputname": "OnCase02",
 					"targetname": "part1door1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say 시스템 가동중……붕괴능 농도 저하중……>0.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say 시스템 가동중…… 붕괴능 농도 저하중……>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -883,7 +883,7 @@
 					"outputname": "OnCase02",
 					"targetname": "part1door1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say 좋아!지금부터 저 망할 붕괴로를 막으러 간다,그렇지 않으면 제2 율자가 더욱 강해진다>40.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say 좋아!지금부터 저 망할 붕괴로를 막으러 간다, 그렇지 않으면 제2 율자가 더욱 강해진다>40.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -928,7 +928,7 @@
 					"outputname": "OnCase02",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 젠장,키아나가 어째서 바빌론 실험실의 기억을 가지고 있는거야>21.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 젠장, 키아나가 어째서 바빌론 실험실의 기억을 가지고 있는거야>21.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -973,7 +973,7 @@
 					"outputname": "OnCase02",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 젠장!이 사도들은 도대체 어디서 온거지?>57.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 젠장! 이 사도들은 도대체 어디서 온거지?>57.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -982,7 +982,7 @@
 					"outputname": "OnCase02",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 제2 율자다,그녀가 우리들쪽으로 사도를 보내고 있다>59.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 제2 율자다, 그녀가 우리들쪽으로 사도를 보내고 있다>59.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -991,7 +991,7 @@
 					"outputname": "OnCase02",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 위로 도망가,빨리 빨리 빨리!>61.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 위로 도망가, 빨리 빨리 빨리!>61.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1000,7 +1000,7 @@
 					"outputname": "OnCase02",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 젠장,위에도 사도가 출몰했다!>129.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 젠장, 위에도 사도가 출몰했다!>129.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1018,7 +1018,7 @@
 					"outputname": "OnCase02",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say 다음 공격이 오기 전에,서둘러 이곳을 떠나자!>165.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say 다음 공격이 오기 전에, 서둘러 이곳을 떠나자!>165.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1107,7 +1107,7 @@
 					"outputname": "OnCase03",
 					"targetname": "1474",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnStartTouch>juben>Command>say The upper section has been sealed by an unknown force,we are attempting to unlock it>0.0>-1",
+					"overrideparam": "OnStartTouch>juben>Command>say The upper section has been sealed by an unknown force, We are attempting to unlock it>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1143,7 +1143,7 @@
 					"outputname": "OnCase03",
 					"targetname": "fly3",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPass>juben>Command>say Then,our dear Bishop will have to explain exactly what happened>18.0>-1",
+					"overrideparam": "OnPass>juben>Command>say Then, Our dear Bishop will have to explain exactly what happened>18.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1170,7 +1170,7 @@
 					"outputname": "OnCase03",
 					"targetname": "1665",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say Defend,Wait until the data transfer finishes>20.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say Defend, Wait until the data transfer finishes>20.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1206,7 +1206,7 @@
 					"outputname": "OnCase03",
 					"targetname": "fyl",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say Hold this position,until the Honkai Reactor comes to a complete stop>5.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say Hold this position, Until the Honkai Reactor comes to a complete stop>5.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1269,7 +1269,7 @@
 					"outputname": "OnCase03",
 					"targetname": "part3door1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say Fall back!Fall back!Get on the elevator fast!>40.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say Fall back! Fall back! Get on the elevator fast!>40.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1287,7 +1287,7 @@
 					"outputname": "OnCase03",
 					"targetname": "part1door4x",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say The door is locked,without a keycard it will take time to unlock!>0.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say The door is locked, Without a keycard it will take time to unlock!>0.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1314,7 +1314,7 @@
 					"outputname": "OnCase03",
 					"targetname": "part1door4x",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say Activate the safety system to lower the decay-capable concentration. Otherwise, we won’t be able to move forward!>26.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say Activate the safety system to lower the decay-capable concentration. Otherwise, We won’t be able to move forward!>26.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1341,7 +1341,7 @@
 					"outputname": "OnCase03",
 					"targetname": "part1door1",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnPressed>juben>Command>say Alright!From now on we’re going to stop that damn Honkai Reactor,Otherwise the Herrscher of Reason will grow even stronger>40.0>-1",
+					"overrideparam": "OnPressed>juben>Command>say Alright!From now on we’re going to stop that damn Honkai Reactor, Otherwise the Herrscher of Reason will grow even stronger>40.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1386,7 +1386,7 @@
 					"outputname": "OnCase03",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Damn it,why does Kiana have memories of the Babylon Laboratory>21.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Damn it, Why does Kiana have memories of the Babylon Laboratory>21.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1440,7 +1440,7 @@
 					"outputname": "OnCase03",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say It’s Herrscher of Reason,She’s sending zombies our way>59.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say It’s Herrscher of Reason, She’s sending zombies our way>59.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1449,7 +1449,7 @@
 					"outputname": "OnCase03",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Run upstairs, quick quick quick!>61.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Run upstairs, Quick quick quick!>61.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1458,7 +1458,7 @@
 					"outputname": "OnCase03",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Damn it, zombies have appeared above as well!>129.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Damn it, Zombies have appeared above as well!>129.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -1476,7 +1476,7 @@
 					"outputname": "OnCase03",
 					"targetname": "auto_relay",
 					"inputname": "AddOutPut",
-					"overrideparam": "OnTrigger>juben>Command>say Before the next attack comes, leave this place quickly!>165.0>-1",
+					"overrideparam": "OnTrigger>juben>Command>say Before the next attack comes, Leave this place quickly!>165.0>-1",
 					"delay": 0.0,
 					"timestofire": -1
 				},
