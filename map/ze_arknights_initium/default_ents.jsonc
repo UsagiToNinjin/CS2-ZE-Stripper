@@ -1,4 +1,4 @@
-// stripper by 兎RB,ELvEN 26.07.07
+// stripper by 兎RB,ELvEN 26.10.09
 // map ze_arknights_initium
 // workshop id 3330894823
 // if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
@@ -30,7 +30,7 @@
                         "outputname": "OnMapSpawn",
 						"targetname": "cmd",
                         "inputname": "Command",
-                        "overrideparam": "say language translation stripper 26.07.07 by 兎RB,ELvEN",
+                        "overrideparam": "say language translation stripper 26.10.09 by 兎RB,ELvEN",
                         "delay": 2.0,
                         "timestofire": -1
                     }
@@ -98,9 +98,9 @@
         {
 			"targetname": "language_case",
 			"classname": "logic_case",
-			"case01": "1", // 日本語
-			"case02": "2", // 한국어
-			"case03": "3", // English
+			"case01": "1.0", // 日本語
+			"case02": "2.0", // 한국어
+			"case03": "3.0", // English
 			"io":
 			[
                 // 日本語
