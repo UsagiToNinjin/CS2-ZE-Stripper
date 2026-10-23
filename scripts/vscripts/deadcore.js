@@ -283,27 +283,34 @@ Instance.OnScriptInput("PlayBGM", ({ activator }) => {
 // ============================================================
 
 Instance.OnPlayerDamage((event) => {
+    const damageTypes = event.damageTypes;
+
+    const allowedTypes =
+        CSDamageTypes.BULLET |
+        CSDamageTypes.BUCKSHOT;
+
+    if ((damageTypes & allowedTypes) === 0)
+        return;
 
     const victim = event.player;
 
     const attackerEntity = event.attacker;
-    if (!attackerEntity) 
+    if (!attackerEntity)
         return;
 
-    if (typeof attackerEntity.GetPlayerController !== "function") {
+    if (typeof attackerEntity.GetPlayerController !== "function")
         return;
-    }
 
     const attacker = attackerEntity.GetPlayerController();
-    if (!attacker || !attacker.IsConnected()) 
+    if (!attacker || !attacker.IsConnected())
         return;
 
     const victimController = victim.GetPlayerController();
-    if (attacker === victimController) 
+    if (attacker === victimController)
         return;
 
     const damage = Math.floor(event.damage);
-    if (damage <= 0) 
+    if (damage <= 0)
         return;
 
     attacker.AddScore(damage);
