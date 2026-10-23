@@ -1,6 +1,7 @@
-// stripper by 兎RB 26.10.01
+// stripper by 兎RB 26.10.23
 // map ze_deadcore_r
 // workshop id 3331345627
+// test. do not use it
 {
     "filter": // remove unnecessary entities
     [
@@ -29,8 +30,8 @@
                 [
 					{
                         "outputname": "OnStartTouch",
-				        "targetname": "music_potal_case",
-                        "inputname": "PickRandom",
+				        "targetname": "music_potal",
+                        "inputname": "StartSound",
                         "delay": 0.0,
                         "timestofire": -1
                     }
@@ -158,6 +159,37 @@
 				]
 			}
 		},
+		// set player's base health to 100, regardless of the cause
+        {
+            "match":
+            {
+                "targetname": "[PR#]reset",
+                "classname": "game_zone_player"
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerInZone",
+				        "targetname": "!activator",
+                        "inputname": "SetHealth",
+						"overrideparam": "100",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnPlayerOutZone",
+				        "targetname": "!activator",
+                        "inputname": "SetHealth",
+						"overrideparam": "100",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
         // move the entity
         {
             "match":
@@ -174,42 +206,10 @@
     "add":
     [
         {
-            "targetname": "music_potal_case",
-            "classname": "logic_case",
-            "io":
-            [
-				{
-                    "outputname": "OnCase01",
-			        "targetname": "client",
-                    "inputname": "Command",
-                    "overrideparam": "play sounds/music/music_potal1.vsnd",
-                    "delay": 0.0,
-                    "timestofire": -1
-                },
-
-                {
-                    "outputname": "OnCase02",
-			        "targetname": "client",
-                    "inputname": "Command",
-                    "overrideparam": "play sounds/music/music_potal2.vsnd",
-                    "delay": 0.0,
-                    "timestofire": -1
-                }
-			]
-        },
-
-        {
-            "targetname": "music_potal1",
+            "targetname": "music_potal",
             "classname": "point_soundevent",
             "stoponnew": "1",
             "soundname": "music_potal1"
-        },
-
-        {
-            "targetname": "music_potal2",
-            "classname": "point_soundevent",
-            "stoponnew": "1",
-            "soundname": "music_potal2"
         }
     ]
-}        
+}
