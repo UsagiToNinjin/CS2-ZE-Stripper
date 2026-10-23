@@ -29,12 +29,13 @@
                 "io":
                 [
 					{
-                        "outputname": "OnStartTouch",
-				        "targetname": "music_potal",
-                        "inputname": "StartSound",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
+                    	"outputname": "OnStartTouch",
+			        	"targetname": "client",
+                   		"inputname": "Command",
+                    	"overrideparam": "play sounds/music/music_potal1.vsnd",
+                    	"delay": 0.0,
+                    	"timestofire": -1
+                	},
                     /* If point_clientcommand does not work, use the script as an alternative
                     {
                         "outputname": "OnStartTouch",
