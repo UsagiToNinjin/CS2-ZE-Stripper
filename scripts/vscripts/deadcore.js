@@ -262,10 +262,7 @@ Instance.OnScriptInput("Reset", () =>
 // Potal Sound
 // ============================================================
 
-const BGMs = [
-    "sounds/music/music_potal1.vsnd_c",
-    "sounds/music/music_potal2.vsnd_c",
-];
+const BGM = "sounds/music/music_potal.vsnd_c";
 
 Instance.OnScriptInput("PlayBGM", ({ activator }) => {
     if (!activator || !activator.IsValid())
@@ -278,8 +275,62 @@ Instance.OnScriptInput("PlayBGM", ({ activator }) => {
 
     const slot = player.GetPlayerSlot();
 
-    const randomIndex = Math.floor(Math.random() * BGMs.length);
-    const BGM = BGMs[randomIndex];
-
     Instance.ClientCommand(slot, `play "${BGM}"`);
+});
+
+// ============================================================
+// Damage Score
+// ============================================================
+
+Instance.OnPlayerDamage((event) => {
+
+    const victim = event.player;
+
+    const attackerEntity = event.attacker;
+    if (!attackerEntity) 
+        return;
+
+    if (typeof attackerEntity.GetPlayerController !== "function") {
+        return;
+    }
+
+    const attacker = attackerEntity.GetPlayerController();
+    if (!attacker || !attacker.IsConnected()) 
+        return;
+
+    const victimController = victim.GetPlayerController();
+    if (attacker === victimController) 
+        return;
+
+    const damage = Math.floor(event.damage);
+    if (damage <= 0) 
+        return;
+
+    attacker.AddScore(damage);
+});
+
+// ============================================================
+// Reset Damage Score
+// ============================================================
+
+const players = new Map();
+
+Instance.OnPlayerActivate(({ player }) => {
+    players.set(player.GetPlayerSlot(), player);
+});
+
+Instance.OnPlayerDisconnect(({ playerSlot }) => {
+    players.delete(playerSlot);
+});
+
+Instance.OnRoundStart(() => {
+    for (const player of players.values()) {
+        if (!player.IsConnected()) 
+            continue;
+
+        const score = player.GetScore();
+        if (score > 0) {
+            player.AddScore(-score);
+        }
+    }
 });
