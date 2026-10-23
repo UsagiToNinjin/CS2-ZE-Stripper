@@ -341,3 +341,31 @@ Instance.OnRoundStart(() => {
         }
     }
 });
+
+// ============================================================
+// Set Health 100
+// ============================================================
+
+Instance.SetThink(() => {
+    for (const player of players.values()) {
+        if (!player.IsConnected())
+            continue;
+
+        const pawn = player.GetPlayerPawn();
+        if (!pawn || !pawn.IsValid())
+            continue;
+
+        if (pawn.GetTeamNumber() !== 3 || !pawn.IsAlive())
+            continue;
+
+        if (pawn.GetMaxHealth() !== 100)
+            pawn.SetMaxHealth(100);
+
+        if (pawn.GetHealth() > 100)
+            pawn.SetHealth(100);
+    }
+
+    Instance.SetNextThink(Instance.GetGameTime() + 1);
+});
+
+Instance.SetNextThink(Instance.GetGameTime() + 1);
