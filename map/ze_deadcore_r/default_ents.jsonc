@@ -13,6 +13,16 @@
         {
             "targetname": "[PR#]extra_case",
             "classname": "logic_case"
+        },
+
+        {
+            "targetname": "[PR#]cannon_origin_d_case1",
+            "classname": "logic_case"
+        },
+
+        {
+            "targetname": "[PR#]enemy_d_case",
+            "classname": "logic_case"
         }
     ],
 	"modify": 
@@ -35,7 +45,7 @@
                     	"overrideparam": "play sounds/music/music_potal.vsnd",
                     	"delay": 0.0,
                     	"timestofire": -1
-                	},
+                	}
                     /* If point_clientcommand does not work, use the script as an alternative
                     {
                         "outputname": "OnStartTouch",
@@ -171,7 +181,1856 @@
             {
                 "template25": "escape_branch"
             }
-		}
+		},
+        // change the logic from s7 to match the v1_3(original) version
+        {
+            "match":
+            {
+                "targetname": "[PR#]d_enemy_relay",
+                "classname": "logic_relay"
+            },
+			"delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy2_maker",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.9,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy2_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -2390 -10950 9550",
+                        "delay": 0.8,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy_d_case",
+                        "inputname": "PickRandom",
+                        "delay": 0.1,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy_d_case",
+                        "inputname": "PickRandom",
+                        "delay": 0.3,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy_d_case",
+                        "inputname": "PickRandom",
+                        "delay": 0.5,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy_d_case",
+                        "inputname": "PickRandom",
+                        "delay": 0.7,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "enemy_case",
+                        "inputname": "PickRandom",
+                        "delay": 0.1,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "enemy_case",
+                        "inputname": "PickRandom",
+                        "delay": 0.3,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "enemy_case",
+                        "inputname": "PickRandom",
+                        "delay": 0.5,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "enemy_case",
+                        "inputname": "PickRandom",
+                        "delay": 0.7,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+        // convert the entity to a new entity corresponding to the modified inputname "KeyValue" instead of changing it directly
+        // avoid using the CS2Fixes plugin whenever possible
+        /*
+        {
+            "match":
+            {
+                "targetname": "[PR#]escape_laser_case1",
+                "classname": "logic_case"
+            },
+			"delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnCase01",
+				        "targetname": "[PR#]escape_laser_maker1",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -3 4689 4453",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+				        "targetname": "[PR#]escape_laser_maker1",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -3 4689 4503",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+					{
+                        "outputname": "OnCase01",
+				        "targetname": "[PR#]escape_laser_maker1",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.1,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+				        "targetname": "[PR#]escape_laser_maker1",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.1,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnCase01",
+				        "targetname": "escape_laser_maker1",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.1,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+				        "targetname": "escape_laser_maker2",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.1,
+                        "timestofire": -1
+                    }
+                ]
+            }
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]escape_laser_maker1",
+                "classname": "env_entity_maker"
+            },
+			"replace":
+            {
+                "origin": "-3 4689 4453"
+            }
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]escape_finallaser_case1",
+                "classname": "logic_case"
+            },
+			"delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnCase01",
+				        "targetname": "[PR#]escape_finallaser_maker1",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -4 -1432 174",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase01",
+				        "targetname": "[PR#]escape_finallaser_maker1",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.1,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+				        "targetname": "[PR#]escape_finallaser_maker1",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -4 -1432 220",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+				        "targetname": "[PR#]escape_finallaser_maker1",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.1,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnCase01",
+				        "targetname": "escape_finallaser_maker1",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.1,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+				        "targetname": "escape_finallaser_maker2",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.1,
+                        "timestofire": -1
+                    }
+                ]
+            }
+		},
+        {
+            "match":
+            {
+                "targetname": "[PR#]d_ex_hp_filter",
+                "classname": "filter_activator_team"
+            },
+			"delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnPass",
+                        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "health 90",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPass",
+                        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "health 80",
+                        "delay": 2.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPass",
+                        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "health 70",
+                        "delay": 4.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPass",
+                        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "health 60",
+                        "delay": 6.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPass",
+                        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "health 50",
+                        "delay": 8.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPass",
+                        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "health 40",
+                        "delay": 10.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPass",
+                        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "health 30",
+                        "delay": 12.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPass",
+                        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "health 20",
+                        "delay": 14.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPass",
+                        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "health 10",
+                        "delay": 16.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPass",
+                        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "health 1",
+                        "delay": 18.0,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnPass",
+                        "targetname": "!activator",
+                        "inputname": "SetHealth",
+                        "overrideparam": "90",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPass",
+                        "targetname": "!activator",
+                        "inputname": "SetHealth",
+                        "overrideparam": "80",
+                        "delay": 2.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPass",
+                        "targetname": "!activator",
+                        "inputname": "SetHealth",
+                        "overrideparam": "70",
+                        "delay": 4.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPass",
+                        "targetname": "!activator",
+                        "inputname": "SetHealth",
+                        "overrideparam": "60",
+                        "delay": 6.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPass",
+                        "targetname": "!activator",
+                        "inputname": "SetHealth",
+                        "overrideparam": "50",
+                        "delay": 8.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPass",
+                        "targetname": "!activator",
+                        "inputname": "SetHealth",
+                        "overrideparam": "40",
+                        "delay": 10.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPass",
+                        "targetname": "!activator",
+                        "inputname": "SetHealth",
+                        "overrideparam": "30",
+                        "delay": 12.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPass",
+                        "targetname": "!activator",
+                        "inputname": "SetHealth",
+                        "overrideparam": "20",
+                        "delay": 14.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnPass",
+                        "targetname": "!activator",
+                        "inputname": "SetHealth",
+                        "overrideparam": "10",
+                        "delay": 16.0,
+                        "timestofire": -1
+                    },
+                    
+                    {
+                        "outputname": "OnPass",
+                        "targetname": "!activator",
+                        "inputname": "SetHealth",
+                        "overrideparam": "1",
+                        "delay": 18.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_startwarp_case1",
+                "classname": "logic_case"
+            },
+			"delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnCase01",
+                        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 1958 0 8140",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+                        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 1483 1481 8140",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+                        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 0 1958 8140",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+                        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -1482 1482 8140",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase05",
+                        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -1958 0 8140",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase06",
+                        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -1482 -1482 8140",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase07",
+                        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 0 -1958 8140",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase08",
+                        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 1482 -1482 8140",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnCase01",
+                        "targetname": "radiation_des1",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+                        "targetname": "radiation_des2",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+                        "targetname": "radiation_des3",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+                        "targetname": "radiation_des4",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase05",
+                        "targetname": "radiation_des5",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase06",
+                        "targetname": "radiation_des6",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase07",
+                        "targetname": "radiation_des7",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                    
+                    {
+                        "outputname": "OnCase08",
+                        "targetname": "radiation_des8",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+        
+        {
+            "match":
+            {
+                "targetname": "[PR#]cannon_origin_a_case1",
+                "classname": "logic_case"
+            },
+			"delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnCase01",
+                        "targetname": "[PR#]item_maker1",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -858 -5997 82",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+                        "targetname": "[PR#]item_maker1",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 2789 -7322 86",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+                        "targetname": "[PR#]item_maker1",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 2592 -3752 85",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+                        "targetname": "[PR#]item_maker1",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 4572 -6895 -145",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase05",
+                        "targetname": "[PR#]item_maker1",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 5068 -2206 118",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase05",
+                        "targetname": "[PR#]item_maker2",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 5068 -2206 118",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+                        "targetname": "[PR#]item_maker2",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 4572 -6895 -145",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+                        "targetname": "[PR#]item_maker2",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 2592 -3752 85",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+                        "targetname": "[PR#]item_maker2",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 2789 -7322 86",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase01",
+                        "targetname": "[PR#]item_maker2",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -858 -5997 82",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase05",
+                        "targetname": "[PR#]item_maker3",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 5068 -2206 118",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+                        "targetname": "[PR#]item_maker3",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 4572 -6895 -145",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+                        "targetname": "[PR#]item_maker3",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 2592 -3752 85",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+                        "targetname": "[PR#]item_maker3",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 2789 -7322 86",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase01",
+                        "targetname": "[PR#]item_maker3",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -858 -5997 82",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnCase01",
+                        "targetname": "cannon_origin_a_point1",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+                        "targetname": "cannon_origin_a_point2",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+                        "targetname": "cannon_origin_a_point3",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+                        "targetname": "cannon_origin_a_point4",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase05",
+                        "targetname": "cannon_origin_a_point5",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "!self",
+                        "inputname": "PickRandomShuffle",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "item_maker1",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.1,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "!self",
+                        "inputname": "PickRandomShuffle",
+                        "delay": 0.2,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "item_maker2",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.3,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "!self",
+                        "inputname": "PickRandomShuffle",
+                        "delay": 0.4,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "item_maker3",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.5,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]stage_a",
+                "classname": "logic_relay"
+            },
+			"delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]cannon_origin_a_case1",
+                        "inputname": "PickRandomShuffle",
+                        "delay": 0.4,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]cannon_origin_a_case1",
+                        "inputname": "PickRandomShuffle",
+                        "delay": 0.2,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]cannon_origin_a_case1",
+                        "inputname": "PickRandomShuffle",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]cannon_origin_b_case1",
+                "classname": "logic_case"
+            },
+			"delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "[PR#]item_maker3",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.5,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "[PR#]item_maker2",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.3,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "[PR#]item_maker1",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.1,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase01",
+                        "targetname": "[PR#]item_maker3",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 10764 -12184 -555",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase01",
+                        "targetname": "[PR#]item_maker2",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 10764 -12184 -555",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase01",
+                        "targetname": "[PR#]item_maker1",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 10764 -12184 -555",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+                        "targetname": "[PR#]item_maker1",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 9781 -11790 -170",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+                        "targetname": "[PR#]item_maker2",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 9781 -11790 -170",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+                        "targetname": "[PR#]item_maker3",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 9781 -11790 -170",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+                        "targetname": "[PR#]item_maker1",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 9553 -9519 -137",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+                        "targetname": "[PR#]item_maker2",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 9553 -9519 -137",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+                        "targetname": "[PR#]item_maker3",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 9553 -9519 -137",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+                        "targetname": "[PR#]item_maker1",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 9154 -8551 -210",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+                        "targetname": "[PR#]item_maker2",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 9154 -8551 -210",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+                        "targetname": "[PR#]item_maker3",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 9154 -8551 -210",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase05",
+                        "targetname": "[PR#]item_maker1",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 6120 -10120 -201",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase05",
+                        "targetname": "[PR#]item_maker2",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 6120 -10120 -201",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase05",
+                        "targetname": "[PR#]item_maker3",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 6120 -10120 -201",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnCase01",
+                        "targetname": "cannon_origin_b_point1",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+                        "targetname": "cannon_origin_b_point2",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+                        "targetname": "cannon_origin_b_point3",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+                        "targetname": "cannon_origin_b_point4",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase05",
+                        "targetname": "cannon_origin_b_point5",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "!self",
+                        "inputname": "PickRandomShuffle",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "item_maker1",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.1,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "!self",
+                        "inputname": "PickRandomShuffle",
+                        "delay": 0.2,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "item_maker2",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.3,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "!self",
+                        "inputname": "PickRandomShuffle",
+                        "delay": 0.4,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "item_maker3",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.5,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+        
+        {
+            "match":
+            {
+                "targetname": "[PR#]stage_b",
+                "classname": "logic_relay"
+            },
+			"delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]cannon_origin_b_case1",
+                        "inputname": "PickRandomShuffle",
+                        "delay": 0.4,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]cannon_origin_b_case1",
+                        "inputname": "PickRandomShuffle",
+                        "delay": 0.2,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]cannon_origin_b_case1",
+                        "inputname": "PickRandomShuffle",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]cannon_origin_c_case1",
+                "classname": "logic_case"
+            },
+			"delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "[PR#]item_maker3",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.5,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "[PR#]item_maker2",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.3,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "[PR#]item_maker1",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.1,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase05",
+                        "targetname": "[PR#]item_maker3",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 10763 51 -2327",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase05",
+                        "targetname": "[PR#]item_maker2",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 10763 51 -2327",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase05",
+                        "targetname": "[PR#]item_maker1",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 10763 51 -2327",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+                        "targetname": "[PR#]item_maker3",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 7515 -1288 -3124",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+                        "targetname": "[PR#]item_maker2",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 7515 -1288 -3124",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+                        "targetname": "[PR#]item_maker1",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 7515 -1288 -3124",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+                        "targetname": "[PR#]item_maker3",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 10760 -4427 -2869",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+                        "targetname": "[PR#]item_maker2",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 10760 -4427 -2869",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+                        "targetname": "[PR#]item_maker1",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 10760 -4427 -2869",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+                        "targetname": "[PR#]item_maker3",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 14393 -1781 -2874",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+                        "targetname": "[PR#]item_maker2",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 14393 -1781 -2874",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+                        "targetname": "[PR#]item_maker1",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 14393 -1781 -2874",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase01",
+                        "targetname": "[PR#]item_maker1",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 12642 431 -2837",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase01",
+                        "targetname": "[PR#]item_maker2",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 12642 431 -2837",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase01",
+                        "targetname": "[PR#]item_maker3",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 12642 431 -2837",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnCase01",
+                        "targetname": "cannon_origin_c_point1",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+                        "targetname": "cannon_origin_c_point2",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+                        "targetname": "cannon_origin_c_point3",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+                        "targetname": "cannon_origin_c_point4",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase05",
+                        "targetname": "cannon_origin_c_point5",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "!self",
+                        "inputname": "PickRandomShuffle",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "item_maker1",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.1,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "!self",
+                        "inputname": "PickRandomShuffle",
+                        "delay": 0.2,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "item_maker2",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.3,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "!self",
+                        "inputname": "PickRandomShuffle",
+                        "delay": 0.4,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser1",
+                        "targetname": "item_maker3",
+                        "inputname": "ForceSpawn",
+                        "delay": 0.5,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]stage_c",
+                "classname": "logic_relay"
+            },
+			"delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]cannon_origin_c_case1",
+                        "inputname": "PickRandomShuffle",
+                        "delay": 0.4,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]cannon_origin_c_case1",
+                        "inputname": "PickRandomShuffle",
+                        "delay": 0.2,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]cannon_origin_c_case1",
+                        "inputname": "PickRandomShuffle",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "/escape_(human|zombie)tele/",
+                "classname": "trigger_multiple"
+            },
+            "replace":
+            {
+                "classname": "trigger_teleport"
+            },
+			"delete":
+            {
+                "wait": "1.0",
+                "io":
+                [
+                    {
+                        "outputname": "OnStartTouch",
+                        "targetname": "!activator",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -5 -192 198",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "target": "escape_des"
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]a_enemy_relay",
+                "classname": "logic_relay"
+            },
+			"delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy1_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 7479 -5473 -143",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy2_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 7479 -5473 -143",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy3_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 7479 -5473 -143",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy3_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 4232 -5464 -4093",
+                        "delay": 0.2,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy2_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 4232 -5464 -4093",
+                        "delay": 0.2,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy1_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 4232 -5464 -4093",
+                        "delay": 0.2,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy3_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -3885 -7401 -1944",
+                        "delay": 0.4,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy2_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -3885 -7401 -1944",
+                        "delay": 0.4,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy1_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -3885 -7401 -1944",
+                        "delay": 0.4,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy1_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -3885 -3795 -1944",
+                        "delay": 0.6,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy2_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -3885 -3795 -1944",
+                        "delay": 0.6,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy3_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -3885 -3795 -1944",
+                        "delay": 0.6,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "a_enemy_point1",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "a_enemy_point2",
+                        "inputname": "Teleport",
+                        "delay": 0.2,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "a_enemy_point3",
+                        "inputname": "Teleport",
+                        "delay": 0.4,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "a_enemy_point4",
+                        "inputname": "Teleport",
+                        "delay": 0.6,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]b_enemy_relay",
+                "classname": "logic_relay"
+            },
+			"delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy1_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -4760 -1272 1449",
+                        "delay": 0.2,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy2_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -4760 -1272 1449",
+                        "delay": 0.2,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy3_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin -4760 -1272 1449",
+                        "delay": 0.2,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy1_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 7880 -10120 -229",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy2_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 7880 -10120 -229",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy3_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 7880 -10120 -229",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "b_enemy_point1",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "b_enemy_point2",
+                        "inputname": "Teleport",
+                        "delay": 0.2,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]c_enemy_relay",
+                "classname": "logic_relay"
+            },
+			"delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy3_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 10763 1154 -510",
+                        "delay": 0.2,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy2_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 10763 1154 -510",
+                        "delay": 0.2,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy1_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 10763 1154 -510",
+                        "delay": 0.2,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy1_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 10763 581 -3103",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy2_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 10763 581 -3103",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "[PR#]enemy3_maker",
+                        "inputname": "KeyValue",
+                        "overrideparam": "origin 10763 581 -3103",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "c_enemy_point1",
+                        "inputname": "Teleport",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "c_enemy_point2",
+                        "inputname": "Teleport",
+                        "delay": 0.2,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        }
+        */
     ],
     "add":
     [
@@ -180,6 +2039,345 @@
             "classname": "point_soundevent",
             "stoponnew": "1",
             "soundname": "music_potal1"
+        },
+        /*
+        {
+            "targetname": "escape_laser_maker2",
+            "classname": "env_entity_maker",
+            "origin": "-3 4689 4503",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "entitytemplate": "escape_laser_temp1",
+            "postspawndirectionvariance": "0.15"
+        },
+
+        {
+            "targetname": "escape_finallaser_maker2",
+            "classname": "env_entity_maker",
+            "origin": "-4 -1432 220",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "entitytemplate": "escape_finallaser_temp1",
+            "postspawndirectionvariance": "0.15"
+        },
+
+        {
+            "targetname": "radiation_des1",
+            "classname": "point_teleport",
+            "origin": "1958 0 8140",
+            "angles": "0 0 0", // need to check
+            "scales": "1 1 1",
+            "target": "!activator",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "radiation_des2",
+            "classname": "point_teleport",
+            "origin": "1483 1481 8140",
+            "angles": "0 0 0", // need to check
+            "scales": "1 1 1",
+            "target": "!activator",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "radiation_des3",
+            "classname": "point_teleport",
+            "origin": "0 1958 8140",
+            "angles": "0 0 0", // need to check
+            "scales": "1 1 1",
+            "target": "!activator",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "radiation_des4",
+            "classname": "point_teleport",
+            "origin": "-1482 1482 8140",
+            "angles": "0 0 0", // need to check
+            "scales": "1 1 1",
+            "target": "!activator",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "radiation_des5",
+            "classname": "point_teleport",
+            "origin": "-1958 0 8140",
+            "angles": "0 0 0", // need to check
+            "scales": "1 1 1",
+            "target": "!activator",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "radiation_des6",
+            "classname": "point_teleport",
+            "origin": "-1482 -1482 8140",
+            "angles": "0 0 0", // need to check
+            "scales": "1 1 1",
+            "target": "!activator",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "radiation_des7",
+            "classname": "point_teleport",
+            "origin": "0 -1958 8140",
+            "angles": "0 0 0", // need to check
+            "scales": "1 1 1",
+            "target": "!activator",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "radiation_des8",
+            "classname": "point_teleport",
+            "origin": "1482 -1482 8140",
+            "angles": "0 0 0", // need to check
+            "scales": "1 1 1",
+            "target": "!activator",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "cannon_origin_a_point1",
+            "classname": "point_teleport",
+            "origin": "-858 -5997 82",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "item_maker*",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "cannon_origin_a_point2",
+            "classname": "point_teleport",
+            "origin": "2789 -7322 86",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "item_maker*",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "cannon_origin_a_point3",
+            "classname": "point_teleport",
+            "origin": "2592 -3752 85",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "item_maker*",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "cannon_origin_a_point4",
+            "classname": "point_teleport",
+            "origin": "4572 -6895 -145",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "item_maker*",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "cannon_origin_a_point5",
+            "classname": "point_teleport",
+            "origin": "5068 -2206 118",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "item_maker*",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "cannon_origin_b_point1",
+            "classname": "point_teleport",
+            "origin": "10764 -12184 -555",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "item_maker*",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "cannon_origin_b_point2",
+            "classname": "point_teleport",
+            "origin": "9781 -11790 -170",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "item_maker*",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "cannon_origin_b_point3",
+            "classname": "point_teleport",
+            "origin": "9553 -9519 -137",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "item_maker*",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "cannon_origin_b_point4",
+            "classname": "point_teleport",
+            "origin": "9154 -8551 -210",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "item_maker*",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "cannon_origin_b_point5",
+            "classname": "point_teleport",
+            "origin": "6120 -10120 -201",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "item_maker*",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "cannon_origin_c_point1",
+            "classname": "point_teleport",
+            "origin": "10763 51 -2327",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "item_maker*",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "cannon_origin_c_point2",
+            "classname": "point_teleport",
+            "origin": "7515 -1288 -3124",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "item_maker*",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "cannon_origin_c_point3",
+            "classname": "point_teleport",
+            "origin": "10760 -4427 -2869",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "item_maker*",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "cannon_origin_c_point4",
+            "classname": "point_teleport",
+            "origin": "14393 -1781 -2874",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "item_maker*",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "cannon_origin_c_point5",
+            "classname": "point_teleport",
+            "origin": "12642 431 -2837",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "item_maker*",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "escape_des",
+            "classname": "info_teleport_destination",
+            "origin": "-5 -192 198",
+            "angles": "0 0 0", // need to check
+            "scales": "1 1 1"
+        },
+
+        {
+            "targetname": "a_enemy_point1",
+            "classname": "point_teleport",
+            "origin": "7479 -5473 -143",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "enemy*_maker",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "a_enemy_point2",
+            "classname": "point_teleport",
+            "origin": "4232 -5464 -4093",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "enemy*_maker",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "a_enemy_point3",
+            "classname": "point_teleport",
+            "origin": "-3885 -7401 -1944",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "enemy*_maker",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "a_enemy_point4",
+            "classname": "point_teleport",
+            "origin": "-3885 -3795 -1944",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "enemy*_maker",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "b_enemy_point1",
+            "classname": "point_teleport",
+            "origin": "7880 -10120 -229",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "enemy*_maker",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "b_enemy_point2",
+            "classname": "point_teleport",
+            "origin": "-4760 -1272 1449",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "enemy*_maker",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "c_enemy_point1",
+            "classname": "point_teleport",
+            "origin": "10763 581 -3103",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "enemy*_maker",
+            "spawnflags": "0"
+        },
+
+        {
+            "targetname": "c_enemy_point2",
+            "classname": "point_teleport",
+            "origin": "10763 1154 -510",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "target": "enemy*_maker",
+            "spawnflags": "0"
         }
+        */
     ]
 }
