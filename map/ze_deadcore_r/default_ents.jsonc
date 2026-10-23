@@ -160,37 +160,6 @@
 				]
 			}
 		},
-		// set player's base health to 100, regardless of the cause
-        {
-            "match":
-            {
-                "targetname": "[PR#]reset",
-                "classname": "game_zone_player"
-            },
-			"insert":
-            {
-                "io":
-                [
-					{
-                        "outputname": "OnPlayerInZone",
-				        "targetname": "!activator",
-                        "inputname": "SetHealth",
-						"overrideparam": "100",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    },
-
-					{
-                        "outputname": "OnPlayerOutZone",
-				        "targetname": "!activator",
-                        "inputname": "SetHealth",
-						"overrideparam": "100",
-                        "delay": 0.0,
-                        "timestofire": -1
-                    }
-				]
-			}
-		},
         // move the entity
         {
             "match":
