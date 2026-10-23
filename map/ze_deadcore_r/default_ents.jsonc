@@ -32,7 +32,7 @@
                     	"outputname": "OnStartTouch",
 			        	"targetname": "client",
                    		"inputname": "Command",
-                    	"overrideparam": "play sounds/music/music_potal1.vsnd",
+                    	"overrideparam": "play sounds/music/music_potal.vsnd",
                     	"delay": 0.0,
                     	"timestofire": -1
                 	},
