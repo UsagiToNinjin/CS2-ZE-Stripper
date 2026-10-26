@@ -1,0 +1,28 @@
+// stripper by 兎RB 26.10.26
+// map ze_deadcore_r
+// workshop id 3331345627
+{
+	"modify": // add fix missing zombie nuke output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]c_win_detecttrigger",
+                "classname": "trigger_once"
+            },
+			"insert":
+            {
+                "io":
+                [
+					{
+                    	"outputname": "OnStartTouch",
+			        	"targetname": "global_zm_nuke",
+                   		"inputname": "FireUser1",
+                    	"delay": 13.0,
+                    	"timestofire": 1
+                	}
+                ]
+            }
+		}
+    ]
+}

@@ -1,0 +1,40 @@
+// stripper by 兎RB 26.10.26
+// map ze_deadcore_r
+// workshop id 3331345627
+{
+    "modify": // fix particle rendering issues depending on the PC client
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_beam1&0000",
+                "classname": "info_particle_system"
+            },
+            "replace":
+            {
+                "start_active": "1"
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]radiation_beam_temprelay1&0000",
+                "classname": "logic_relay"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                    	"outputname": "OnSpawn",
+			        	"targetname": "[PR#]radiation_beam1&0000",
+                   		"inputname": "Start",
+                    	"delay": 0.5,
+                    	"timestofire": -1
+                	}
+                ]
+            }        
+		}
+    ]
+}
