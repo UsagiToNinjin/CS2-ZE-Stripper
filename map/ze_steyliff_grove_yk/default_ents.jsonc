@@ -1,0 +1,4016 @@
+// stripper by 兎RB 26.10.30
+// ze_steyliff_grove_r
+// workshop id 3777967019
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+// serial code L89 日本語:"jp" 한국어:"kr" English:"en"
+{
+	"modify": 
+    [
+        {
+            "match":
+            {
+                "classname": "logic_auto"
+            },
+            "delete": 
+            {
+                "io":
+                [
+					// readjusting the delay to apply AddOutPut +0.1 sec
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]Stage_Math",
+                        "inputname": "GetValue",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    },
+                    // remove message output
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say < 后续制作：runa >",
+                        "delay": 8.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 幻影剑目前可能存在bug，如果有遇到穿墙之类的情况，请自觉返回地图。",
+                        "delay": 9.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "> 无法返回地图请自觉处死自己",
+                        "delay": 10.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 某些地方存在能用幻影剑提前触发的情况，也不要提前触发",
+                        "delay": 11.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > no卖人",
+                        "delay": 12.0,
+                        "timestofire": 1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "Stage_Math",
+                        "inputname": "GetValue",
+                        "delay": 0.1,
+                        "timestofire": 1
+                    },
+
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "language_case",
+                        "inputname": "InValue",
+                        "overrideparam": "en", // please type language serial code here
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                    /*
+					{
+                        "outputname": "OnMapSpawn",
+						"targetname": "lyric_toggle",
+                        "inputname": "SetValueTest",
+                        "overrideparam": "1", // Enable:1, Disable:0
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+                    */
+                    // stripper update log
+                    {
+                        "outputname": "OnMapSpawn",
+						"targetname": "ServerCommand",
+                        "inputname": "Command",
+                        "overrideparam": "say language translation stripper 26.10.30 by 兎RB",
+                        "delay": 13.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        }
+    ],
+    "add":
+    [
+        {
+			"targetname": "language_case",
+			"classname": "logic_case",
+			"case01": "jp", // 日本語
+			"case02": "kr", // 한국어
+			"case03": "en", // English
+			"io":
+			[
+                // 日本語
+				{
+					"outputname": "OnCase01",
+					"targetname": "Console",
+					"inputname": "Command",
+					"overrideparam": "say < 後続制作：runa >",
+					"delay": 8.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Console",
+					"inputname": "Command",
+					"overrideparam": "say > 幻影剣には現在不具合が発生している可能性があります, 壁抜けなどの現象が発生した場合は各自でマップ内に戻るようお願いします",
+					"delay": 9.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Console",
+					"inputname": "Command",
+					"overrideparam": "say > マップに戻れない場合は自発的に自殺してください",
+					"delay": 10.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Console",
+					"inputname": "Command",
+					"overrideparam": "say > 一部の場所では幻影剣でトリガーを早期発動できる場合がありますが, そのような行為はお控えください",
+					"delay": 11.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Console",
+					"inputname": "Command",
+					"overrideparam": "say > 味方を犠牲にする行為はno",
+					"delay": 12.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "21517",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnTrigger>Console>Command>say 「未完成で不安定な魔法」>3.35>1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Item_Zombie_Despair_Goto_Template",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnEntitySpawned>Console>Command>say * 絶望の捕食 *>0.05>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Item_Zombie_Lock",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser1>Console>Command>say ゾンビのアイテムが封印されました>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnCase01",
+					"targetname": "Item_Zombie_Lock",
+					"inputname": "AddOutPut",
+					"overrideparam": "OnUser2>Console>Command>say ゾンビのアイテムが解放されました>0.0>-1",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Console>Command>say ＞ 氷の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase08>Console>Command>say ＞ 火の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase17>Console>Command>say ＞ 雷の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Console>Command>say ＞ 氷の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Console>Command>say ＞ 氷の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase04>Console>Command>say ＞ 氷の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase05>Console>Command>say ＞ 氷の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase06>Console>Command>say ＞ 氷の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase07>Console>Command>say ＞ 氷の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase09>Console>Command>say ＞ 火の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase10>Console>Command>say ＞ 火の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase11>Console>Command>say ＞ 火の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase12>Console>Command>say ＞ 火の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase13>Console>Command>say ＞ 火の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase14>Console>Command>say ＞ 火の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase15>Console>Command>say ＞ 雷の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase16>Console>Command>say ＞ 雷の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase18>Console>Command>say ＞ 雷の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase19>Console>Command>say ＞ 雷の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase20>Console>Command>say ＞ 雷の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "materia_case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase21>Console>Command>say ＞ 雷の元素40獲得 ＜>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "Temp_S1",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Temp_S1_relay>FireUser1>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "Temp_S2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Temp_S2_relay>FireUser1>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "Item_Human_Blizzard_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Blizzard_Template_relay>FireUser1>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "Item_Human_Water_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Water_Template_relay>FireUser1>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "Item_Human_Thunder_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Thunder_Template_relay>FireUser1>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "Item_Human_Fire_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Fire_Template_relay>FireUser1>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "Item_Human_Cure_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Cure_Template_relay>FireUser1>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "Item_Zombie_Ward_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Ward_Template_relay>FireUser1>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "Item_Zombie_Frazzle_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Frazzle_Template_relay>FireUser1>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "Item_Zombie_Despair_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Despair_Template_relay>FireUser1>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "Item_Zombie_Foul_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Foul_Template_relay>FireUser1>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "Item_Zombie_Impact_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Impact_Template_relay>FireUser1>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "Item_Zombie_Gravity_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Gravity_Template_relay>FireUser1>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "Item_Zombie_Umbral_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Umbral_Template_relay>FireUser1>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "Item_Zombie_Siphon_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Siphon_Template_relay>FireUser1>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "Item_Human_Aero_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Aero_Template_relay>FireUser1>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "Item_Human_A_MegaElixir_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_A_MegaElixir_tl_relay*>FireUser1>>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase01",
+                    "targetname": "Item_Human_Elixir_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Elixir_Template_tl_relay*>FireUser1>>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{ 
+                    "outputname": "OnCase02", 
+                    "targetname": "Console", 
+                    "inputname": "Command", 
+                    "overrideparam": "say < 후속 제작: runa >", 
+                    "delay": 8.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "Console", 
+                    "inputname": "Command", 
+                    "overrideparam": "say > 환영검에 현재 버그가 존재할 가능성이 있습니다, 벽 통과 등의 현상이 발생하면 각자 맵 안으로 돌아와 주시기 바랍니다", 
+                    "delay": 9.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "Console", 
+                    "inputname": "Command", 
+                    "overrideparam": "say > 맵으로 돌아올 수 없는 경우 자발적으로 자살해 주시기 바랍니다.", 
+                    "delay": 10.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "Console", 
+                    "inputname": "Command", 
+                    "overrideparam": "say > 일부 장소에서는 환영검을 사용해 트리거를 조기 발동할 수 있는 경우가 있습니다, 이러한 행위는 삼가 주시기 바랍니다", 
+                    "delay": 11.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "Console", 
+                    "inputname": "Command", 
+                    "overrideparam": "say > 아군을 희생시키는 행위는 no", 
+                    "delay": 12.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "21517", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnTrigger>Console>Command>say 「미완성이며 불안정한 마법」>3.35>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "Item_Zombie_Despair_Goto_Template", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnEntitySpawned>Console>Command>say * 절망의 포식 *>0.05>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "Item_Zombie_Lock", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnUser1>Console>Command>say 좀비 아이템이 봉인되었습니다>0.0>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "Item_Zombie_Lock", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnUser2>Console>Command>say 좀비 아이템이 해제되었습니다>0.0>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase01>Console>Command>say ＞ 얼음 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase08>Console>Command>say ＞ 불 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase17>Console>Command>say ＞ 번개 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase02>Console>Command>say ＞ 얼음 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase03>Console>Command>say ＞ 얼음 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase04>Console>Command>say ＞ 얼음 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase05>Console>Command>say ＞ 얼음 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase06>Console>Command>say ＞ 얼음 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase07>Console>Command>say ＞ 얼음 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase09>Console>Command>say ＞ 불 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase10>Console>Command>say ＞ 불 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase11>Console>Command>say ＞ 불 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase12>Console>Command>say ＞ 불 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase13>Console>Command>say ＞ 불 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase14>Console>Command>say ＞ 불 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase15>Console>Command>say ＞ 번개 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase16>Console>Command>say ＞ 번개 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase18>Console>Command>say ＞ 번개 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase19>Console>Command>say ＞ 번개 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase20>Console>Command>say ＞ 번개 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "materia_case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase21>Console>Command>say ＞ 번개 원소 40 획득 ＜>1.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "Temp_S1", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnEntitySpawned>Temp_S1_relay>FireUser2>>0.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase02", 
+                    "targetname": "Temp_S2", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnEntitySpawned>Temp_S2_relay>FireUser2>>0.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                },
+
+                {
+                    "outputname": "OnCase02",
+                    "targetname": "Item_Human_Blizzard_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Blizzard_Template_relay>FireUser2>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase02",
+                    "targetname": "Item_Human_Water_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Water_Template_relay>FireUser2>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase02",
+                    "targetname": "Item_Human_Thunder_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Thunder_Template_relay>FireUser2>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase02",
+                    "targetname": "Item_Human_Fire_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Fire_Template_relay>FireUser2>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase02",
+                    "targetname": "Item_Human_Cure_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Cure_Template_relay>FireUser2>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase02",
+                    "targetname": "Item_Zombie_Ward_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Ward_Template_relay>FireUser2>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase02",
+                    "targetname": "Item_Zombie_Frazzle_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Frazzle_Template_relay>FireUser2>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase02",
+                    "targetname": "Item_Zombie_Despair_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Despair_Template_relay>FireUser2>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase02",
+                    "targetname": "Item_Zombie_Foul_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Foul_Template_relay>FireUser2>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase02",
+                    "targetname": "Item_Zombie_Impact_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Impact_Template_relay>FireUser2>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase02",
+                    "targetname": "Item_Zombie_Gravity_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Gravity_Template_relay>FireUser2>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase02",
+                    "targetname": "Item_Zombie_Umbral_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Umbral_Template_relay>FireUser2>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase02",
+                    "targetname": "Item_Zombie_Siphon_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Siphon_Template_relay>FireUser2>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase02",
+                    "targetname": "Item_Human_Aero_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Aero_Template_relay>FireUser2>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase02",
+                    "targetname": "Item_Human_A_MegaElixir_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_A_MegaElixir_tl_relay*>FireUser2>>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase02",
+                    "targetname": "Item_Human_Elixir_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Elixir_Template_tl_relay*>FireUser2>>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{  
+                    "outputname": "OnCase03",  
+                    "targetname": "Console",  
+                    "inputname": "Command",  
+                    "overrideparam": "say < Further Development: runa >",  
+                    "delay": 8.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "Console",  
+                    "inputname": "Command",  
+                    "overrideparam": "say > The Phantom Sword may currently have bugs, If you experience issues such as passing through walls, please return to the map on your own",  
+                    "delay": 9.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "Console",  
+                    "inputname": "Command",  
+                    "overrideparam": "say > If you cannot return to the map, Please kill yourself voluntarily",  
+                    "delay": 10.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "Console",  
+                    "inputname": "Command",  
+                    "overrideparam": "say > In some areas, The Phantom Sword can trigger events prematurely, Please refrain from doing so",  
+                    "delay": 11.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "Console",  
+                    "inputname": "Command",  
+                    "overrideparam": "say > Do not sacrifice your teammates",  
+                    "delay": 12.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "21517",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnTrigger>Console>Command>say 「Incomplete and Unstable Magic」>3.35>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "Item_Zombie_Despair_Goto_Template",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnEntitySpawned>Console>Command>say * Despair Devoured *>0.05>-1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "Item_Zombie_Lock",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnUser1>Console>Command>say Zombie Items Have Been Sealed>0.0>-1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "Item_Zombie_Lock",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnUser2>Console>Command>say Zombie Items Have Been Unlocked>0.0>-1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase01>Console>Command>say ＞ Obtained 40 Ice Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase08>Console>Command>say ＞ Obtained 40 Fire Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase17>Console>Command>say ＞ Obtained 40 Thunder Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase02>Console>Command>say ＞ Obtained 40 Ice Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase03>Console>Command>say ＞ Obtained 40 Ice Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase04>Console>Command>say ＞ Obtained 40 Ice Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase05>Console>Command>say ＞ Obtained 40 Ice Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase06>Console>Command>say ＞ Obtained 40 Ice Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase07>Console>Command>say ＞ Obtained 40 Ice Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase09>Console>Command>say ＞ Obtained 40 Fire Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase10>Console>Command>say ＞ Obtained 40 Fire Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase11>Console>Command>say ＞ Obtained 40 Fire Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase12>Console>Command>say ＞ Obtained 40 Fire Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase13>Console>Command>say ＞ Obtained 40 Fire Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase14>Console>Command>say ＞ Obtained 40 Fire Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase15>Console>Command>say ＞ Obtained 40 Thunder Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase16>Console>Command>say ＞ Obtained 40 Thunder Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase18>Console>Command>say ＞ Obtained 40 Thunder Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase19>Console>Command>say ＞ Obtained 40 Thunder Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase20>Console>Command>say ＞ Obtained 40 Thunder Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },  
+
+                {  
+                    "outputname": "OnCase03",  
+                    "targetname": "materia_case",  
+                    "inputname": "AddOutPut",  
+                    "overrideparam": "OnCase21>Console>Command>say ＞ Obtained 40 Thunder Elements ＜>1.0>1",  
+                    "delay": 0.0,  
+                    "timestofire": -1  
+                },
+
+                { 
+                    "outputname": "OnCase03", 
+                    "targetname": "Temp_S1", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnEntitySpawned>Temp_S1_relay>FireUser3>>0.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnCase03", 
+                    "targetname": "Temp_S2", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnEntitySpawned>Temp_S2_relay>FireUser3>>0.0>1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                },
+
+                {
+                    "outputname": "OnCase03",
+                    "targetname": "Item_Human_Blizzard_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Blizzard_Template_relay>FireUser3>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase03",
+                    "targetname": "Item_Human_Water_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Water_Template_relay>FireUser3>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase03",
+                    "targetname": "Item_Human_Thunder_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Thunder_Template_relay>FireUser3>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase03",
+                    "targetname": "Item_Human_Fire_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Fire_Template_relay>FireUser3>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase03",
+                    "targetname": "Item_Human_Cure_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Cure_Template_relay>FireUser3>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase03",
+                    "targetname": "Item_Zombie_Ward_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Ward_Template_relay>FireUser3>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase03",
+                    "targetname": "Item_Zombie_Frazzle_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Frazzle_Template_relay>FireUser3>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase03",
+                    "targetname": "Item_Zombie_Despair_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Despair_Template_relay>FireUser3>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase03",
+                    "targetname": "Item_Zombie_Foul_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Foul_Template_relay>FireUser3>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase03",
+                    "targetname": "Item_Zombie_Impact_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Impact_Template_relay>FireUser3>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase03",
+                    "targetname": "Item_Zombie_Gravity_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Gravity_Template_relay>FireUser3>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase03",
+                    "targetname": "Item_Zombie_Umbral_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Umbral_Template_relay>FireUser3>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase03",
+                    "targetname": "Item_Zombie_Siphon_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Zombie_Siphon_Template_relay>FireUser3>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase03",
+                    "targetname": "Item_Human_Aero_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Aero_Template_relay>FireUser3>>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase03",
+                    "targetname": "Item_Human_A_MegaElixir_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_A_MegaElixir_tl_relay*>FireUser3>>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnCase03",
+                    "targetname": "Item_Human_Elixir_Template",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnEntitySpawned>Item_Human_Elixir_Template_tl_relay*>FireUser3>>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+            ]
+        },
+
+        {
+			"targetname": "Temp_S1_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "S1_trigger_1",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ このドアが開くまで待機. 24秒>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S1_trigger_2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ このドアが開くまで待機. 19秒>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S1_trigger_3",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ このドアが開くまで待機. 24秒>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S1_trigger_4",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ このドアが開くまで待機. 19秒>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S1_trigger_5",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ このドアが開くまで待機. 19秒>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S1_trigger_6",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ このドアが開くまで待機. 24秒>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S1_trigger_6",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＜ 11秒? ＞>4.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S1_trigger_7",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ このドアが開くまで待機. 24秒>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S1_trigger_8",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 結界が消えるまで待機. 19秒>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S1_trigger_9",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ このドアが開くまで待機. 24秒>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S1_trigger_10",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ このドアが開くまで待機. 24秒>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S1_trigger_11",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ このドアが開くまで待機. 29秒>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S1_trigger_12",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ このドアが開くまで待機>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S1_trigger_13",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ プラットフォームが14秒後に上昇します>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S1_trigger_14",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ このドアが開くまで待機. 14秒>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S1_T_win_Trigger",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrigger>Console>Command>say ** 残りのゾンビを全滅 **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "S1_trigger_1",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 이 문이 열리기까지 대기. 24초>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S1_trigger_2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 이 문이 열리기까지 대기. 19초>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S1_trigger_3",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 이 문이 열리기까지 대기. 24초>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S1_trigger_4",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 이 문이 열리기까지 대기. 19초>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S1_trigger_5",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 이 문이 열리기까지 대기. 19초>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S1_trigger_6",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 이 문이 열리기까지 대기. 24초>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S1_trigger_6",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＜ 11초? ＞>4.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S1_trigger_7",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 이 문이 열리기까지 대기. 24초>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S1_trigger_8",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 결계가 사라지기까지 대기. 19초>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S1_trigger_9",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 이 문이 열리기까지 대기. 24초>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S1_trigger_10",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 이 문이 열리기까지 대기. 24초>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S1_trigger_11",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 이 문이 열리기까지 대기. 29초>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S1_trigger_12",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 이 문이 열리기까지 대기>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S1_trigger_13",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 플랫폼이 14초 후 상승합니다>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S1_trigger_14",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 이 문이 열리기까지 대기. 14초>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S1_T_win_Trigger",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrigger>Console>Command>say ** 남은 좀비를 전멸 **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "S1_trigger_1",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Wait for this door to open. 24 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S1_trigger_2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Wait for this door to open. 19 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S1_trigger_3",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Wait for this door to open. 24 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S1_trigger_4",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Wait for this door to open. 19 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S1_trigger_5",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Wait for this door to open. 19 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S1_trigger_6",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Wait for this door to open. 24 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S1_trigger_6",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＜ 11 seconds? ＞>4.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S1_trigger_7",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Wait for this door to open. 24 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S1_trigger_8",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Wait for the barrier to disappear. 19 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S1_trigger_9",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Wait for this door to open. 24 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S1_trigger_10",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Wait for this door to open. 24 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S1_trigger_11",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Wait for this door to open. 29 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S1_trigger_12",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Wait for this door to open>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S1_trigger_13",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ The platform will rise in 14 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                 {
+                    "outputname": "OnUser3",
+					"targetname": "S1_trigger_14",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Wait for this door to open. 14 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S1_T_win_Trigger",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrigger>Console>Command>say ** Kill the remaining zombies **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "Temp_S2_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "S2_trigger_1",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ プラットフォームが14秒後に上昇します>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S2_trigger_2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ このドアが開くまで待機. 19秒>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S2_trigger_3",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ どこかのドアが10秒後に開きます>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S2_trigger_4",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ どこかのドアが10秒後に開きます>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S2_trigger_5",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ どこかのドアが10秒後に開きます>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S2_trigger_6",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ どこかのドアが24秒後に開きます>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S2_trigger_7",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ バハムートとの戦闘が19秒後に始まります>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S2_trigger_8",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ このドアが開くまで待機. 29秒>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S2_trigger_9",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ このドアが開くまで待機. 14秒>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S2_trigger_10",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ ポータルが19秒後に開きます>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S2_trigger_11",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ このドアが開くまで待機. 19秒>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S2_trigger_12",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ このドアが開くまで待機. 19秒>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S2_trigger_13",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ このドアが開くまで待機. 19秒>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S2_trigger_13",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 幻影剣封印>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S2_trigger_14",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 光の幕が19秒後に消えます>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S2_trigger_15",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ このドアが開くまで待機. 9秒>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "S2_T_win_Trigger",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrigger>Console>Command>say ** 残りのゾンビを全滅 **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "S2_trigger_1",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 플랫폼이 14초 후 상승합니다>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S2_trigger_2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 이 문이 열리기까지 대기. 19초>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S2_trigger_3",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 어딘가의 문이 10초 후에 열립니다>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S2_trigger_4",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 어딘가의 문이 10초 후에 열립니다>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S2_trigger_5",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 어딘가의 문이 10초 후에 열립니다>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S2_trigger_6",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 어딘가의 문이 24초 후에 열립니다>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S2_trigger_7",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 바하무트와의 전투가 19초 후에 시작됩니다>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S2_trigger_8",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 이 문이 열리기까지 대기. 29초>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S2_trigger_9",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 이 문이 열리기까지 대기. 14초>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S2_trigger_10",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 포탈이 19초 후에 열립니다>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S2_trigger_11",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 이 문이 열리기까지 대기. 19초>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S2_trigger_12",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 이 문이 열리기까지 대기. 19초>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S2_trigger_13",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 이 문이 열리기까지 대기. 19초>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S2_trigger_13",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 환상검 봉인>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S2_trigger_14",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 빛의 막이 19초 후에 사라집니다>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S2_trigger_15",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ 이 문이 열리기까지 대기. 9초>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "S2_T_win_Trigger",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrigger>Console>Command>say ** 남은 좀비를 전멸 **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "S2_trigger_1",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ The platform will rise in 14 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S2_trigger_2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Wait for this door to open. 19 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S2_trigger_3",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ A door somewhere will open in 10 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S2_trigger_4",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ A door somewhere will open in 10 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S2_trigger_5",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ A door somewhere will open in 10 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S2_trigger_6",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ A door somewhere will open in 24 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S2_trigger_7",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ The battle with Bahamut will begin in 19 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S2_trigger_8",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Wait for this door to open. 29 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S2_trigger_9",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Wait for this door to open. 14 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S2_trigger_10",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ The portal will open in 19 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S2_trigger_11",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Wait for this door to open. 19 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S2_trigger_12",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Wait for this door to open. 19 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S2_trigger_13",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Wait for this door to open. 19 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S2_trigger_13",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Phantom Sword Disabled>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S2_trigger_14",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ The light barrier will dissipate in 19 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S2_trigger_15",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>Console>Command>say ＞ Wait for this door to open. 9 seconds>1.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "S2_T_win_Trigger",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrigger>Console>Command>say ** Kill the remaining zombies **>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "Item_Human_Blizzard_Template_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Blizzard_Elite",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ プレイヤーが［ 氷 ］魔法を習得した ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Blizzard_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Console>Command>say ** 氷結 **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Blizzard_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Console>Command>say ** 凍結 **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Blizzard_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Console>Command>say ** 氷封 **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Blizzard_Materia_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnLessThan>Item_Human_Blizzard_HudHint>SetMessage>元素のエネルギーが足りない…>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Blizzard_Magia_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnLessThan>Item_Human_Blizzard_HudHint>SetMessage>魔力のエネルギーが足りない…>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Blizzard_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Item_Human_Blizzard_Text2>SetMessage>＞ 氷結 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Blizzard_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Item_Human_Blizzard_Text2>SetMessage>＞ 凍結 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Blizzard_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Item_Human_Blizzard_Text2>SetMessage>＞ 氷封 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{ 
+                    "outputname": "OnUser2", 
+                    "targetname": "Item_Human_Blizzard_Elite", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ 플레이어가 [ 얼음 ] 마법을 습득했다 ＜>0.0>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnUser2", 
+                    "targetname": "Item_Human_Blizzard_Case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase01>Console>Command>say ** 빙결 **>0.2>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnUser2", 
+                    "targetname": "Item_Human_Blizzard_Case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase02>Console>Command>say ** 동결 **>0.2>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnUser2", 
+                    "targetname": "Item_Human_Blizzard_Case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase03>Console>Command>say ** 얼음 봉인 **>0.2>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnUser2", 
+                    "targetname": "Item_Human_Blizzard_Materia_Compare", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnLessThan>Item_Human_Blizzard_HudHint>SetMessage>원소 에너지가 부족하다…>0.0>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnUser2", 
+                    "targetname": "Item_Human_Blizzard_Magia_Compare", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnLessThan>Item_Human_Blizzard_HudHint>SetMessage>마력 에너지가 부족하다…>0.0>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnUser2", 
+                    "targetname": "Item_Human_Blizzard_hud2", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase01>Item_Human_Blizzard_Text2>SetMessage>＞ 빙결 ＜>0.0>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnUser2", 
+                    "targetname": "Item_Human_Blizzard_hud2", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase02>Item_Human_Blizzard_Text2>SetMessage>＞ 동결 ＜>0.0>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnUser2", 
+                    "targetname": "Item_Human_Blizzard_hud2", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase03>Item_Human_Blizzard_Text2>SetMessage>＞ 얼음 봉인 ＜>0.0>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                },
+                // English
+                { 
+                    "outputname": "OnUser3", 
+                    "targetname": "Item_Human_Blizzard_Elite", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ A player has learned [ Blizzard ] magic ＜>0.0>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnUser3", 
+                    "targetname": "Item_Human_Blizzard_Case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase01>Console>Command>say ** Freeze **>0.2>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnUser3", 
+                    "targetname": "Item_Human_Blizzard_Case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase02>Console>Command>say ** Frozen **>0.2>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnUser3", 
+                    "targetname": "Item_Human_Blizzard_Case", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase03>Console>Command>say ** Ice Seal **>0.2>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnUser3", 
+                    "targetname": "Item_Human_Blizzard_Materia_Compare", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnLessThan>Item_Human_Blizzard_HudHint>SetMessage>Not enough elemental energy…>0.0>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnUser3", 
+                    "targetname": "Item_Human_Blizzard_Magia_Compare", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnLessThan>Item_Human_Blizzard_HudHint>SetMessage>Not enough magic energy…>0.0>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnUser3", 
+                    "targetname": "Item_Human_Blizzard_hud2", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase01>Item_Human_Blizzard_Text2>SetMessage>＞ Freeze ＜>0.0>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnUser3", 
+                    "targetname": "Item_Human_Blizzard_hud2", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase02>Item_Human_Blizzard_Text2>SetMessage>＞ Frozen ＜>0.0>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }, 
+
+                { 
+                    "outputname": "OnUser3", 
+                    "targetname": "Item_Human_Blizzard_hud2", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnCase03>Item_Human_Blizzard_Text2>SetMessage>＞ Ice Seal ＜>0.0>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }
+            ]
+        },
+
+        {
+			"targetname": "Item_Human_Water_Template_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Water_Elite",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ プレイヤーが［ 水 ］魔法を習得した ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{ 
+                    "outputname": "OnUser2", 
+                    "targetname": "Item_Human_Water_Elite", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ 플레이어가 [ 물 ] 마법을 습득했다 ＜>0.0>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                },
+                // English
+                { 
+                    "outputname": "OnUser3", 
+                    "targetname": "Item_Human_Water_Elite", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ A player has learned [ Water ] magic ＜>0.0>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }
+            ]
+        },
+        
+        {
+			"targetname": "Item_Human_Thunder_Template_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Thunder_Elite",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ プレイヤーが［ 雷 ］魔法を習得した ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Thunder_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Console>Command>say ** 閃雷 **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Thunder_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Console>Command>say ** 震雷 **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Thunder_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Console>Command>say ** 暴雷 **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Thunder_Materia_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnLessThan>Item_Human_Thunder_HudHint>SetMessage>元素のエネルギーが足りない…>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Thunder_Magia_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnLessThan>Item_Human_Thunder_HudHint>SetMessage>魔力のエネルギーが足りない…>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Thunder_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Item_Human_Thunder_Text2>SetMessage>＞ 閃雷 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Thunder_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Item_Human_Thunder_Text2>SetMessage>＞ 震雷 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Thunder_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Item_Human_Thunder_Text2>SetMessage>＞ 暴雷 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Human_Thunder_Elite",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ 플레이어가［ 번개 ］마법을 습득했다 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Human_Thunder_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Console>Command>say ** 섬뢰 **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Human_Thunder_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Console>Command>say ** 진뢰 **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Human_Thunder_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Console>Command>say ** 폭뢰 **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Human_Thunder_Materia_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnLessThan>Item_Human_Thunder_HudHint>SetMessage>원소 에너지가 부족하다…>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Human_Thunder_Magia_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnLessThan>Item_Human_Thunder_HudHint>SetMessage>마력 에너지가 부족하다…>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Human_Thunder_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Item_Human_Thunder_Text2>SetMessage>＞ 섬뢰 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Human_Thunder_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Item_Human_Thunder_Text2>SetMessage>＞ 진뢰 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Human_Thunder_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Item_Human_Thunder_Text2>SetMessage>＞ 폭뢰 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Human_Thunder_Elite",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ A player has learned［ Thunder ］magic ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Human_Thunder_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Console>Command>say ** Flash Thunder **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Human_Thunder_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Console>Command>say ** Thunderclap **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Human_Thunder_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Console>Command>say ** Thunderstorm **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Human_Thunder_Materia_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnLessThan>Item_Human_Thunder_HudHint>SetMessage>Not enough elemental energy…>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Human_Thunder_Magia_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnLessThan>Item_Human_Thunder_HudHint>SetMessage>Not enough magic energy…>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Human_Thunder_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Item_Human_Thunder_Text2>SetMessage>＞ Flash Thunder ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Human_Thunder_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Item_Human_Thunder_Text2>SetMessage>＞ Thunderclap ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Human_Thunder_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Item_Human_Thunder_Text2>SetMessage>＞ Thunderstorm ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "Item_Human_Fire_Template_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Fire_Elite",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ プレイヤーが［ 火 ］魔法を習得した ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Fire_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Console>Command>say ** 火炎 **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Fire_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Console>Command>say ** 烈炎 **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Fire_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Console>Command>say ** 爆炎 **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Fire_Materia_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnLessThan>Item_Human_Fire_HudHint>SetMessage>元素のエネルギーが足りない…>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Fire_Magia_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnLessThan>Item_Human_Fire_HudHint>SetMessage>魔力のエネルギーが足りない…>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Fire_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Item_Human_Fire_Text2>SetMessage>＞ 火炎 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Fire_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Item_Human_Fire_Text2>SetMessage>＞ 烈炎 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Fire_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Item_Human_Fire_Text2>SetMessage>＞ 爆炎 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Human_Fire_Elite",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ 플레이어가［ 불 ］마법을 습득했다 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Human_Fire_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Console>Command>say ** 화염 **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Human_Fire_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Console>Command>say ** 렬염 **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Human_Fire_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Console>Command>say ** 폭염 **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Human_Fire_Materia_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnLessThan>Item_Human_Fire_HudHint>SetMessage>원소 에너지가 부족하다…>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Human_Fire_Magia_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnLessThan>Item_Human_Fire_HudHint>SetMessage>마력 에너지가 부족하다…>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Human_Fire_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Item_Human_Fire_Text2>SetMessage>＞ 화염 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Human_Fire_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Item_Human_Fire_Text2>SetMessage>＞ 렬염 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Human_Fire_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Item_Human_Fire_Text2>SetMessage>＞ 폭염 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Human_Fire_Elite",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ A player has learned［ Fire ］magic ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Human_Fire_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Console>Command>say ** Flame **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Human_Fire_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Console>Command>say ** Blaze **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Human_Fire_Case",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Console>Command>say ** Inferno **>0.2>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Human_Fire_Materia_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnLessThan>Item_Human_Fire_HudHint>SetMessage>Not enough elemental energy…>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Human_Fire_Magia_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnLessThan>Item_Human_Fire_HudHint>SetMessage>Not enough magic energy…>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Human_Fire_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Item_Human_Fire_Text2>SetMessage>＞ Flame ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Human_Fire_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Item_Human_Fire_Text2>SetMessage>＞ Blaze ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Human_Fire_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Item_Human_Fire_Text2>SetMessage>＞ Inferno ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "Item_Human_Cure_Template_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Cure_Elite",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ プレイヤーが［ ケアル ］魔法を習得した ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{ 
+                    "outputname": "OnUser2", 
+                    "targetname": "Item_Human_Cure_Elite", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ 플레이어가 [ 케알 ] 마법을 습득했다 ＜>0.0>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                },
+                // English
+                { 
+                    "outputname": "OnUser3", 
+                    "targetname": "Item_Human_Cure_Elite", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ A player has learned [ Cure ] magic ＜>0.0>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }
+            ]
+        },
+
+        {
+			"targetname": "Item_Zombie_Ward_Template_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Zombie_Ward_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ ゾンビが [ ウォード ] 魔法を習得した ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Zombie_Ward_Relay_1",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrigger>Console>Command>say * 防護結界展開 *>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Zombie_Ward_Relay_2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrigger>Console>Command>say * 防護結界展開 *>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Zombie_Ward_Relay_3",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrigger>Console>Command>say * 防護結界展開 *>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Zombie_Ward_Magia_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnLessThan>Item_Zombie_Ward_HudHint>SetMessage>魔力のエネルギーが足りない…>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Zombie_Ward_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Item_Zombie_Ward_Text2>SetMessage>＞ 一級 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Zombie_Ward_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Item_Zombie_Ward_Text2>SetMessage>＞ 二級 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Zombie_Ward_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Item_Zombie_Ward_Text2>SetMessage>＞ 三級 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Zombie_Ward_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ 좀비가 [ 워드 ] 마법을 습득했다 ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Zombie_Ward_Relay_1",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrigger>Console>Command>say * 방어 결계 전개 *>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Zombie_Ward_Relay_2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrigger>Console>Command>say * 방어 결계 전개 *>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Zombie_Ward_Relay_3",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrigger>Console>Command>say * 방어 결계 전개 *>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Zombie_Ward_Magia_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnLessThan>Item_Zombie_Ward_HudHint>SetMessage>마력 에너지가 부족하다…>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Zombie_Ward_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Item_Zombie_Ward_Text2>SetMessage>＞ 1급 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Zombie_Ward_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Item_Zombie_Ward_Text2>SetMessage>＞ 2급 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Zombie_Ward_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Item_Zombie_Ward_Text2>SetMessage>＞ 3급 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Zombie_Ward_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ A zombie has learned [ Ward ] magic ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Zombie_Ward_Relay_1",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrigger>Console>Command>say * Ward Unfold *>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Zombie_Ward_Relay_2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrigger>Console>Command>say * Ward Unfold *>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Zombie_Ward_Relay_3",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrigger>Console>Command>say * Ward Unfold *>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Zombie_Ward_Magia_Compare",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnLessThan>Item_Zombie_Ward_HudHint>SetMessage>Not enough magic energy…>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Zombie_Ward_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase01>Item_Zombie_Ward_Text2>SetMessage>＞ Level 1 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Zombie_Ward_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase02>Item_Zombie_Ward_Text2>SetMessage>＞ Level 2 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Zombie_Ward_hud2",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnCase03>Item_Zombie_Ward_Text2>SetMessage>＞ Level 3 ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "Item_Zombie_Frazzle_Template_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Zombie_Frazzle_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ ゾンビが [ 衰弱 ] 魔法を習得した ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Zombie_Frazzle_Relay",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrigger>Console>Command>say * 衰弱の呪い *>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Zombie_Frazzle_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ 좀비가 [ 쇠약 ] 마법을 습득했다 ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Zombie_Frazzle_Relay",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrigger>Console>Command>say * 쇠약의 저주 *>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Zombie_Frazzle_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ A zombie has learned [ Frazzle ] magic ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Zombie_Frazzle_Relay",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnTrigger>Console>Command>say * Frazzle Curse *>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "Item_Zombie_Despair_Template_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Zombie_Despair_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ ゾンビが [ 絶望 ] 魔法を習得した ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Zombie_Despair_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ 좀비가 [ 절망 ] 마법을 습득했다 ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Zombie_Despair_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ A zombie has learned [ Despair ] magic ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "Item_Zombie_Foul_Template_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Zombie_Foul_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ ゾンビが [ 邪悪 ] 魔法を習得した ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Zombie_Foul_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ 좀비가 [ 사악 ] 마법을 습득했다 ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Zombie_Foul_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ A zombie has learned [ Foul ] magic ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "Item_Zombie_Impact_Template_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Zombie_Impact_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ ゾンビが [ 衝撃 ] 魔法を習得した ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Zombie_Impact_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ 좀비가 [ 충격 ] 마법을 습득했다 ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Zombie_Impact_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ A zombie has learned [ Impact ] magic ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "Item_Zombie_Gravity_Template_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Zombie_Gravity_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ ゾンビが [ 重力 ] 魔法を習得した ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Zombie_Gravity_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ 좀비가 [ 중력 ] 마법을 습득했다 ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Zombie_Gravity_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ A zombie has learned [ Gravity ] magic ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "Item_Zombie_Umbral_Template_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Zombie_Umbral_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ ゾンビが [ 暗影 ] 魔法を習得した ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser1",
+					"targetname": "Item_Zombie_Umbral_Counter",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnHitMax>Console>Command>say * 暗影の襲撃 *>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Zombie_Umbral_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ 좀비가 [ 암영 ] 마법을 습득했다 ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser2",
+					"targetname": "Item_Zombie_Umbral_Counter",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnHitMax>Console>Command>say * 암영의 습격 *>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Zombie_Umbral_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ A zombie has learned [ Umbral ] magic ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnUser3",
+					"targetname": "Item_Zombie_Umbral_Counter",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnHitMax>Console>Command>say * Umbral Assault *>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "Item_Zombie_Siphon_Template_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Zombie_Siphon_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ ゾンビが [ 吸収 ] 魔法を習得した ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{
+                    "outputname": "OnUser2",
+					"targetname": "Item_Zombie_Siphon_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ 좀비가 [ 흡수 ] 마법을 습득했다 ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // English
+				{
+                    "outputname": "OnUser3",
+					"targetname": "Item_Zombie_Siphon_Knife",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ A zombie has learned [ Siphon ] magic ＜>0.0>1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "Item_Human_Aero_Template_relay",
+			"classname": "logic_relay",
+			"io":
+            [
+				// 日本語
+				{
+                    "outputname": "OnUser1",
+					"targetname": "Item_Human_Aero_Elite",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ プレイヤーが［ 風 ］魔法を習得した ＜>0.0>-1",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+                // 한국어
+				{ 
+                    "outputname": "OnUser2", 
+                    "targetname": "Item_Human_Aero_Elite", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ 플레이어가 [ 바람 ] 마법을 습득했다 ＜>0.0>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                },
+                // English
+                { 
+                    "outputname": "OnUser3", 
+                    "targetname": "Item_Human_Aero_Elite", 
+                    "inputname": "AddOutPut", 
+                    "overrideparam": "OnPlayerPickup>Console>Command>say ＞ A player has learned [ Aero ] magic ＜>0.0>-1", 
+                    "delay": 0.0, 
+                    "timestofire": -1 
+                }
+            ]
+        }
+    ],
+    "modify": // remove message output, add targetname
+    [
+        {
+            "match":
+            {
+                "classname": "trigger_once",
+                "hammeruniqueid": "21517"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say 「未完成的,不安定魔法」",
+                        "delay": 3.35,
+                        "timestofire": 1
+                    }
+                ]
+            },
+            "insert":
+            {
+                "targetname": "21517"
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Zombie_Despair_Goto_Template"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnEntitySpawned",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say * Despair Devoured *",
+                        "delay": 0.05,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Zombie_Lock"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnUser1",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say Zombie Item Lock",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnUser2",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say Zombie Item Unlock",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+                ]
+            }
+        },
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]materia_case"
+            },
+            "delete":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnCase01",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40冰元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase08",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40火元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase17",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40雷元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40冰元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40冰元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase04",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40冰元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase05",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40冰元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase06",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40冰元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase07",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40冰元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase09",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40火元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase10",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40火元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase11",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40火元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase12",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40火元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase13",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40火元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase14",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40火元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase15",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40雷元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase16",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40雷元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase18",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40雷元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase19",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40雷元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase20",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40雷元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnCase21",
+                        "targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 获得了40雷元素 <",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+                ]
+            }
+        },
+        // add language translation entity
+        // 23746#entityLumpName
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Human_A_MegaElixir_Template"
+            },
+            "insert":
+            {
+                "template10": "Item_Human_A_MegaElixir_tl_relay"
+            }
+        },
+        // 23750#entityLumpName
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Human_Elixir_Template"
+            },
+            "insert":
+            {
+                "template11": "Item_Human_Elixir_Template_tl_relay"
+            }
+        }
+    ]
+}

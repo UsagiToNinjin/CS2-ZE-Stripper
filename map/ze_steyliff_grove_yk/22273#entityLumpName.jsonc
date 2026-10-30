@@ -1,0 +1,423 @@
+// stripper by 兎RB 26.10.30
+// ze_steyliff_grove_r
+// workshop id 3777967019
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output, split duplicate targetname
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]S1_trigger",
+                "hammeruniqueid": "11782"
+            },
+            "replace":
+            {
+                "targetname": "S1_trigger_1"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 等待此门开启.24秒",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]S1_trigger",
+                "hammeruniqueid": "12028"
+            },
+            "replace":
+            {
+                "targetname": "S1_trigger_2"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 等待此门开启.19秒",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]S1_trigger",
+                "hammeruniqueid": "20094"
+            },
+            "replace":
+            {
+                "targetname": "S1_trigger_3"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 等待此门开启.24秒",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]S1_trigger",
+                "hammeruniqueid": "20098"
+            },
+            "replace":
+            {
+                "targetname": "S1_trigger_4"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 等待此门开启.19秒",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]S1_trigger",
+                "hammeruniqueid": "20106"
+            },
+            "replace":
+            {
+                "targetname": "S1_trigger_5"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 等待此门开启.19秒",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]S1_trigger",
+                "hammeruniqueid": "20110"
+            },
+            "replace":
+            {
+                "targetname": "S1_trigger_6"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 等待此门开启.24秒",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say < 11 seconds? >",
+                        "delay": 4.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]S1_trigger",
+                "hammeruniqueid": "20226"
+            },
+            "replace":
+            {
+                "targetname": "S1_trigger_7"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 等待此门开启.24秒",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    },
+                    // unify split targetname L195~217
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]S1_trigger",
+                        "inputname": "Enable",
+                        "delay": 25.0,
+                        "timestofire": 1
+                    }
+				]
+			},
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnStartTouch",
+						"targetname": "S1_trigger*",
+                        "inputname": "Enable",
+                        "delay": 25.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]S1_trigger",
+                "hammeruniqueid": "22244"
+            },
+            "replace":
+            {
+                "targetname": "S1_trigger_8"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 等待屏障消失.19秒",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]S1_trigger",
+                "hammeruniqueid": "20092"
+            },
+            "replace":
+            {
+                "targetname": "S1_trigger_9"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 等待此门开启.24秒",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]S1_trigger",
+                "hammeruniqueid": "22484"
+            },
+            "replace":
+            {
+                "targetname": "S1_trigger_10"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 等待此门开启.24秒",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]S1_trigger",
+                "hammeruniqueid": "22549"
+            },
+            "replace":
+            {
+                "targetname": "S1_trigger_11"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 等待此门开启.29秒",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]S1_trigger",
+                "hammeruniqueid": "22565"
+            },
+            "replace":
+            {
+                "targetname": "S1_trigger_12"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 等待此门开启.",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]S1_trigger",
+                "hammeruniqueid": "22567"
+            },
+            "replace":
+            {
+                "targetname": "S1_trigger_13"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 平台将在14秒后上升.",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]S1_trigger",
+                "hammeruniqueid": "22569"
+            },
+            "replace":
+            {
+                "targetname": "S1_trigger_14"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnStartTouch",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > 等待此门开启.14秒",
+                        "delay": 1.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]S1_T_win_Trigger"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say ** 杀死剩余的僵尸 **",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		}
+	]
+}

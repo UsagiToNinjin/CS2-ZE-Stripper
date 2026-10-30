@@ -1,0 +1,50 @@
+// stripper by 兎RB 26.10.30
+// ze_steyliff_grove_r
+// workshop id 3777967019
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Zombie_Frazzle_Knife"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > A zombie has learned [ Frazzle ] magic, <",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Zombie_Frazzle_Relay"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say * Frazzle Curse *",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		}
+	]
+}

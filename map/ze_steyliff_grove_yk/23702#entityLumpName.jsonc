@@ -1,0 +1,29 @@
+// stripper by 兎RB 26.10.30
+// ze_steyliff_grove_r
+// workshop id 3777967019
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Human_Aero_Elite"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > A player has learned [ Aero ] magic, <",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		}
+	]
+}

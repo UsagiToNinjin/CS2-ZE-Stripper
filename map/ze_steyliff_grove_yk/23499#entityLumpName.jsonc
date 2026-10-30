@@ -1,0 +1,110 @@
+// stripper by 兎RB 26.10.30
+// ze_steyliff_grove_r
+// workshop id 3777967019
+// if find mistranslation tell me https://steamcommunity.com/profiles/76561198343767968/
+{
+	"modify": // remove message output
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Zombie_Ward_Knife"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnPlayerPickup",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say > A zombie has learned [ Ward ] magic, <",
+                        "delay": 0.0,
+                        "timestofire": 1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "/Item_Zombie_Ward_Relay_[1-3]/"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnTrigger",
+						"targetname": "[PR#]Console",
+                        "inputname": "Command",
+                        "overrideparam": "say * Ward Unfold *",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Zombie_Ward_Magia_Compare"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnLessThan",
+						"targetname": "[PR#]Item_Zombie_Ward_HudHint",
+                        "inputname": "SetMessage",
+                        "overrideparam": "没有足够的魔力值…",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]Item_Zombie_Ward_hud2"
+            },
+            "delete":
+            {
+                "io":
+                [
+					{
+                        "outputname": "OnCase01",
+						"targetname": "[PR#]Item_Zombie_Ward_Text2",
+                        "inputname": "SetMessage",
+                        "overrideparam": "> 一级 <",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase02",
+						"targetname": "[PR#]Item_Zombie_Ward_Text2",
+                        "inputname": "SetMessage",
+                        "overrideparam": "> 二级 <",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnCase03",
+						"targetname": "[PR#]Item_Zombie_Ward_Text2",
+                        "inputname": "SetMessage",
+                        "overrideparam": "> 三级 <",
+                        "delay": 0.0,
+                        "timestofire": -1
+                    }
+				]
+			}
+		}
+	]
+}
