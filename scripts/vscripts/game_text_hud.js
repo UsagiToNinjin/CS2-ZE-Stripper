@@ -179,7 +179,7 @@ const MESSAGES = {
 		ru: "> УРОВЕНЬ - ПЁРПЛ D <",
 		color: COLOR.PURPLE 
 	},
-	stage_error_d: { 
+	stage_error: { 
 		text: "> STAGE - #ERROR <", 
 		zh: "> 关卡 - #错误 <", 
 		kr: "> 스테이지 - #에러 <", 
