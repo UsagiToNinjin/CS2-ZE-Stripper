@@ -954,7 +954,7 @@ const LYRICS = {
 		style: {
 			x: 50, y: 78, size: 44, sub: 0,
 			brightness: 1.5, font: FONT.STRATUM_MONO_BOLD,
-			fadeIn: 0.5, fadeOut: 0.5, ruby: 50, gap: 0,
+			fadeIn: 1.0, fadeOut: 1.0, ruby: 50, gap: 0,
 		},
 		lines: [
 			{ t: "Feariiteiru wa\n御伽話(フェアリーテイル)は", d: 28.8 },
@@ -988,7 +988,7 @@ const LYRICS = {
 		style: {
 			x: 50, y: 78, size: 40,
 			brightness: 1.5, font: FONT.STRATUM_MONO_BOLD,
-			fadeIn: 0.5, fadeOut: 0.5,
+			fadeIn: 1.0, fadeOut: 1.0,
 		},
 		lines: [
 			{ t: "A dying fairy tale", d: 27.8 },
@@ -1006,8 +1006,7 @@ const LYRICS = {
 			{ t: "We'll bring forth the mercy and the justice", d: 81.7 },
 			{ t: "Destroy them all before they even touch us", d: 84.3 },
 			{ t: "We'll pay the price a karma paradise", d: 86.9 },
-			{ t: "And walk ahead as one becoming", d: 89.5 },
-			{ t: "We've done", d: 91.3 },
+			{ t: "And walk ahead as one becoming, We've done", d: 89.5 },
 			{ t: "Let the rain continue falling on this", d: 92.3 },
 			{ t: "Unwanted soul in case you haven't noticed", d: 95.0 },
 			{ t: "The guilty sin of my neurotic mind", d: 97.9 },
@@ -1308,16 +1307,25 @@ function PlayLyrics(name) {
 	for (let i = 0; i < lines.length; i++) {
 		const line = lines[i];
 		const at = typeof line.d === "number" ? line.d : 0;
-		const next = i + 1 < lines.length && typeof lines[i + 1].d === "number" ? lines[i + 1].d : at + 6.0;
+		const next = i + 1 < lines.length && typeof lines[i + 1].d === "number"
+			? lines[i + 1].d
+			: at + 6.0;
 
 		Instance.Delay(Math.max(0, at)).then(() => {
 			if (gen !== lyricPlayGen)
 				return;
 
-			let hold = line.hold;
-			if (typeof hold !== "number" || hold <= 0) hold = Math.max(0.2, next - at - 0.6);
+			const fadeIn = typeof style.fadeIn === "number" ? style.fadeIn : 1.0;
+			const fadeOut = typeof style.fadeOut === "number" ? style.fadeOut : 1.0;
 
-			ShowLyric(MergeObj(style, line, { hold: hold, text: line.t }));
+			const hold = Math.max(0, next - at - fadeIn - fadeOut);
+
+			ShowLyric(MergeObj(style, line, {
+				fadeIn: fadeIn,
+				fadeOut: fadeOut,
+				hold: hold,
+				text: line.t
+			}));
 		});
 	}
 
