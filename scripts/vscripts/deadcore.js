@@ -152,18 +152,23 @@ Instance.OnScriptInput("PlayBGM", ({ activator }) => {
 // ============================================================
 
 Instance.SetThink(() => {
-    for (const player of players.values()) {
+    for (const player of Instance.GetAllPlayerControllers()) {
         if (!player.IsConnected())
             continue;
 
         const pawn = player.GetPlayerPawn();
+
         if (!pawn || !pawn.IsValid())
             continue;
 
-        if (pawn.GetTeamNumber() === 3 && pawn.IsAlive() && pawn.GetHealth() > 100) {
+        if (pawn.GetTeamNumber() !== 3 || !pawn.IsAlive())
+            continue;
+
+        if (pawn.GetMaxHealth() !== 100)
             pawn.SetMaxHealth(100);
+
+        if (pawn.GetHealth() > 100)
             pawn.SetHealth(100);
-        }
     }
 
     Instance.SetNextThink(Instance.GetGameTime() + 1);
