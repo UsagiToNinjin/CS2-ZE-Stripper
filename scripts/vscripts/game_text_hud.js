@@ -111,82 +111,102 @@ const DEFAULTS = {
 };
 
 const MESSAGES = {
-	mapper: { 
-		text: "*** Map by Airvulpes ***", 
-		zh: "*** 地图制作：Airvulpes ***", 
-		kr: "*** 맵 제작：Airvulpes ***", 
-		jp: "*** マップ制作：Airvulpes ***",
-		ru: "*** Создание карты：Airvulpes ***",
-		x: 50, y: 20, size: 56, hold: 3.0 
-	},
-	modder: { 
-		text: "*** Map modify by 兎RB ***", 
-		zh: "*** 地图改版：兎RB ***", 
-		kr: "*** 맵 개편：兎RB ***", 
-		jp: "*** マップ改編：兎RB ***",
-		ru: "*** Переработка карты：兎RB ***",
-		x: 50, y: 20, size: 56, hold: 3.0 
-	},
-	porter: { 
-		text: "*** Map port by SIRloin ***", 
-		zh: "*** 地图移植：SIRloin ***", 
-		kr: "*** 맵 포트：SIRloin ***", 
-		jp: "*** マップポート：SIRloin ***",
-		ru: "*** Портирование карты：SIRloin ***",
-		x: 50, y: 20, size: 56, hold: 3.0 
-	},
-	stage_a: { 
-		text: "> STAGE - A <", 
-		zh: "> 关卡 - A <", 
-		kr: "> 스테이지 - A <", 
-		jp: "> ステージ - A <",
-		ru: "> УРОВЕНЬ - A <"
-	},
-	stage_b: { 
-		text: "> STAGE - B <", 
-		zh: "> 关卡 - B <", 
-		kr: "> 스테이지 - B <", 
-		jp: "> ステージ - B <",
-		ru: "> УРОВЕНЬ - B <"
-	},
-	stage_c: { 
-		text: "> STAGE - C <", 
-		zh: "> 关卡 - C <", 
-		kr: "> 스테이지 - C <", 
-		jp: "> ステージ - C <",
-		ru: "> УРОВЕНЬ - C <"
-	},
-	stage_d: { 
-		text: "> STAGE - D <", 
-		zh: "> 关卡 - D <", 
-		kr: "> 스테이지 - D <", 
-		jp: "> ステージ - D <",
-		ru: "> УРОВЕНЬ - D <"
-	},
-	stage_red_d: { 
-		text: "> STAGE - RED D <", 
-		zh: "> 关卡 - 红D <", 
-		kr: "> 스테이지 - 레드 D <", 
-		jp: "> ステージ - レッド D <",
-		ru: "> УРОВЕНЬ - РЭД D <",
-		color: COLOR.RED 
-	},
-	stage_purple_d: { 
-		text: "> STAGE - PURPLE D <", 
-		zh: "> 关卡 - 紫D <", 
-		kr: "> 스테이지 - 퍼플 D <", 
-		jp: "> ステージ - パープル D <",
-		ru: "> УРОВЕНЬ - ПЁРПЛ D <",
-		color: COLOR.PURPLE 
-	},
-	stage_error: { 
-		text: "> STAGE - #ERROR <", 
-		zh: "> 关卡 - #错误 <", 
-		kr: "> 스테이지 - #에러 <", 
-		jp: "> ステージ - #エラー <",
-		ru: "> УРОВЕНЬ - #ОШИБКА <",
-		color: COLOR.WHITE 
-	},
+    mapper: {
+        text: "*** Map by Airvulpes ***",
+        zh: "*** 地图制作：Airvulpes ***",
+        ko: "*** 맵 제작：Airvulpes ***",
+        ja: "*** マップ制作：Airvulpes ***",
+        ru: "*** Создание карты：Airvulpes ***",
+        vi: "*** Bản đồ của：Airvulpes ***",
+        th: "*** แผนที่โดย：Airvulpes ***",
+        x: 50, y: 20, size: 56, hold: 3.0
+    },
+    modder: {
+        text: "*** Map modify by 兎RB ***",
+        zh: "*** 地图改版：兎RB ***",
+        ko: "*** 맵 개편：兎RB ***",
+        ja: "*** マップ改編：兎RB ***",
+        ru: "*** Переработка карты：兎RB ***",
+        vi: "*** Chỉnh sửa bản đồ：兎RB ***",
+        th: "*** ปรับปรุงแผนที่โดย：兎RB ***",
+        x: 50, y: 20, size: 56, hold: 3.0
+    },
+    porter: {
+        text: "*** Map port by SIRloin ***",
+        zh: "*** 地图移植：SIRloin ***",
+        ko: "*** 맵 포트：SIRloin ***",
+        ja: "*** マップポート：SIRloin ***",
+        ru: "*** Портирование карты：SIRloin ***",
+        vi: "*** Chuyển đổi bản đồ：SIRloin ***",
+        th: "*** พอร์ตแผนที่โดย：SIRloin ***",
+        x: 50, y: 20, size: 56, hold: 3.0
+    },
+    stage_a: {
+        text: "> STAGE - A <",
+        zh: "> 关卡 - A <",
+        ko: "> 스테이지 - A <",
+        ja: "> ステージ - A <",
+        ru: "> ЭТАП - A <",
+        vi: "> MÀN - A <",
+        th: "> สเตจ - A <",
+    },
+    stage_b: {
+        text: "> STAGE - B <",
+        zh: "> 关卡 - B <",
+        ko: "> 스테이지 - B <",
+        ja: "> ステージ - B <",
+        ru: "> ЭТАП - B <",
+        vi: "> MÀN - B <",
+        th: "> สเตจ - B <",
+    },
+    stage_c: {
+        text: "> STAGE - C <",
+        zh: "> 关卡 - C <",
+        ko: "> 스테이지 - C <",
+        ja: "> ステージ - C <",
+        ru: "> ЭТАП - C <",
+        vi: "> MÀN - C <",
+        th: "> สเตจ - C <",
+    },
+    stage_d: {
+        text: "> STAGE - D <",
+        zh: "> 关卡 - D <",
+        ko: "> 스테이지 - D <",
+        ja: "> ステージ - D <",
+        ru: "> ЭТАП - D <",
+        vi: "> MÀN - D <",
+        th: "> สเตจ - D <",
+    },
+    stage_red_d: {
+        text: "> STAGE - RED D <",
+        zh: "> 关卡 - 红D <",
+        ko: "> 스테이지 - 빨강 D <",
+        ja: "> ステージ - 赤D <",
+        ru: "> ЭТАП - КРАСНЫЙ D <",
+        vi: "> MÀN - ĐỎ D <",
+        th: "> สเตจ - แดง D <",
+        color: COLOR.RED
+    },
+    stage_purple_d: {
+        text: "> STAGE - PURPLE D <",
+        zh: "> 关卡 - 紫D <",
+        ko: "> 스테이지 - 보라 D <",
+        ja: "> ステージ - 紫D <",
+        ru: "> ЭТАП - ФИОЛЕТОВЫЙ D <",
+        vi: "> MÀN - TÍM D <",
+        th: "> สเตจ - ม่วง D <",
+        color: COLOR.PURPLE
+    },
+    stage_error: {
+        text: "> STAGE - #ERROR <",
+        zh: "> 关卡 - #错误 <",
+        ko: "> 스테이지 - #에러 <",
+        ja: "> ステージ - #エラー <",
+        ru: "> ЭТАП - #ОШИБКА <",
+        vi: "> MÀN - #LỖI <",
+        th: "> สเตจ - #ข้อผิดพลาด <",
+        color: COLOR.WHITE
+    },
 };
 
 const MAX_CELLS = 37;
@@ -1383,17 +1403,24 @@ Instance.OnPlayerChat((event) => {
 
 	const command = String(event.text).trim().toLowerCase();
 	const languageCommands = {
-		"!en": "en",
 		"!english": "en",
-		"!ch": "zh",
-		"!zh": "zh",
+        "!en": "en",
 		"!中文": "zh",
-		"!kr": "kr",
-		"!한국어": "kr",
-		"!jp": "jp",
-		"!日本語": "jp",
-		"!ru": "ru",
+        "!ch": "zh",
+        "!zh": "zh",
+		"!한국어": "ko",
+        "!kr": "ko",
+        "!ko": "ko",
+		"!日本語": "ja",
+        "!jp": "ja",
+        "!ja": "ja",
 		"!русский": "ru",
+        "!ru": "ru",
+        "!tiếng việt": "vi",
+        "!vn": "vi",
+        "!vi": "vi",
+        "!ภาษาไทย": "th",
+        "!th": "th",
 	};
 	const language = languageCommands[command];
 	if (!language)
@@ -1481,4 +1508,4 @@ Instance.OnScriptReload({
 	after: () => {
 		TryStartup(0);
 	},
-});
+});	
