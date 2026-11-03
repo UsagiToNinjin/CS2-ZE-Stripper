@@ -119,6 +119,7 @@ const MESSAGES = {
         ru: "*** Создание карты：Airvulpes ***",
         vi: "*** Bản đồ của：Airvulpes ***",
         th: "*** แผนที่โดย：Airvulpes ***",
+		color: COLOR.DEADCORE_BLUE,
         x: 50, y: 20, size: 56, hold: 3.0
     },
     modder: {
@@ -129,6 +130,7 @@ const MESSAGES = {
         ru: "*** Переработка карты：兎RB ***",
         vi: "*** Chỉnh sửa bản đồ：兎RB ***",
         th: "*** ปรับปรุงแผนที่โดย：兎RB ***",
+		color: COLOR.DEADCORE_BLUE,
         x: 50, y: 20, size: 56, hold: 3.0
     },
     porter: {
@@ -139,6 +141,7 @@ const MESSAGES = {
         ru: "*** Портирование карты：SIRloin ***",
         vi: "*** Chuyển đổi bản đồ：SIRloin ***",
         th: "*** พอร์ตแผนที่โดย：SIRloin ***",
+		color: COLOR.DEADCORE_BLUE,
         x: 50, y: 20, size: 56, hold: 3.0
     },
     stage_a: {
@@ -149,6 +152,7 @@ const MESSAGES = {
         ru: "> ЭТАП - A <",
         vi: "> MÀN - A <",
         th: "> สเตจ - A <",
+		color: COLOR.DEADCORE_BLUE
     },
     stage_b: {
         text: "> STAGE - B <",
@@ -158,6 +162,7 @@ const MESSAGES = {
         ru: "> ЭТАП - B <",
         vi: "> MÀN - B <",
         th: "> สเตจ - B <",
+		color: COLOR.DEADCORE_BLUE
     },
     stage_c: {
         text: "> STAGE - C <",
@@ -167,6 +172,7 @@ const MESSAGES = {
         ru: "> ЭТАП - C <",
         vi: "> MÀN - C <",
         th: "> สเตจ - C <",
+		color: COLOR.DEADCORE_BLUE
     },
     stage_d: {
         text: "> STAGE - D <",
@@ -176,6 +182,7 @@ const MESSAGES = {
         ru: "> ЭТАП - D <",
         vi: "> MÀN - D <",
         th: "> สเตจ - D <",
+		color: COLOR.DEADCORE_BLUE
     },
     stage_red_d: {
         text: "> STAGE - RED D <",
@@ -1504,10 +1511,12 @@ Instance.OnScriptReload({
 	before: () => {
 		const l = GetLayout(true);
 		if (!l) return;
+		
 		for (const slot of slots) ResetSlot(l, slot);
 		ResetCountdown(l);
+		StopLyrics(true);
 	},
 	after: () => {
 		TryStartup(0);
 	},
-});	
+});
