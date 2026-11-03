@@ -795,24 +795,26 @@ function AcquireSlot(l, channel) {
 }
 
 function MakeConfig(src) {
-	src = src || {};
+    src = src || {};
 
-	const color = GlobalColorRgb();
+    const color = src.color !== undefined
+        ? ParseColor(src.color)
+        : GlobalColorRgb();
 
-	return {
-		text: src.text === undefined ? "" : String(src.text),
-		x: SnapInt("x", src.x === undefined ? DEFAULTS.x : src.x, X_MIN, X_MAX),
-		y: SnapInt("y", src.y === undefined ? DEFAULTS.y : src.y, Y_MIN, Y_MAX),
-		size: SnapInt("size", src.size === undefined ? DEFAULTS.size : src.size, SIZE_MIN, SIZE_MAX),
-		colorClass: RgbClass(color),
-		brightClass: BrightClass(SnapBrightness(src.brightness === undefined ? DEFAULTS.brightness : src.brightness)),
-		font: src.font || DEFAULTS.font,
-		hold: typeof src.hold === "number" ? src.hold : DEFAULTS.hold,
-		fadeInMs: SnapFadeMs("fadeIn", src.fadeIn === undefined ? DEFAULTS.fadeIn : src.fadeIn),
-		fadeOutMs: SnapFadeMs("fadeOut", src.fadeOut === undefined ? DEFAULTS.fadeOut : src.fadeOut),
-		wrap: !!src.wrap,
-		channel: src.channel ? String(src.channel) : "",
-	};
+    return {
+        text: src.text === undefined ? "" : String(src.text),
+        x: SnapInt("x", src.x === undefined ? DEFAULTS.x : src.x, X_MIN, X_MAX),
+        y: SnapInt("y", src.y === undefined ? DEFAULTS.y : src.y, Y_MIN, Y_MAX),
+        size: SnapInt("size", src.size === undefined ? DEFAULTS.size : src.size, SIZE_MIN, SIZE_MAX),
+        colorClass: RgbClass(color),
+        brightClass: BrightClass(SnapBrightness(src.brightness === undefined ? DEFAULTS.brightness : src.brightness)),
+        font: src.font || DEFAULTS.font,
+        hold: typeof src.hold === "number" ? src.hold : DEFAULTS.hold,
+        fadeInMs: SnapFadeMs("fadeIn", src.fadeIn === undefined ? DEFAULTS.fadeIn : src.fadeIn),
+        fadeOutMs: SnapFadeMs("fadeOut", src.fadeOut === undefined ? DEFAULTS.fadeOut : src.fadeOut),
+        wrap: !!src.wrap,
+        channel: src.channel ? String(src.channel) : "",
+    };
 }
 
 function ShowGameText(src) {
