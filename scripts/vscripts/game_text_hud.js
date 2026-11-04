@@ -920,10 +920,15 @@ const LYRIC_WRAP_ID = "ly_wrap";
 const LYRIC_BOX_ID = "ly_box";
 const LYRIC_TOP_ID = "ly_top";
 const LYRIC_ROW_ID = "ly_row";
+const LYRIC_TRANSLATION_ID = "ly_translation";
 
 const LYRIC_GONE_CLASS = "gt-lyr-gone";
 const VAR_RUBY = "gt_ruby";
 const VAR_CHAR = "gt_char";
+const VAR_TRANSLATION = "gt_translation";
+
+let activeLyricLine = null;
+const lyricPlayerOverrides = [];
 
 const RUBY_MIN_PX = 2, RUBY_MAX_PX = 48;
 const RUBY_GAP_MAX_PX = 12;
@@ -943,8 +948,8 @@ const LYRIC_DEFAULTS = {
 	brightness: 1.5,
 	font: FONT.STRATUM_MONO_BOLD,
 	hold: 0,
-	fadeIn: 0.2,
-	fadeOut: 0.2,
+	fadeIn: 1.0,
+	fadeOut: 1.0,
 	ruby: 50,
 	gap: 0,
 };
@@ -957,33 +962,296 @@ const LYRICS = {
 			fadeIn: 1.0, fadeOut: 1.0, ruby: 50, gap: 0,
 		},
 		lines: [
-			{ t: "Feariiteiru wa\n御伽話(フェアリーテイル)は", d: 28.8 },
-			{ t: "Sakki shinda mitai\nさっき死(し)んだみたい", d: 34.0 },
-			{ t: "Renga no byoutou de\n煉瓦(れんが)の病棟(びょうとう)で", d: 39.4 },
-			{ t: "Umaku utaenakute\n上手(うま)く歌(うた)えなくて", d: 44.7 },
-			{ t: "Kiri ni kemuru yoru\n霧(きり)に煙(けむ)る夜(よる)", d: 50.1 },
-			{ t: "Ukabe akai tsuki\n浮(う)かべ赤(あか)い月(つき)", d: 55.3 },
-			{ t: "Hora mite watashi wo\nほら見(み)て私(わたし)を", d: 60.6 },
-			{ t: "Me wo sorasanaide\n目(め)を逸(そ)らさないで", d: 66.1 },
-			{ t: "Kuroi tetsu goushi no naka de\n黒(くろ)い鉄格子(てつごうし)の中(なか)で", d: 72.0 },
-			{ t: "Watashi wa umarete kitanda\n私(わたし)は生(う)まれてきたんだ", d: 74.6 },
-			{ t: "Akui no daishou wo negae\n悪意(あくい)の代償(だいしょう)を願(ねが)え", d: 77.2 },
-			{ t: "Nozomu ga mama ni omae ni\n望(のぞ)むがままにお前(まえ)に", d: 79.5 },
-			{ t: "Saa ataeyou seigi wo\nさぁ与(あた)えよう正義(せいぎ)を", d: 82.7 },
-			{ t: "Kowashite kowasareru mae ni\n壊(こわ)して壊(こわ)される前(まえ)に", d: 85.3 },
-			{ t: "Inga no daishou wo harai\n因果(いんが)の代償(だいしょう)を払(はら)い", d: 87.9 },
-			{ t: "Tomo ni yukou na mo naki kaibutsu\n共(とも)に行(ゆ)こう 名(な)もなき怪物(かいぶつ)", d: 89.7 },
-			{ t: "Kuroi ame furase kono sora\n黒(くろ)い雨(あめ) 降(ふ)らせこの空(そら)", d: 93.5 },
-			{ t: "Watashi wa nozomarenai mono\n私(わたし)は望(のぞ)まれないもの", d: 96.2 },
-			{ t: "Hibi wareta noirooze\nひび割(わ)れたノイローゼ", d: 99.0 },
-			{ t: "Aisu douzai no boukansha tachi ni\n愛(あい)す同罪(どうざい)の傍観者達(ぼうかんしゃたち)に", d: 100.7 },
-			{ t: "Saa ima furue seigi wo\nさぁ今(いま)震(ふる)え正義(せいぎ)を", d: 104.5 },
-			{ t: "Kesenai kizu wo dakishimete\n消(け)せない傷(きず)を抱(だ)きしめて", d: 107.0 },
-			{ t: "Kono karada wo uke ire\nこの身体(カラダ)を受(う)け入(い)れ", d: 109.4 },
-			{ t: "Tomo ni yukou namae no nai\n共(とも)に行(ゆ)こう名(な)前(まえ)のない", d: 111.9 },
+			{
+			    t: "Feariiteiru wa\n御伽話(フェアリーテイル)は",
+			    tr: {
+			        en: "The fairy tale",
+			        zh: "童话故事",
+			        ko: "옛날 이야기는",
+			        ru: "Сказка",
+			        vi: "Câu chuyện cổ tích",
+			        th: "นิทานเรื่องหนึ่ง"
+			    },
+			    d: 28.8
+			},
+			{
+			    t: "Sakki shinda mitai\nさっき死(し)んだみたい",
+			    tr: {
+			        en: "Seemed to have died just now",
+			        zh: "好像刚才死去了",
+			        ko: "방금 전에 죽은 것 같아",
+			        ru: "Кажется, кто-то только что умер",
+			        vi: "Có vẻ như vừa mới chết",
+			        th: "ดูเหมือนว่าเพิ่งตายไปเมื่อครู่นี้"
+			    },
+			    d: 34.0
+			},
+			{
+			    t: "Renga no byoutou de\n煉瓦(れんが)の病棟(びょうとう)で",
+			    tr: {
+			        en: "In this brick hospital",
+			        zh: "在砖砌的病房里",
+			        ko: "벽돌로 된 병동에서",
+			        ru: "В кирпичной больничной палате",
+			        vi: "Trong khu phòng bệnh xây bằng gạch",
+			        th: "ณ หอผู้ป่วยที่ก่อด้วยอิฐ"
+			    },
+			    d: 39.4
+			},
+			{
+			    t: "Umaku utaenakute\n上手(うま)く歌(うた)えなくて",
+			    tr: {
+			        en: "I can’t seem to sing",
+			        zh: "无法好好歌唱",
+			        ko: "제대로 노래하지 못했어",
+			        ru: "не могу хорошо петь",
+			        vi: "Chẳng thể hát thật hay",
+			        th: "ร้องเพลงได้ไม่ดีเลย"
+			    },
+			    d: 44.7
+			},
+			{
+			    t: "Kiri ni kemuru yoru\n霧(きり)に煙(けむ)る夜(よる)",
+			    tr: {
+			        en: "In the night hazy with mist",
+			        zh: "在雾气缭绕的夜晚",
+			        ko: "안개가 자욱한 밤",
+			        ru: "В туманной ночи",
+			        vi: "Trong đêm mờ sương",
+			        th: "ในคืนที่ปกคลุมด้วยหมอก"
+			    },
+			    d: 50.1
+			},
+			{
+			    t: "Ukabe akai tsuki\n浮(う)かべ赤(あか)い月(つき)",
+			    tr: {
+			        en: "A red moon floats",
+			        zh: "浮现红色的月亮",
+			        ko: "떠올라라 붉은 달이여",
+			        ru: "Взойди, красная луна",
+			        vi: "Hãy mọc lên, vầng trăng đỏ",
+			        th: "จงลอยขึ้นมา ดวงจันทร์สีแดง"
+			    },
+			    d: 55.3
+			},
+			{
+			    t: "Hora mite watashi wo\nほら見(み)て私(わたし)を",
+			    tr: {
+			        en: "Here, look at me",
+			        zh: "看着我啊",
+			        ko: "자, 날 바라봐줘",
+			        ru: "Ну же, посмотри на меня",
+			        vi: "Nào, hãy nhìn tôi đi",
+			        th: "นี่ มองฉันสิ"
+			    },
+			    d: 60.6
+			},
+			{
+			    t: "Me wo sorasanaide\n目(め)を逸(そ)らさないで",
+			    tr: {
+			        en: "Don't avert your eyes",
+			        zh: "别将视线从我身上移开",
+			        ko: "눈을 돌리지 말아 줘",
+			        ru: "не отводи взгляд",
+			        vi: "Đừng rời mắt khỏi tôi",
+			        th: "อย่าละสายตาไปจากฉัน"
+			    },
+			    d: 66.1
+			},
+			{
+			    t: "Kuroi tetsu goushi no naka de\n黒(くろ)い鉄格子(てつごうし)の中(なか)で",
+			    tr: {
+			        en: "Inside the black iron bars",
+			        zh: "在黑色的铁栅栏中",
+			        ko: "검은 쇠창살 속에서",
+			        ru: "За чёрной железной решёткой",
+			        vi: "Bên trong song sắt đen",
+			        th: "ภายในลูกกรงเหล็กสีดำ"
+			    },
+			    d: 72.0
+			},
+			{
+			    t: "Watashi wa umarete kitanda\n私(わたし)は生(う)まれてきたんだ",
+			    tr: {
+			        en: "I was born",
+			        zh: "我诞生了",
+			        ko: "나는 태어난 거야",
+			        ru: "Ведь я родилась",
+			        vi: "Tôi đã được sinh ra",
+			        th: "ฉันได้ถือกำเนิดมาแล้ว"
+			    },
+			    d: 74.6
+			},
+			{
+			    t: "Akui no daishou wo negae\n悪意(あくい)の代償(だいしょう)を願(ねが)え",
+			    tr: {
+			        en: "Wish for the price of malice",
+			        zh: "祈求恶意的代价",
+			        ko: "악의의 대가를 바라고",
+			        ru: "Желай расплаты за зло",
+			        vi: "Hãy mong cho cái ác phải trả giá",
+			        th: "จงปรารถนาให้ความชั่วร้ายต้องชดใช้"
+			    },
+			    d: 77.2
+			},
+			{
+			    t: "Nozomu ga mama ni omae ni\n望(のぞ)むがままにお前(まえ)に",
+			    tr: {
+			        en: "Just as you desire",
+			        zh: "随你所愿",
+			        ko: "원하는 대로 너에게",
+			        ru: "Тебе — всё, как я пожелаю",
+			        vi: "Theo đúng những gì ta mong muốn, dành cho ngươi",
+			        th: "แด่เจ้า ตามที่ปรารถนา"
+			    },
+			    d: 79.5
+			},
+			{
+			    t: "Saa ataeyou seigi wo\nさぁ与(あた)えよう正義(せいぎ)を",
+			    tr: {
+			        en: "Come, let me grant justice",
+			        zh: "来吧, 让我赐予你正义",
+			        ko: "자, 정의를 부여하자",
+			        ru: "Дарую тебе справедливость",
+			        vi: "Nào, ta sẽ ban tặng công lý",
+			        th: "มาเถิด ข้าจะมอบความยุติธรรมให้"
+			    },
+			    d: 82.7
+			},
+			{
+			    t: "Kowashite kowasareru mae ni\n壊(こわ)して壊(こわ)される前(まえ)に",
+			    tr: {
+			        en: "Before destroying and being destroyede",
+			        zh: "在被摧毀之前先摧毀一切",
+			        ko: "부숴버려 부서지기 전에",
+			        ru: "Разрушь, прежде чем разрушат тебя",
+			        vi: "Hãy phá hủy trước khi bị phá hủy",
+			        th: "จงทำลายเสีย ก่อนที่จะถูกทำลาย"
+			    },
+			    d: 85.3
+			},
+			{
+			    t: "Inga no daishou wo harai\n因果(いんが)の代償(だいしょう)を払(はら)い",
+			    tr: {
+			        en: "Paying the price of karma",
+			        zh: "偿还因果的代价",
+			        ko: "인과의 대가를 지불하고",
+			        ru: "Заплатив цену за карму",
+			        vi: "Trả giá cho nghiệp quả",
+			        th: "ชดใช้ผลแห่งกรรม"
+			    },
+			    d: 87.9
+			},
+			{
+			    t: "Tomo ni yukou na mo naki kaibutsu\n共(とも)に行(ゆ)こう 名(な)もなき怪物(かいぶつ)",
+			    tr: {
+			        en: "Go together, nameless monster",
+			        zh: "一起前行吧, 没有名字的怪物",
+			        ko: "함께 나아가자 이름 없는 괴물이여",
+			        ru: "Пойдём вместе, безымянное чудовище",
+			        vi: "Hãy cùng đi, hỡi quái vật vô danh",
+			        th: "ไปด้วยกันเถอะ เจ้าสัตว์ประหลาดไร้นาม"
+			    },
+			    d: 89.7
+			},
+			{
+			    t: "Kuroi ame furase kono sora\n黒(くろ)い雨(あめ) 降(ふ)らせこの空(そら)",
+			    tr: {
+			        en: "Make black rain fall from this sky",
+			        zh: "让黑雨降临这片天空",
+			        ko: "검은 빗줄기를 내려라 하늘이여",
+			        ru: "Пусть чёрный дождь прольётся с этого неба",
+			        vi: "Hãy trút cơn mưa đen xuống bầu trời này",
+			        th: "จงทำให้ฝนสีดำโปรยปรายลงมาจากฟากฟ้านี้"
+			    },
+			    d: 93.5
+			},
+			{
+			    t: "Watashi wa nozomarenai mono\n私(わたし)は望(のぞ)まれないもの",
+			    tr: {
+			        en: "I am something unwanted",
+			        zh: "我是个不被期望的存在",
+			        ko: "나는 버림받은 존재",
+			        ru: "Я — нежеланное существо",
+			        vi: "Tôi là một tồn tại không được mong đợi",
+			        th: "ฉันคือสิ่งมีชีวิตที่ไม่มีใครปรารถนา"
+			    },
+			    d: 96.2
+			},
+			{
+			    t: "Hibi wareta noirooze\nひび割(わ)れたノイローゼ",
+			    tr: {
+			        en: "To the cracked neurosis",
+			        zh: "破碎支离的神经官能症",
+			        ko: "금이 가버린 노이로제",
+			        ru: "Потрескавшийся невроз",
+			        vi: "Chứng loạn thần kinh rạn vỡ",
+			        th: "โรคประสาทที่แตกร้าว"
+			    },
+			    d: 99.0
+			},
+			{
+			    t: "Aisu douzai no boukansha tachi ni\n愛(あい)す同罪(どうざい)の傍観者達(ぼうかんしゃたち)に",
+			    tr: {
+			        en: "Beloved bystanders with the same sins",
+			        zh: "与爱同罪的旁观者们",
+			        ko: "같은 죄를 지은 사랑하는 방관자들에게",
+			        ru: "Любящим наблюдателям, разделяющим ту же вину",
+			        vi: "Gửi đến những kẻ bàng quan yêu thương, cùng chung tội lỗi",
+			        th: "แด่เหล่าผู้เฝ้ามอง ผู้มีความผิดร่วมกันในความรัก"
+			    },
+			    d: 100.7
+			},
+			{
+			    t: "Saa ima furue seigi wo\nさぁ今(いま)震(ふる)え正義(せいぎ)を",
+			    tr: {
+			        en: "Now, trembling justice",
+			        zh: "来吧, 现在让正义颤抖",
+			        ko: "자, 지금 휘둘러 정의를",
+			        ru: "Взмахни же справедливостью",
+			        vi: "Nào, hãy vung công lý lên",
+			        th: "มาเถิด จงกวัดแกว่งความยุติธรรม"
+			    },
+			    d: 104.5
+			},
+			{
+			    t: "Kesenai kizu wo dakishimete\n消(け)せない傷(きず)を抱(だ)きしめて",
+			    tr: {
+			        en: "Embrace my unerasable scars",
+			        zh: "拥抱无法抹去的伤痕",
+			        ko: "지울 수 없는 상처를 끌어안고서",
+			        ru: "Обнимая неизгладимые раны",
+			        vi: "Ôm lấy những vết thương không thể xóa nhòa",
+			        th: "โอบกอดบาดแผลที่ไม่อาจลบเลือน"
+			    },
+			    d: 107.0
+			},
+			{
+			    t: "Kono karada wo uke ire\nこの身体(からだ)を受(う)け入(い)れ",
+			    tr: {
+			        en: "Accept this body",
+			        zh: "接受这个身躯",
+			        ko: "이 육체를 받아들이고",
+			        ru: "Приняв это тело",
+			        vi: "Đón nhận thân thể này",
+			        th: "ยอมรับร่างกายนี้"
+			    },
+			    d: 109.4
+			},
+			{
+			    t: "Tomo ni yukou namae no nai\n共(とも)に行(ゆ)こう 名(な)前(まえ)のない...",
+			    tr: {
+			        en: "We’ll go together, nameless...",
+			        zh: "一起前行吧, 没有名字的...",
+			        ko: "함께 나아가자 이름 없는...",
+			        ru: "Пойдём вместе, безымянное...",
+			        vi: "Hãy cùng đi, kẻ không tên...",
+			        th: "ไปด้วยกันเถอะ ผู้ไร้นาม..."
+			    },
+			    d: 111.9
+			},
 		],
 	},
-
 	EN: {
 		style: {
 			x: 50, y: 78, size: 40,
@@ -1170,11 +1438,84 @@ function MakeLyricConfig(src) {
 	};
 }
 
+function SetPlayerLyricTranslation(playerSlot, language) {
+	if (!activeLyricLine)
+		return;
+
+	const l = GetLayout(true);
+	if (!l)
+		return;
+
+	const translations = activeLyricLine.tr || {};
+	let translation = "";
+
+	if (language !== "ja") {
+		translation = translations[language];
+
+		if (typeof translation !== "string" || !translation.length)
+			translation = translations.en || "";
+	}
+
+	l.SetDialogVariableStringForPlayer(
+		playerSlot,
+		LYRIC_TRANSLATION_ID,
+		VAR_TRANSLATION,
+		translation
+	);
+
+	if (lyricPlayerOverrides.indexOf(playerSlot) === -1)
+		lyricPlayerOverrides.push(playerSlot);
+}
+
+function RefreshPlayerLyricTranslation(playerSlot, language) {
+	SetPlayerLyricTranslation(playerSlot, language || "en");
+}
+
+function RefreshAllPlayerLyricTranslations() {
+	if (!activeLyricLine)
+		return;
+
+	for (const player of Instance.GetAllPlayerControllers()) {
+		if (!player || !player.IsConnected())
+			continue;
+
+		const playerSlot = player.GetPlayerSlot();
+		RefreshPlayerLyricTranslation(
+			playerSlot,
+			playerLanguages[playerSlot] || "en"
+		);
+	}
+}
+
+function ClearPlayerLyricTranslation(playerSlot) {
+	const index = lyricPlayerOverrides.indexOf(playerSlot);
+	if (index === -1)
+		return;
+
+	const l = GetLayout(true);
+	if (l) {
+		l.SetDialogVariableStringForPlayer(
+			playerSlot,
+			LYRIC_TRANSLATION_ID,
+			VAR_TRANSLATION,
+			undefined
+		);
+	}
+
+	lyricPlayerOverrides.splice(index, 1);
+}
+
+function ClearAllPlayerLyricTranslations() {
+	while (lyricPlayerOverrides.length)
+		ClearPlayerLyricTranslation(lyricPlayerOverrides[0]);
+}
+
 function ShowLyric(src) {
 	const l = GetLayout(true);
 	if (!l) return null;
 
 	src = src || {};
+	activeLyricLine = src;
 
 	const parsed = ParseLyric(src.text === undefined ? "" : src.text);
 	const cells = src.cells && src.cells.length ? src.cells : parsed.cells;
@@ -1225,6 +1566,8 @@ function ShowLyric(src) {
 		e.r = read;
 	}
 
+	RefreshAllPlayerLyricTranslations();
+
 	SetClassRec(l, LYRIC_BOX_ID, lyricEnv, "outCls", null);
 	SetClassRec(l, LYRIC_BOX_ID, lyricEnv, "inCls", InClass(cfg.fadeInMs));
 
@@ -1256,6 +1599,9 @@ function ShowLyric(src) {
 }
 
 function ClearLyric(instant) {
+	activeLyricLine = null;
+	ClearAllPlayerLyricTranslations();
+
 	const l = GetLayout(true);
 	if (!l) return;
 
@@ -1406,12 +1752,17 @@ Instance.OnPlayerConnect((event) => {
 	const playerSlot = event.player.GetPlayerSlot();
 	delete playerLanguages[playerSlot];
 	ClearPlayerLanguageOverride(playerSlot);
+	ClearPlayerLyricTranslation(playerSlot);
+
+	if (activeLyricLine)
+		RefreshPlayerLyricTranslation(playerSlot, "en");
 });
 
 Instance.OnPlayerDisconnect((event) => {
 	const playerSlot = event.playerSlot;
 	delete playerLanguages[playerSlot];
 	ClearPlayerLanguageOverride(playerSlot);
+	ClearPlayerLyricTranslation(playerSlot);
 });
 
 Instance.OnPlayerChat((event) => {
@@ -1450,6 +1801,7 @@ Instance.OnPlayerChat((event) => {
 
 	playerLanguages[playerSlot] = language;
 	RefreshPlayerLocalizedMessages(playerSlot, language);
+	RefreshPlayerLyricTranslation(playerSlot, language);
 });
 
 for (const key in MESSAGES) {
