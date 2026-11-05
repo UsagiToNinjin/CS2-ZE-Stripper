@@ -1,4 +1,4 @@
-import { Entity, Instance } from "cs_script/point_script";
+import { Entity, Instance, Entities } from "cs_script/point_script";
 
 const LAYOUT_NAME = "game_text_hud_layout";
 const MAX_SLOTS = 2;
@@ -607,7 +607,10 @@ function GetLayout(quiet) {
 	if (layout instanceof Entity && layout.IsValid()) {
 		return layout;
 	}
+	layout = Entities.FindByName(LAYOUT_NAME)[0];
+	/* 26-11-05 valve update "Instance >> Entities"
 	layout = Instance.FindEntitiesByName(LAYOUT_NAME)[0];
+	*/
 	return layout;
 }
 
