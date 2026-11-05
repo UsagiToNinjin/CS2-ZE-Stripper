@@ -1,4 +1,4 @@
-import { Instance } from "cs_script/point_script";
+import { Instance, Entities } from "cs_script/point_script";
 
 // ============================================================
 // Skip State
@@ -26,11 +26,19 @@ function TriggerStage(stage) {
     const target = targets[stage];
     if (!target) return;
 
+    Entities.FireInput({
+        name: target,
+        input: "Trigger",
+        delay: 0.0
+    });
+
+    /* 26-11-05 valve update "Instance >> Entities"
     Instance.EntFireAtName({
         name: target,
         input: "Trigger",
         delay: 0.0
     });
+    */
 }
 
 function SelectStage()
