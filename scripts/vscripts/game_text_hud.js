@@ -1846,10 +1846,6 @@ Instance.OnScriptInput("lyric_JP", () => PlayLyrics("JP"));
 Instance.OnScriptInput("lyric_EN", () => PlayLyrics("EN"));
 Instance.OnScriptInput("lyric_stop", () => StopLyrics(true));
 
-Instance.RegisterCheatCommand("lyric_jp", () => PlayLyrics("JP"));
-Instance.RegisterCheatCommand("lyric_en", () => PlayLyrics("EN"));
-Instance.RegisterCheatCommand("lyric_stop", () => StopLyrics(true));
-
 for (const cname in COLOR) {
 	const key = cname;
 	const input = "hud_color_" + cname.toLowerCase();
@@ -1858,17 +1854,10 @@ for (const cname in COLOR) {
 	Instance.OnScriptInput(input, () => SetGlobalColor(key));
 }
 
-Instance.RegisterCheatCommand("hud_color", (args) => {
-	let a = args;
-	if (Array.isArray(a)) a = a.length ? a[0] : "";
-	a = a === undefined || a === null ? "" : String(a);
-
-	SetGlobalColor(a.length ? a : GlobalColorKey);
-});
-
 GameText.hud_reset = () => ResetHud();
-Instance.OnScriptInput("hud_reset", () => ResetHud());
-Instance.RegisterCheatCommand("hud_reset", () => ResetHud());
+Instance.OnRoundStart(() => {
+    ResetHud();
+});
 
 Instance.OnScriptReload({
 	before: () => {
