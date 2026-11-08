@@ -1281,7 +1281,7 @@ const LYRICS = {
 			{ t: "Let the rain continue falling on this", d: 92.3 },
 			{ t: "Unwanted soul in case you haven't noticed", d: 95.0 },
 			{ t: "The guilty sin of my neurotic mind", d: 97.9 },
-			{ t: "I share it with the strangers passing me by", d: 100.5 },
+			{ t: "I share it with the strangers passing me by", d: 100.0 },
 			{ t: "So bring forth the mercy and the justice", d: 103.3 },
 			{ t: "Embrace these scars I know will never vanish", d: 105.8 },
 			{ t: "My whole body accepting all of me", d: 108.4 },
