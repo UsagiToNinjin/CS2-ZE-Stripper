@@ -1,4 +1,4 @@
-import { Instance, Entities } from "cs_script/point_script";
+import { Instance, Entities, Console } from "cs_script/point_script";
 
 // ============================================================
 // Skip State
@@ -152,7 +152,11 @@ Instance.OnScriptInput("PlayBGM", ({ activator }) => {
 
     const slot = player.GetPlayerSlot();
 
+    Console.ClientCommand(slot, `play "${BGM}"`);
+    
+    /* 26-11-05 valve update "Instance >> Console"
     Instance.ClientCommand(slot, `play "${BGM}"`);
+    */
 });
 
 // ============================================================
@@ -181,5 +185,4 @@ Instance.SetThink(() => {
 
     Instance.SetNextThink(Instance.GetGameTime() + 1);
 });
-
 Instance.SetNextThink(Instance.GetGameTime() + 1);
